@@ -111,7 +111,6 @@
         "text": {
           "type": "text",
           "settings": {
-            "enlarge_text": true,
             "text": "<p>We strive to simplify the procurement process, fostering a culture of ease, efficiency, and reliability. Our team of acquisition specialists is committed to delivering flawless supply solutions that support the critical missions of our federal partners. <\/p>"
           }
         }
@@ -123,7 +122,8 @@
       "settings": {
         "align_text": "center",
         "backgroundcolor": "#000000",
-        "fontcolor": "#ffffff"
+        "fontcolor": "#ffffff",
+        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png"
       }
     },
     "af_vintage_military_enFrtq": {
