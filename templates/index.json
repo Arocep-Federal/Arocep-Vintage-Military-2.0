@@ -99,30 +99,30 @@
         "enable_gutter": false
       }
     },
-    "rich-text": {
+    "rich_text_pG3miY": {
       "type": "rich-text",
       "blocks": {
-        "heading": {
+        "heading_wyxeW7": {
           "type": "heading",
           "settings": {
-            "title": "Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success."
+            "title": "Our Mission"
           }
         },
-        "text": {
+        "text_he6a6B": {
           "type": "text",
           "settings": {
-            "text": "<p>We strive to simplify the procurement process, fostering a culture of ease, efficiency, and reliability. Our team of acquisition specialists is committed to delivering flawless supply solutions that support the critical missions of our federal partners. <\/p>"
+            "text": "<p><strong>Empowering Federal Excellence: <\/strong><em>Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/em><\/p><p><br\/>At Arocep Federal, we are dedicated to providing unparalleled products and<br\/> services that exceed the unique needs of the federal government. We <br\/>strive to simplify the procurement process, fostering a culture of ease,<br\/> efficiency, and reliability. Our team of acquisition specialists is <br\/>committed to delivering flawless supply solutions that support the <br\/>critical missions of our federal partners. Through our unwavering <br\/>commitment to excellence, we aim to make a meaningful impact, enabling <br\/>our customers to achieve their goals and serve the nation with <br\/>distinction<\/p>"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading_wyxeW7",
+        "text_he6a6B"
       ],
       "settings": {
         "align_text": "center",
-        "backgroundcolor": "#000000",
-        "fontcolor": "#ffffff",
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
         "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png"
       }
     },
@@ -220,7 +220,7 @@
   "order": [
     "hero-video",
     "featured-collections",
-    "rich-text",
+    "rich_text_pG3miY",
     "af_vintage_military_enFrtq",
     "fading-images",
     "collection-callout",
