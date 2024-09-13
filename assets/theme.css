@@ -89,6 +89,15 @@
   --color-bg:#ffffff;
 }
 
+
+.site-footer{
+  padding-top:120px;
+  padding-bottom:80px;
+  background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/stripe-horizontal.png?v=1725899104");
+  background-repeat:repeat-x;
+  background-position: top left;
+}
+
 @keyframes placeholder-shimmer{
   0%{
     background-position:-150% 0;
