@@ -8335,7 +8335,7 @@ input[type=image]{
   }
 
 .index-section{
-  margin:34px 0;
+  margin:0;
 }
 
 .index-section--small{
@@ -8383,9 +8383,6 @@ input[type=image]{
 }
 
 @media only screen and (min-width:590px){
-  .index-section{
-    margin:100px 0;
-  }
 
   .index-section--small{
     margin:40px 0;
