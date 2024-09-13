@@ -19,6 +19,12 @@
     padding:20px;
   }
 
+  .bluetripe {
+    color:#fff;
+    background-color:#091d33;
+    padding:20px;
+  }
+
   /* .testimonials-slide {
     padding:0 0 10px;
     margin-right:6px;
@@ -119,12 +125,13 @@
                           </div>
                         </div>
                       {%- endif -%}
-                      <div class="redstripe">
+                      <div class="redstripe">&nbsp;</div>
+                      <div class="whitestripe">
                         {%- if block.settings.author != blank -%}
                           <cite>{{ block.settings.author | escape }}</cite>
                         {%- endif -%}
                       </div>
-                      <div class="whitestripe">
+                      <div class="bluetripe">
                         {%- if block.settings.author_info != blank -%}
                           <p>{{ block.settings.author_info | escape }}</p>
                         {%- endif -%}
