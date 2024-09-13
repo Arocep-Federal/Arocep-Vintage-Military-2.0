@@ -208,7 +208,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
+            "author": "Author name 1",
             "author_info": "Los Angeles, CA"
           }
         },
@@ -217,7 +217,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
+            "author": "2",
             "author_info": "Los Angeles, CA"
           }
         },
@@ -226,7 +226,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
+            "author": "3",
             "author_info": "Los Angeles, CA"
           }
         },
@@ -236,7 +236,7 @@
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "author_info": "Iowa"
           }
         },
         "testimonial_96PYPQ": {
@@ -245,7 +245,7 @@
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "author_info": "Wisonsin"
           }
         },
         "testimonial_yaUL9h": {
@@ -253,7 +253,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
+            "author": "6",
             "author_info": "Los Angeles, CA"
           }
         },
@@ -262,8 +262,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "author": "7",
+            "author_info": "Minnesota"
           }
         },
         "testimonial_jinkMX": {
@@ -271,8 +271,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "author": "Chicago",
+            "author_info": "Illinois"
           }
         },
         "testimonial_zA9N3c": {
@@ -281,7 +281,7 @@
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "author_info": "Reno"
           }
         }
       },
