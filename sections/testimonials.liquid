@@ -129,15 +129,15 @@
                       {%- endif -%}
                     </div>
                   {%- endif -%}
-                  {%- if block.settings.author != blank -%}
-                    <cite>{{ block.settings.author | escape }}</cite>
-                  {%- endif -%}
                 </div>
-                {%- if block.settings.author_info != blank -%}
-                  <p>{{ block.settings.author_info | escape }}</p>
+                {%- if block.settings.author != blank -%}
+                  <cite>{{ block.settings.author | escape }}</cite>
                 {%- endif -%}
               </div>
             </blockquote>
+            {%- if block.settings.author_info != blank -%}
+              <p>{{ block.settings.author_info | escape }}</p>
+            {%- endif -%}
           </div>
         {%- endfor -%}
       </div>
