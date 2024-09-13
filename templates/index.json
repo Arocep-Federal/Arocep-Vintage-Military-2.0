@@ -30,31 +30,15 @@
         "1499789718857-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "focal_point": "center center",
-            "size": "wide"
-          }
-        },
-        "1499789718857-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
+            "collection": "information-technology",
             "focal_point": "center center",
             "size": "square-small"
           }
         },
-        "1499789718857-2": {
+        "collection_VwAEmF": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
-        "1499789718857-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
+            "collection": "notebooks",
             "focal_point": "center center",
             "size": "square-small"
           }
@@ -62,7 +46,23 @@
         "1499789718857-4": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "flatbed-scanners",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "film-scanners",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitors",
             "focal_point": "center center",
             "size": "square-small"
           }
@@ -70,19 +70,28 @@
         "1499789718857-5": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "computer-systems",
             "focal_point": "center center",
             "size": "wide"
+          }
+        },
+        "1499789718857-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "inkjet-printers",
+            "focal_point": "center center",
+            "size": "square-small"
           }
         }
       },
       "block_order": [
         "1499789718857-0",
-        "1499789718857-1",
-        "1499789718857-2",
-        "1499789718857-3",
+        "collection_VwAEmF",
         "1499789718857-4",
-        "1499789718857-5"
+        "1499789718857-3",
+        "1499789718857-1",
+        "1499789718857-5",
+        "1499789718857-2"
       ],
       "settings": {
         "title": "Shop by Category",
