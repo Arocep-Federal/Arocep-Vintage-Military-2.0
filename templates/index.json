@@ -259,8 +259,8 @@
       "settings": {
         "title": "Don't take our word for it...",
         "round_images": true,
-        "color_background": "#000",
-        "color_text": "#fff"
+        "color_background": "#000000",
+        "color_text": "#ffffff"
       }
     },
     "logo_list_UWpBYQ": {
@@ -341,7 +341,7 @@
       ],
       "settings": {
         "title": "",
-        "font_color": "#fff",
+        "font_color": "#ffffff",
         "drawer_open_height": 350,
         "bgcolor": "#383838"
       }
@@ -361,6 +361,24 @@
         "parallax_direction": "top",
         "lazyload_images": true
       }
+    },
+    "af_hero_WnDXfD": {
+      "type": "af-hero",
+      "settings": {
+        "fontcolor": "#ffffff",
+        "kicker": "Proud to be",
+        "headline": "Woman Owned & Operated",
+        "subheadline": "Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.",
+        "button_label": "",
+        "button_link": "",
+        "text_align": "vertical-bottom horizontal-right",
+        "image": "shopify:\/\/shop_images\/bg-woman-owned.jpg",
+        "focal_point": "20% 50%",
+        "color_border": "#f4f4f4",
+        "height": 450,
+        "parallax": true,
+        "vintage_military_overlay": "none"
+      }
     }
   },
   "order": [
@@ -372,6 +390,7 @@
     "collection-callout",
     "testimonials_HAxENX",
     "logo_list_UWpBYQ",
-    "background-image-text"
+    "background-image-text",
+    "af_hero_WnDXfD"
   ]
 }
