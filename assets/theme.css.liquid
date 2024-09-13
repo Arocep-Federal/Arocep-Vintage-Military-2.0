@@ -536,13 +536,11 @@
 .flickity-enabled.is-fade .flickity-slider>*{
   pointer-events:none;
   z-index:0;
-  opacity:.4 !important;
 }
 
 .flickity-enabled.is-fade .flickity-slider>.is-selected{
   pointer-events:auto;
   z-index:1;
-  opacity:1;
 }
 
 .hero[data-arrows=true]{
@@ -11032,11 +11030,13 @@ html[dir=rtl] .grid-product__content{
 
 .testimonials-slide .testimonials-slider__text{
     transform:scale(0.95);
+    opacity:.2;
     transition:transform 0.5s ease,box-shadow 0.5s ease;
   }
 
 .testimonials-slide.is-selected .testimonials-slider__text{
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    box-shadow:0 0 25px rgba(0,0,0,1);
+    opacity:1;
     position:relative;
     transform:scale(1.1);
     z-index:10;
