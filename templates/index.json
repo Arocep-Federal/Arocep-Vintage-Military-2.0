@@ -121,8 +121,8 @@
       ],
       "settings": {
         "align_text": "center",
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff",
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff",
         "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png"
       }
     },
@@ -200,6 +200,86 @@
         "divider": false
       }
     },
+    "logo_list_UWpBYQ": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_UUaJhN": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_MNjJNG": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_iiPni3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_VRRyBK": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_tLBfFj": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_gphRRx": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Capq89": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_eEd7bg": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_r7Kt8p": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Nk3n4V": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_UUaJhN",
+        "logo_image_MNjJNG",
+        "logo_image_iiPni3",
+        "logo_image_VRRyBK",
+        "logo_image_tLBfFj",
+        "logo_image_gphRRx",
+        "logo_image_Capq89",
+        "logo_image_eEd7bg",
+        "logo_image_r7Kt8p",
+        "logo_image_Nk3n4V"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -224,6 +304,7 @@
     "af_vintage_military_enFrtq",
     "fading-images",
     "collection-callout",
+    "logo_list_UWpBYQ",
     "background-image-text"
   ]
 }
