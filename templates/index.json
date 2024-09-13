@@ -99,19 +99,6 @@
         "enable_gutter": false
       }
     },
-    "af_vintage_military_enFrtq": {
-      "type": "af-vintage-military",
-      "settings": {
-        "kicker": "Your Brand Story",
-        "headline": "Vintage Military Hero",
-        "subheadline": "with all the things...",
-        "text_align": "vertical-center horizontal-center",
-        "image": "shopify:\/\/shop_images\/saluting.jpg",
-        "link": "",
-        "link_text": "Optional button",
-        "vintage_military_overlay": "none"
-      }
-    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -136,7 +123,21 @@
       "settings": {
         "align_text": "center",
         "narrow_column": false,
-        "divider": false
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff"
+      }
+    },
+    "af_vintage_military_enFrtq": {
+      "type": "af-vintage-military",
+      "settings": {
+        "kicker": "Your Brand Story",
+        "headline": "Vintage Military Hero",
+        "subheadline": "with all the things...",
+        "text_align": "vertical-center horizontal-center",
+        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "link": "",
+        "link_text": "Optional button",
+        "vintage_military_overlay": "none"
       }
     },
     "fading-images": {
@@ -220,8 +221,8 @@
   "order": [
     "hero-video",
     "featured-collections",
-    "af_vintage_military_enFrtq",
     "rich-text",
+    "af_vintage_military_enFrtq",
     "fading-images",
     "collection-callout",
     "background-image-text"
