@@ -9,7 +9,7 @@
 {% endstyle %}
 
 <div class="vintage-military-{{ section.id }}">
-  <div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+  <div class="text-{{ section.settings.align_text }} page-width">
     {%- for block in section.blocks -%}
       <div class="theme-block" {{ block.shopify_attributes }}>
         {%- case block.type -%}
@@ -26,9 +26,7 @@
           {%- when 'text' -%}
             <div class="rte">
               {%- if block.settings.text != blank -%}
-                {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
                 {{ block.settings.text }}
-                {%- if block.settings.enlarge_text %}</div>{% endif -%}
               {%- else -%}
                 {{ 'home_page.onboarding.no_content' | t }}
               {%- endif -%}
@@ -70,12 +68,6 @@
       ]
     },
     {
-      "type": "checkbox",
-      "id": "narrow_column",
-      "label": "t:sections.rich-text.settings.narrow_column.label",
-      "default": true
-    },
-    {
       "type": "color",
       "id": "backgroundcolor",
       "label": "Background Color",
@@ -86,6 +78,12 @@
       "id": "fontcolor",
       "label": "Text Color",
       "default": "#fff"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image",
+      "default":"https://cdn.shopify.com/s/files/1/0666/7884/9714/files/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png?v=1725835274"
     }
   ],
   "blocks": [
@@ -105,12 +103,6 @@
       "type": "text",
       "name": "t:sections.rich-text.blocks.text.name",
       "settings": [
-        {
-          "type": "checkbox",
-          "id": "enlarge_text",
-          "label": "t:sections.rich-text.blocks.text.settings.enlarge_text.label",
-          "default": true
-        },
         {
           "id": "text",
           "type": "richtext",
