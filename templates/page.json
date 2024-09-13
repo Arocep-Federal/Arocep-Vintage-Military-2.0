@@ -1,1 +1,131 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "text_with_icons_dMG8Gf": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_qyxkjQ": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "text_block_nAJF3h": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        },
+        "text_block_eXY9MP": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_qyxkjQ",
+        "text_block_nAJF3h",
+        "text_block_eXY9MP"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000",
+        "button_label": "",
+        "button_link": "",
+        "divider": false
+      }
+    },
+    "text_and_image_h8ej36": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_n8fxxF": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/helicopter.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_nL4Rcx": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_with_icons_dMG8Gf",
+    "text_and_image_h8ej36",
+    "text_and_image_n8fxxF",
+    "text_and_image_nL4Rcx"
+  ]
+}
