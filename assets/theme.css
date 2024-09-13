@@ -8339,7 +8339,8 @@ input[type=image]{
 }
 
 .index-section--small{
-  margin:24px 0;
+  padding-top:24px;
+  padding-bottom:24px;
 }
 
 .index-section+.index-section,.index-section+.index-section--hidden{
@@ -8351,7 +8352,7 @@ input[type=image]{
 }
 
 .index-section--faq{
-  margin-bottom:20px;
+  padding-bottom:20px;
 }
 
 .section--divider{
@@ -8361,7 +8362,7 @@ input[type=image]{
 }
 
 .index-section--faq{
-  margin-bottom:40px;
+  padding-bottom:40px;
 }
 
 .newsletter-section{
@@ -8389,11 +8390,13 @@ input[type=image]{
   }
 
   .index-section--small{
-    margin:40px 0;
+    padding-top:40px;
+    padding-bottom:40px;
   }
 
   .index-section--faq{
-    margin:40px 0 20px;
+    padding-top:40px;
+    padding-bottom:20px;
   }
 
   .section--divider{
