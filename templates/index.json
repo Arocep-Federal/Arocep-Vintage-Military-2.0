@@ -200,6 +200,69 @@
         "divider": false
       }
     },
+    "testimonials_HAxENX": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_RLVQcc": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_V6q3GN": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_9KhXDL": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_KPCVTr": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_96PYPQ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_RLVQcc",
+        "testimonial_V6q3GN",
+        "testimonial_9KhXDL",
+        "testimonial_KPCVTr",
+        "testimonial_96PYPQ"
+      ],
+      "settings": {
+        "title": "Don't take our word for it...",
+        "round_images": true,
+        "color_background": "#000",
+        "color_text": "#fff"
+      }
+    },
     "logo_list_UWpBYQ": {
       "type": "logo-list",
       "blocks": {
@@ -277,7 +340,10 @@
         "logo_image_Nk3n4V"
       ],
       "settings": {
-        "title": ""
+        "title": "",
+        "font_color": "#fff",
+        "drawer_open_height": 350,
+        "bgcolor": "#383838"
       }
     },
     "background-image-text": {
@@ -304,6 +370,7 @@
     "af_vintage_military_enFrtq",
     "fading-images",
     "collection-callout",
+    "testimonials_HAxENX",
     "logo_list_UWpBYQ",
     "background-image-text"
   ]
