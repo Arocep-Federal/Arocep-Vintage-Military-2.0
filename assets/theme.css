@@ -5473,20 +5473,20 @@ predictive-search .predictive__screen{
   padding-bottom:40px;
 }
 
-.site-footer{
-  padding-top:120px;
-  padding-bottom:80px;
-  background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/stripe-horizontal.png?v=1725899104");
-  background-repeat:repeat-x;
-  background-position: top left;
-}
 
 @media only screen and (min-width:590px){
-
-.site-footer{
+  
+  .site-footer{
     padding-bottom:40px;
     padding-top:80px;
-}
+  }
+  .site-footer{
+    padding-top:120px;
+    padding-bottom:80px;
+    background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/stripe-horizontal.png?v=1725899104");
+    background-repeat:repeat-x;
+    background-position: top left;
+  }
   }
 
 .site-footer .collapsible-content p,.site-footer .faux-select,.site-footer .site-footer__linklist a,.site-footer input,.site-footer select,.site-footer textarea{
