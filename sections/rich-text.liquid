@@ -3,6 +3,9 @@
 .vintage-military-{{ section.id }} {
   background-color: {{ section.settings.backgroundcolor }};
   color: {{ section.settings.fontcolor }};
+  background-image: url({{ section.settings.backgroundcolor }});
+  background-position: fixed center;
+  background-repeat: no-repeat;
 }
 
  
@@ -80,6 +83,11 @@
       "id": "fontcolor",
       "label": "Text Color",
       "default": "#fff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bgimage",
+      "label": "Background Image"
     }
   ],
   "blocks": [
