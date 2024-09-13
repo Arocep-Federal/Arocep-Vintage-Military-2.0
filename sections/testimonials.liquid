@@ -3,6 +3,15 @@
     background-color: {{ section.settings.color_background }};
     color: {{ section.settings.color_text }};
   }
+
+  .redstripe{ 
+    background-color: #34090a; 
+    padding: 0 0 45px;
+}
+.whitestripe {
+  background-color:#e2dfd1;
+  }
+
 }
 {%- endstyle -%}
 
@@ -27,6 +36,8 @@
             class="testimonials-slide testimonials-slide--{{ block.id }}"
             data-index="{{ forloop.index0 }}"
             {{ block.shopify_attributes }}>
+            <div class="whitestripe testimonial-rating rating-{{ block.settings.rating | escape }}">
+              <div class="redstripe">
             <blockquote class="testimonials-slider__text">
 
               {%- if block.settings.icon == 'quote' -%}
@@ -85,6 +96,7 @@
               {%- endif -%}
 
             </blockquote>
+            </div></div>
           </div>
         {%- endfor -%}
       </div>
