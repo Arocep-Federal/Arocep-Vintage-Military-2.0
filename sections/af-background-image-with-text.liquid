@@ -1,0 +1,168 @@
+<div
+    data-section-id="{{ section.id }}"
+    data-section-type="background-image"
+    class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
+    data-aos="background-media-text__animation"
+    {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+  
+    <div class="background-media-text__container">
+      {%- if section.settings.parallax -%}
+        <parallax-image class="parallax-container">
+          <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
+      {%- endif -%}
+  
+        {%- if section.settings.image != blank -%}
+  
+          {% assign classes = 'image-fit background-media-text__image background-media-text__image--' | append: section.id %}
+          {% comment %} Full width image so don't need to adjust sizes attribute, fallback is 100vw {% endcomment %}
+          {%- render 'image-element',
+            img: section.settings.image,
+            img_width: 2400,
+            loading: section.settings.lazyload_images,
+            classes: classes,
+          -%}
+        {%- else -%}
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+  
+      {%- if section.settings.parallax -%}
+          </div>
+        </parallax-image>
+      {%- endif -%}
+    </div>
+  
+    {%- if section.settings.subtitle != blank or section.settings.title != blank or section.settings.text != blank -%}
+      <div class="background-media-text__inner">
+        <div class="background-media-text__aligner background-media-text--{{ section.settings.layout }}">
+          <div class="animation-cropper">
+            <div class="animation-contents">
+              <div class="background-media-text__text larger-text">
+                {%- if section.settings.subtitle -%}
+                  <p class="subtitle">{{ section.settings.subtitle }}</p>
+                {%- endif -%}
+                {%- if section.settings.title != blank -%}
+                  <h2 class="h3">{{ section.settings.title | escape }}</h2>
+                {%- endif -%}
+                {%- if section.settings.text != blank -%}
+                  <div class="rte background-media-text__subtext">{{ section.settings.text }}</div>
+                {%- endif -%}
+                {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+                  <a href="{{ section.settings.button_link }}" class="btn">
+                    {{ section.settings.button_label }}
+                  </a>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+  
+  <div class="background-media-text__spacer background-media-text--{{ section.settings.height }}"></div>
+  
+  {% schema %}
+  {
+    "name": "AF Background Image with Text",
+    "class": "index-section--flush",
+    "settings": [
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Proud to Be"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Woman Owned & Operated"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Body Copy",
+        "default": "<p>Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Height",
+        "default": 450,
+        "min": 250,
+        "max": 750,
+        "step": 50,
+        "unit": "px"
+      },
+      {
+        "type": "checkbox",
+        "id": "parallax",
+        "label": "Parallax",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "parallax_direction",
+        "label": "Parallax Direction",
+        "default": "top",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "left",
+            "label": "Left"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "lazyload_images",
+        "label": "Lazy load images",
+        "info": "Image loading for better performance",
+        "default": true
+      }
+    ],
+    "presets": [
+      {
+        "name": "AF Background Image with Text"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["footer", "header", "custom.popups"]
+    }
+  }
+  {% endschema %}
+  
