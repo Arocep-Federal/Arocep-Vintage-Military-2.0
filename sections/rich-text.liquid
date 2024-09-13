@@ -1,42 +1,48 @@
-{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
-<div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
-  {%- for block in section.blocks -%}
-    <div class="theme-block" {{ block.shopify_attributes }}>
-      {%- case block.type -%}
-        {%- when 'heading' -%}
-          <h2>{{ block.settings.title | escape }}</h2>
-        {%- when 'page' -%}
-          <div class="rte">
-            {%- if block.settings.page_text != blank -%}
-              {{ pages[block.settings.page_text].content }}
-            {%- else -%}
-              {{ 'home_page.onboarding.no_content' | t }}
-            {%- endif -%}
-          </div>
-        {%- when 'text' -%}
-          <div class="rte">
-            {%- if block.settings.text != blank -%}
-              {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
-              {{ block.settings.text }}
-              {%- if block.settings.enlarge_text %}</div>{% endif -%}
-            {%- else -%}
-              {{ 'home_page.onboarding.no_content' | t }}
-            {%- endif -%}
-          </div>
-        {%- when 'button' -%}
-          <div class="rte">
-            <a href="{{ block.settings.link }}" class="btn">
-              {{ block.settings.link_text }}
-            </a>
-          </div>
-      {%- endcase -%}
-    </div>
-  {%- endfor -%}
+{% style %}
+.vintage-military-{{ section.id }} {
+  color: {{ section.settings.fontcolor }};
+}
+
+
+{% endstyle %}
+
+<div class="vintage-military-{{ section.id }}">
+  <div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- for block in section.blocks -%}
+      <div class="theme-block" {{ block.shopify_attributes }}>
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2>{{ block.settings.title | escape }}</h2>
+          {%- when 'page' -%}
+            <div class="rte">
+              {%- if block.settings.page_text != blank -%}
+                {{ pages[block.settings.page_text].content }}
+              {%- else -%}
+                {{ 'home_page.onboarding.no_content' | t }}
+              {%- endif -%}
+            </div>
+          {%- when 'text' -%}
+            <div class="rte">
+              {%- if block.settings.text != blank -%}
+                {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                {{ block.settings.text }}
+                {%- if block.settings.enlarge_text %}</div>{% endif -%}
+              {%- else -%}
+                {{ 'home_page.onboarding.no_content' | t }}
+              {%- endif -%}
+            </div>
+          {%- when 'button' -%}
+            <div class="rte">
+              <a href="{{ block.settings.link }}" class="btn">
+                {{ block.settings.link_text }}
+              </a>
+            </div>
+        {%- endcase -%}
+      </div>
+    {%- endfor -%}
+  </div>
 </div>
-
-{%- if section.settings.divider -%}</div>{%- endif -%}
-
 {% schema %}
 {
   "name": "t:sections.rich-text.name",
@@ -69,10 +75,16 @@
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "divider",
-      "label": "t:sections.rich-text.settings.divider.label",
-      "default": false
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "fontcolor",
+      "label": "Text Color",
+      "default": "#fff"
     }
   ],
   "blocks": [
