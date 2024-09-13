@@ -1,51 +1,50 @@
 {%- style -%}
-    .testimonials-{{ section.id }} {
-      background-color: {{ section.settings.color_background }};
-      color: {{ section.settings.color_text }};
-    }
-
-    .redstripe{
-      background-color: #34090a;
-      padding: 0 0 45px;
-    }
-    .whitestripe {
-      background-color:#e2dfd1;
-    }
-
-    .testimonials-slide {
-      padding:0 0 10px;
-      margin-right:6px;
-      opacity: .4;
-      background-color: #091d33;
-      color:#fff;
-      border-radius: 10px;
-    }
-
-    .is-selected {
-      box-shadow:0 0 10px black;
-      opacity: 1;
-      z-index: 2;
-    }
-
-    .testimonials-slide .author-info {
-      color:#091d33
-  }
-    .testimonials-slide .author,
-    .testimonials-slide .author-info {
-    text-align: right;
-    margin:0 10px 0 0;
-    padding: 10px 0;
+  .testimonials-{{ section.id }} {
+    background-color: {{ section.settings.color_background }};
+    color: {{ section.settings.color_text }};
   }
 
+  .redstripe{ 
+    background-color: #34090a; 
+    padding: 0 0 45px;
   }
+  .whitestripe {
+    background-color:#e2dfd1;
+  }
+
+  .testimonials-slide {
+    padding:0 0 10px;
+    margin-right:6px;
+    opacity: .4;
+    background-color: #091d33;
+    color:#fff;
+    border-radius: 10px;
+  }
+  
+  .is-selected {
+    box-shadow:0 0 10px black;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .testimonials-slide .author-info {
+    color:#091d33
+}
+  .testimonials-slide .author, 
+  .testimonials-slide .author-info {
+  text-align: right;
+  margin:0 10px 0 0;
+  padding: 10px 0;
+}
+
+}
 {%- endstyle -%}
 
 <div
   class="text-center testimonials-section testimonials-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} testimonials-section--with-divider{% endif %}"
   data-section-id="{{ section.id }}"
   data-section-type="testimonials"
-  data-aos
->
+  data-aos>
   {%- if section.settings.title != blank -%}
     <div class="page-width">
       <div class="section-header">
@@ -61,83 +60,68 @@
           <div
             class="testimonials-slide testimonials-slide--{{ block.id }}"
             data-index="{{ forloop.index0 }}"
-            {{ block.shopify_attributes }}
-          >
+            {{ block.shopify_attributes }}>
             <blockquote class="testimonials-slider__text">
-              <div class="whitestripe testimonial-rating rating-{{ block.settings.rating | escape }}">
-                <div class="redstripe">
-                  {%- if block.settings.icon == 'quote' -%}
-                    <span class="quote-icon">
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        role="presentation"
-                        class="icon icon-quote"
-                        viewBox="0 0 41 35"
+              
+              {%- if block.settings.icon == 'quote' -%}
+                <span class="quote-icon"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-quote" viewBox="0 0 41 35"><path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766Zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766Z" fill-rule="evenodd"/></svg></span>
+                {%- elsif block.settings.icon == '5-stars' -%}
+                <span class="testimonial-stars">★★★★★</span>
+                {%- elsif block.settings.icon == '4-stars' -%}
+                <span class="testimonial-stars">★★★★</span>
+                {%- elsif block.settings.icon == '3-stars' -%}
+                <span class="testimonial-stars">★★★</span>
+                {%- elsif block.settings.icon == '2-stars' -%}
+                <span class="testimonial-stars">★★</span>
+                {%- elsif block.settings.icon == '1-star' -%}
+                <span class="testimonial-stars">★</span>
+              {%- endif -%}
+              
+              {%- if block.settings.testimonial != blank -%}
+                <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
+              {%- endif -%}
+              
+              {%- if block.settings.image != blank or block.settings.author != blank or block.settings.author_info != blank -%}
+                <div class="testimonial-meta">
+                  {%- if block.settings.image != blank -%}
+                    <div class="whitestripe testimonial-rating rating-{{ block.settings.rating | escape }}">
+                      <div class="redstripe">
+                    <div
+                      class="testimonial-image{% if section.settings.round_images %} testimonial-image--round{% endif %}">
+                      <div class="image-wrap"
+                        {% if section.settings.round_images == false %}
+                          style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+                        {% endif %}
                       >
-                        <path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766Zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766Z" fill-rule="evenodd"/>
-                      </svg>
-                    </span>
-                  {%- elsif block.settings.icon == '5-stars' -%}
-                    <span class="testimonial-stars">★★★★★</span>
-                  {%- elsif block.settings.icon == '4-stars' -%}
-                    <span class="testimonial-stars">★★★★</span>
-                  {%- elsif block.settings.icon == '3-stars' -%}
-                    <span class="testimonial-stars">★★★</span>
-                  {%- elsif block.settings.icon == '2-stars' -%}
-                    <span class="testimonial-stars">★★</span>
-                  {%- elsif block.settings.icon == '1-star' -%}
-                    <span class="testimonial-stars">★</span>
-                  {%- endif -%}
+                        {%- liquid
+                          if section.settings.round_images
+                            assign sizeVariable = '65px'
+                          else
+                            assign sizeVariable = '142px'
+                          endif
 
-                  {%- if block.settings.testimonial != blank -%}
-                    <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
-                  {%- endif -%}
-
-                  {%- if block.settings.image != blank
-                    or block.settings.author != blank
-                    or block.settings.author_info != blank
-                  -%}
-                    <div class="testimonial-meta">
-                      {%- if block.settings.image != blank -%}
-                        <div
-                          class="testimonial-image{% if section.settings.round_images %} testimonial-image--round{% endif %}"
-                        >
-                          <div
-                            class="image-wrap"
-                            {% if section.settings.round_images == false %}
-                              style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
-                            {% endif %}
-                          >
-                            {%- liquid
-                              if section.settings.round_images
-                                assign sizeVariable = '65px'
-                              else
-                                assign sizeVariable = '142px'
-                              endif
-
-                              assign fallback = sizeVariable
-                            -%}
-                            {%- render 'image-element',
-                              img: block.settings.image,
-                              sizeVariable: sizeVariable,
-                              fallback: fallback,
-                              widths: '180, 360, 540, 720'
-                            -%}
-                          </div>
-                        </div>
-                      {%- endif -%}
+                          assign fallback = sizeVariable
+                        -%}
+                        {%- render 'image-element',
+                          img: block.settings.image,
+                          sizeVariable: sizeVariable,
+                          fallback: fallback,
+                          widths: '180, 360, 540, 720',
+                        -%}
+                      </div>
                     </div>
+                    {%- if block.settings.author != blank -%}
+                      <cite>{{ block.settings.author | escape }}</cite>
+                    {%- endif -%}
                   {%- endif -%}
+                  {%- if block.settings.author_info != blank -%}
+                    <p>{{ block.settings.author_info | escape }}</p>
+                  {%- endif -%}
+                </div></div>
                 </div>
-                {%- if block.settings.author != blank -%}
-                  <cite>{{ block.settings.author | escape }}</cite>
-                {%- endif -%}
-              </div>
+              {%- endif -%}
+
             </blockquote>
-            {%- if block.settings.author_info != blank -%}
-              <p>{{ block.settings.author_info | escape }}</p>
-            {%- endif -%}
           </div>
         {%- endfor -%}
       </div>
