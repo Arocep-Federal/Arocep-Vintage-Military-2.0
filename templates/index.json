@@ -122,9 +122,8 @@
       ],
       "settings": {
         "align_text": "center",
-        "narrow_column": false,
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff"
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff"
       }
     },
     "af_vintage_military_enFrtq": {
