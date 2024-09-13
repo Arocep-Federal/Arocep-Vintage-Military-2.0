@@ -247,6 +247,42 @@
             "author": "Author name",
             "author_info": "Los Angeles, CA"
           }
+        },
+        "testimonial_yaUL9h": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_dwEf9r": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_jinkMX": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_zA9N3c": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
         }
       },
       "block_order": [
@@ -254,7 +290,11 @@
         "testimonial_V6q3GN",
         "testimonial_9KhXDL",
         "testimonial_KPCVTr",
-        "testimonial_96PYPQ"
+        "testimonial_96PYPQ",
+        "testimonial_yaUL9h",
+        "testimonial_dwEf9r",
+        "testimonial_jinkMX",
+        "testimonial_zA9N3c"
       ],
       "settings": {
         "title": "Don't take our word for it...",
