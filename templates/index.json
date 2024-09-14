@@ -175,13 +175,22 @@
             "image": "shopify:\/\/shop_images\/global-support.jpg",
             "button_link": ""
           }
+        },
+        "image_block_6q8RGx": {
+          "type": "image_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/global-support.jpg",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "image_block_bP73kM",
         "image_block_qWCKDc",
         "image_block_eXwKJq",
-        "image_block_DwENXF"
+        "image_block_DwENXF",
+        "image_block_6q8RGx"
       ],
       "settings": {
         "background": "#000",
