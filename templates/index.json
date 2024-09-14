@@ -86,7 +86,8 @@
       ],
       "settings": {
         "title": "Shop by Category",
-        "enable_gutter": true
+        "enable_gutter": true,
+        "background-color": "#000"
       }
     },
     "rich_text_Yq8WRF": {
@@ -216,8 +217,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name 1",
-            "author_info": "Los Angeles, CA"
+            "author": "Ted Cruz",
+            "author_info": "US Department of the Navy"
           }
         },
         "testimonial_V6q3GN": {
@@ -225,8 +226,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "2",
-            "author_info": "Los Angeles, CA"
+            "author": "Joe Radcliff",
+            "author_info": "US Department of the Army"
           }
         },
         "testimonial_9KhXDL": {
@@ -234,8 +235,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "3",
-            "author_info": "Los Angeles, CA"
+            "author": "Sal Manella",
+            "author_info": "US Department of the Marines"
           }
         },
         "testimonial_KPCVTr": {
@@ -243,8 +244,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "Iowa"
+            "author": "Ryan, The Backend",
+            "author_info": "US Department of the Airforce"
           }
         },
         "testimonial_96PYPQ": {
@@ -253,7 +254,7 @@
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author name",
-            "author_info": "Wisonsin"
+            "author_info": "US Department of Space Force"
           }
         },
         "testimonial_yaUL9h": {
@@ -261,8 +262,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "6",
-            "author_info": "Los Angeles, CA"
+            "author": "My Little Bronie",
+            "author_info": "Navy Seal Team 6"
           }
         },
         "testimonial_dwEf9r": {
@@ -270,8 +271,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "7",
-            "author_info": "Minnesota"
+            "author": "Snake Pliskin",
+            "author_info": "Escape LA, Escape NYC"
           }
         },
         "testimonial_jinkMX": {
@@ -279,8 +280,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Chicago",
-            "author_info": "Illinois"
+            "author": "Nomi Malone",
+            "author_info": "Professional Marble Thrower"
           }
         },
         "testimonial_zA9N3c": {
@@ -288,8 +289,8 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "Reno"
+            "author": "Broker Thanmost",
+            "author_info": "Gambler's Anonymous"
           }
         }
       },
