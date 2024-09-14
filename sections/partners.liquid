@@ -32,15 +32,16 @@
                 prevNextButtons: false
             };
             console.log(defaults);
-  
-    function Partners(container) {
-      this.container = container;
-      var sectionId = container.getAttribute('data-section-id');
-      this.slideshow = container.querySelector('#Partners-' + sectionId);
-      this.namespace = '.partner-' + sectionId;
-  
-      if (!this.slideshow) { return }
-  
+            
+            function Partners(container) {
+                this.container = container;
+                var sectionId = container.getAttribute('data-section-id');
+                this.slideshow = container.querySelector('#Partners-' + sectionId);
+                this.namespace = '.partner-' + sectionId;
+                
+                console.log(slideshow);
+                if (!this.slideshow) { return }
+                
       theme.initWhenVisible({
         element: this.container,
         callback: this.init.bind(this),
