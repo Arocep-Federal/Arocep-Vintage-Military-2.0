@@ -2,7 +2,7 @@
   .military-background--{{ section.id }} {
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
-    background-blend-mode: luminosity;
+    background-blend-mode: luminosity; 
     background-color: {{ section.settings.vintage_military_overlay }};
     background-position: {{ block.settings.focal_point }};
     height:80vh;
@@ -67,6 +67,10 @@
   data-section-id="{{ section.id }}"
   data-aos="hero__animation"
   loading="lazy"
+
+  {%- unless section.settings.vintage_military_overlay != "none" -%} 
+  style="background-blend-mode: luminosity"
+  {%- endunless -%}
 >
   <div class="hero__media hero__media--{{ section.id }}"></div>
   <div class="hero__text-wrap hero__text-wrap--absolute">
