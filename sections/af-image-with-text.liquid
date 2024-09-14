@@ -34,14 +34,23 @@
       <div style="margin: 0 auto; max-width: {{ section.settings.image_width }}px;">
         {% if section.settings.image != blank %}
           {% if section.settings.button_label != blank and section.settings.button_link != blank %}<a href="{{ section.settings.button_link }}" aria-label="{{ section.settings.button_label | escape }}">{% endif %}
-          <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;">
-            {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="feature-row__image lazyload"
-                data-src="{{ img_url }}"
-                data-widths="[180, 360, 540, 720, 900, 1080]"
-                data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-                data-sizes="auto"
-                alt="{{ section.settings.image.alt }}">
+          <div class="image-wrap {% if section.settings.image2_mask != 'none' %}svg-mask svg-mask--{{ section.settings.image2_mask }}{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image2.aspect_ratio }}%;">
+            {%- liquid
+              if section.settings.image == blank
+                assign sizeVariable = section.settings.image_width | append: 'vw'
+                assign fallback = '100vw'
+              else
+                assign sizeVariable = 'calc(0.6 * 50vw)'
+                assign fallback = '60vw'
+              endif
+            -%}
+            {%- render 'image-element',
+              img: section.settings.background-img,
+              widths: '180, 360, 540, 750, 900, 1080',
+              sizeVariable: sizeVariable,
+              fallback: fallback,
+              classes: 'feature-row__image',
+            -%}
           </div>
           {% if section.settings.button_label != blank and section.settings.button_link != blank %}</a>{% endif %}
         {% else %}
