@@ -18,7 +18,9 @@
   }
   .af-text .kicker { margin: 0 0 10px;}
   .af-text h2 { margin: 0 0 15px}
-  
+  .bgimg {
+    background-image:url({{ section.settings.image | image_url:width:auto }});
+  }
   @media only screen and (max-width: 589px){ 
     .hero__text-content.vertical-center {
       vertical-align:top;
@@ -66,7 +68,7 @@
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
   {% comment %} class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded" {% endcomment %}
-  class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }}"
+  class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} bgimg"
   data-aos="background-media-text__animation"
   {% if section.settings.parallax %}
     data-parallax="true"
