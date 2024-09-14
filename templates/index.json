@@ -87,7 +87,7 @@
       "settings": {
         "title": "Shop by Category",
         "enable_gutter": true,
-        "background-color": "#000"
+        "background-color": "#000000"
       }
     },
     "rich_text_Yq8WRF": {
@@ -141,7 +141,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/computer-systems"
           }
         },
         "image_block_qWCKDc": {
