@@ -126,14 +126,32 @@
         "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png"
       }
     },
+    "background_image_text_76KFKQ": {
+      "type": "background-image-text",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "layout": "left",
+        "height": 750,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
     "af_vintage_military_enFrtq": {
       "type": "af-vintage-military",
       "settings": {
-        "kicker": "Your Brand Story",
+        "kicker": "ewwew",
         "headline": "Vintage Military Hero",
-        "subheadline": "with all the things...",
+        "subheadline": "",
         "text_align": "vertical-center horizontal-center",
-        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "image": "shopify:\/\/shop_images\/AdobeStock_225122865.jpg",
         "link": "",
         "link_text": "Optional button",
         "vintage_military_overlay": "none"
@@ -142,32 +160,35 @@
     "fading-images": {
       "type": "fading-images",
       "blocks": {
+        "1498501481980-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/helicopter.jpg",
+            "slide_title1": "Powered by",
+            "slide_title2": "America"
+          }
+        },
         "1498501481980-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
             "slide_title1": "Beautifully animated",
             "slide_title2": "titles and images"
           }
         },
-        "1498501481980-1": {
+        "image_CEtJ6k": {
           "type": "image",
           "settings": {
-            "slide_title1": "Use this section",
-            "slide_title2": "to impress"
-          }
-        },
-        "1498501481980-2": {
-          "type": "image",
-          "settings": {
-            "slide_title1": "And highlight",
-            "slide_title2": "important details"
+            "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
+            "slide_title1": "",
+            "slide_title2": ""
           }
         }
       },
       "block_order": [
-        "1498501481980-0",
         "1498501481980-1",
-        "1498501481980-2"
+        "1498501481980-0",
+        "image_CEtJ6k"
       ],
       "settings": {
         "title_lines": "2",
@@ -183,21 +204,6 @@
         "desktop_height": "650px",
         "mobile_height": "auto",
         "lazyload_images": true
-      }
-    },
-    "collection-callout": {
-      "type": "collection-callout",
-      "settings": {
-        "collection": "automated-collection",
-        "subtitle": "Brand new",
-        "title": "Collection callout",
-        "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
-        "cta_text1": "Shop Jackets",
-        "cta_link1": "shopify:\/\/pages\/contact",
-        "cta_text2": "Shop All",
-        "cta_link2": "",
-        "layout": "right",
-        "divider": false
       }
     },
     "testimonials_HAxENX": {
@@ -303,6 +309,22 @@
         "color_text": "#ffffff"
       }
     },
+    "background-image-text": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Impressive",
+        "title": "Large image and text",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "layout": "left",
+        "height": 650,
+        "parallax": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
     "logo_list_UWpBYQ": {
       "type": "logo-list",
       "blocks": {
@@ -386,22 +408,6 @@
         "bgcolor": "#383838"
       }
     },
-    "background-image-text": {
-      "type": "background-image-text",
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image and text",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "image": "shopify:\/\/shop_images\/saluting.jpg",
-        "layout": "left",
-        "height": 650,
-        "parallax": true,
-        "parallax_direction": "top",
-        "lazyload_images": true
-      }
-    },
     "af_hero_WnDXfD": {
       "type": "af-hero",
       "settings": {
@@ -425,12 +431,12 @@
     "hero-video",
     "featured-collections",
     "rich_text_Yq8WRF",
+    "background_image_text_76KFKQ",
     "af_vintage_military_enFrtq",
     "fading-images",
-    "collection-callout",
     "testimonials_HAxENX",
-    "logo_list_UWpBYQ",
     "background-image-text",
+    "logo_list_UWpBYQ",
     "af_hero_WnDXfD"
   ]
 }
