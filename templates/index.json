@@ -493,64 +493,82 @@
         "lazyload_images": true
       }
     },
-    "logo_list_UWpBYQ": {
+    "logo_list_7Jb47n": {
       "type": "logo-list",
       "blocks": {
-        "logo_image_UUaJhN": {
+        "logo_image_jmcyQb": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_MNjJNG": {
+        "logo_image_iQqmzj": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_iiPni3": {
+        "logo_image_YRR8zX": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_VRRyBK": {
+        "logo_image_AjMjeN": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_tLBfFj": {
+        "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_gphRRx": {
+        "logo_image_GmBXAp": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_Capq89": {
+        "logo_image_q8NrFt": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_eEd7bg": {
+        "logo_image_cabdRU": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_r7Kt8p": {
+        "logo_image_RW8dB6": {
           "type": "logo_image",
           "settings": {
             "link": ""
           }
         },
-        "logo_image_Nk3n4V": {
+        "logo_image_nt9qY4": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_qDcEGy": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_gypAtE": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
             "link": ""
@@ -558,20 +576,23 @@
         }
       },
       "block_order": [
-        "logo_image_UUaJhN",
-        "logo_image_MNjJNG",
-        "logo_image_iiPni3",
-        "logo_image_VRRyBK",
-        "logo_image_tLBfFj",
-        "logo_image_gphRRx",
-        "logo_image_Capq89",
-        "logo_image_eEd7bg",
-        "logo_image_r7Kt8p",
-        "logo_image_Nk3n4V"
+        "logo_image_jmcyQb",
+        "logo_image_iQqmzj",
+        "logo_image_YRR8zX",
+        "logo_image_AjMjeN",
+        "logo_image_Vn7xRp",
+        "logo_image_GmBXAp",
+        "logo_image_q8NrFt",
+        "logo_image_cabdRU",
+        "logo_image_RW8dB6",
+        "logo_image_nt9qY4",
+        "logo_image_qDcEGy",
+        "logo_image_gypAtE",
+        "logo_image_Fg8KxN"
       ],
       "settings": {
-        "title": "",
-        "font_color": "#ffffff",
+        "title": "Federal Agencies Served",
+        "font_color": "#fff",
         "drawer_open_height": 350,
         "bgcolor": "#383838"
       }
@@ -609,7 +630,7 @@
     "vintage_military_UahVJC",
     "hero_video_LbjQQi",
     "advanced_content_xx9WfN",
-    "logo_list_UWpBYQ",
+    "logo_list_7Jb47n",
     "af_hero_WnDXfD"
   ]
 }
