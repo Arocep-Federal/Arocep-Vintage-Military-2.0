@@ -19,7 +19,7 @@
 
 {%- endstyle -%}
 
-<script>
+{% script %}
     document.addEventListener('page:loaded', function() {
         // Page has loaded and theme assets are ready
      
@@ -101,7 +101,7 @@
 });
 
 
-</script>>
+{% endscript %}
 
 <div
   class="text-center partners-section partners-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} partners-section--with-divider{% endif %}"
