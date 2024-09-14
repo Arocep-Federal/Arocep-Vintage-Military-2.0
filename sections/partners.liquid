@@ -23,14 +23,15 @@
     document.addEventListener('page:loaded', function() {
         // Page has loaded and theme assets are ready
         console.log("slideshow");
-     
-  theme.Partners = (function() {
-    var defaults = {
-      adaptiveHeight: true,
-      avoidReflow: true,
-      pageDots: true,
-      prevNextButtons: false
-    };
+        
+        theme.Partners = (function() {
+            var defaults = {
+                adaptiveHeight: true,
+                avoidReflow: true,
+                pageDots: true,
+                prevNextButtons: false
+            };
+            console.log(defaults);
   
     function Partners(container) {
       this.container = container;
