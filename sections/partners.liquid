@@ -20,7 +20,9 @@
 {%- endstyle -%}
 
 <script>
-
+    document.addEventListener('page:loaded', function() {
+        // Page has loaded and theme assets are ready
+     
   theme.Partners = (function() {
     var defaults = {
       adaptiveHeight: true,
@@ -91,7 +93,12 @@
     });
   
     return Partners;
+
+    
   })();
+
+});
+
 
 </script>>
 
