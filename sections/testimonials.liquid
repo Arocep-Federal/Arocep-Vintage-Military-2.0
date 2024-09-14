@@ -26,10 +26,10 @@
   .bluestripe {
     color:#fff;
     background-color:#091d33;
-    padding:8px;
+    padding:10px;
   }
   .bluestripe cite {
-    font-size:12px;
+    font-size:14px;
   }
 
   blockquote.testimonials-slider__text {
@@ -139,7 +139,7 @@
                       </div>
                       <div class="bluestripe">
                         {%- if block.settings.author != blank -%}
-                          <cite>&mdash; {{ block.settings.author | escape }}</cite>
+                          <cite>~ {{ block.settings.author | escape }}</cite>
                         {%- endif -%}
                       </div>
                     </div>
