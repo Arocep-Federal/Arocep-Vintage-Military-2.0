@@ -8,7 +8,7 @@
 
 {%-  style  -%}
 
-.index-collections {
+.index-collections-{{ section.id }} {
     /* background-color:var(--colorVintageBlue); */
     background-color:#091d33;
     height:480px;
@@ -16,28 +16,28 @@
     z-index:2;
     position:relative;
   }
-  .index-collections .grid,
-  .index-collections .section-header__title {
+  .index-collections-{{ section.id }} .grid,
+  .index-collections-{{ section.id }} .section-header__title {
     position:relative;
     top:-175px;
   }
-  .index-collections .grid__item .grid__image img {
+  .index-collections-{{ section.id }} .grid__item .grid__image img {
     filter: grayscale(100%);
   }
   
-  .index-collections .grid__item {
+  .index-collections-{{ section.id }} .grid__item {
     position: relative;
     margin-bottom:6px;
     padding-bottom:0;
   }
-  .index-collections .grid--small-gutters .grid__item {
+  .index-collections-{{ section.id }} .grid--small-gutters .grid__item {
     padding-bottom: 0;
   }
 
-  .index-collections a {
+  .index-collections-{{ section.id }} a {
   }
   
-  .index-collections .skrim__link .skrim__title {
+  .index-collections-{{ section.id }} .skrim__link .skrim__title {
     font-family: var(--typeBasePrimary),var(--typeBaseFallback);
     font-size: 20px; 
     bottom:30px;
@@ -46,7 +46,7 @@
     z-index: 4;
 }
 
-  .index-collections .grid__item::before {
+  .index-collections-{{ section.id }} .grid__item::before {
     content: '';
     z-index: 3;
     width: 100%;
@@ -62,10 +62,15 @@
     position: relative;
     z-index:2;
   }
+  .shopify-section:has(.index-collections-{{ section.id }}) {
+   padding:0;
+
+  } 
+
 
 {%-  endstyle  -%}
 
-<div class="index-collections">
+<div class="index-collections-{{ section.id }}">
 
   <div class="page-width">
     {%- if section.settings.title != blank -%}
