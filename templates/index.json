@@ -321,7 +321,7 @@
         "button_link": "",
         "image": "shopify:\/\/shop_images\/bg-contracting.jpg",
         "layout": "left",
-        "height": 450,
+        "height": 650,
         "parallax": true,
         "parallax_direction": "top",
         "lazyload_images": true
