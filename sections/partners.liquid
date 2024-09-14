@@ -22,7 +22,7 @@
 <script>
     document.addEventListener('page:loaded', function() {
         // Page has loaded and theme assets are ready
-        console.log("slideshow");
+        console.log("init partners");
         
         theme.Partners = (function() {
             var defaults = {
@@ -32,7 +32,8 @@
                 prevNextButtons: false
             };
             
-            console.log(defaults);
+            console.log("defaults: ", defaults);
+
             function Partners(container) {
               this.container = container;
               var sectionId = container.getAttribute('data-section-id');
