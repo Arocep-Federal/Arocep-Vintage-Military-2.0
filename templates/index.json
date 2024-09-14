@@ -59,20 +59,20 @@
             "size": "square-small"
           }
         },
-        "1499789718857-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "monitors",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
         "1499789718857-5": {
           "type": "collection",
           "settings": {
             "collection": "computer-systems",
             "focal_point": "center center",
             "size": "wide"
+          }
+        },
+        "1499789718857-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitors",
+            "focal_point": "center center",
+            "size": "square-small"
           }
         },
         "1499789718857-2": {
@@ -89,8 +89,8 @@
         "collection_VwAEmF",
         "1499789718857-4",
         "1499789718857-3",
-        "1499789718857-1",
         "1499789718857-5",
+        "1499789718857-1",
         "1499789718857-2"
       ],
       "settings": {
