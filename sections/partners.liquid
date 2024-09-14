@@ -26,12 +26,13 @@
         
         theme.Partners = (function() {
             var defaults = {
-              adaptiveHeight: true,
-              avoidReflow: true,
-              pageDots: true,
-              prevNextButtons: false
+                adaptiveHeight: true,
+                avoidReflow: true,
+                pageDots: true,
+                prevNextButtons: false
             };
-          
+            
+            console.log(defaults);
             function Partners(container) {
               this.container = container;
               var sectionId = container.getAttribute('data-section-id');
