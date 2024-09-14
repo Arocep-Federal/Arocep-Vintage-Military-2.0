@@ -126,6 +126,21 @@
         "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png"
       }
     },
+    "vintage_military_gYpftm": {
+      "type": "vintage-military",
+      "settings": {
+        "background": "#111111",
+        "fontcolor": "#ffffff",
+        "kicker": "Here To Support Your Mission",
+        "headline": "Our Trusted Global Network is Standing By",
+        "subheadline": "Our global distribution network is available around the clock ensuring you get your products when and where you need them. Government buyers can purchase directly from Arocep Federal with ease. We're standing by to support you.",
+        "text_align": "vertical-center horizontal-right",
+        "image": "shopify:\/\/shop_images\/bg-global-network.png",
+        "link": "",
+        "link_text": "Optional button",
+        "vintage_military_overlay": "#091d33"
+      }
+    },
     "background_image_text_76KFKQ": {
       "type": "background-image-text",
       "custom_css": [
@@ -141,68 +156,6 @@
         "height": 750,
         "parallax": true,
         "parallax_direction": "top",
-        "lazyload_images": true
-      }
-    },
-    "af_vintage_military_enFrtq": {
-      "type": "af-vintage-military",
-      "settings": {
-        "kicker": "ewwew",
-        "headline": "Vintage Military Hero",
-        "subheadline": "",
-        "text_align": "vertical-center horizontal-center",
-        "image": "shopify:\/\/shop_images\/AdobeStock_225122865.jpg",
-        "link": "",
-        "link_text": "Optional button",
-        "vintage_military_overlay": "none"
-      }
-    },
-    "fading-images": {
-      "type": "fading-images",
-      "blocks": {
-        "1498501481980-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/helicopter.jpg",
-            "slide_title1": "Powered by",
-            "slide_title2": "America"
-          }
-        },
-        "1498501481980-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
-            "slide_title1": "Beautifully animated",
-            "slide_title2": "titles and images"
-          }
-        },
-        "image_CEtJ6k": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
-            "slide_title1": "",
-            "slide_title2": ""
-          }
-        }
-      },
-      "block_order": [
-        "1498501481980-1",
-        "1498501481980-0",
-        "image_CEtJ6k"
-      ],
-      "settings": {
-        "title_lines": "2",
-        "title_font": "body",
-        "title_size": 45,
-        "title_color": "#ffffff",
-        "title_bg_color": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "link": "",
-        "slide_speed": 5,
-        "color_overlay": "#000000",
-        "color_overlay_opacity": 30,
-        "desktop_height": "650px",
-        "mobile_height": "auto",
         "lazyload_images": true
       }
     },
@@ -309,19 +262,128 @@
         "color_text": "#ffffff"
       }
     },
+    "fading-images": {
+      "type": "fading-images",
+      "blocks": {
+        "1498501481980-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/helicopter.jpg",
+            "slide_title1": "Powered by",
+            "slide_title2": "America"
+          }
+        },
+        "1498501481980-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
+            "slide_title1": "Beautifully animated",
+            "slide_title2": "titles and images"
+          }
+        },
+        "image_CEtJ6k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
+            "slide_title1": "",
+            "slide_title2": ""
+          }
+        }
+      },
+      "block_order": [
+        "1498501481980-1",
+        "1498501481980-0",
+        "image_CEtJ6k"
+      ],
+      "settings": {
+        "title_lines": "2",
+        "title_font": "body",
+        "title_size": 45,
+        "title_color": "#ffffff",
+        "title_bg_color": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "link": "",
+        "slide_speed": 5,
+        "color_overlay": "#000000",
+        "color_overlay_opacity": 30,
+        "desktop_height": "650px",
+        "mobile_height": "auto",
+        "lazyload_images": true
+      }
+    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image and text",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "subtitle": "Arocep Federal",
+        "title": "Contracting Vehicles",
+        "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. <\/p><p><strong>FEDMALL CONTRACT(S): <\/strong><a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">GS02F0052V<\/a>; <a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">MARKETPLACE_4UB10<\/a><\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "image": "shopify:\/\/shop_images\/bg-contracting.jpg",
         "layout": "left",
-        "height": 650,
+        "height": 450,
         "parallax": true,
         "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "vintage_military_UahVJC": {
+      "type": "vintage-military",
+      "settings": {
+        "background": "#111111",
+        "fontcolor": "#ffffff",
+        "kicker": "Discover",
+        "headline": "The Arocep Advantage",
+        "subheadline": "Providing transparency of products and pricing with a low cost to match. Streamlined purchasing simplifies the acquisition experience while meeting your socio-economic goals.",
+        "text_align": "vertical-center horizontal-center",
+        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "link": "",
+        "link_text": "Optional button",
+        "vintage_military_overlay": "none"
+      }
+    },
+    "hero_video_LbjQQi": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6f5f388f77804402b82199e83539a6fc.mp4",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "advanced_content_xx9WfN": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_i7ANcY": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "liquid_h98BrB": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_i7ANcY",
+        "liquid_h98BrB"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
         "lazyload_images": true
       }
     },
@@ -431,11 +493,14 @@
     "hero-video",
     "featured-collections",
     "rich_text_Yq8WRF",
+    "vintage_military_gYpftm",
     "background_image_text_76KFKQ",
-    "af_vintage_military_enFrtq",
-    "fading-images",
     "testimonials_HAxENX",
+    "fading-images",
     "background-image-text",
+    "vintage_military_UahVJC",
+    "hero_video_LbjQQi",
+    "advanced_content_xx9WfN",
     "logo_list_UWpBYQ",
     "af_hero_WnDXfD"
   ]
