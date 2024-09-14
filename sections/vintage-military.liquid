@@ -71,7 +71,7 @@
   style="background-blend-mode: luminosity"
   {%- endunless -%}
 >
-  <div class="hero__media hero__media--{{ section.id }}"></div>
+  {% comment %} <div class="hero__media hero__media--{{ section.id }}"></div> {% endcomment %}
   <div class="hero__text-wrap hero__text-wrap--absolute">
     <div class="page-width text-center">
       <div class="hero__text-content {{ section.settings.text_align }}">
