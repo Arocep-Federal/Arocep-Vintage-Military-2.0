@@ -22,7 +22,81 @@
 <script>
     document.addEventListener('page:loaded', function() {
         // Page has loaded and theme assets are ready
-  console.log("partners")
+        console.log("slideshow");
+     
+  theme.Partners = (function() {
+    var defaults = {
+      adaptiveHeight: true,
+      avoidReflow: true,
+      pageDots: true,
+      prevNextButtons: false
+    };
+  
+    function Partners(container) {
+      this.container = container;
+      var sectionId = container.getAttribute('data-section-id');
+      this.slideshow = container.querySelector('#Partners-' + sectionId);
+      this.namespace = '.partner-' + sectionId;
+  
+      if (!this.slideshow) { return }
+  
+      theme.initWhenVisible({
+        element: this.container,
+        callback: this.init.bind(this),
+        threshold: 600
+      });
+    }
+  
+    Partners.prototype = Object.assign({}, Partners.prototype, {
+      init: function() {
+        // Do not wrap when only a few blocks
+        if (this.slideshow.dataset.count <= 3) {
+          defaults.wrapAround = false;
+        }
+  
+        this.flickity = new theme.Slideshow(this.slideshow, defaults);
+  
+        // Autoscroll to next slide on load to indicate more blocks
+        if (this.slideshow.dataset.count > 3) {
+          setTimeout(function() {
+            this.flickity.goToSlide(1);
+          }.bind(this), 1000);
+        }
+      },
+  
+      onUnload: function() {
+        if (this.flickity && typeof this.flickity.destroy === 'function') {
+          this.flickity.destroy();
+        }
+      },
+  
+      onDeselect: function() {
+        if (this.flickity && typeof this.flickity.play === 'function') {
+          this.flickity.play();
+        }
+      },
+  
+      onBlockSelect: function(evt) {
+        var slide = this.slideshow.querySelector('.partners-slide--' + evt.detail.blockId)
+        var index = parseInt(slide.dataset.index);
+  
+        if (this.flickity && typeof this.flickity.pause === 'function') {
+          this.flickity.goToSlide(index);
+          this.flickity.pause();
+        }
+      },
+  
+      onBlockDeselect: function() {
+        if (this.flickity && typeof this.flickity.play === 'function') {
+          this.flickity.play();
+        }
+      }
+    });
+  
+    return Partners;
+
+    
+  })();
 
 });
 
