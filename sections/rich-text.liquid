@@ -28,9 +28,7 @@
           {%- when 'text' -%}
             <div class="rte">
               {%- if block.settings.text != blank -%}
-                {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
                 {{ block.settings.text }}
-                {%- if block.settings.enlarge_text %}</div>{% endif -%}
               {%- else -%}
                 {{ 'home_page.onboarding.no_content' | t }}
               {%- endif -%}
@@ -87,6 +85,11 @@
       "type": "image_picker",
       "id": "bgimage",
       "label": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "Narrow Column"
     }
   ],
   "blocks": [
