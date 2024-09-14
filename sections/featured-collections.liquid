@@ -57,6 +57,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 98%);
   }
   
+  .light-headline { color: white}
 
 {%-  endstyle  -%}
 
@@ -65,7 +66,7 @@
   <div class="page-width">
     {%- if section.settings.title != blank -%}
       <div class="section-header">
-        <h2 class="section-header__title">{{ section.settings.title }}</h2>
+        <h2 class="section-header__title light-headline">{{ section.settings.title }}</h2>
       </div>
     {% endif %}
 
