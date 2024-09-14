@@ -2,7 +2,6 @@
   .military-background--{{ section.id }} {
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
-    background-blend-mode: luminosity; 
     background-color: {{ section.settings.vintage_military_overlay }};
     background-position: {{ block.settings.focal_point }};
     height:80vh;
