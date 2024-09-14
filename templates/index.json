@@ -133,6 +133,53 @@
         "vintage_military_overlay": "#091d33"
       }
     },
+    "partners_qCAy33": {
+      "type": "partners",
+      "blocks": {
+        "partner_4ETcWQ": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_skilcraft3.png"
+          }
+        },
+        "partner_UEwTeP": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png"
+          }
+        },
+        "partner_eE7ca3": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_gatorz2.png"
+          }
+        },
+        "partner_GCCUgN": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/helicopter.jpg"
+          }
+        },
+        "partner_8D3A9q": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "partner_4ETcWQ",
+        "partner_UEwTeP",
+        "partner_eE7ca3",
+        "partner_GCCUgN",
+        "partner_8D3A9q"
+      ],
+      "settings": {
+        "title": "Proudly Partnered With",
+        "color_background": "#9a9a9a",
+        "color_text": "#fff"
+      }
+    },
     "image_carousel_floating_ixUTQC": {
       "type": "image-carousel-floating",
       "blocks": {
@@ -548,7 +595,8 @@
       ],
       "settings": {
         "title": "Federal Agencies Served",
-        "font_color": "#fff",
+        "font_color": "#ffffff",
+        "text_align": "center",
         "drawer_open_height": 350,
         "bgcolor": "#383838"
       }
@@ -577,6 +625,7 @@
     "featured-collections",
     "rich_text_Yq8WRF",
     "vintage_military_gYpftm",
+    "partners_qCAy33",
     "image_carousel_floating_ixUTQC",
     "background_image_text_76KFKQ",
     "testimonials_HAxENX",
