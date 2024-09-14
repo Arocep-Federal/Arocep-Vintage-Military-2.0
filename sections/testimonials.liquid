@@ -41,9 +41,11 @@
     color:#fff;
     z-index:1;
   }
+
   .testimonials-slide {
     z-index:1; 
   }
+
   .testimonials-slide.is-selected {
     z-index:1000; 
     -webkit-box-shadow: 0px 0px 23px 10px rgba(0,0,0,1);
@@ -56,6 +58,10 @@
     /* display:block; */
     /* position:relative; */
     /* top:-50px;  */
+  }
+
+  .testimonial-text {
+    margin: 0 10%;
   }
   
   .flickity-page-dots {display:none}
@@ -100,7 +106,7 @@
               {%- endif -%}
               
               {%- if block.settings.testimonial != blank -%}
-                <div class="rte-setting text-spacing">{{ block.settings.testimonial }}</div>
+                <div class="rte-setting text-spacing testimonial-text">{{ block.settings.testimonial }}</div>
               {%- endif -%}
               
               {%- if block.settings.image != blank or block.settings.author != blank or block.settings.author_info != blank -%}
