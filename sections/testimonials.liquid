@@ -126,13 +126,13 @@
                       {%- endif -%}
                       <div class="redstripe">&nbsp;</div>
                       <div class="whitestripe">
-                        {%- if block.settings.author != blank -%}
-                          <cite>&mdash;{{ block.settings.author | escape }}</cite>
+                        {%- if block.settings.author_info != blank -%}
+                          <p>{{ block.settings.author_info | escape }}</p>
                         {%- endif -%}
                       </div>
                       <div class="bluestripe">
-                        {%- if block.settings.author_info != blank -%}
-                          <p>{{ block.settings.author_info | escape }}</p>
+                        {%- if block.settings.author != blank -%}
+                          <cite>&mdash;{{ block.settings.author | escape }}</cite>
                         {%- endif -%}
                       </div>
                     </div>
