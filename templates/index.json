@@ -133,50 +133,6 @@
         "vintage_military_overlay": "#091d33"
       }
     },
-    "slideshow_dmHEYC": {
-      "type": "slideshow",
-      "blocks": {
-        "image_HkLNed": {
-          "type": "image",
-          "settings": {
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_ceM3TF": {
-          "type": "image",
-          "settings": {
-            "title": "Two line\nslide titles.",
-            "title_size": 80,
-            "subheading": "And big, beautiful imagery",
-            "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_HkLNed",
-        "image_ceM3TF"
-      ],
-      "settings": {
-        "section_height": "650px",
-        "mobile_height": "auto",
-        "parallax": false,
-        "style": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 5,
-        "lazyload_images": true
-      }
-    },
     "image_carousel_floating_ixUTQC": {
       "type": "image-carousel-floating",
       "blocks": {
@@ -621,7 +577,6 @@
     "featured-collections",
     "rich_text_Yq8WRF",
     "vintage_military_gYpftm",
-    "slideshow_dmHEYC",
     "image_carousel_floating_ixUTQC",
     "background_image_text_76KFKQ",
     "testimonials_HAxENX",
