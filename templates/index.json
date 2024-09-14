@@ -86,8 +86,7 @@
       ],
       "settings": {
         "title": "Shop by Category",
-        "divider": false,
-        "enable_gutter": false
+        "enable_gutter": true
       }
     },
     "rich_text_Yq8WRF": {
