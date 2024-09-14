@@ -319,10 +319,10 @@
         "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. <\/p><p><strong>FEDMALL CONTRACT(S): <\/strong><a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">GS02F0052V<\/a>; <a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">MARKETPLACE_4UB10<\/a><\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/bg-contracting.jpg",
+        "image": "shopify:\/\/shop_images\/bg-contracting.png",
         "layout": "left",
-        "height": 650,
-        "parallax": true,
+        "height": 550,
+        "parallax": false,
         "parallax_direction": "top",
         "lazyload_images": true
       }
