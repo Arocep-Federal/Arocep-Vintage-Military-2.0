@@ -35,6 +35,8 @@
             console.log("defaults: ", defaults);
 
             function Partners(container) {
+
+                console.log("init Partners function");
               this.container = container;
               var sectionId = container.getAttribute('data-section-id');
               this.slideshow = container.querySelector('#Partners-' + sectionId);
