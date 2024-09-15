@@ -90,34 +90,6 @@
         "background-color": "#000000"
       }
     },
-    "rich_text_Yq8WRF": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_NKppNe": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Mission"
-          }
-        },
-        "text_QcLaz8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Empowering Federal Excellence: Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p><p>At Arocep Federal, we are dedicated to providing unparalleled products and services that exceed the unique needs of the federal government. We strive to simplify the procurement process, fostering a culture of ease, efficiency, and reliability. Our team of acquisition specialists is committed to delivering flawless supply solutions that support the critical missions of our federal partners. Through our unwavering commitment to excellence, we aim to make a meaningful impact, enabling our customers to achieve their goals and serve the nation with distinction.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_NKppNe",
-        "text_QcLaz8"
-      ],
-      "settings": {
-        "align_text": "center",
-        "backgroundcolor": "#000000",
-        "fontcolor": "#ffffff",
-        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png",
-        "narrow_column": true
-      }
-    },
     "vintage_military_gYpftm": {
       "type": "vintage-military",
       "settings": {
@@ -176,8 +148,8 @@
       ],
       "settings": {
         "title": "Proudly Partnered With",
-        "color_background": "#000",
-        "color_text": "#fff"
+        "color_background": "#000000",
+        "color_text": "#ffffff"
       }
     },
     "testimonials_HAxENX": {
@@ -547,7 +519,6 @@
   "order": [
     "hero-video",
     "featured-collections",
-    "rich_text_Yq8WRF",
     "vintage_military_gYpftm",
     "partners_JKRHiJ",
     "testimonials_HAxENX",
