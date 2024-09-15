@@ -342,7 +342,7 @@
             "subheading": "Bring your brand to life",
             "link": "",
             "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-bottom horizontal-right",
             "image": "shopify:\/\/shop_images\/helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
@@ -356,7 +356,7 @@
             "subheading": "And big, beautiful imagery",
             "link": "",
             "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-bottom horizontal-right",
             "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
@@ -370,7 +370,7 @@
             "subheading": "And an optional subheading",
             "link": "",
             "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
+            "text_align": "vertical-bottom horizontal-right",
             "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
