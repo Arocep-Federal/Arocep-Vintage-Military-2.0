@@ -74,6 +74,10 @@
     z-index:0;
   }
 
+  .drawer-handle span {
+    display:inline-block;
+    transform:rotate(90deg)
+  }
     
 {%- endstyle -%}
 
@@ -107,7 +111,7 @@
     {% endif %}
 
     <div class="logo-drawer">
-      <a href="#" class="drawer-handle">&gt;&gt;</a>
+      <a href="#" class="drawer-handle"><span>&gt;&gt;</span></a>
     {% if section.blocks.size > 0 %}
       <div class="logo-bar logo-bar--{{ section.id }}">
         {%- for block in section.blocks -%}
