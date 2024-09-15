@@ -26,10 +26,10 @@
         
         theme.Partners = (function() {
             var defaults = {
-                adaptiveHeight: true,
+                adaptiveHeight: false,
                 avoidReflow: true,
                 pageDots: true,
-                prevNextButtons: false
+                prevNextButtons: true
             };
             
             console.log("defaults: ", defaults);
@@ -42,7 +42,7 @@
               this.slideshow = container.querySelector('#partners-' + sectionId);
               this.namespace = '.partner-' + sectionId;
           
-console.log("Namespace: ", this.namespace)
+            console.log("Namespace: ", this.namespace)
 
               if (!this.slideshow) { 
                 console.log("no slideshow");
