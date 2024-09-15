@@ -344,6 +344,21 @@
         "lazyload_images": true
       }
     },
+    "hero_video_LbjQQi": {
+      "type": "hero-video",
+      "settings": {
+        "title": "GATORZ",
+        "title_size": 80,
+        "subheading": "American Made Eyewear",
+        "link_text": "Shop Now",
+        "link": "shopify:\/\/collections\/information-technology",
+        "text_align": "vertical-bottom horizontal-left",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
@@ -355,7 +370,7 @@
         "image": "shopify:\/\/shop_images\/bg-contracting.jpg",
         "focal_point": "80% 50%",
         "layout": "left",
-        "height": 450,
+        "height": 550,
         "parallax": false,
         "parallax_direction": "left",
         "lazyload_images": true
@@ -374,51 +389,6 @@
         "link": "",
         "link_text": "Optional button",
         "vintage_military_overlay": "none"
-      }
-    },
-    "hero_video_LbjQQi": {
-      "type": "hero-video",
-      "settings": {
-        "title": "GATORZ",
-        "title_size": 80,
-        "subheading": "American Made Eyewear",
-        "link_text": "Shop Now",
-        "link": "shopify:\/\/collections\/information-technology",
-        "text_align": "vertical-bottom horizontal-left",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
-        "overlay_opacity": 0,
-        "section_height": "650px",
-        "mobile_height": "auto"
-      }
-    },
-    "advanced_content_xx9WfN": {
-      "type": "advanced-content",
-      "blocks": {
-        "image_i7ANcY": {
-          "type": "image",
-          "settings": {
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "liquid_h98BrB": {
-          "type": "liquid",
-          "settings": {
-            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_i7ANcY",
-        "liquid_h98BrB"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true,
-        "lazyload_images": true
       }
     },
     "logo_list_7Jb47n": {
@@ -553,10 +523,9 @@
     "partners_JKRHiJ",
     "testimonials_HAxENX",
     "slideshow_Jqiidr",
+    "hero_video_LbjQQi",
     "background-image-text",
     "vintage_military_UahVJC",
-    "hero_video_LbjQQi",
-    "advanced_content_xx9WfN",
     "logo_list_7Jb47n",
     "af_hero_WnDXfD"
   ]
