@@ -83,22 +83,15 @@
     
         var handle =  document.querySelector(".drawer-handle");
         var drawer =  document.querySelector(".logo-drawer");
-        var open =  document.querySelector(".open");
         
         handle.addEventListener("click", function (e) {
           e.preventDefault();
-          drawer.classList.add("open")
-        
+          if (drawer.classList.contains("open")) {
+            drawer.classList.remove("open")
+          } else {
+            drawer.classList.add("open")
+          }
         });
-        
-        
-        open.addEventListener("click", function (e) {
-          e.preventDefault();
-          drawer.classList.remove("open")
-        
-        });
-
-
 
 
   });
