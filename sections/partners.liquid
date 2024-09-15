@@ -3,7 +3,7 @@
     background-color: {{ section.settings.color_background }};
     color: {{ section.settings.color_text }};
     height:100px;
-    overflow:visible; 
+    overflow:visible;
   }
 
   .partner-text {
@@ -17,149 +17,158 @@
     border-radius: 10px;
     margin-right:6px;
   }
-  
-  .flickity-page-dots {display:none}
 
+  .partners-wrapper {
+    position:relative;
+    top:-100px;
+  }
+
+
+  .flickity-page-dots {display:none}
 {%- endstyle -%}
 
 <script>
-    document.addEventListener('page:loaded', function() {
-        // Page has loaded and theme assets are ready
-        {% comment %} console.log("init partners"); {% endcomment %}
-        
-        theme.Partners = (function() {
-            var defaults = {
-                adaptiveHeight: false,
-                freeScroll: true,
-                avoidReflow: true,
-                pageDots: false,
-                prevNextButtons: true,
-                wrapAround: false
-            };
-            
-            {% comment %} console.log("defaults: ", defaults); {% endcomment %}
+      document.addEventListener('page:loaded', function() {
+          // Page has loaded and theme assets are ready
+          {% comment %} console.log("init partners"); {% endcomment %}
 
-            function Partners(container) {
+          theme.Partners = (function() {
+              var defaults = {
+                  adaptiveHeight: false,
+                  freeScroll: true,
+                  avoidReflow: true,
+                  pageDots: false,
+                  prevNextButtons: true,
+                  wrapAround: false
+              };
 
-                console.log("init Partners function");
-              this.container = container;
-              var sectionId = container.getAttribute('data-section-id');
-              this.slideshow = container.querySelector('#partners-' + sectionId);
-              this.namespace = '.partner-' + sectionId;
-          
-            {% comment %} console.log("Namespace: ", this.namespace) {% endcomment %}
+              {% comment %} console.log("defaults: ", defaults); {% endcomment %}
 
-              if (!this.slideshow) { 
-                {% comment %} console.log("no slideshow"); {% endcomment %}
-                return;
-            }
-          
-              theme.initWhenVisible({
-                element: this.container,
-                callback: this.init.bind(this),
-                threshold: 600
-              });
-            }
-          
-            Partners.prototype = Object.assign({}, Partners.prototype, {
-              init: function() {
-                // Do not wrap when only a few blocks
-                if (this.slideshow.dataset.count <= 3) {
-                  defaults.wrapAround = false;
-                }
-          
-                this.flickity = new theme.Slideshow(this.slideshow, defaults);
-          
-                // Autoscroll to next slide on load to indicate more blocks
-                if (this.slideshow.dataset.count > 3) {
-                  setTimeout(function() {
-                    this.flickity.goToSlide(1);
-                  }.bind(this), 1000);
-                }
-              },
-          
-              onUnload: function() {
-                if (this.flickity && typeof this.flickity.destroy === 'function') {
-                  this.flickity.destroy();
-                }
-              },
-          
-              onDeselect: function() {
-                if (this.flickity && typeof this.flickity.play === 'function') {
-                  this.flickity.play();
-                }
-              },
-          
-              onBlockSelect: function(evt) {
-                var slide = this.slideshow.querySelector('.partners-slide--' + evt.detail.blockId)
-                var index = parseInt(slide.dataset.index);
-          
-                if (this.flickity && typeof this.flickity.pause === 'function') {
-                  this.flickity.goToSlide(index);
-                  this.flickity.pause();
-                }
-              },
-          
-              onBlockDeselect: function() {
-                if (this.flickity && typeof this.flickity.play === 'function') {
-                  this.flickity.play();
-                }
+              function Partners(container) {
+
+                  console.log("init Partners function");
+                this.container = container;
+                var sectionId = container.getAttribute('data-section-id');
+                this.slideshow = container.querySelector('#partners-' + sectionId);
+                this.namespace = '.partner-' + sectionId;
+
+              {% comment %} console.log("Namespace: ", this.namespace) {% endcomment %}
+
+                if (!this.slideshow) {
+                  {% comment %} console.log("no slideshow"); {% endcomment %}
+                  return;
               }
-            });
-          
-            return Partners;
-          })();
-          
 
-          theme.sections.register('partners', theme.Partners);
-});
+                theme.initWhenVisible({
+                  element: this.container,
+                  callback: this.init.bind(this),
+                  threshold: 600
+                });
+              }
+
+              Partners.prototype = Object.assign({}, Partners.prototype, {
+                init: function() {
+                  // Do not wrap when only a few blocks
+                  if (this.slideshow.dataset.count <= 3) {
+                    defaults.wrapAround = false;
+                  }
+
+                  this.flickity = new theme.Slideshow(this.slideshow, defaults);
+
+                  // Autoscroll to next slide on load to indicate more blocks
+                  if (this.slideshow.dataset.count > 3) {
+                    setTimeout(function() {
+                      this.flickity.goToSlide(1);
+                    }.bind(this), 1000);
+                  }
+                },
+
+                onUnload: function() {
+                  if (this.flickity && typeof this.flickity.destroy === 'function') {
+                    this.flickity.destroy();
+                  }
+                },
+
+                onDeselect: function() {
+                  if (this.flickity && typeof this.flickity.play === 'function') {
+                    this.flickity.play();
+                  }
+                },
+
+                onBlockSelect: function(evt) {
+                  var slide = this.slideshow.querySelector('.partners-slide--' + evt.detail.blockId)
+                  var index = parseInt(slide.dataset.index);
+
+                  if (this.flickity && typeof this.flickity.pause === 'function') {
+                    this.flickity.goToSlide(index);
+                    this.flickity.pause();
+                  }
+                },
+
+                onBlockDeselect: function() {
+                  if (this.flickity && typeof this.flickity.play === 'function') {
+                    this.flickity.play();
+                  }
+                }
+              });
+
+              return Partners;
+            })();
 
 
+            theme.sections.register('partners', theme.Partners);
+  });
 </script>
 
 <div
   class="text-center partners-section partners-{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="partners"
-  data-aos>
-  {%- if section.settings.title != blank -%}
-    <div class="page-width">
-      <div class="section-header">
-        <h2>{{ section.settings.title | escape }}</h2>
+  data-aos
+>
+  <div class="partners-wrapper">
+    {%- if section.settings.title != blank -%}
+      <div class="page-width">
+        <div class="section-header">
+          <h2>{{ section.settings.title | escape }}</h2>
+        </div>
       </div>
-    </div>
-  {%- endif -%}
+    {%- endif -%}
 
-  {%- if section.blocks.size > 0 -%}
-    <div class="slideshow-wrapper">
-      <div class="partners-slider" id="partners-{{ section.id }}" data-count="{{ section.blocks.size }}">
-        {%- for block in section.blocks -%}
-          <div
-            class="partners-slide partners-slide--{{ block.id }}"
-            data-index="{{ forloop.index0 }}"
-            {{ block.shopify_attributes }}>
-                {%- if block.settings.image != blank -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="slideshow-wrapper">
+        <div class="partners-slider" id="partners-{{ section.id }}" data-count="{{ section.blocks.size }}">
+          {%- for block in section.blocks -%}
+            <div
+              class="partners-slide partners-slide--{{ block.id }}"
+              data-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.image != blank -%}
                 <div class="partner-image">
-                    <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
-                    {%- liquid 
-                        assign sizeVariable = '142px'
-                        assign fallback = sizeVariable
-                        -%}
-                        {%- render 'image-element',
-                        img: block.settings.image,
-                        sizeVariable: sizeVariable,
-                        fallback: fallback,
-                        widths: '180, 360, 540, 720',
-                        -%}
-                        </div>
-                    </div>
-                {%- endif -%}
-              
-          </div>
-        {%- endfor -%}
+                  <div
+                    class="image-wrap"
+                    style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+                  >
+                    {%- liquid
+                      assign sizeVariable = '142px'
+                      assign fallback = sizeVariable
+                    -%}
+                    {%- render 'image-element',
+                      img: block.settings.image,
+                      sizeVariable: sizeVariable,
+                      fallback: fallback,
+                      widths: '180, 360, 540, 720'
+                    -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
       </div>
-    </div>
-  {%- endif -%}
+    {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
