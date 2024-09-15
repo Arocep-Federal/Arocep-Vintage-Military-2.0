@@ -123,7 +123,8 @@
       "type": "af-text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
-        "subtitle": "",
+        "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
+        "subtitle": "Honored to Support",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
         "button_label": "",
