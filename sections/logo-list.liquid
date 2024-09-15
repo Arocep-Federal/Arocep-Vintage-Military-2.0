@@ -76,21 +76,12 @@
 <script>
 
   document.addEventListener('page:loaded', function() {
-      {% comment %} var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after') {% endcomment %}
-          {% comment %} console.log("Computed: ",x); {% endcomment %}
+      var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after');
+          console.log("Computed: ",x);
 
-          {% comment %} theme.LogoList = (function() {
-
-            function LogoList(container) {
-
-            }
-            
-            return LogoList;
-          })(); {% endcomment %}
           
           console.log("LogoList3")
 
-        {% comment %} theme.sections.register('logolist', theme.LogoList); {% endcomment %}
   });
   </script>
 
