@@ -32,15 +32,16 @@
   }
 
   .logo-drawer {
-    height: {{section.settings.drawer_open_height }}px;
+    max-height: {{section.settings.drawer_open_height }}px;
     overflow:hidden;
-    transition:height 1s ease;
+    transition:max-height 1s ease;
     padding-bottom:50px;
   }
   
   .logo-drawer.open {
-    transition:height 1s ease;
+    transition:max-height 1s ease;
     height:auto;
+    max-height:10000;
   }
 
   .vintage-military-{{ section.id }} .drawer-handle {
