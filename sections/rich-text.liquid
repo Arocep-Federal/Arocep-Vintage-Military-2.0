@@ -8,6 +8,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
+
+
 {% endstyle %}
 
 <div class="vintage-military-{{ section.id }} vintage-military-section">
@@ -20,7 +22,7 @@
           {%- when 'page' -%}
             <div class="rte">
               {%- if block.settings.page_text != blank -%}
-                {{ pages[block.settings.page_text].content }}
+                <p>{{ pages[block.settings.page_text].content }}</p>
               {%- else -%}
                 {{ 'home_page.onboarding.no_content' | t }}
               {%- endif -%}
