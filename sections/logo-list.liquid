@@ -83,7 +83,8 @@
         var drawer =  document.querySelector(".logo-drawer");
         handle.addEventListener("click", "openDrawer") 
 
-        function openDrawer() {
+        function openDrawer(e) {
+          e.preventDefault();
           drawer.classlist.add("open")
         }
           
