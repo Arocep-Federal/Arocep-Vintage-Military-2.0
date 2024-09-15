@@ -8107,10 +8107,90 @@ if (console && console.log) {
   })();
 
 
+    {% comment %} console.log("init partners"); {% endcomment %}
 
+    theme.Partners = (function() {
+        var defaults = {
+            adaptiveHeight: false,
+            freeScroll: true,
+            avoidReflow: true,
+            pageDots: false,
+            prevNextButtons: true,
+            wrapAround: false
+        };
 
+        {% comment %} console.log("defaults: ", defaults); {% endcomment %}
 
+        function Partners(container) {
 
+            console.log("init Partners function");
+          this.container = container;
+          var sectionId = container.getAttribute('data-section-id');
+          this.slideshow = container.querySelector('#partners-' + sectionId);
+          this.namespace = '.partner-' + sectionId;
+
+        {% comment %} console.log("Namespace: ", this.namespace) {% endcomment %}
+
+          if (!this.slideshow) {
+            {% comment %} console.log("no slideshow"); {% endcomment %}
+            return;
+        }
+
+          theme.initWhenVisible({
+            element: this.container,
+            callback: this.init.bind(this),
+            threshold: 600
+          });
+        }
+
+        Partners.prototype = Object.assign({}, Partners.prototype, {
+          init: function() {
+            // Do not wrap when only a few blocks
+            if (this.slideshow.dataset.count <= 3) {
+              defaults.wrapAround = false;
+            }
+
+            this.flickity = new theme.Slideshow(this.slideshow, defaults);
+
+            // Autoscroll to next slide on load to indicate more blocks
+            if (this.slideshow.dataset.count > 3) {
+              setTimeout(function() {
+                this.flickity.goToSlide(1);
+              }.bind(this), 1000);
+            }
+          },
+
+          onUnload: function() {
+            if (this.flickity && typeof this.flickity.destroy === 'function') {
+              this.flickity.destroy();
+            }
+          },
+
+          onDeselect: function() {
+            if (this.flickity && typeof this.flickity.play === 'function') {
+              this.flickity.play();
+            }
+          },
+
+          onBlockSelect: function(evt) {
+            var slide = this.slideshow.querySelector('.partners-slide--' + evt.detail.blockId)
+            var index = parseInt(slide.dataset.index);
+
+            if (this.flickity && typeof this.flickity.pause === 'function') {
+              this.flickity.goToSlide(index);
+              this.flickity.pause();
+            }
+          },
+
+          onBlockDeselect: function() {
+            if (this.flickity && typeof this.flickity.play === 'function') {
+              this.flickity.play();
+            }
+          }
+        });
+
+        return Partners;
+      })();
 
 
   theme.Testimonials = (function() {
@@ -8270,6 +8350,7 @@ if (console && console.log) {
     theme.sections.register('store-availability', theme.StoreAvailability);
     theme.sections.register('fading-images', theme.FadingImages);
     theme.sections.register('testimonials', theme.Testimonials);
+    theme.sections.register('partners', theme.Partners);
     theme.sections.register('background-image', theme.BackgroundImage);
     theme.sections.register('collection-template', theme.Collection);
 
