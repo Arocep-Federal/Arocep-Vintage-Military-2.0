@@ -73,6 +73,15 @@
     
 {%- endstyle -%}
 
+<script>
+
+  document.addEventListener('page:loaded', function() {
+      var x = window.getComputedStyle(
+        document.querySelector('.vintage-military-'+{{ section.id }}'), '::after'
+        )
+          console.log(x);
+  });
+  </script>
 
 <div class="vintage-military-{{ section.id }}">
   <div class="page-width" data-aos="logo__animation">
