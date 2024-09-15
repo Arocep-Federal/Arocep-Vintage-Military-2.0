@@ -76,8 +76,10 @@
 <script>
 
   document.addEventListener('page:loaded', function() {
-      var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after')
-          console.log("Computed: ",x);
+      {% comment %} var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after') {% endcomment %}
+          {% comment %} console.log("Computed: ",x); {% endcomment %}
+
+          console.log("LogoList")
   });
   </script>
 
