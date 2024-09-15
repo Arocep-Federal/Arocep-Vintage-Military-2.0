@@ -34,12 +34,12 @@
   .logo-drawer {
     height: {{section.settings.drawer_open_height }}px;
     overflow:hidden;
-    transition:all 1s ease-in-out 2s;
+    transition:height 1s ease;
     padding-bottom:50px;
   }
   
   .logo-drawer.open {
-    transition:all 1s ease-in-out 2s;
+    transition:height 1s ease;
     height:auto;
   }
 
@@ -82,6 +82,7 @@
     
         var handle =  document.querySelector(".drawer-handle");
         var drawer =  document.querySelector(".logo-drawer");
+        var open =  document.querySelector(".open");
         
         handle.addEventListener("click", function (e) {
           e.preventDefault();
