@@ -90,6 +90,35 @@
         "background-color": "#000000"
       }
     },
+    "rich_text_ty8K8y": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Fgc9jC": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission"
+          }
+        },
+        "text_crqG8q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Empowering Federal Excellence: Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fgc9jC",
+        "text_crqG8q"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 26,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png",
+        "narrow_column": true
+      }
+    },
     "vintage_military_gYpftm": {
       "type": "vintage-military",
       "settings": {
@@ -519,6 +548,7 @@
   "order": [
     "hero-video",
     "featured-collections",
+    "rich_text_ty8K8y",
     "vintage_military_gYpftm",
     "partners_JKRHiJ",
     "testimonials_HAxENX",
