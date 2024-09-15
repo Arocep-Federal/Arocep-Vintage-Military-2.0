@@ -23,17 +23,18 @@
 <script>
     document.addEventListener('page:loaded', function() {
         // Page has loaded and theme assets are ready
-        console.log("init partners");
+        {% comment %} console.log("init partners"); {% endcomment %}
         
         theme.Partners = (function() {
             var defaults = {
                 adaptiveHeight: false,
+                freeScroll: true,
                 avoidReflow: true,
                 pageDots: true,
                 prevNextButtons: true
             };
             
-            console.log("defaults: ", defaults);
+            {% comment %} console.log("defaults: ", defaults); {% endcomment %}
 
             function Partners(container) {
 
@@ -43,10 +44,10 @@
               this.slideshow = container.querySelector('#partners-' + sectionId);
               this.namespace = '.partner-' + sectionId;
           
-            console.log("Namespace: ", this.namespace)
+            {% comment %} console.log("Namespace: ", this.namespace) {% endcomment %}
 
               if (!this.slideshow) { 
-                console.log("no slideshow");
+                {% comment %} console.log("no slideshow"); {% endcomment %}
                 return;
             }
           
