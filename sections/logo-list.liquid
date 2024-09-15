@@ -77,8 +77,8 @@
 
   document.addEventListener('page:loaded', function() {
     console.log("LogoList4")
-      var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after');
-          console.log("Computed=: ",x);
+      {% comment %} var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after');
+          console.log("Computed=: ",x); {% endcomment %}
 
           
 
