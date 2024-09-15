@@ -177,83 +177,7 @@
       "settings": {
         "title": "Proudly Partnered With",
         "color_background": "#9a9a9a",
-        "color_text": "#fff"
-      }
-    },
-    "image_carousel_floating_ixUTQC": {
-      "type": "image-carousel-floating",
-      "blocks": {
-        "image_block_bP73kM": {
-          "type": "image_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png",
-            "button_link": "shopify:\/\/collections\/computer-systems"
-          }
-        },
-        "image_block_qWCKDc": {
-          "type": "image_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_skilcraft3.png",
-            "button_link": ""
-          }
-        },
-        "image_block_eXwKJq": {
-          "type": "image_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_gatorz2.png",
-            "button_link": ""
-          }
-        },
-        "image_block_DwENXF": {
-          "type": "image_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/global-support.jpg",
-            "button_link": ""
-          }
-        },
-        "image_block_6q8RGx": {
-          "type": "image_block",
-          "settings": {
-            "enable_image": true,
-            "image": "shopify:\/\/shop_images\/global-support.jpg",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_block_bP73kM",
-        "image_block_qWCKDc",
-        "image_block_eXwKJq",
-        "image_block_DwENXF",
-        "image_block_6q8RGx"
-      ],
-      "settings": {
-        "background": "#000000",
-        "fontcolor": "#ffffff",
-        "title": "Proudly Partnered With",
-        "align_text": "center"
-      }
-    },
-    "background_image_text_76KFKQ": {
-      "type": "background-image-text",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "layout": "left",
-        "height": 750,
-        "parallax": true,
-        "parallax_direction": "top",
-        "lazyload_images": true
+        "color_text": "#ffffff"
       }
     },
     "testimonials_HAxENX": {
@@ -626,8 +550,6 @@
     "rich_text_Yq8WRF",
     "vintage_military_gYpftm",
     "partners_qCAy33",
-    "image_carousel_floating_ixUTQC",
-    "background_image_text_76KFKQ",
     "testimonials_HAxENX",
     "slideshow_Jqiidr",
     "background-image-text",
