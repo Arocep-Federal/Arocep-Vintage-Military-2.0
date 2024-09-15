@@ -81,13 +81,14 @@
     
         var handle =  document.querySelector(".drawer-handle");
         var drawer =  document.querySelector(".logo-drawer");
-        handle.addEventListener("click", "openDrawer") 
-
-        function openDrawer(e) {
+        
+        handle.addEventListener("click", function (e) {
           e.preventDefault();
           drawer.classlist.add("open")
-        }
-          
+        
+        });
+
+
 
   });
   </script>
