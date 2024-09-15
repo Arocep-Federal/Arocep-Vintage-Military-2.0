@@ -36,17 +36,27 @@
     overflow:hidden;
     transition:all 1s ease;
     padding-bottom:50px;
+  }
+
+  .logo-drawer a {
     color:white;
     font-size:1.8em;
     letter-spacing:-5px;
   }
+  
+
+  .logo-drawer a span {
+    display:inline-block;
+    transform:rotate(90deg)
+  }
+    
   
   .logo-drawer.open {
     transition:all 1s ease;
     height:auto;
     max-height:2000px;
   }
-
+  
   .vintage-military-{{ section.id }} .drawer-handle {
     width:66px;
     height: 40px;
@@ -76,11 +86,6 @@
     z-index:0;
   }
 
-  .drawer-handle span {
-    display:inline-block;
-    transform:rotate(90deg)
-  }
-    
 {%- endstyle -%}
 
 <script>
