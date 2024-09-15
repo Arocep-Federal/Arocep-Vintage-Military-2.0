@@ -13,16 +13,16 @@
     color: {{ section.settings.font_color }}
   }
 
-  .border {
+  .border-style {
     position:relative;
     top:-100px;
   }
 {% endstyle %}
  
 <div class="index-section"> 
-  <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
+  <div class="page-width feature-row-wrapper feature-row--{{ image_width }}{% if section.settings.image_style == 'border' %}border-style{% endif %}">
     {%- capture image_layout -%}
-      <div class="feature-row__item feature-row__images{% if placeholder_images %}feature-row__item--placeholder-images{% endif %} {% if section.settings.image_style == 'border' %}border {% endif %}" data-aos>
+      <div class="feature-row__item feature-row__images{% if placeholder_images %}feature-row__item--placeholder-images{% endif %}" data-aos>
           {%- if section.settings.image != blank -%}
             <div class="feature-row__first-image">
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
