@@ -35,7 +35,7 @@
                     loading: loading,
                     size_variable: size_variable,
                     fallback: fallback,
-                    classes: 'feature-row__image',
+                    classes: 'feature-row__image  {%- if section.settings.imageLift == 'border' -%}',
                   -%}
                 </div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
@@ -98,6 +98,22 @@
       "id": "image",
       "label": "Image"
     },
+    {
+      "type": "select",
+      "id": "image_style",
+      "label": "Image Style",
+      "default": "border",
+      "options": [
+        {
+          "value": "border",
+          "label": "Border"
+        },
+        {
+          "value": "inline",
+          "label": "Inline"
+        }
+      ]
+    },,
     {
       "type": "image_picker",
       "id": "bgimage",
