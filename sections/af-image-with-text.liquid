@@ -37,17 +37,17 @@
             <div class="image-wrap {% if section.settings.image2_mask != 'none' %}svg-mask svg-mask--{{ section.settings.image2_mask }}{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image2.aspect_ratio }}%;">
               {%- liquid
                 if section.settings.image == blank
-                  assign sizeVariable = section.settings.image_width | append: 'vw'
+                  assign size_variable = section.settings.image_width | append: 'vw'
                   assign fallback = '100vw'
                 else
-                  assign sizeVariable = 'calc(0.6 * 50vw)'
+                  assign size_variable = 'calc(0.6 * 50vw)'
                   assign fallback = '60vw'
                 endif
               -%}
               {%- render 'image-element',
                 img: section.settings.background-img,
                 widths: '180, 360, 540, 750, 900, 1080',
-                sizeVariable: sizeVariable,
+                size_variable: size_variable,
                 fallback: fallback,
                 classes: 'feature-row__image',
               -%}
