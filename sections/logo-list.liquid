@@ -79,8 +79,13 @@
   document.addEventListener('page:loaded', function() {
     console.log("LogoList4")
     
-        var x =  document.querySelector(".drawer-handle");
-        console.log(x)
+        var handle =  document.querySelector(".drawer-handle");
+        var drawer =  document.querySelector(".logo-drawer");
+        handle.addEventListener("click", "openDrawer") 
+
+        function openDrawer() {
+          drawer.classlist.add("open")
+        }
           
 
   });
