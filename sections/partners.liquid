@@ -77,7 +77,7 @@
 
               function Partners(container) {
 
-                  console.log("init Partners function");
+                  {% comment %} console.log("init Partners function"); {% endcomment %}
                 this.container = container;
                 var sectionId = container.getAttribute('data-section-id');
                 this.slideshow = container.querySelector('#partners-' + sectionId);

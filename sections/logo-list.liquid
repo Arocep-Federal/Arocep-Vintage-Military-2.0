@@ -79,7 +79,14 @@
       {% comment %} var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after') {% endcomment %}
           {% comment %} console.log("Computed: ",x); {% endcomment %}
 
+          theme.LogoList = (function() {
           console.log("LogoList")
+
+          return LogoList;
+        })();
+
+
+        theme.sections.register('logolist', theme.LogoList);
   });
   </script>
 
