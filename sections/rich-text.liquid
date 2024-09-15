@@ -1,25 +1,26 @@
 {% style %}
- 
- .shopify-section:has(.vintage-military-{{ section.id }}) {
-    background-color: {{ section.settings.backgroundcolor }};
-    color: {{ section.settings.fontcolor }};
-    background-image: url({{ section.settings.bgimage | image_url:width:auto }});
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+
+   .shopify-section:has(.vintage-military-{{ section.id }}) {
+      background-color: {{ section.settings.backgroundcolor }};
+      color: {{ section.settings.fontcolor }};
+      background-image: url({{ section.settings.bgimage | image_url:width:auto }});
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+
+    .shopify-section:has(.vintage-military-{{ section.id }}) p {
+      font-size:{{ section.settings.font_size }}px;
+    }
+
+
+  @media only screen and (max-width:589px){
+
+    .shopify-section:has(.vintage-military-{{ section.id }}) p {
+    font-size:calc({{ section.settings.font_size }}*0.7)px;
   }
-
- 
-  .shopify-section:has(.vintage-military-{{ section.id }}) p {
-    font-size:{{ section.settings.font_size }}px;
   }
-
-
-@media only screen and (max-width:589px){ 
-  font-size:calc({{ section.settings.font_size }}*0.7)px;
-}
-
-
 {% endstyle %}
 
 <div class="vintage-military-{{ section.id }} vintage-military-section">
@@ -87,7 +88,7 @@
       "max": 50,
       "id": "font_size",
       "label": "Body Font Size",
-      "default":32
+      "default": 32
     },
     {
       "type": "color",
