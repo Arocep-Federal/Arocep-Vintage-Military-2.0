@@ -90,6 +90,34 @@
         "background-color": "#000000"
       }
     },
+    "rich_text_bKrQYe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zB4eLX": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission"
+          }
+        },
+        "text_bXtPkQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>Empowering Federal Excellence:<\/b><br\/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zB4eLX",
+        "text_bXtPkQ"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "narrow_column": false
+      }
+    },
     "vintage_military_gYpftm": {
       "type": "vintage-military",
       "settings": {
@@ -519,6 +547,7 @@
   "order": [
     "hero-video",
     "featured-collections",
+    "rich_text_bKrQYe",
     "vintage_military_gYpftm",
     "partners_JKRHiJ",
     "testimonials_HAxENX",
