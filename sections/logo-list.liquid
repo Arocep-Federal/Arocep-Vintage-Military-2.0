@@ -11,27 +11,7 @@
 
   }
 
-  .vintage-military-{{ section.id }} .drawer-handle {
-    width:66px;
-    height: 40px;
-    background-color:#091d33;
-    position:absolute;
-    z-index:3;
-    left:calc(50% - 33px);
-    bottom:20px;
-
-    -webkit-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
-    -moz-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
-    box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
-
-    -webkit-border-top-left-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
+ 
   .vintage-military-{{ section.id }}::before {
     content:"";
     width:100%;
@@ -59,8 +39,30 @@
   }
 
   .logo-drawer.open {
-    
+    height:auto;
   }
+
+  .vintage-military-{{ section.id }} .drawer-handle {
+    width:66px;
+    height: 40px;
+    background-color:#091d33;
+    position:absolute;
+    z-index:3;
+    left:calc(50% - 33px);
+    bottom:20px;
+
+    -webkit-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
+    -moz-box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
+    box-shadow: -1px -5px 15px -1px rgba(0,0,0,0.8);
+
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
 
   .logo-bar {
     /* min-height:1000px; */
@@ -76,9 +78,9 @@
 
   document.addEventListener('page:loaded', function() {
     console.log("LogoList4")
-      {% comment %} var x = window.getComputedStyle(document.querySelector('.vintage-military-'+{{ section.id }}'), '::after');
-          console.log("Computed=: ",x); {% endcomment %}
-
+    
+        var x =  document.querySelector(".drawer-handle");
+        console.log(x)
           
 
   });
@@ -93,7 +95,7 @@
     {% endif %}
 
     <div class="logo-drawer">
-      <div class="drawer-handle">&gt;&gt;</div>
+      <a href="#" class="drawer-handle">&gt;&gt;</a>
     {% if section.blocks.size > 0 %}
       <div class="logo-bar logo-bar--{{ section.id }}">
         {%- for block in section.blocks -%}
