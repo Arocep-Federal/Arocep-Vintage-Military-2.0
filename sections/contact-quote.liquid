@@ -34,8 +34,8 @@
             </div>
             
             <div class="grid__item medium-up--one-whole">
-              <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
-              <input type="text" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
+              <label for="ContactFormAgency-{{ section.id }}">Department/Agency</label>
+              <input type="text" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
             </div>
 
         <div class="grid__item medium-up--one-half">
