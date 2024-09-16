@@ -145,26 +145,40 @@
         <div class="hero__text-content {{ section.settings.text_align }}">
           {%- unless section.settings.headline == blank -%}
             <h2 class="af-text hero__title">
+              <div class="animation-cropper">
+                <div class="animation-contents">
                   {%- unless section.settings.kicker == blank -%}
                     <div class="af-text hero__kicker">
-                      [{{ section.settings.kicker }}]
+                      <div class="animation-cropper">
+                        <div class="animation-contents">[{{ section.settings.kicker }}]</div>
+                      </div>
                     </div>
                   {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
+                </div>
+              </div>
             </h2>
           {%- endunless -%}
 
           {%- unless section.settings.subheadline == blank -%}
             <div class="af-text hero__subtitle">
-              <p>{{ section.settings.subheadline | escape }}</p>
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  <p>{{ section.settings.subheadline | escape }}</p>
+                </div>
+              </div>
             </div>
           {%- endunless -%}
 
           {%- unless section.settings.link_text == blank -%}
             <div class="af-text hero__link">
-              <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
-                {{ section.settings.link_text | escape }}
-              </a>
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
+                    {{ section.settings.link_text | escape }}
+                  </a>
+                </div>
+              </div>
             </div>
           {%- endunless -%}
         </div>
