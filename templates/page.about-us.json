@@ -23,7 +23,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0001_teamwork_dcca46bc-e9b0-41da-86ca-10e740930406.png",
-            "image_mask": "none",
+            "image_mask": "square",
             "image_width": 200,
             "title": "Teamwork",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
@@ -36,7 +36,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0002_excellence_5df2b598-5370-4182-99c4-9d4ed78bf8cc.png",
-            "image_mask": "none",
+            "image_mask": "square",
             "image_width": 200,
             "title": "Excellence",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
@@ -49,7 +49,7 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0000_innovation_0274b423-3d77-4926-b20c-644d48c7f3b2.png",
-            "image_mask": "none",
+            "image_mask": "square",
             "image_width": 200,
             "title": "Innovation",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
@@ -65,7 +65,7 @@
       ],
       "settings": {
         "title": "Our Values",
-        "fontcolor": "#fff",
+        "fontcolor": "#ffffff",
         "align_text": "center",
         "bgimage": "shopify:\/\/shop_images\/bg-about_422a919f-5ef8-4ff1-a051-73322ce60d29.jpg"
       }
