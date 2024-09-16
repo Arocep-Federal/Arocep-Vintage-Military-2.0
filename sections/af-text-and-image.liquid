@@ -12,8 +12,7 @@
     background-repeat:no-repeat;
     color: {{ section.settings.font_color }}
   }
-  #shopify-section-{{ section.id }} .index-section::after {
-    content: "";
+  #shopify-section-{{ section.id }} .stripe {
     width: 600px;
     height:80px;
     display:block;
@@ -51,7 +50,7 @@
   }
   }
 {% endstyle %}
- 
+ <div class="stripe"></div>
 <div class="index-section {% if section.settings.image_style == 'border' %} border-style{% endif %}"> 
   <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
     {%- capture image_layout -%}
