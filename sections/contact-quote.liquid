@@ -387,11 +387,11 @@
       </select>
     </div>
 
-    <div class="grid__item medium-up--one-half">
+    <div class="grid__item medium-up--one-whole">
       <label for="ContactFormFile-{{ section.id }}">Upload File</label>
      <input type="file" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept="" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
     </div>
-          
+
   </div>
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
           <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
