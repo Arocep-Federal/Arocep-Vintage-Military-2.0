@@ -47,6 +47,20 @@
             <label for="ContactFormPhone-{{ section.id }}">{{ 'contact.form.phone' | t }}</label>
             <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
         </div>
+
+
+            
+        <div class="grid__item medium-up--one-whole">
+          <label for="ContactFormAddress1-{{ section.id }}">Address</label>
+          <input type="text" id="ContactFormAddress1-{{ section.id }}" class="input-full" name="contact[address1]" autocapitalize="words" value="{% if form.address1 %}{{ form.address1 }}{% elsif customer %}{{ customer.address1 }}{% endif %}">
+        </div>
+
+            
+        <div class="grid__item medium-up--one-whole">
+          <label for="ContactFormAddress2-{{ section.id }}">Address 2</label>
+          <input type="text" id="ContactFormAddress2-{{ section.id }}" class="input-full" name="contact[address2]" autocapitalize="words" value="{% if form.address2 %}{{ form.address2 }}{% elsif customer %}{{ customer.address2 }}{% endif %}">
+        </div>
+
             
   </div>
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
