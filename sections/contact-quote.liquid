@@ -136,7 +136,7 @@
         <label for="ContactFormZip-{{ section.id }}">Postal / Zip Code</label>
         <input type="text" required="required" id="ContactFormZip-{{ section.id }}" class="input-full" pattern="[0-9\-]*" name="contact[zip]" autocorrect="off" autocapitalize="off" value="{% if form.zip %}{{ form.zip }}{% elsif customer %}{{ customer.zip }}{% endif %}">
     </div>
-    
+      
     <div class="grid__item medium-up--one-half">
         <label for="ContactFormCountry-{{ section.id }}">Country</label>
         <select required="required" id="ContactFormCountry-{{ section.id }}" class="input-full" name="contact[country]" value="{% if form.country %}{{ form.country }}{% elsif customer %}{{ customer.country }}{% endif %}">
@@ -387,7 +387,11 @@
       </select>
     </div>
 
-            
+    <div class="grid__item medium-up--one-half">
+      <label for="ContactFormFile-{{ section.id }}">Upload File</label>
+     <input type="file" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept="" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
+    </div>
+          
   </div>
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
           <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
