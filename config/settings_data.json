@@ -61,7 +61,7 @@
     "cart_type": "page",
     "cart_icon": "bag-minimal",
     "cart_additional_buttons": false,
-    "cart_notes_enable": false,
+    "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": true,
