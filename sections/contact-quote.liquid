@@ -64,7 +64,7 @@
 
         <div class="grid__item medium-up--one-half">
           <label for="ContactFormCity-{{ section.id }}">City</label>
-          <input type="text" required="required" id="ContactFormCity-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+          <input type="text" required="required" id="ContactFormCity-{{ section.id }}" class="input-full" name="contact[city]" autocorrect="off" autocapitalize="off" value="{% if form.city %}{{ form.city }}{% elsif customer %}{{ customer.city }}{% endif %}">
       </div>
       
       <div class="grid__item medium-up--one-half">
