@@ -30,29 +30,29 @@
             </div>
             <div class="grid__item medium-up--one-half">
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
-              <input type="text" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
+              <input type="text" required="required" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
             </div>
             
             <div class="grid__item medium-up--one-whole">
               <label for="ContactFormAgency-{{ section.id }}">Department/Agency</label>
-              <input type="text" aria-required="true" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
+              <input type="text" required="required" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
             </div>
 
         <div class="grid__item medium-up--one-half">
             <label for="ContactFormEmail-{{ section.id }}">Email Address</label>
-            <input type="email" aria-required="true" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            <input type="email" required="required" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
         </div>
         
         <div class="grid__item medium-up--one-half">
             <label for="ContactFormPhone-{{ section.id }}">Phone Number</label>
-            <input type="tel" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+            <input type="tel" required="required" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
         </div>
 
 
             
         <div class="grid__item medium-up--one-whole">
           <label for="ContactFormAddress1-{{ section.id }}">Address</label>
-          <input type="text" id="ContactFormAddress1-{{ section.id }}" class="input-full" name="contact[address1]" autocapitalize="words" value="{% if form.address1 %}{{ form.address1 }}{% elsif customer %}{{ customer.address1 }}{% endif %}">
+          <input type="text" required="required" id="ContactFormAddress1-{{ section.id }}" class="input-full" name="contact[address1]" autocapitalize="words" value="{% if form.address1 %}{{ form.address1 }}{% elsif customer %}{{ customer.address1 }}{% endif %}">
         </div>
 
             
