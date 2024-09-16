@@ -27,6 +27,7 @@
         "text": {
           "type": "text",
           "settings": {
+            "text": "<p><b>Empowering Federal Excellence:<\/b><br\/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p>"
           }
         }
       },
@@ -35,17 +36,25 @@
         "text"
       ],
       "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "narrow_column": false
       }
     },
-    "form": {
-      "type": "contact-form",
+    "contact_quote_qry8bN": {
+      "type": "contact-quote",
       "settings": {
+        "title": "Request for Quote",
+        "text": "",
+        "narrow_column": true
       }
     }
   },
   "order": [
     "main",
     "rich-text",
-    "form"
+    "contact_quote_qry8bN"
   ]
 }
