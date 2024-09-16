@@ -20,6 +20,7 @@
   width:91px;
   background-repeat:no-repeat;
   background-position:top left;
+  z-index:2;
 }
 
 @media only screen and (max-width: 589px){
@@ -34,13 +35,13 @@
 
 {% endstyle %}
 
-{% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
   class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
   data-aos="background-media-text__animation"
   {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+  {% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
   <div class="page-width">
     <div class="background-media-text__container">
       {%- if section.settings.parallax -%}
