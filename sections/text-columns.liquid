@@ -1,69 +1,80 @@
 
-<div class="page-width">
-  {%- if section.settings.title != blank -%}
-    <div class="section-header text-{{ section.settings.align_text }}">
-      <h2>{{ section.settings.title }}</h2>
-    </div>
-  {% endif %}
+{% style %} 
 
-  <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom">
-    {%- liquid
-      assign grid_item_width = 'medium-up--one-third'
-      case section.blocks.size
-        when 1
-          assign grid_item_width = 'medium-up--one-half'
-        when 2
-          assign grid_item_width = 'medium-up--one-half'
-        when 4
-          assign grid_item_width = 'medium-up--one-half'
-      endcase
-    -%}
-    {%- for block in section.blocks -%}
-      {%- if section.blocks.size == 5 and forloop.index < 3 -%}
-        {%- assign column_width = 'medium-up--one-half' -%}
-      {%- else -%}
-        {%- assign column_width = grid_item_width -%}
-      {%- endif -%}
-      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
-        {%- if block.settings.enable_image -%}
-          <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
-            {% if block.settings.button_link != blank %}
-              <a href="{{ block.settings.button_link }}">
-            {% endif %}
-            {% if block.settings.image != blank %}
+.shopify-section:has(.vintage-military-{{ section.id }}) {
+      color: {{ section.settings.fontcolor }};
+      background-image: url({{ section.settings.bgimage | image_url:width:auto }});
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+{% endstyle %}
 
-              <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
-                {%- render 'image-element',
-                  img: block.settings.image,
-                  sizeVariable: column_width,
-                  widths: '180, 360, 540, 720, 900, 1080',
-                -%}
-              </div>
-            {% else %}
-              <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 300px">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
-            {% endif %}
-            {% if block.settings.button_link != blank %}
-              </a>
-            {% endif %}
-          </div>
-        {% endif %}
-        {%- if block.settings.title != blank -%}
-          <h3>{{ block.settings.title }}</h3>
-        {% endif %}
-        {% if block.settings.text != blank %}
-          <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
-        {% endif %}
-        {% if block.settings.button_label != blank %}
-          <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
-            {{ block.settings.button_label }}
-          </a>
-        {% endif %}
+<div class="vintage-military-{{ section.id }} vintage-military-section">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <div class="section-header text-{{ section.settings.align_text }}">
+        <h2>{{ section.settings.title }}</h2>
       </div>
-    {%- endfor -%}
-  </div>
-</div>
+    {% endif %}
 
-{%- if section.settings.divider -%}</div>{%- endif -%}
+    <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom">
+      {%- liquid
+        assign grid_item_width = 'medium-up--one-third'
+        case section.blocks.size
+          when 1
+            assign grid_item_width = 'medium-up--one-half'
+          when 2
+            assign grid_item_width = 'medium-up--one-half'
+          when 4
+            assign grid_item_width = 'medium-up--one-half'
+        endcase
+      -%}
+      {%- for block in section.blocks -%}
+        {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+          {%- assign column_width = 'medium-up--one-half' -%}
+        {%- else -%}
+          {%- assign column_width = grid_item_width -%}
+        {%- endif -%}
+        <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
+          {%- if block.settings.enable_image -%}
+            <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
+              {% if block.settings.button_link != blank %}
+                <a href="{{ block.settings.button_link }}">
+              {% endif %}
+              {% if block.settings.image != blank %}
+
+                <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+                  {%- render 'image-element',
+                    img: block.settings.image,
+                    sizeVariable: column_width,
+                    widths: '180, 360, 540, 720, 900, 1080',
+                  -%}
+                </div>
+              {% else %}
+                <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}" style="height: 300px">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+              {% endif %}
+              {% if block.settings.button_link != blank %}
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+          {%- if block.settings.title != blank -%}
+            <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+          {% endif %}
+          {% if block.settings.button_label != blank %}
+            <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+        </div>
+      {%- endfor -%}
+  </div>
+
+</div>
 
 {% schema %}
 {
@@ -74,6 +85,11 @@
       "type": "text",
       "id": "title",
       "label": "t:sections.text-columns.settings.title.label"
+    },
+    {
+      "type": "color",
+      "id": "fontcolor",
+      "label": "Text Color"
     },
     {
       "type": "select",
