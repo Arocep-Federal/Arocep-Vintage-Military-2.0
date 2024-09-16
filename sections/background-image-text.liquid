@@ -11,6 +11,7 @@
 }
 
 .background-media-text--{{ section.id }} a {
+  position:relative;
   color: white;
   text-decoration: underline
 }
@@ -39,13 +40,13 @@
 
 {% endstyle %}
 
-{% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
   class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
   data-aos="background-media-text__animation"
   {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+  {% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
   <div class="page-width">
     <div class="background-media-text__container">
       {%- if section.settings.parallax -%}
