@@ -32,10 +32,12 @@
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
               <input type="text" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
             </div>
-  
-        </div>
+            
+            <div class="grid__item medium-up--one-whole">
+              <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
+              <input type="text" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
+            </div>
 
-        <div class="grid grid--small">
         <div class="grid__item medium-up--one-half">
             <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
             <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
