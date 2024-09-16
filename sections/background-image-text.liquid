@@ -1,10 +1,16 @@
 {% style %}
-.background-media-text__aligner {
+.background-media-text--{{ section.id }} .background-media-text__aligner {
   margin:0;
 }
 
-.background-media-text__text {
-  width:50%;
+.background-media-text--{{ section.id }} .background-media-text__text {
+  background-color:none;
+  color: white;
+}
+
+.background-media-text--{{ section.id }} a {
+  color: white;
+  text-decoration: underline
 }
 {% endstyle %}
 
