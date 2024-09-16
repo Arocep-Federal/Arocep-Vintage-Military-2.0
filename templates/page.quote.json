@@ -27,7 +27,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<h5>Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.<\/h5>"
+            "text": "<p>Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.<\/p>"
           }
         }
       },
@@ -37,11 +37,11 @@
       ],
       "settings": {
         "align_text": "center",
-        "font_size": 32,
-        "backgroundcolor": "#000",
+        "font_size": 20,
+        "backgroundcolor": "#000000",
         "fontcolor": "#fff",
         "bgimage": "shopify:\/\/shop_images\/bg-contracting.png",
-        "narrow_column": false
+        "narrow_column": true
       }
     },
     "contact_quote_qry8bN": {
