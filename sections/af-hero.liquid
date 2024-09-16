@@ -145,18 +145,18 @@
         <div class="hero__text-content {{ section.settings.text_align }}">
           {%- unless section.settings.headline == blank -%}
             <h2 class="af-text hero__title">
-              <div class="animation-cropper">
-                <div class="animation-contents">
+              {% comment %} <div class="animation-cropper"> {% endcomment %}
+                {% comment %} <div class="animation-contents"> {% endcomment %}
                   {%- unless section.settings.kicker == blank -%}
                     <div class="af-text hero__kicker">
-                      <div class="animation-cropper">
-                        <div class="animation-contents">[{{ section.settings.kicker }}]</div>
+                      {% comment %} <div class="animation-cropper"> {% endcomment %}
+                        <div >[{{ section.settings.kicker }}]</div>
                       </div>
                     </div>
                   {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
-                </div>
-              </div>
+                {% comment %} </div> {% endcomment %}
+              {% comment %} </div> {% endcomment %}
             </h2>
           {%- endunless -%}
 
