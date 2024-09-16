@@ -389,7 +389,7 @@
 
     <div class="grid__item medium-up--one-whole">
       <label for="ContactFormFile-{{ section.id }}">Upload File</label>
-     <input type="file" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept=".doc,.docx,.xml,application/msword,.csv,.tsv,.txt" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
+     <input type="file" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept=".doc,.docx,.xml,application/msword,.csv,.tsv,.txt,.pdf,.png,.jpg,.jpeg" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
     </div>
 
   </div>
