@@ -31,14 +31,14 @@
         "product_grid"
       ],
       "settings": {
-        "collection_image_enable": true,
+        "collection_image_enable": false,
         "collection_image_height": 350,
         "parallax": true,
         "parallax_direction": "left",
         "enable_sidebar": true,
-        "collapsed": true,
+        "collapsed": false,
         "enable_color_swatches": false,
-        "enable_swatch_labels": true,
+        "enable_swatch_labels": false,
         "enable_sort": false
       }
     }
