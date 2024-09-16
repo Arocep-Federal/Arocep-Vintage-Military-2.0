@@ -57,10 +57,70 @@
         "button_link": "",
         "divider": false
       }
+    },
+    "af_text_and_image_rvrsbl_dWxVLT": {
+      "type": "af-text-and-image-rvrsbl",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/helicopter.jpg",
+        "subtitle": "Subtitle",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "af_text_and_image_rvrsbl_HL9r68": {
+      "type": "af-text-and-image-rvrsbl",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "33",
+        "layout": "left",
+        "stripe": false,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": false
+      }
+    },
+    "af_text_and_image_rvrsbl_7tMAcp": {
+      "type": "af-text-and-image-rvrsbl",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
     }
   },
   "order": [
     "main",
-    "text_with_icons_dMG8Gf"
+    "text_with_icons_dMG8Gf",
+    "af_text_and_image_rvrsbl_dWxVLT",
+    "af_text_and_image_rvrsbl_HL9r68",
+    "af_text_and_image_rvrsbl_7tMAcp"
   ]
 }
