@@ -17,10 +17,13 @@
 .stripe {
   position:absolute;
   background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
-  width:91px;
+  width:100px;
   background-repeat:no-repeat;
   background-position:top left;
   z-index:2;
+  top:0;
+  left:20px;
+  height:2000px
 }
 
 @media only screen and (max-width: 589px){
@@ -35,13 +38,13 @@
 
 {% endstyle %}
 
+{% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
   class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
   data-aos="background-media-text__animation"
   {% if section.settings.parallax %}data-parallax="true"{% endif %}>
-  {% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
   <div class="page-width">
     <div class="background-media-text__container">
       {%- if section.settings.parallax -%}
