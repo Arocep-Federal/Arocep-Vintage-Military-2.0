@@ -309,14 +309,14 @@
     "hero_video_LbjQQi": {
       "type": "hero-video",
       "settings": {
-        "title": "GATORZ",
-        "title_size": 80,
+        "title": "Gatorz",
+        "title_size": 60,
         "subheading": "American Made Eyewear",
-        "link_text": "Shop Now",
+        "link_text": "",
         "link": "shopify:\/\/collections\/information-technology",
-        "text_align": "vertical-bottom horizontal-left",
+        "text_align": "vertical-center horizontal-center",
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
-        "overlay_opacity": 0,
+        "overlay_opacity": 34,
         "section_height": "650px",
         "mobile_height": "auto"
       }
@@ -334,6 +334,7 @@
         "layout": "left",
         "height": 550,
         "parallax": false,
+        "stripe": true,
         "parallax_direction": "left",
         "lazyload_images": true
       }
