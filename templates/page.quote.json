@@ -21,13 +21,13 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Get in touch"
+            "title": "Request A Formal Proposal"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><b>Empowering Federal Excellence:<\/b><br\/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p>"
+            "text": "<h5>Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.<\/h5>"
           }
         }
       },
@@ -40,6 +40,7 @@
         "font_size": 32,
         "backgroundcolor": "#000",
         "fontcolor": "#fff",
+        "bgimage": "shopify:\/\/shop_images\/bg-contracting.png",
         "narrow_column": false
       }
     },
