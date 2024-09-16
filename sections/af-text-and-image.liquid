@@ -13,9 +13,13 @@
     color: {{ section.settings.font_color }}
   }
 
-  .border-style .feature-row__first-image{
+  #shopify-section-{{ section.id }} .index-section .border-style .feature-row__first-image{
     position:relative;
     top:-300px;
+  }
+
+  #shopify-section-{{ section.id }} .index-section .feature-row-wrapper {
+    overflow:visible
   }
 {% endstyle %}
  
