@@ -61,7 +61,8 @@
         "text_block_UhaLAf"
       ],
       "settings": {
-        "title": "",
+        "title": "Our Values",
+        "fontcolor": "#ffffff",
         "align_text": "center",
         "bgimage": "shopify:\/\/shop_images\/bg-about.jpg"
       }
