@@ -22,8 +22,9 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon_0001_teamwork.png",
             "image_mask": "none",
-            "image_width": 650,
+            "image_width": 250,
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
@@ -34,8 +35,9 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon_0002_excellence.png",
             "image_mask": "none",
-            "image_width": 650,
+            "image_width": 190,
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
@@ -46,8 +48,9 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon_0000_innovation.png",
             "image_mask": "none",
-            "image_width": 650,
+            "image_width": 150,
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
