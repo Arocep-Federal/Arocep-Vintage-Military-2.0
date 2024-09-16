@@ -14,7 +14,13 @@
   color: white;
   text-decoration: underline
 }
-
+.stripe {
+  position:absolute;
+  background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
+  width:91px;
+  background-repeat:no-repeat;
+  background-position:top left;
+}
 
 @media only screen and (max-width: 589px){
   .background-media-text--{{ section.id }} .page-width {
@@ -28,7 +34,7 @@
 
 {% endstyle %}
 
-
+{% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
@@ -209,6 +215,12 @@
       "type": "checkbox",
       "id": "parallax",
       "label": "t:sections.background-image-text.settings.parallax.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stripe",
+      "label": "Stripe",
       "default": true
     },
     {
