@@ -21,7 +21,44 @@
   .af-text .hero__kicker { margin: 0 0 10px; font-size:16px; }
   .af-text h2 { margin: 0 0 15px; }
 
+  @media only screen and (min-width: 590px){
+    
+    .military-background--{{ section.id }}  .animation-contents {
+      /* text-transform: uppercase; */
+      margin-bottom:0;
+    }
+    
+    .military-background--{{ section.id }} .hero__title .animation-contents{
+      /* text-transform: uppercase; */
+      font-size: 20px;
+      margin-bottom:0;
+    }
+    .hero__text-content.vertical-center {
+      padding:0 0 200px
+    }
+    .af-text .hero__kicker { margin: 0 0 10px; font-size:20px;}
 
+  }
+  @media only screen and (min-width: 769px){
+
+      .military-background--{{ section.id }} {
+          padding-bottom:1000px;
+      }
+      .military-background--{{ section.id }} .hero__text-wrap .hero__text-content.horizontal-right {
+        padding-left:40%;
+      }
+      .military-background--{{ section.id }} .hero__text-wrap .hero__text-content.horizontal-left {
+        padding-right:40%;
+      }
+      .military-background--{{ section.id }} .hero__text-wrap .hero__text-content.horizontal-center {
+        padding: 0 20%;
+      }
+
+  }
+
+  @media only screen and (max-width: 589px){
+
+  }
 {%- endstyle -%}
 
 <div
