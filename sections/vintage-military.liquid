@@ -3,8 +3,8 @@
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
     background-color: {{ section.settings.vintage_military_overlay }};
-    height:80vh;
-    min-height:800px;
+    height:{{section.settings.height}};
+    /* min-height:800px; */
     width:auto;
     position:relative;
   }
@@ -188,6 +188,14 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 40,
+      "max": 100,
+      "default":100,
+      "label": "Image Height"
     },
       {
         "type": "url",
