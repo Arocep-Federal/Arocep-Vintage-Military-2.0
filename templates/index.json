@@ -123,6 +123,7 @@
       "type": "af-text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
+        "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
         "title": "The Ability One Program",
@@ -149,6 +150,7 @@
         "subheadline": "Our global distribution network is available around the clock ensuring you get your products when and where you need them. Government buyers can purchase directly from Arocep Federal with ease. We're standing by to support you.",
         "text_align": "vertical-center horizontal-right",
         "image": "shopify:\/\/shop_images\/bg-global-network.png",
+        "height": 100,
         "link": "",
         "link_text": "Optional button",
         "vintage_military_overlay": "#091d33"
@@ -346,6 +348,7 @@
         "subheadline": "Providing transparency of products and pricing with a low cost to match. Streamlined purchasing simplifies the acquisition experience while meeting your socio-economic goals.",
         "text_align": "vertical-center horizontal-center",
         "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "height": 78,
         "link": "",
         "link_text": "Optional button",
         "vintage_military_overlay": "none"
