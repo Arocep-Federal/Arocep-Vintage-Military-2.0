@@ -361,43 +361,43 @@
         "image_7tfdTk": {
           "type": "image",
           "settings": {
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
+            "title": "Powered by America",
+            "title_size": 50,
+            "subheading": "",
             "link": "",
             "link_text": "",
-            "text_align": "vertical-center horizontal-right",
+            "text_align": "vertical-bottom horizontal-center",
             "image": "shopify:\/\/shop_images\/helicopter.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 0
+            "overlay_opacity": 26
           }
         },
         "image_4U7VXy": {
           "type": "image",
           "settings": {
-            "title": "Two line\nslide titles.",
-            "title_size": 80,
-            "subheading": "And big, beautiful imagery",
+            "title": "Simplified Acquisition Enhances Buyer Experience",
+            "title_size": 50,
+            "subheading": "",
             "link": "",
             "link_text": "",
-            "text_align": "vertical-center horizontal-right",
+            "text_align": "vertical-bottom horizontal-center",
             "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 0
+            "overlay_opacity": 26
           }
         },
         "image_mCakBX": {
           "type": "image",
           "settings": {
-            "title": "Two line\nslide title.",
-            "title_size": 80,
-            "subheading": "And an optional subheading",
+            "title": "Servicing Every Federal Branch Globally",
+            "title_size": 50,
+            "subheading": "",
             "link": "",
             "link_text": "",
-            "text_align": "vertical-center horizontal-right",
+            "text_align": "vertical-bottom horizontal-center",
             "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
             "parallax_direction": "top",
-            "overlay_opacity": 0
+            "overlay_opacity": 26
           }
         }
       },
