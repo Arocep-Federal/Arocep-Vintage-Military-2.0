@@ -26,7 +26,7 @@
           <div class="grid grid--small">
             <div class="grid__item medium-up--one-half">
               <label for="ContactFormFirstName-{{ section.id }}">First Name</label>
-              <input type="text" id="ContactFormFirstName-{{ section.id }}" class="input-full" name="contact[firstname]" autocapitalize="words" value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}">
+              <input type="text" required="required" id="ContactFormFirstName-{{ section.id }}" class="input-full" name="contact[firstname]" autocapitalize="words" value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}">
             </div>
             <div class="grid__item medium-up--one-half">
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
