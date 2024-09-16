@@ -58,7 +58,7 @@
         "divider": false
       }
     },
-    "af_text_and_image_rvrsbl_3JM39E": {
+    "af_text_and_image_rvrsbl_j6rWfC": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
         "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
@@ -81,6 +81,6 @@
   "order": [
     "main",
     "text_with_icons_dMG8Gf",
-    "af_text_and_image_rvrsbl_3JM39E"
+    "af_text_and_image_rvrsbl_j6rWfC"
   ]
 }
