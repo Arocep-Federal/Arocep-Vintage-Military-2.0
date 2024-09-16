@@ -15,47 +15,54 @@
       "settings": {
       }
     },
-    "text_with_icons_dMG8Gf": {
-      "type": "text-with-icons",
+    "text_columns_Df3qeF": {
+      "type": "text-columns",
       "blocks": {
-        "text_block_qyxkjQ": {
+        "text_block_LtGNk4": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "enable_image": true,
+            "image_mask": "splat-1",
+            "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
           }
         },
-        "text_block_nAJF3h": {
+        "text_block_gHFLgp": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
           }
         },
-        "text_block_eXY9MP": {
+        "text_block_Ay4rfJ": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 650,
             "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.<\/p>"
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "text_block_qyxkjQ",
-        "text_block_nAJF3h",
-        "text_block_eXY9MP"
+        "text_block_LtGNk4",
+        "text_block_gHFLgp",
+        "text_block_Ay4rfJ"
       ],
       "settings": {
         "title": "",
-        "align_text": "center",
-        "desktop_columns_per_row": 3,
-        "icon_color": "#000000",
-        "button_label": "",
-        "button_link": "",
-        "divider": false
+        "align_text": "center"
       }
     },
     "af_text_and_image_rvrsbl_fBmM47": {
@@ -118,7 +125,7 @@
   },
   "order": [
     "main",
-    "text_with_icons_dMG8Gf",
+    "text_columns_Df3qeF",
     "af_text_and_image_rvrsbl_fBmM47",
     "af_text_and_image_rvrsbl_j6rWfC",
     "af_text_and_image_rvrsbl_MHLGPz"
