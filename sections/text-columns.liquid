@@ -1,7 +1,7 @@
 
 {% style %} 
 
-.shopify-section:has(.vintage-military-{{ section.id }}) {
+.page-width-{{ section.id }} {
       color: {{ section.settings.fontcolor }};
       background-image: url({{ section.settings.bgimage | image_url:width:auto }});
       background-position: center;
@@ -11,7 +11,7 @@
 {% endstyle %}
 
 <div class="vintage-military-{{ section.id }} vintage-military-section">
-  <div class="page-width">
+  <div class="page-width-{{ section.id }}">
     {%- if section.settings.title != blank -%}
       <div class="section-header text-{{ section.settings.align_text }}">
         <h2>{{ section.settings.title }}</h2>
