@@ -145,40 +145,26 @@
         <div class="hero__text-content {{ section.settings.text_align }}">
           {%- unless section.settings.headline == blank -%}
             <h2 class="af-text hero__title">
-              {% comment %} <div class="animation-cropper"> {% endcomment %}
-                {% comment %} <div class="animation-contents"> {% endcomment %}
                   {%- unless section.settings.kicker == blank -%}
                     <div class="af-text hero__kicker">
-                      {% comment %} <div class="animation-cropper"> {% endcomment %}
-                        <div >[{{ section.settings.kicker }}]</div>
-                      </div>
+                      [{{ section.settings.kicker }}]
                     </div>
                   {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
-                {% comment %} </div> {% endcomment %}
-              {% comment %} </div> {% endcomment %}
             </h2>
           {%- endunless -%}
 
           {%- unless section.settings.subheadline == blank -%}
             <div class="af-text hero__subtitle">
-              <div class="animation-cropper">
-                <div class="animation-contents">
-                  <p>{{ section.settings.subheadline | escape }}</p>
-                </div>
-              </div>
+              <p>{{ section.settings.subheadline | escape }}</p>
             </div>
           {%- endunless -%}
 
           {%- unless section.settings.link_text == blank -%}
             <div class="af-text hero__link">
-              <div class="animation-cropper">
-                <div class="animation-contents">
-                  <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
-                    {{ section.settings.link_text | escape }}
-                  </a>
-                </div>
-              </div>
+              <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
+                {{ section.settings.link_text | escape }}
+              </a>
             </div>
           {%- endunless -%}
         </div>
