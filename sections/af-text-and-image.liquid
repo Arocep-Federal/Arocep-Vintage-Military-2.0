@@ -18,8 +18,13 @@
     top:-200px;
   }
 
-  #shopify-section-{{ section.id }} .index-section .feature-row-wrapper {
-    overflow:visible
+  #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
+    overflow:visible;
+    position:relative;
+    top:-100px;
+  }
+  #shopify-section-{{ section.id }} .border-style + div {
+    padding-bottom:100px;
   }
 {% endstyle %}
  
