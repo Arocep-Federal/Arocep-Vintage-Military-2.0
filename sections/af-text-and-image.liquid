@@ -17,15 +17,15 @@
     position:relative;
     max-width: 550px;
     top:-140px;
+    border:10px solid white;
+    border-radius:10px;
+    filter: grayscale(1);
   }
 
   #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
     overflow:visible;
     position:relative;
     top:-80px;
-  }
-  #shopify-section-{{ section.id }} .border-style + div {
-    padding-bottom:120px;
   }
 
 
@@ -37,9 +37,6 @@
   #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
     overflow:visible;
     top:auto;
-  }
-  #shopify-section-{{ section.id }} .border-style + div {
-    padding-bottom:auto;
   }
   }
 {% endstyle %}
