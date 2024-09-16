@@ -72,10 +72,10 @@
             <div class="animation-contents">
               <div class="background-media-text__text larger-text">
                 {%- if section.settings.subtitle -%}
-                  <p class="subtitle">[ {{ section.settings.subtitle }} ]</p>
+                  <h2 class="hero__kicker">[ {{ section.settings.subtitle }} ]</h2>
                 {%- endif -%}
                 {%- if section.settings.title != blank -%}
-                  <h2 class="h3">{{ section.settings.title | escape }}</h2>
+                  <h2>{{ section.settings.title | escape }}</h2>
                 {%- endif -%}
                 {%- if section.settings.text != blank -%}
                   <div class="rte background-media-text__subtext">{{ section.settings.text }}</div>
