@@ -3,6 +3,7 @@
   width:48%;
   margin-right:2%
 }
+.index-section--{{ section.id }} label { display:none }
 
 {% endstyle %}
 
@@ -33,51 +34,51 @@
   
           <div class="grid grid--small">
             <div class="grid__item medium-up--one-half with-margin">
-              <label for="ContactFormFirstName-{{ section.id }}">First Name</label>
+              <label aria- for="ContactFormFirstName-{{ section.id }}">First Name</label>
               <input type="text" required="required" placeholder="First Name" id="ContactFormFirstName-{{ section.id }}" class="input-full" name="contact[firstname]" autocapitalize="words" value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}">
             </div>
             <div class="grid__item medium-up--one-half">
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
-              <input type="text" required="required" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
+              <input type="text" required="required" placeholder="Last Name" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
             </div>
             
             <div class="grid__item medium-up--one-whole">
               <label for="ContactFormAgency-{{ section.id }}">Department/Agency</label>
-              <input type="text" required="required" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
+              <input type="text" required="required" placeholder="Department/Agency" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
             </div>
 
         <div class="grid__item medium-up--one-half with-margin">
             <label for="ContactFormEmail-{{ section.id }}">Email Address</label>
-            <input type="email" required="required" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+            <input type="email" required="required" placeholder="Email Address" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
         </div>
         
         <div class="grid__item medium-up--one-half">
             <label for="ContactFormPhone-{{ section.id }}">Phone Number</label>
-            <input type="tel" required="required" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+            <input type="tel" required="required" placeholder="Phone Number" id="ContactFormPhone-{{ section.id }}" class="input-full" name="contact[phone]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}">
         </div>
 
 
             
         <div class="grid__item medium-up--one-whole">
           <label for="ContactFormAddress1-{{ section.id }}">Address</label>
-          <input type="text" required="required" id="ContactFormAddress1-{{ section.id }}" class="input-full" name="contact[address1]" autocapitalize="words" value="{% if form.address1 %}{{ form.address1 }}{% elsif customer %}{{ customer.address1 }}{% endif %}">
+          <input type="text" required="required" placeholder="Address" id="ContactFormAddress1-{{ section.id }}" class="input-full" name="contact[address1]" autocapitalize="words" value="{% if form.address1 %}{{ form.address1 }}{% elsif customer %}{{ customer.address1 }}{% endif %}">
         </div>
 
             
         <div class="grid__item medium-up--one-whole">
           <label for="ContactFormAddress2-{{ section.id }}">Address 2</label>
-          <input type="text" id="ContactFormAddress2-{{ section.id }}" class="input-full" name="contact[address2]" autocapitalize="words" value="{% if form.address2 %}{{ form.address2 }}{% elsif customer %}{{ customer.address2 }}{% endif %}">
+          <input type="text" placeholder="Address 2" id="ContactFormAddress2-{{ section.id }}" class="input-full" name="contact[address2]" autocapitalize="words" value="{% if form.address2 %}{{ form.address2 }}{% elsif customer %}{{ customer.address2 }}{% endif %}">
         </div>
 
 
         <div class="grid__item medium-up--one-half with-margin">
           <label for="ContactFormCity-{{ section.id }}">City</label>
-          <input type="text" required="required" id="ContactFormCity-{{ section.id }}" class="input-full" name="contact[city]" autocorrect="off" autocapitalize="off" value="{% if form.city %}{{ form.city }}{% elsif customer %}{{ customer.city }}{% endif %}">
+          <input type="text" placeholder="City" required="required" id="ContactFormCity-{{ section.id }}" class="input-full" name="contact[city]" autocorrect="off" autocapitalize="off" value="{% if form.city %}{{ form.city }}{% elsif customer %}{{ customer.city }}{% endif %}">
       </div>
       
       <div class="grid__item medium-up--one-half">
           <label for="ContactFormState-{{ section.id }}">State</label>
-          <select required="required" id="ContactFormState-{{ section.id }}" class="input-full" name="contact[state]" value="{% if form.state %}{{ form.state }}{% elsif customer %}{{ customer.state }}{% endif %}">
+          <select required="required" placeholder="State" id="ContactFormState-{{ section.id }}" class="input-full" name="contact[state]" value="{% if form.state %}{{ form.state }}{% elsif customer %}{{ customer.state }}{% endif %}">
             <option value="AL" selected>Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -142,12 +143,12 @@
 
       <div class="grid__item medium-up--one-half with-margin">
         <label for="ContactFormZip-{{ section.id }}">Postal / Zip Code</label>
-        <input type="text" required="required" id="ContactFormZip-{{ section.id }}" class="input-full" pattern="[0-9\-]*" name="contact[zip]" autocorrect="off" autocapitalize="off" value="{% if form.zip %}{{ form.zip }}{% elsif customer %}{{ customer.zip }}{% endif %}">
+        <input type="text" placeholder="Postal / Zip Code" required="required" id="ContactFormZip-{{ section.id }}" class="input-full" pattern="[0-9\-]*" name="contact[zip]" autocorrect="off" autocapitalize="off" value="{% if form.zip %}{{ form.zip }}{% elsif customer %}{{ customer.zip }}{% endif %}">
     </div>
       
     <div class="grid__item medium-up--one-half">
         <label for="ContactFormCountry-{{ section.id }}">Country</label>
-        <select required="required" id="ContactFormCountry-{{ section.id }}" class="input-full" name="contact[country]" value="{% if form.country %}{{ form.country }}{% elsif customer %}{{ customer.country }}{% endif %}">
+        <select required="required" placeholder="Country" id="ContactFormCountry-{{ section.id }}" class="input-full" name="contact[country]" value="{% if form.country %}{{ form.country }}{% elsif customer %}{{ customer.country }}{% endif %}">
           <option value="Afghanistan">Afghanistan</option>
           <option value="Åland Islands">Åland Islands</option>
           <option value="Albania">Albania</option>
@@ -397,12 +398,12 @@
 
     <div class="grid__item medium-up--one-whole">
       <label for="ContactFormFile-{{ section.id }}">Upload File</label>
-     <input type="file" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept=".doc,.docx,.xml,application/msword,.csv,.tsv,.txt,.pdf,.png,.jpg,.jpeg" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
+     <input type="file" placeholder="Upload File" id="ContactFormFile-{{ section.id }}" class="input-full" name="contact[file]" accept=".doc,.docx,.xml,application/msword,.csv,.tsv,.txt,.pdf,.png,.jpg,.jpeg" autocorrect="off" autocapitalize="off" value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}" />
     </div>
 
   </div>
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
-          <textarea rows="5" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          <textarea rows="5" placeholder="Note" id="ContactFormMessage-{{ section.id }}" class="input-full" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
   
           <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
           <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
