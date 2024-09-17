@@ -137,10 +137,19 @@
     },
     "contact_form_x3zXCd": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "title": "Contact us",
         "text": "",
         "show_phone": false,
+        "narrow_column": true
+      }
+    },
+    "contact_quote_adqUc3": {
+      "type": "contact-quote",
+      "settings": {
+        "title": "Request for Quote",
+        "text": "",
         "narrow_column": true
       }
     }
@@ -151,6 +160,7 @@
     "text_and_image_h8ej36",
     "text_and_image_n8fxxF",
     "text_and_image_nL4Rcx",
-    "contact_form_x3zXCd"
+    "contact_form_x3zXCd",
+    "contact_quote_adqUc3"
   ]
 }
