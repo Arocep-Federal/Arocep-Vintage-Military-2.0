@@ -27,11 +27,9 @@
           "type": "megamenu",
           "settings": {
             "menu_item": "new",
-            "promo_image_1": "shopify:\/\/shop_images\/arocep_brandmark_outline_black.png",
             "promo_heading_1": "Heading",
             "promo_text_1": "Text",
             "promo_url_1": "shopify:\/\/products\/the-3p-fulfilled-snowboard",
-            "promo_image_2": "shopify:\/\/shop_images\/skilcraft_rnd_rect.png",
             "promo_heading_2": "heading",
             "promo_text_2": "text",
             "promo_url_2": "shopify:\/\/collections\/all"
@@ -41,7 +39,6 @@
           "type": "megamenu",
           "settings": {
             "menu_item": "new2",
-            "promo_image_1": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
             "promo_heading_1": "23232",
             "promo_text_1": "2323232",
             "promo_url_1": "shopify:\/\/products\/1035806930",
@@ -56,11 +53,11 @@
         "megamenu_G3AUnR"
       ],
       "settings": {
-        "logo": "shopify:\/\/shop_images\/Arocep_Logo_horizontal_4f3418a8-b81b-47da-a147-56b2ce82e427.png",
-        "logo-inverted": "shopify:\/\/shop_images\/arocep_mixed_white.svg",
+        "logo": "shopify:\/\/shop_images\/Arocep_Logo_horizontal.png",
+        "logo-inverted": "shopify:\/\/shop_images\/arocep_mixed_3x_white.png",
         "desktop_logo_width": 200,
         "mobile_logo_width": 140,
-        "main_menu_link_list": "products",
+        "main_menu_link_list": "vintage-military-theme",
         "hover_menu": true,
         "main_menu_alignment": "left-center",
         "header_sticky": true,
