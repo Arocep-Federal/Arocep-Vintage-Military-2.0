@@ -63,6 +63,7 @@
         "text_block_fGyd9k",
         "text_block_UhaLAf"
       ],
+      "disabled": true,
       "settings": {
         "title": "Our Values",
         "fontcolor": "#ffffff",
@@ -72,6 +73,7 @@
     },
     "text_and_image_h8ej36": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image_mask": "none",
         "image2_mask": "none",
@@ -92,6 +94,7 @@
     },
     "text_and_image_n8fxxF": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Helicopter.jpg",
         "image_mask": "none",
@@ -113,6 +116,7 @@
     },
     "text_and_image_nL4Rcx": {
       "type": "text-and-image",
+      "disabled": true,
       "settings": {
         "image_mask": "none",
         "image2_mask": "none",
@@ -130,6 +134,15 @@
         "bottom_padding": true,
         "lazyload_images": true
       }
+    },
+    "contact_form_x3zXCd": {
+      "type": "contact-form",
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
     }
   },
   "order": [
@@ -137,6 +150,7 @@
     "text_columns_Xgn7cY",
     "text_and_image_h8ej36",
     "text_and_image_n8fxxF",
-    "text_and_image_nL4Rcx"
+    "text_and_image_nL4Rcx",
+    "contact_form_x3zXCd"
   ]
 }
