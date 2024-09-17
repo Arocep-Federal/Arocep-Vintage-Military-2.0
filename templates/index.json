@@ -115,12 +115,14 @@
         "font_size": 32,
         "backgroundcolor": "#000000",
         "fontcolor": "#ffffff",
+        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed.png",
         "narrow_column": true
       }
     },
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/partner_rnd_rect_abilityone.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
