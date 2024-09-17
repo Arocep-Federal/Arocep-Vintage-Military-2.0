@@ -1,5 +1,5 @@
 {% style %}
-.index-section--{{ section.id }} .grid > .medium-up--one-half:first-child {
+.index-section--{{ section.id }} .with-margin {
   width:48%;
   margin-right:2%
 }
@@ -32,11 +32,11 @@
           {{ form.errors | default_errors }}
   
           <div class="grid grid--small">
-            <div class="grid__item medium-up--one-half">
+            <div class="grid__item medium-up--one-half with-margin">
               <label for="ContactFormFirstName-{{ section.id }}">First Name</label>
               <input type="text" required="required" id="ContactFormFirstName-{{ section.id }}" class="input-full" name="contact[firstname]" autocapitalize="words" value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}">
             </div>
-            <div class="grid__item medium-up--one-half">
+            <div class="grid__item medium-up--one-half with-margin">
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
               <input type="text" required="required" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
             </div>
@@ -46,7 +46,7 @@
               <input type="text" required="required" id="ContactFormAgency-{{ section.id }}" class="input-full" name="contact[agency]" autocapitalize="words" value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}">
             </div>
 
-        <div class="grid__item medium-up--one-half">
+        <div class="grid__item medium-up--one-half with-margin">
             <label for="ContactFormEmail-{{ section.id }}">Email Address</label>
             <input type="email" required="required" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
         </div>
@@ -70,7 +70,7 @@
         </div>
 
 
-        <div class="grid__item medium-up--one-half">
+        <div class="grid__item medium-up--one-half with-margin">
           <label for="ContactFormCity-{{ section.id }}">City</label>
           <input type="text" required="required" id="ContactFormCity-{{ section.id }}" class="input-full" name="contact[city]" autocorrect="off" autocapitalize="off" value="{% if form.city %}{{ form.city }}{% elsif customer %}{{ customer.city }}{% endif %}">
       </div>
@@ -140,7 +140,7 @@
       </div>
 
 
-      <div class="grid__item medium-up--one-half">
+      <div class="grid__item medium-up--one-half with-margin">
         <label for="ContactFormZip-{{ section.id }}">Postal / Zip Code</label>
         <input type="text" required="required" id="ContactFormZip-{{ section.id }}" class="input-full" pattern="[0-9\-]*" name="contact[zip]" autocorrect="off" autocapitalize="off" value="{% if form.zip %}{{ form.zip }}{% elsif customer %}{{ customer.zip }}{% endif %}">
     </div>
