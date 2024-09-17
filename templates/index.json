@@ -162,35 +162,26 @@
         "partner_EMHanM": {
           "type": "partner",
           "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_skilcraft3.png"
+          }
+        },
+        "partner_y8dVTx": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_gatorz2.png"
           }
         },
         "partner_MjMr7h": {
           "type": "partner",
           "settings": {
-          }
-        },
-        "partner_WhLy3c": {
-          "type": "partner",
-          "settings": {
-          }
-        },
-        "partner_7B6hU6": {
-          "type": "partner",
-          "settings": {
-          }
-        },
-        "partner_8H7hTX": {
-          "type": "partner",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png"
           }
         }
       },
       "block_order": [
         "partner_EMHanM",
-        "partner_MjMr7h",
-        "partner_WhLy3c",
-        "partner_7B6hU6",
-        "partner_8H7hTX"
+        "partner_y8dVTx",
+        "partner_MjMr7h"
       ],
       "settings": {
         "title": "Proudly Partnered With",
