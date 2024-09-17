@@ -1,3 +1,10 @@
+{% style %}
+.grid__item:has(+ input) {
+  margin-right:5px;
+}
+
+{% endstyle %}
+
 <div class="index-section">
     <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
       {%- if section.settings.title != blank -%}
