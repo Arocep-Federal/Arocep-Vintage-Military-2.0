@@ -27,42 +27,18 @@
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
-        "1499789718857-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "information-technology",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
-        "collection_VwAEmF": {
-          "type": "collection",
-          "settings": {
-            "collection": "notebooks",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
         "1499789718857-1": {
           "type": "collection",
           "settings": {
-            "collection": "monitors",
+            "collection": "office-supplies",
             "focal_point": "20% 0",
             "size": "wide"
           }
         },
-        "1499789718857-5": {
+        "1499789718857-0": {
           "type": "collection",
           "settings": {
-            "collection": "computer-systems",
-            "focal_point": "top center",
-            "size": "wide"
-          }
-        },
-        "1499789718857-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "flatbed-scanners",
+            "collection": "it",
             "focal_point": "center center",
             "size": "square-small"
           }
@@ -70,19 +46,43 @@
         "1499789718857-3": {
           "type": "collection",
           "settings": {
-            "collection": "film-scanners",
+            "collection": "textile",
             "focal_point": "center center",
             "size": "square-small"
+          }
+        },
+        "1499789718857-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "facilities-maintenance",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_VwAEmF": {
+          "type": "collection",
+          "settings": {
+            "collection": "janitorial-sanitation",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "1499789718857-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "tactical-supplies",
+            "focal_point": "top center",
+            "size": "wide"
           }
         }
       },
       "block_order": [
-        "1499789718857-0",
-        "collection_VwAEmF",
         "1499789718857-1",
-        "1499789718857-5",
+        "1499789718857-0",
+        "1499789718857-3",
         "1499789718857-4",
-        "1499789718857-3"
+        "collection_VwAEmF",
+        "1499789718857-5"
       ],
       "settings": {
         "title": "Shop by Category",
@@ -115,14 +115,12 @@
         "font_size": 32,
         "backgroundcolor": "#000000",
         "fontcolor": "#ffffff",
-        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed_25b704fc-0d77-44bd-8080-cac22d026a50.png",
         "narrow_column": true
       }
     },
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
@@ -162,31 +160,26 @@
         "partner_EMHanM": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_skilcraft3.png"
           }
         },
         "partner_MjMr7h": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png"
           }
         },
         "partner_WhLy3c": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png"
           }
         },
         "partner_7B6hU6": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_gatorz2.png"
           }
         },
         "partner_8H7hTX": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/global-support_05a106a0-3841-4090-b322-af7e14de9ff0.jpg"
           }
         }
       },
@@ -367,7 +360,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/helicopter.jpg",
+            "image": "shopify:\/\/shop_images\/Helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -381,7 +374,6 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -395,7 +387,6 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -531,7 +522,6 @@
         "button_label": "Read About Us",
         "button_link": "shopify:\/\/pages\/about-us",
         "text_align": "vertical-bottom horizontal-right",
-        "image": "shopify:\/\/shop_images\/bg-woman-owned.jpg",
         "focal_point": "20% 50%",
         "color_border": "#f4f4f4",
         "height": 450,
