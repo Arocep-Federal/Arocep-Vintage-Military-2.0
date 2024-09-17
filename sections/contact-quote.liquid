@@ -36,7 +36,7 @@
               <label for="ContactFormFirstName-{{ section.id }}">First Name</label>
               <input type="text" required="required" id="ContactFormFirstName-{{ section.id }}" class="input-full" name="contact[firstname]" autocapitalize="words" value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}">
             </div>
-            <div class="grid__item medium-up--one-half with-margin">
+            <div class="grid__item medium-up--one-half">
               <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
               <input type="text" required="required" id="ContactFormLastName-{{ section.id }}" class="input-full" name="contact[lastname]" autocapitalize="words" value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}">
             </div>
