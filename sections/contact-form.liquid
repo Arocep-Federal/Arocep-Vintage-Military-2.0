@@ -1,3 +1,9 @@
+{% style %}
+.index-section--{{ section.id }} .with-margin {
+  width:48%;
+  margin-right:2%
+}
+
 <div class="index-section">
   <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
     {%- if section.settings.title != blank -%}
@@ -24,7 +30,7 @@
         {{ form.errors | default_errors }}
 
         <div class="grid grid--small">
-          <div class="grid__item medium-up--one-half">
+          <div class="grid__item medium-up--one-half with-margin">
             <label for="ContactFormName-{{ section.id }}">{{ 'contact.form.name' | t }}</label>
             <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
           </div>
