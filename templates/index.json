@@ -367,6 +367,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/shipping-container-ship.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -380,6 +381,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/230429-M-GH793-1088_0dd09b51-9fb9-4c1b-b6a1-52805c7ea4e5.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
