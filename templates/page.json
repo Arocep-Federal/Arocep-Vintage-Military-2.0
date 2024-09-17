@@ -23,9 +23,9 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0001_teamwork.png",
-            "image_mask": "none",
+            "image_mask": "square",
             "image_width": 250,
-            "title": "Example title",
+            "title": "Teamwork",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
             "button_link": ""
@@ -36,9 +36,9 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0002_excellence.png",
-            "image_mask": "none",
-            "image_width": 190,
-            "title": "Example title",
+            "image_mask": "square",
+            "image_width": 250,
+            "title": "Excellence",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
             "button_link": ""
@@ -49,9 +49,9 @@
           "settings": {
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/icon_0000_innovation.png",
-            "image_mask": "none",
-            "image_width": 150,
-            "title": "Example title",
+            "image_mask": "square",
+            "image_width": 250,
+            "title": "Innovation",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
             "button_label": "Optional button",
             "button_link": ""
@@ -73,7 +73,6 @@
     "text_and_image_h8ej36": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
@@ -94,7 +93,7 @@
     "text_and_image_n8fxxF": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/helicopter.jpg",
+        "image": "shopify:\/\/shop_images\/Helicopter.jpg",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
@@ -115,7 +114,6 @@
     "text_and_image_nL4Rcx": {
       "type": "text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
         "image_mask": "none",
         "image2_mask": "none",
         "subtitle": "",
