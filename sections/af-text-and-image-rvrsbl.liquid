@@ -2,15 +2,6 @@
 
 {%- liquid
   assign image_width = section.settings.image_width
-  assign overlap_images = true
-  if section.settings.image == blank or section.settings.image2 == blank
-    assign overlap_images = false
-  endif
-
-  if section.settings.image == blank and section.settings.image2 == blank
-    assign overlap_images = true
-    assign placeholder_images = true
-  endif
 -%}
 
 {% style %}
@@ -19,9 +10,7 @@
   {% endif %}
   {% if section.settings.bottom_padding == false %}
     #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
-  {% endif %}
-
-  
+  {% endif %}  
 {% endstyle %}
 
 <div class="index-section">
@@ -242,3 +231,5 @@
   }
 }
 {% endschema %}
+
+
