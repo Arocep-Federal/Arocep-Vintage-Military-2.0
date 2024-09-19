@@ -48,6 +48,7 @@
 #shopify-section-{{ section.id }} .feature-row {
   display:flex;
   position:relative;
+  overflow: visible;
 
 }
 #shopify-section-{{ section.id }} .feature-row-item {
@@ -144,7 +145,7 @@
       {%- if section.settings.layout == 'right' -%}
         {{ image_layout }}
       {%- endif -%}
-      
+
       <div class="stripe"></div>
     </div>
   </div>
