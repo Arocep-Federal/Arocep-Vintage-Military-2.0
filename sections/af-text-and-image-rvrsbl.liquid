@@ -23,14 +23,21 @@
     padding:125px 25px;
     position:relative;
     z-index:2;
+
   }
 
 #shopify-section-{{ section.id }} .feature-row {
-  display:flex;
+  position:relative;
 }
 #shopify-section-{{ section.id }} .feature-row-item {
-width:50%;
+  position:absolute;
+  width:50%;
 }
+
+#shopify-section-{{ section.id }} .feature-row__images {
+
+}
+
 
 
   .index-section-{{ section.id }} { 
@@ -48,7 +55,7 @@ width:50%;
 
 <div class="index-section index-section-{{ section.id }}">
 
-  <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
+  <div class="page-width feature-row-wrapper feature-row--{{ image_width }} {{ section.setting.layout }}">
     {%- capture image_layout -%}
       <div class="feature-row__item feature-row__images data-aos">
           {%- if section.settings.image != blank -%}
