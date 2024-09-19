@@ -5,10 +5,12 @@
 -%}
 
 {% style %}
+    .index-section-{{ section.id }} { 
+    background-color: {{ section.settings.bg-color }}
+  }
   {% if section.settings.top_padding == false %}
     .index-section-{{ section.id }} { 
       /* margin-top: 0 !important;  */
-      background-color: {{ section.settings.bg-color }}
     }
   {% endif %}
   {% if section.settings.bottom_padding == false %}
