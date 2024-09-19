@@ -6,17 +6,17 @@
 
 {% style %}
   {% if section.settings.top_padding == false %}
-    #shopify-section-{{ section.id }} .index-section { 
+    .index-section-{{ section.id }} { 
       margin-top: 0 !important; 
       background-color: {{ section.settings.bg-color }}
     }
   {% endif %}
   {% if section.settings.bottom_padding == false %}
-    #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
+    .index-section-{{ section.id }} { margin-bottom: 0 !important; }
   {% endif %}  
 {% endstyle %}
 
-<div class="index-section">
+<div class="index-section index-section-{{ section.id }}">
 
   <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
     {%- capture image_layout -%}
