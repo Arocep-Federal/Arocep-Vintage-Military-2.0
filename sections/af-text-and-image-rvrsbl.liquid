@@ -22,7 +22,12 @@
     background-color: black;
     padding:125 20px;
     position:relative;
-    {{ section.settings.layout }}:150px;
+    {%- if section.settings.layout == 'left' -%}
+    right:150px;
+    {% endif %}
+    {%- if section.settings.layout == 'right' -%}
+    left:150px;
+    {% endif %}
     top:40px;
   }
 
