@@ -13,6 +13,10 @@
 #shopify-section-{{ section.id }}.index-section {
   padding:0
 }
+
+#main-content:has(#shopify-section-{{ section.id }}) {
+  overflow:hidden;
+}
 {% endstyle %}
 
 <div class="page-width-{{ section.id }}">
