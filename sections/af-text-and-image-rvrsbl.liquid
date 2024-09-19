@@ -25,12 +25,16 @@
     position:relative;
     z-index:3;
     {%- if section.settings.layout == 'left' -%}
-    right:150px;
-    {% endif %}
-    {%- if section.settings.layout == 'right' -%}
-    left:150px;
-    {% endif %}
-  }
+      right:150px;
+      {% endif %}
+      {%- if section.settings.layout == 'right' -%}
+        left:150px;
+        {% endif %}
+      }
+      
+      #shopify-section-{{ section.id }} .image-wrap {
+        border-radius-{{ section.settings.layout }}: 10px;
+      }
 
 #shopify-section-{{ section.id }} .feature-row {
   display:flex;
