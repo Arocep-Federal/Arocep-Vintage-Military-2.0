@@ -20,23 +20,18 @@
   }
   #shopify-section-{{ section.id }} .feature-row__text {
     background-color: black;
-    padding:125px 25px;
+    padding:125 20px;
     position:relative;
-    z-index:2;
-
+    {{ section.settings.layout }}:150px;
   }
 
 #shopify-section-{{ section.id }} .feature-row {
-  position:relative;
+  display:flex;
 }
 #shopify-section-{{ section.id }} .feature-row-item {
-  position:absolute;
   width:50%;
 }
 
-#shopify-section-{{ section.id }} .feature-row__images {
-
-}
 
 
 
@@ -55,7 +50,7 @@
 
 <div class="index-section index-section-{{ section.id }}">
 
-  <div class="page-width feature-row-wrapper feature-row--{{ image_width }} {{ section.setting.layout }}">
+  <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
     {%- capture image_layout -%}
       <div class="feature-row__item feature-row__images data-aos">
           {%- if section.settings.image != blank -%}
