@@ -5,9 +5,11 @@
 -%}
 
 {% style %}
-#shopify-section-{{ section.id }},
+  /* rest row css */
+  #shopify-section-{{ section.id }},
   #shopify-section-{{ section.id }} .page-width,
-  #shopify-section-{{ section.id }} .feature-row {
+  #shopify-section-{{ section.id }} .feature-row, 
+  #shopify-section-{{ section.id }} .feature-row-item {
   margin:0;
   padding:0;
 }
