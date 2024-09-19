@@ -1,11 +1,32 @@
+{% style %}
+@media only screen and (min-width: 590px) {
+  .collection--{{ section.id }} .product-grid-container {
+  display:flex;
+  flex-wrap: wrap;
+}
 
+.collection--{{ section.id }} .grid-product__has-quick-shop {
+  border:1px solid black;
+  padding:20px;
+  margin-right:1vw;
+}
+
+.collection--{{ section.id }} .medium-up--one-quarter {
+  flex: 1 1 24%!important;
+  /* width:23% !important; */
+  margin-right:1% !important;
+  margin-bottom: 10px !important; 
+}
+}
+{% endstyle %}
 
 
 <div
   id="CollectionSection"
   data-section-id="{{ section.id }}"
   data-section-type="collection-template"
-  {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+  {% if section.settings.parallax %}data-parallax="true"{% endif %}
+  class="collection--{{ section.id }}">
 
   {%- if section.settings.collection_image_enable and collection.image -%}
 
