@@ -116,7 +116,7 @@
             >
           </div>
 
-          <div class="grid__item medium-up--one-half">
+          <div class="grid__item medium-up--one-whole">
             <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
             <textarea
               rows="5"
@@ -125,11 +125,13 @@
               class="input-full"
               name="contact[body]"
             >{% if form.body %}{{ form.body }}{% endif %}</textarea>
-            <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
-            <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
-              {{ 'contact.form.send' | t }}
-            </button>
           </div>
+          
+          <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+          <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+            {{ 'contact.form.send' | t }}
+          </button>
+
         </div>
 
         {% comment %}
