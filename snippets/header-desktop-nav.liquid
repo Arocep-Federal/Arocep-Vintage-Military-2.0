@@ -49,6 +49,9 @@
       width:auto;
       float:left;
     } 
+    .site-nav__deep-dropdown {
+      top:30px;
+    }
     {%- endstyle -%}
 
     <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
