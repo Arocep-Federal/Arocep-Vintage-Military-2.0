@@ -9,18 +9,7 @@
 
 @media only screen and (min-width:560px){ 
   /* rest row css */
-  #shopify-section-{{ section.id }},
-  #shopify-section-{{ section.id }} .page-width,
-  #shopify-section-{{ section.id }} .feature-row, 
-  #shopify-section-{{ section.id }} .feature-row-item, 
-  #shopify-section-{{ section.id }} .feature-row--50 .feature-row__images {
-    margin:0;
-    padding:0;
-    display:block; 
-  }
-  #shopify-section-{{ section.id }} .page-width {
-    max-width:100vw;
-  }
+
   #shopify-section-{{ section.id }} .feature-row__text {
     background-color: black;
     padding:125px 25px;
@@ -48,17 +37,6 @@
         overflow: hidden;
       }
 
-#shopify-section-{{ section.id }} .feature-row-wrapper {
-  overflow: visible !important;
-}
-#shopify-section-{{ section.id }} .feature-row {
-  display:flex;
-  position:relative;
-}
-
-#shopify-section-{{ section.id }} .feature-row-item {
-  width:50%;
-}
 
 #shopify-section-{{ section.id }} .feature-row .stripe {
   width:90px;
@@ -73,7 +51,36 @@
     left:20px;
   {%- endif -%}
 }
+
+
 }
+
+#shopify-section-{{ section.id }},
+#shopify-section-{{ section.id }} .page-width,
+#shopify-section-{{ section.id }} .feature-row, 
+#shopify-section-{{ section.id }} .feature-row-item, 
+#shopify-section-{{ section.id }} .feature-row--50 .feature-row__images {
+  margin:0;
+  padding:0;
+  display:block; 
+}
+
+#shopify-section-{{ section.id }} .page-width {
+  max-width:100vw;
+}
+
+#shopify-section-{{ section.id }} .feature-row-wrapper {
+  overflow: visible !important;
+}
+#shopify-section-{{ section.id }} .feature-row {
+  display:flex;
+  position:relative;
+}
+
+#shopify-section-{{ section.id }} .feature-row-item {
+  width:50%;
+}
+
 
 .index-section-{{ section.id }} .stripe:last-of-type {
   bottom:-100px;
@@ -81,10 +88,11 @@
 
 
 
-  .index-section-{{ section.id }} { 
-    background-color: {{ section.settings.bg-color }};
-    color: {{ section.settings.color }};
-  }
+.index-section-{{ section.id }} { 
+  background-color: {{ section.settings.bg-color }};
+  color: {{ section.settings.color }};
+}
+
 
   {% if section.settings.top_padding == false %}
     #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
