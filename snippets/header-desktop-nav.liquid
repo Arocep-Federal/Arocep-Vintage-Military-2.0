@@ -39,6 +39,7 @@
 
     {%- style -%}
     .site-nav__details { border: 1px solid red; }
+    .site-nav__dropdown { border: 1px solid green; } 
     {%- endstyle -%}
 
     <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
