@@ -37,7 +37,11 @@
       endif
     -%}
 
-    <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
+    {%- style -%}
+    .        
+    {%- endstyle -%}
+
+    <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %} site-nav--is-megamenu{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
 
       {% if is_megamenu or has_dropdown %}
         <details
@@ -176,7 +180,7 @@
             {%- liquid
               assign has_sub_dropdown = false
               if childlink.links != blank
-                assign has_sub_dropdown = true
+              assign has_sub_dropdown = true
               endif
             -%}
 
@@ -203,7 +207,6 @@
                   {{ childlink.title | escape }}
                 </a>
               {% endif %}
-
               {%- if has_sub_dropdown -%}
                 <ul class="site-nav__deep-dropdown">
                   {%- for grandchildlink in childlink.links -%}
