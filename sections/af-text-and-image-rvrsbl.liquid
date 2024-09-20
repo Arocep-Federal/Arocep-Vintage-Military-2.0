@@ -10,10 +10,10 @@
   #shopify-section-{{ section.id }} .feature-row__text {
    width:60%;
     {%- if section.settings.layout == 'left' -%}
-      right:10px;
+      right:10px !important;
     {%- endif -%}
       {%- if section.settings.layout == 'right' -%}
-        left:10px;
+        left:10px !important;
       {%- endif -%}
   }
 }
