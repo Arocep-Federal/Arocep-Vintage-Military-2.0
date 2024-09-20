@@ -7,8 +7,14 @@
 {% style %}
 
 @media only screen and (max-width:589px){ 
-  .feature-row__text {
-    width:40%;
+  #shopify-section-{{ section.id }} .feature-row__text {
+   width:60%;
+    {%- if section.settings.layout == 'left' -%}
+      right:10px;
+    {%- endif -%}
+      {%- if section.settings.layout == 'right' -%}
+        left:10px;
+      {%- endif -%}
   }
 }
 
