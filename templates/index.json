@@ -221,7 +221,7 @@
         "testimonial_KPCVTr": {
           "type": "testimonial",
           "settings": {
-            "icon": "3-5stars",
+            "icon": "3-5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Ryan, The Backend",
             "author_info": "US Department of the Airforce"
