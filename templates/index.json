@@ -122,7 +122,6 @@
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/partner_rnd_rect_abilityone.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
@@ -195,7 +194,7 @@
         "testimonial_RLVQcc": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
+            "icon": "4-5-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Ted Cruz",
             "author_info": "US Department of the Navy"
@@ -204,7 +203,7 @@
         "testimonial_V6q3GN": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
+            "icon": "4-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Joe Radcliff",
             "author_info": "US Department of the Army"
@@ -213,7 +212,7 @@
         "testimonial_9KhXDL": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
+            "icon": "4-stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Sal Manella",
             "author_info": "US Department of the Marines"
@@ -222,7 +221,7 @@
         "testimonial_KPCVTr": {
           "type": "testimonial",
           "settings": {
-            "icon": "5-stars",
+            "icon": "3-5stars",
             "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Ryan, The Backend",
             "author_info": "US Department of the Airforce"
@@ -315,7 +314,6 @@
         "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. <\/p><p><strong>FEDMALL CONTRACT(S): <\/strong><a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">GS02F0052V<\/a>; <a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">MARKETPLACE_4UB10<\/a><\/p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/bg-contracting4_77cb62be-a187-4bd1-b33d-e81abd15cf51.png",
         "focal_point": "80% 50%",
         "layout": "left",
         "height": 550,
@@ -353,7 +351,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/Helicopter.jpg",
+            "image": "shopify:\/\/shop_images\/helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -367,7 +365,6 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/shipping-container-ship.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -381,7 +378,6 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/230429-M-GH793-1088_0dd09b51-9fb9-4c1b-b6a1-52805c7ea4e5.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -408,56 +404,48 @@
         "logo_image_jmcyQb": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ARMY.png",
             "link": ""
           }
         },
         "logo_image_iQqmzj": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_Defense_Commissary_Agency_f8f404f5-3040-4724-89f5-45f5f1f491b2.png",
             "link": ""
           }
         },
         "logo_image_YRR8zX": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/United_States_Coast_Guard-logo-554035E666-seeklogo.com.png",
             "link": ""
           }
         },
         "logo_image_AjMjeN": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Defense_Contract_Audit_Agency_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ARMY.png",
             "link": ""
           }
         },
         "logo_image_GmBXAp": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Office_of_Personnel_Management_svg.png",
             "link": ""
           }
         },
         "logo_image_q8NrFt": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/US_Department_of_Health_and_Human_Services_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_cabdRU": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/US_Department_of_Agriculture_seal_svg.png",
             "link": ""
           }
         },
@@ -525,7 +513,6 @@
         "button_label": "Read About Us",
         "button_link": "shopify:\/\/pages\/about-us",
         "text_align": "vertical-bottom horizontal-right",
-        "image": "shopify:\/\/shop_images\/bg-woman-owned.png",
         "focal_point": "20% 50%",
         "color_border": "#f4f4f4",
         "height": 450,
