@@ -99,6 +99,7 @@
             <div class="feature-row__first-image">
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
                 <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                   {%- liquid
 
                       assign size_variable = 'calc(0.6 * 50vw)'
