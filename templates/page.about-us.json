@@ -73,8 +73,8 @@
     "af_text_and_image_rvrsbl_fBmM47": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
+        "bg-color": "#000000",
+        "color": "#ffffff",
         "image": "shopify:\/\/shop_images\/AdobeStock_271345578_2_Large_d817713e-3cab-4e87-9348-2af151ccc49e.jpg",
         "subtitle": "",
         "title": "Unparalleled Products& Services",
@@ -94,8 +94,8 @@
     "af_text_and_image_rvrsbl_j6rWfC": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
+        "bg-color": "#000000",
+        "color": "#ffffff",
         "image": "shopify:\/\/shop_images\/AdobeStock_271352220_2_Large_5dff69c5-d547-4d81-979d-a1c4498ab076.jpg",
         "subtitle": "",
         "title": "Ease, Efficiency& Reliability",
@@ -115,9 +115,9 @@
     "af_text_and_image_rvrsbl_MHLGPz": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
-        "image": "shopify:\/\/shop_images\/AdobeStock_523109905_Large_6fbecb47-3908-4481-9a9e-93bda5974bcb.jpg",
+        "bg-color": "#000000",
+        "color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_523109905_Large_8db86611-cc2b-4f0a-9fbe-230f64674c3a.jpg",
         "subtitle": "",
         "title": "Meaningful Impact",
         "text": "<p>Through our unwavering commitment to excellence, we aim to make a meaningful impact, enabling our customers to achieve their goals and serve the nation with distinction<\/p>",
