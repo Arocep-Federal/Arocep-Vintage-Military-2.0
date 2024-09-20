@@ -122,6 +122,7 @@
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
+        "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
