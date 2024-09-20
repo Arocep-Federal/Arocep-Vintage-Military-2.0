@@ -483,6 +483,7 @@
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/US_Department_of_Health_and_Human_Services_seal_svg.png",
             "link": ""
           }
         },
