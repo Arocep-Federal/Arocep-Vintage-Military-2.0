@@ -26,7 +26,7 @@
             "image_mask": "square",
             "image_width": 200,
             "title": "Teamwork",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>We collaborate with our customers, partners, and each other to achieve a common goal: supporting the brave men and women who protect our nation.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -39,7 +39,7 @@
             "image_mask": "square",
             "image_width": 200,
             "title": "Excellence",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>We strive for perfection in every aspect of our work, knowing that our efforts directly impact the safety and success of our military personnel.<\/p>",
             "button_label": "",
             "button_link": ""
           }
@@ -52,7 +52,7 @@
             "image_mask": "square",
             "image_width": 200,
             "title": "Innovation",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text": "<p>We leverage cutting edge solutions and best practices to stay ahead of the evolving needs of our federal customers.<\/p>",
             "button_label": "",
             "button_link": ""
           }
