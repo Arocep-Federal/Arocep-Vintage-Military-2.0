@@ -41,7 +41,7 @@
     .        
     {%- endstyle -%}
 
-    <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %} site-nav--is-megamenu{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
+    <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}site-nav--is-megamenu {% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
 
       {% if is_megamenu or has_dropdown %}
         <details
