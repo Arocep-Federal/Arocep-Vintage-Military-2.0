@@ -483,25 +483,42 @@
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/US_Department_of_Health_and_Human_Services_seal_svg.png",
+            "image": "shopify:\/\/shop_images\/US_Department_of_Agriculture_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_qDcEGy": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_Defense_Commissary_Agency_f8f404f5-3040-4724-89f5-45f5f1f491b2.png",
+            "link": ""
+          }
+        },
+        "logo_image_A3A4ct": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Defense_Contract_Audit_Agency_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_gypAtE": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Labor_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_giVTXq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Space_Force_svg.png",
             "link": ""
           }
         },
         "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_Federal_Bureau_of_Investigation_svg.png",
             "link": ""
           }
         }
@@ -520,7 +537,9 @@
         "logo_image_RW8dB6",
         "logo_image_nt9qY4",
         "logo_image_qDcEGy",
+        "logo_image_A3A4ct",
         "logo_image_gypAtE",
+        "logo_image_giVTXq",
         "logo_image_Fg8KxN"
       ],
       "settings": {
