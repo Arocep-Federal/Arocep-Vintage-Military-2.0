@@ -2,14 +2,14 @@
 {% style %} 
 
 .page-width-{{ section.id }} {
-      color: {{ section.settings.fontcolor }};
-      background-image: url({{ section.settings.bgimage | image_url:width:auto }});
-      background-position: top right;
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding:200px;
-    }
-    
+  color: {{ section.settings.fontcolor }};
+  background-image: url({{ section.settings.bgimage | image_url:width:auto }});
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:200px;
+}
+
 #shopify-section-{{ section.id }}.index-section {
   padding:0;
 }
@@ -17,6 +17,12 @@
 .main-content:has(#shopify-section-{{ section.id }}) {
   overflow:hidden;
 }
+
+.page-width-{{ section.id }} .grid__item {
+  padding-right:20px;
+}
+
+
 {% endstyle %}
 
 <div class="page-width-{{ section.id }}">
