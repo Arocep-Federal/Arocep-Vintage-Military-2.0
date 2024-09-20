@@ -6,6 +6,12 @@
 
 {% style %}
 
+@media only screen and (max-width:1564px){ 
+
+  #shopify-section-{{ section.id }} .feature-row .stripe { 
+  bottom:-400px !important;
+}
+}
 @media only screen and (max-width:1024px){ 
   #shopify-section-{{ section.id }} .feature-row__text {
    width:60%;
@@ -27,9 +33,6 @@ h2.h1 {
 }
 
 
-#shopify-section-{{ section.id }} .feature-row .stripe { 
-  bottom:-400px !important;
-}
 
 }
   /* rest row css */
