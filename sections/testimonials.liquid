@@ -61,9 +61,12 @@
   .testimonials-{{ section.id }} .testimonial-text {
     margin: 0 10%;
   }
+  .testimonials-{{ section.id }} .slideshow-wrapper {
+    overflow:hidden
+  }
   
   .testimonials-{{ section.id }} .flickity-page-dots {display:none}
-  .testimonials-{{ section.id }} .flickity-viewport {height:600px}
+  .testimonials-{{ section.id }} .flickity-viewport {overflow:visible}
 
 
 {%- endstyle -%}
