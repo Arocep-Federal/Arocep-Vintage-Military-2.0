@@ -122,7 +122,7 @@
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
+        "image": "shopify:\/\/shop_images\/AbilityOne.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
@@ -352,7 +352,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/helicopter.jpg",
+            "image": "shopify:\/\/shop_images\/Helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
