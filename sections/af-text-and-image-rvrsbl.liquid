@@ -5,6 +5,9 @@
 -%}
 
 {% style %}
+
+
+@media only screen and (max-width:767px){ 
   /* rest row css */
   #shopify-section-{{ section.id }},
   #shopify-section-{{ section.id }} .page-width,
@@ -82,6 +85,7 @@
     color: {{ section.settings.color }};
   }
 
+}
   {% if section.settings.top_padding == false %}
     #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
   {% endif %}
