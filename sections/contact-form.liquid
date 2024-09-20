@@ -125,11 +125,11 @@
               class="input-full"
               name="contact[body]"
             >{% if form.body %}{{ form.body }}{% endif %}</textarea>
+            <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+            <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+              {{ 'contact.form.send' | t }}
+            </button>
           </div>
-          <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
-          <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
-            {{ 'contact.form.send' | t }}
-          </button>
         </div>
 
         {% comment %}
