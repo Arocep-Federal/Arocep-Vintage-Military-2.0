@@ -73,6 +73,7 @@
     left:20px;
   {%- endif -%}
 }
+}
 
 .index-section-{{ section.id }} .stripe:last-of-type {
   bottom:-100px;
@@ -85,7 +86,6 @@
     color: {{ section.settings.color }};
   }
 
-}
   {% if section.settings.top_padding == false %}
     #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
   {% endif %}
