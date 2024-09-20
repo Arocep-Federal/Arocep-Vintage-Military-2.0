@@ -70,11 +70,12 @@
         "bgimage": "shopify:\/\/shop_images\/bg-about.jpg"
       }
     },
-    "text_and_image_h8ej36": {
-      "type": "text-and-image",
+    "af_text_and_image_rvrsbl_CY3FVd": {
+      "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "image_mask": "none",
-        "image2_mask": "none",
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_271352220_2_Large_bff3a230-d28e-4d50-8dfc-b8a80109a954.jpg",
         "subtitle": "",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
@@ -82,20 +83,41 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "image_width": "66",
-        "layout": "left",
-        "divider": false,
+        "image_width": "50",
+        "layout": "right",
+        "stripe": true,
         "top_padding": true,
         "bottom_padding": true,
         "lazyload_images": true
       }
     },
-    "text_and_image_n8fxxF": {
-      "type": "text-and-image",
+    "af_text_and_image_rvrsbl_RRk8B6": {
+      "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Helicopter.jpg",
-        "image_mask": "none",
-        "image2_mask": "none",
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_271345578_2_Large_50a84d5e-81c4-42ce-8a0c-1b344f223dba.jpg",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "af_text_and_image_rvrsbl_hGCtLt": {
+      "type": "af-text-and-image-rvrsbl",
+      "settings": {
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_523109905_Large_fb07b8d8-0c41-46be-b97f-ac7c33cb668f.jpg",
         "subtitle": "",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
@@ -105,27 +127,7 @@
         "align_text": "left",
         "image_width": "66",
         "layout": "right",
-        "divider": false,
-        "top_padding": true,
-        "bottom_padding": true,
-        "lazyload_images": true
-      }
-    },
-    "text_and_image_nL4Rcx": {
-      "type": "text-and-image",
-      "settings": {
-        "image_mask": "none",
-        "image2_mask": "none",
-        "subtitle": "",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "66",
-        "layout": "left",
-        "divider": false,
+        "stripe": true,
         "top_padding": true,
         "bottom_padding": true,
         "lazyload_images": true
@@ -135,8 +137,8 @@
   "order": [
     "main",
     "text_columns_Xgn7cY",
-    "text_and_image_h8ej36",
-    "text_and_image_n8fxxF",
-    "text_and_image_nL4Rcx"
+    "af_text_and_image_rvrsbl_CY3FVd",
+    "af_text_and_image_rvrsbl_RRk8B6",
+    "af_text_and_image_rvrsbl_hGCtLt"
   ]
 }
