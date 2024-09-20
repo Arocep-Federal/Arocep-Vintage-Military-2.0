@@ -73,7 +73,9 @@
     "af_text_and_image_rvrsbl_fBmM47": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "image": "shopify:\/\/shop_images\/helicopter.jpg",
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_271345578_2_Large_d817713e-3cab-4e87-9348-2af151ccc49e.jpg",
         "subtitle": "",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
@@ -92,7 +94,9 @@
     "af_text_and_image_rvrsbl_j6rWfC": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "image": "shopify:\/\/shop_images\/jet-rear_1296x_dc78f6f6-05ce-4b84-980b-5bdcad35a7f4.jpg",
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_271352220_2_Large_5dff69c5-d547-4d81-979d-a1c4498ab076.jpg",
         "subtitle": "",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
@@ -111,7 +115,9 @@
     "af_text_and_image_rvrsbl_MHLGPz": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AdobeStock_572940787_F-22_Raptor.jpg",
+        "bg-color": "#000",
+        "color": "#fff",
+        "image": "shopify:\/\/shop_images\/AdobeStock_523109905_Large_6fbecb47-3908-4481-9a9e-93bda5974bcb.jpg",
         "subtitle": "",
         "title": "Image with text",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
