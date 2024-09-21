@@ -8038,7 +8038,7 @@ if (console && console.log) {
   theme.Testimonials = (function() {
     var defaults = {
       adaptiveHeight: false,
-      avoidReflow: true,
+      avoidReflow: true, 
       pageDots: true,
       prevNextButtons: false
     };
