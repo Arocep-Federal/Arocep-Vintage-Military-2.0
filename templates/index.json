@@ -257,6 +257,7 @@
           "settings": {
             "icon": "5-stars",
             "testimonial": "<p>\"Excellent Service. Received items within 48hrs of placing order.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
             "author": "Supply Technician",
             "author_info": "US Department of the Army"
           }
@@ -265,9 +266,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Nomi Malone",
-            "author_info": "Professional Marble Thrower"
+            "testimonial": "<p>\"Received product right away\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
+            "author": "Supply Technician",
+            "author_info": "Defense Commissary Agency"
           }
         },
         "testimonial_zA9N3c": {
