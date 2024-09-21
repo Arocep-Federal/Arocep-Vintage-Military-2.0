@@ -276,9 +276,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Broker Thanmost",
-            "author_info": "Gambler's Anonymous"
+            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "author": "Electronics Technician",
+            "author_info": "US Department of the Army"
           }
         }
       },
