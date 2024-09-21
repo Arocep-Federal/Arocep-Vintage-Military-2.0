@@ -471,56 +471,63 @@
         "logo_image_8eaCng": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Labor_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_education.png",
             "link": ""
           }
         },
         "logo_image_RW8dB6": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2048px-Seal_of_the_United_States_Department_of_Education_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_air_force.png",
             "link": ""
           }
         },
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/US_Department_of_Agriculture_seal_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_merit_systems_protection_board.png",
             "link": ""
           }
         },
         "logo_image_qDcEGy": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_Defense_Commissary_Agency_f8f404f5-3040-4724-89f5-45f5f1f491b2.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_defense.png",
             "link": ""
           }
         },
         "logo_image_A3A4ct": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Defense_Contract_Audit_Agency_seal_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_national_archives_and_records_admin.png",
             "link": ""
           }
         },
         "logo_image_gypAtE": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Labor_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_the_director_of_national_intelligence-copy-2.png",
             "link": ""
           }
         },
         "logo_image_giVTXq": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Space_Force_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_the_interior.png",
             "link": ""
           }
         },
         "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seal_of_the_Federal_Bureau_of_Investigation_svg.png",
+            "image": "shopify:\/\/shop_images\/seal_of_the_defense_information_systems_agency.png",
+            "link": ""
+          }
+        },
+        "logo_image_PgUfdF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
             "link": ""
           }
         }
@@ -542,7 +549,8 @@
         "logo_image_A3A4ct",
         "logo_image_gypAtE",
         "logo_image_giVTXq",
-        "logo_image_Fg8KxN"
+        "logo_image_Fg8KxN",
+        "logo_image_PgUfdF"
       ],
       "settings": {
         "title": "Federal Agencies Served",
