@@ -236,18 +236,20 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "US Department of Space Force"
+            "testimonial": "<p>\"Very good Vendor!! Great communication!! Responds immediately ! Items are coming soon although we are FPO\/AE.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "author": "Supply Technician",
+            "author_info": "US Department of Navy, EU"
           }
         },
         "testimonial_yaUL9h": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "My Little Bronie",
-            "author_info": "Navy Seal Team 6"
+            "testimonial": "<p>\"Order received in a timely manner\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "author": "Admin Support Specialist",
+            "author_info": "US Department of the Navy"
           }
         },
         "testimonial_dwEf9r": {
