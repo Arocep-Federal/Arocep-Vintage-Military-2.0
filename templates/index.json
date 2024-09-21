@@ -256,9 +256,9 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Snake Pliskin",
-            "author_info": "Escape LA, Escape NYC"
+            "testimonial": "<p>\"Excellent Service. Received items within 48hrs of placing order.\"<\/p>",
+            "author": "Supply Technician",
+            "author_info": "US Department of the Army"
           }
         },
         "testimonial_jinkMX": {
