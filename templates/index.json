@@ -433,6 +433,13 @@
             "link": ""
           }
         },
+        "logo_image_Ka6mpk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_defense_logistics_agency.png",
+            "link": ""
+          }
+        },
         "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
@@ -646,42 +653,35 @@
         "logo_image_7dpgcG": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us-abilityone-commission.png",
             "link": ""
           }
         },
         "logo_image_VFNA4C": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_central_intelligence_agency.png",
             "link": ""
           }
         },
         "logo_image_eVekn9": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_agriculture_9448049a-84a9-4553-89cd-440d02a44ec7.png",
+            "link": ""
+          }
+        },
+        "logo_image_yzQGdw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_coast_guard.png",
             "link": ""
           }
         },
         "logo_image_YppcGm": {
           "type": "logo_image",
           "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_Ka6mpk": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_xejNPt": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_image_cHLHna": {
-          "type": "logo_image",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_homeland_security.png",
             "link": ""
           }
         }
@@ -691,6 +691,7 @@
         "logo_image_iQqmzj",
         "logo_image_YRR8zX",
         "logo_image_AjMjeN",
+        "logo_image_Ka6mpk",
         "logo_image_Vn7xRp",
         "logo_image_GmBXAp",
         "logo_image_q8NrFt",
@@ -724,10 +725,8 @@
         "logo_image_7dpgcG",
         "logo_image_VFNA4C",
         "logo_image_eVekn9",
-        "logo_image_YppcGm",
-        "logo_image_Ka6mpk",
-        "logo_image_xejNPt",
-        "logo_image_cHLHna"
+        "logo_image_yzQGdw",
+        "logo_image_YppcGm"
       ],
       "settings": {
         "title": "Federal Agencies Served",
