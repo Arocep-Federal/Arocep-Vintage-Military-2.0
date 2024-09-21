@@ -225,7 +225,7 @@
         "testimonial_KPCVTr": {
           "type": "testimonial",
           "settings": {
-            "icon": "3-5-stars",
+            "icon": "5-stars",
             "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"<\/p>",
             "image": "shopify:\/\/shop_images\/seal_of_the_army_corps_of_engineers.png",
             "author": "Civil Engineer Technician",
@@ -236,45 +236,50 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author name",
-            "author_info": "US Department of Space Force"
+            "testimonial": "<p>\"Very good Vendor!! Great communication!! Responds immediately ! Items are coming soon although we are FPO\/AE.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "author": "Supply Technician",
+            "author_info": "US Department of Navy, EU"
           }
         },
         "testimonial_yaUL9h": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "My Little Bronie",
-            "author_info": "Navy Seal Team 6"
+            "testimonial": "<p>\"Order received in a timely manner\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "author": "Admin Support Specialist",
+            "author_info": "US Department of the Navy"
           }
         },
         "testimonial_dwEf9r": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Snake Pliskin",
-            "author_info": "Escape LA, Escape NYC"
+            "testimonial": "<p>\"Excellent Service. Received items within 48hrs of placing order.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "author": "Supply Technician",
+            "author_info": "US Department of the Army"
           }
         },
         "testimonial_jinkMX": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Nomi Malone",
-            "author_info": "Professional Marble Thrower"
+            "testimonial": "<p>\"Received product right away\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
+            "author": "Supply Technician",
+            "author_info": "Defense Commissary Agency"
           }
         },
         "testimonial_zA9N3c": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Broker Thanmost",
-            "author_info": "Gambler's Anonymous"
+            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "author": "Electronics Technician",
+            "author_info": "US Department of the Army"
           }
         }
       },
