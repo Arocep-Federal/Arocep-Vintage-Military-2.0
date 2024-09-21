@@ -226,9 +226,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "3-5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Ryan, The Backend",
-            "author_info": "US Department of the Airforce"
+            "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_army_corps_of_engineers.png",
+            "author": "Civil Engineer Technician",
+            "author_info": "US Department of the Army, Corps of Engineers"
           }
         },
         "testimonial_96PYPQ": {
