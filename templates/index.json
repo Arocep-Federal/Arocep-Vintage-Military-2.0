@@ -530,6 +530,160 @@
             "image": "shopify:\/\/shop_images\/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
             "link": ""
           }
+        },
+        "logo_image_zwejxn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "link": ""
+          }
+        },
+        "logo_image_AYwL4H": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_agriculture.png",
+            "link": ""
+          }
+        },
+        "logo_image_K7FGWY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_the_inspector_general.png",
+            "link": ""
+          }
+        },
+        "logo_image_gajJkE": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_federal_bureau_of_prisons.png",
+            "link": ""
+          }
+        },
+        "logo_image_8NVa7p": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_general_services_admin.png",
+            "link": ""
+          }
+        },
+        "logo_image_9mb9wp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_defense_contract_audit_agency.png",
+            "link": ""
+          }
+        },
+        "logo_image_gedNJU": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_inspector_general.png",
+            "link": ""
+          }
+        },
+        "logo_image_rhq3Ak": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_labor.png",
+            "link": ""
+          }
+        },
+        "logo_image_WxmyGc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_federal_bureau_of_investigation.png",
+            "link": ""
+          }
+        },
+        "logo_image_yWkVjR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_marine_corps.png",
+            "link": ""
+          }
+        },
+        "logo_image_FfVmkj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_air_force.png",
+            "link": ""
+          }
+        },
+        "logo_image_dFCcGk": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_treasury.png",
+            "link": ""
+          }
+        },
+        "logo_image_dHx4pW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_health_and_human_services.png",
+            "link": ""
+          }
+        },
+        "logo_image_DFFHJV": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_commerce.png",
+            "link": ""
+          }
+        },
+        "logo_image_i9VqFX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_housing.png",
+            "link": ""
+          }
+        },
+        "logo_image_CEQeJt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/seal_of_the_us_nuclear_regulatory_commission.png",
+            "link": ""
+          }
+        },
+        "logo_image_7dpgcG": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_VFNA4C": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_eVekn9": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_YppcGm": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_Ka6mpk": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_xejNPt": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_image_cHLHna": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -550,7 +704,30 @@
         "logo_image_gypAtE",
         "logo_image_giVTXq",
         "logo_image_Fg8KxN",
-        "logo_image_PgUfdF"
+        "logo_image_PgUfdF",
+        "logo_image_zwejxn",
+        "logo_image_AYwL4H",
+        "logo_image_K7FGWY",
+        "logo_image_gajJkE",
+        "logo_image_8NVa7p",
+        "logo_image_9mb9wp",
+        "logo_image_gedNJU",
+        "logo_image_rhq3Ak",
+        "logo_image_WxmyGc",
+        "logo_image_yWkVjR",
+        "logo_image_FfVmkj",
+        "logo_image_dFCcGk",
+        "logo_image_dHx4pW",
+        "logo_image_DFFHJV",
+        "logo_image_i9VqFX",
+        "logo_image_CEQeJt",
+        "logo_image_7dpgcG",
+        "logo_image_VFNA4C",
+        "logo_image_eVekn9",
+        "logo_image_YppcGm",
+        "logo_image_Ka6mpk",
+        "logo_image_xejNPt",
+        "logo_image_cHLHna"
       ],
       "settings": {
         "title": "Federal Agencies Served",
