@@ -4552,7 +4552,7 @@ if (console && console.log) {
         }
       }
   
-      //menuDetailsHandler();
+      menuDetailsHandler();
       searchDrawer();
     }
   
@@ -4710,24 +4710,24 @@ if (console && console.log) {
     function menuDetailsHandler() {
       const navDetails = document.querySelectorAll(selectors.navDetails);
   
-      navDetails.forEach((navDetail) => {
-        const summary = navDetail.querySelector('summary');
+      // navDetails.forEach((navDetail) => {
+      //   const summary = navDetail.querySelector('summary');
   
-        // if the navDetail is open, then close it when the user clicks outside of it
-        document.addEventListener('click', (evt) => {
+      //   // if the navDetail is open, then close it when the user clicks outside of it
+      //   document.addEventListener('click', (evt) => {
   
-          if (navDetail.hasAttribute('open') && !navDetail.contains(evt.target)) {
-            navDetail.removeAttribute('open');
-            summary.setAttribute('aria-expanded', 'false');
-          } else {
-            if (navDetail.hasAttribute('open')) {
-              summary.setAttribute('aria-expanded', 'false');
-            } else {
-              summary.setAttribute('aria-expanded', 'true');
-            }
-          }
-        });
-      });
+      //     if (navDetail.hasAttribute('open') && !navDetail.contains(evt.target)) {
+      //       navDetail.removeAttribute('open');
+      //       summary.setAttribute('aria-expanded', 'false');
+      //     } else {
+      //       if (navDetail.hasAttribute('open')) {
+      //         summary.setAttribute('aria-expanded', 'false');
+      //       } else {
+      //         summary.setAttribute('aria-expanded', 'true');
+      //       }
+      //     }
+      //   });
+      // });
     }
   
     return {
