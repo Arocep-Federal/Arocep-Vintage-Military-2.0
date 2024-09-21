@@ -4552,7 +4552,7 @@ if (console && console.log) {
         }
       }
   
-      menuDetailsHandler();
+      //menuDetailsHandler();
       searchDrawer();
     }
   
