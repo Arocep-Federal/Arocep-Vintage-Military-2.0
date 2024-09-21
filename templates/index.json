@@ -195,8 +195,9 @@
         "testimonial_RLVQcc": {
           "type": "testimonial",
           "settings": {
-            "icon": "4-5-stars",
-            "testimonial": "<p>Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.<\/p>",
+            "icon": "5-stars",
+            "testimonial": "<p>\"Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
             "author": "IT Specialist",
             "author_info": "US Department of the Navy"
           }
@@ -204,19 +205,21 @@
         "testimonial_V6q3GN": {
           "type": "testimonial",
           "settings": {
-            "icon": "4-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Joe Radcliff",
+            "icon": "5-stars",
+            "testimonial": "<p>\"Outstanding communications and speedy delivery. Highly recommend this vendor!!!\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "author": "Legal Assistant",
             "author_info": "US Department of the Army"
           }
         },
         "testimonial_9KhXDL": {
           "type": "testimonial",
           "settings": {
-            "icon": "4-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Sal Manella",
-            "author_info": "US Department of the Marines"
+            "icon": "5-stars",
+            "testimonial": "<p>\"Best vendor in FedMall\"<\/p>",
+            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "author": "Supply Manager",
+            "author_info": "US Department of the Navy"
           }
         },
         "testimonial_KPCVTr": {
