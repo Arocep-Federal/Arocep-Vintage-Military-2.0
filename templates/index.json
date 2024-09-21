@@ -122,7 +122,7 @@
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AbilityOne_560_transparent.png",
+        "image": "shopify:\/\/shop_images\/AbilityOne.png",
         "image_style": "border",
         "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
@@ -315,6 +315,7 @@
         "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. <\/p><p><strong>FEDMALL CONTRACT(S): <\/strong><a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">GS02F0052V<\/a>; <a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">MARKETPLACE_4UB10<\/a><\/p>",
         "button_label": "",
         "button_link": "",
+        "image": "shopify:\/\/shop_images\/bg-contracting4_9514d48b-6170-45cb-a847-f19e0d262683.png",
         "focal_point": "80% 50%",
         "layout": "left",
         "height": 550,
@@ -352,7 +353,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/helicopter.jpg",
+            "image": "shopify:\/\/shop_images\/Helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -366,6 +367,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/shipping-container-ship.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -379,6 +381,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/F22_Raptor.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -405,78 +408,119 @@
         "logo_image_jmcyQb": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1200px-US-GeneralServicesAdministration-Seal-Alt_svg.png",
             "link": ""
           }
         },
         "logo_image_iQqmzj": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ARMY.png",
             "link": ""
           }
         },
         "logo_image_YRR8zX": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/US_Department_of_Agriculture_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_AjMjeN": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/US_Department_of_Health_and_Human_Services_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/U_S__Department_of_State_official_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_GmBXAp": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Housing_and_Urban_Development_svg.png",
             "link": ""
           }
         },
         "logo_image_q8NrFt": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Energy_svg.png",
             "link": ""
           }
         },
         "logo_image_cabdRU": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_the_Treasury_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_mPmXqW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_the_Interior_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_8eaCng": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Labor_svg.png",
             "link": ""
           }
         },
         "logo_image_RW8dB6": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2048px-Seal_of_the_United_States_Department_of_Education_svg.png",
             "link": ""
           }
         },
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/US_Department_of_Agriculture_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_qDcEGy": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_Defense_Commissary_Agency_f8f404f5-3040-4724-89f5-45f5f1f491b2.png",
+            "link": ""
+          }
+        },
+        "logo_image_A3A4ct": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Defense_Contract_Audit_Agency_seal_svg.png",
             "link": ""
           }
         },
         "logo_image_gypAtE": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Department_of_Labor_svg.png",
+            "link": ""
+          }
+        },
+        "logo_image_giVTXq": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_United_States_Space_Force_svg.png",
             "link": ""
           }
         },
         "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Seal_of_the_Federal_Bureau_of_Investigation_svg.png",
             "link": ""
           }
         }
@@ -490,10 +534,14 @@
         "logo_image_GmBXAp",
         "logo_image_q8NrFt",
         "logo_image_cabdRU",
+        "logo_image_mPmXqW",
+        "logo_image_8eaCng",
         "logo_image_RW8dB6",
         "logo_image_nt9qY4",
         "logo_image_qDcEGy",
+        "logo_image_A3A4ct",
         "logo_image_gypAtE",
+        "logo_image_giVTXq",
         "logo_image_Fg8KxN"
       ],
       "settings": {
@@ -514,6 +562,7 @@
         "button_label": "Read About Us",
         "button_link": "shopify:\/\/pages\/about-us",
         "text_align": "vertical-bottom horizontal-right",
+        "image": "shopify:\/\/shop_images\/bg-woman-owned.png",
         "focal_point": "20% 50%",
         "color_border": "#f4f4f4",
         "height": 450,
