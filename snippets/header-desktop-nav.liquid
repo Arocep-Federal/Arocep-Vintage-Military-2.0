@@ -236,10 +236,20 @@
                   {{ childlink.title | escape }}
                 </a>
               {% endif %}
+              
+              {%- if has_sub_dropdown -%}
+                <ul class="site-nav__deep-dropdown">
+                  {%- for grandchildlink in childlink.links -%}
+                    <li>
+                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
 
               {% if has_sub_dropdown %}
-                </details>
-              {% endif %}
+              </details>
+            {% endif %}
             </li>
           {%- endfor -%}
         </ul>
@@ -251,14 +261,3 @@
     </li>
   {%- endfor -%}
 </ul>
-
-
-{%- if has_sub_dropdown -%}
-  <ul class="site-nav__deep-dropdown">
-    {%- for grandchildlink in childlink.links -%}
-      <li>
-        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
-      </li>
-    {%- endfor -%}
-  </ul>
-{%- endif -%}
