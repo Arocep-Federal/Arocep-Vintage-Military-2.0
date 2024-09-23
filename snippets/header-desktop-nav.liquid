@@ -242,7 +242,7 @@
                     document.addEventListener('page:loaded', function() {
                       // Page has loaded and theme assets are ready
                       var str = "{{ childlink.title }}" ;
-                      str = str.replace(/\s+\//g, '-').toLowerCase();
+                      str = str.replace(/\s+/g/, '-').toLowerCase();
                       console.log(str);
                       console.log("im logging")
                     });
