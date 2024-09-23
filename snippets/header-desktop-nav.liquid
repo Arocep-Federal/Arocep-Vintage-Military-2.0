@@ -234,7 +234,7 @@
                   >
                     {{ childlink.title | escape }}
                     {%- if has_sub_dropdown -%}
-                      <svg aria-hidden="false" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
                     {%- endif -%}
                   </summary>
               {% else %}
@@ -247,7 +247,7 @@
                 <ul class="site-nav__deep-dropdown">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }}</a>
+                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }} &gt; </a>
                     </li>
                   {%- endfor -%}
                 </ul>
