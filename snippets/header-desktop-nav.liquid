@@ -233,7 +233,7 @@
               {% if has_sub_dropdown %}
                 <details
                   id="site-nav-deep-item--{{ forloop.index }}"
-                  class="site-nav__details {{ childlink.handle }}"
+                  class="site-nav__details {{ childlink.handle | escape }}"
                   data-hover="{{ hover_menu }}"
                 >
 
