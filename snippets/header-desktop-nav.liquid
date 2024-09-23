@@ -252,8 +252,12 @@
                 </a>
               {% endif %}
               
+              {%- script -%}
+              var title = {{ childlink.title }};
+              console.log(title);
+              {%  endscript %}
               {%- if has_sub_dropdown -%}
-                <ul class="site-nav__deep-dropdown {{ childlink.title | escape }}">
+                <ul class="site-nav__deep-dropdown">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
                       <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }} </a>
