@@ -233,22 +233,10 @@
               {% if has_sub_dropdown %}
                 <details
                   id="site-nav-deep-item--{{ forloop.index }}"
-                  class="site-nav__details"
+                  class="site-nav__details {{ collection.handle }}"
                   data-hover="{{ hover_menu }}"
                 >
 
-                  <script>
-                
-                    document.addEventListener('page:loaded', function() {
-                      // Page has loaded and theme assets are ready
-                      var str = "{{ childlink.title }}" ;
-                      str = str.replace(/\s+/g/, '-').toLowerCase();
-                      console.log(str);
-                      console.log("im logging")
-                    });
-                                
-                                
-                                </script>
                   <summary
                     data-link="{{ childlink.url }}"
                     aria-expanded="false"
