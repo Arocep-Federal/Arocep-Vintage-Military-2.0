@@ -133,7 +133,7 @@
                     <div class="megamenu__col-title">
                       <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level site-nav__dropdown-link--mega">
                         <span class="megamenu__link-label">
-                          {{ childlink.title }} &gt; s
+                          {{ childlink.title }} 
                         </span>
                       </a>
                     </div>
@@ -148,7 +148,7 @@
 
                     {%- for grandchildlink in childlink.links -%}
                       <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{ grandchildlink.title }}
+                        {{ grandchildlink.title }} &gt;
                       </a>
                     {%- endfor -%}
                   {%- endfor -%}
