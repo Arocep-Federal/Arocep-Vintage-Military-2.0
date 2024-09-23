@@ -241,8 +241,9 @@
                 
                     document.addEventListener('page:loaded', function() {
                       // Page has loaded and theme assets are ready
-                      var title = "{{ childlink.title }}" ;
-                      console.log(title);
+                      var str = "{{ childlink.title }}" ;
+                      str = str.replace(/\s+/g, '-').toLowerCase();
+                      console.log(str);
                       console.log("im logging")
                     });
                                 
