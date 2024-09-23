@@ -253,7 +253,7 @@
               {% endif %}
               
               {%- if has_sub_dropdown -%}
-                <ul class="site-nav__deep-dropdown">
+                <ul class="site-nav__deep-dropdown {{ childlink.title | escape }}">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
                       <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }} </a>
