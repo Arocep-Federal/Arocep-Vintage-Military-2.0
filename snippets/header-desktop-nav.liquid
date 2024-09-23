@@ -223,7 +223,7 @@
           </div>
         </div>
       {%- elsif has_dropdown -%}
-        <ul class="site-nav__dropdown text-left">
+        <ul class="site-nav__dropdown text-left {{ childlink.handle | escape }}">
           {%- for childlink in link.links -%}
             {%- liquid
               assign has_sub_dropdown = false
@@ -236,7 +236,7 @@
               {% if has_sub_dropdown %}
                 <details
                   id="site-nav-deep-item--{{ forloop.index }}"
-                  class="site-nav__details {{ childlink.handle | escape }}"
+                  class="site-nav__details "
                   data-hover="{{ hover_menu }}"
                 >
 
