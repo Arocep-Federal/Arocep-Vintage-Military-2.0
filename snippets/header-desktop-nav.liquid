@@ -232,7 +232,7 @@
               endif
             -%}
 
-            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}  {{ childlink.handle | escape }}">
+            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %} ">
               {% if has_sub_dropdown %}
                 <details
                   id="site-nav-deep-item--{{ forloop.index }}"
@@ -257,7 +257,7 @@
               {% endif %}
   
               {%- if has_sub_dropdown -%}
-                <ul class="site-nav__deep-dropdown">
+                <ul class="site-nav__deep-dropdown  {{ childlink.handle | escape }}">
                   {%- for grandchildlink in childlink.links -%}
                     <li>
                       <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }} </a>
