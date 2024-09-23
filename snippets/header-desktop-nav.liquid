@@ -45,7 +45,7 @@
       left: 0;
     } 
     .site-nav__dropdown > li { 
-      /* position:relative; */
+      position:static;
       width:auto;
       float:left;
       font-weight:bold;
@@ -79,7 +79,6 @@
           id="site-nav-item--{{ forloop.index }}"
           class="site-nav__details"
           data-hover="{{ hover_menu }}"
-          open=""
         >
           <summary
             data-link="{{ link.url }}"
@@ -222,7 +221,6 @@
                   id="site-nav-deep-item--{{ forloop.index }}"
                   class="site-nav__details"
                   data-hover="{{ hover_menu }}"
-                  open=""
                 >
                   <summary
                     data-link="{{ childlink.url }}"
