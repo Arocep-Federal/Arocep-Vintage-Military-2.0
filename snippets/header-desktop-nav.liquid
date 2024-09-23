@@ -223,7 +223,7 @@
           </div>
         </div>
       {%- elsif has_dropdown -%}
-        <ul class="site-nav__dropdown text-left {{ childlink.handle | escape }}">
+        <ul class="site-nav__dropdown text-left">
           {%- for childlink in link.links -%}
             {%- liquid
               assign has_sub_dropdown = false
@@ -232,7 +232,7 @@
               endif
             -%}
 
-            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}  {{ childlink.handle | escape }}">
               {% if has_sub_dropdown %}
                 <details
                   id="site-nav-deep-item--{{ forloop.index }}"
