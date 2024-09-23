@@ -236,6 +236,18 @@
                   class="site-nav__details"
                   data-hover="{{ hover_menu }}"
                 >
+
+                  <script>
+                
+                    document.addEventListener('page:loaded', function() {
+                      // Page has loaded and theme assets are ready
+                      var title = {{ childlink.title }};
+                      console.log(title);
+                      console.log("im logging")
+                    });
+                                
+                                
+                                </script>
                   <summary
                     data-link="{{ childlink.url }}"
                     aria-expanded="false"
@@ -251,18 +263,7 @@
                   {{ childlink.title | escape }}  
                 </a>
               {% endif %}
-              
-              <script>
-                
-  document.addEventListener('page:loaded', function() {
-    // Page has loaded and theme assets are ready
-    var title = {{ childlink.title }};
-    console.log(title);
-    console.log("im logging")
-  });
-              
-              
-              </script>
+  
               {%- if has_sub_dropdown -%}
                 <ul class="site-nav__deep-dropdown">
                   {%- for grandchildlink in childlink.links -%}
