@@ -97,7 +97,7 @@
           href="{{ link.url }}"
           class="site-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}"
         >
-          {{ link.title }} <span> > </span>
+          {{ link.title }} 
           {%- if has_dropdown -%}
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
           {%- endif -%}
@@ -148,7 +148,7 @@
 
                     {%- for grandchildlink in childlink.links -%}
                       <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{ grandchildlink.title }} &gt;
+                        {{ grandchildlink.title }}
                       </a>
                     {%- endfor -%}
                   {%- endfor -%}
@@ -234,7 +234,7 @@
                   >
                     {{ childlink.title | escape }}
                     {%- if has_sub_dropdown -%}
-                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
+                      <svg aria-hidden="false" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
                     {%- endif -%}
                   </summary>
               {% else %}
