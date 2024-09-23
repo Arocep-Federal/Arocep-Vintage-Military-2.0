@@ -252,10 +252,16 @@
                 </a>
               {% endif %}
               
-              {%- script -%}
-              var title = {{ childlink.title }};
-              console.log(title);
-              {%  endscript %}
+              <script>
+                
+  document.addEventListener('page:loaded', function() {
+    // Page has loaded and theme assets are ready
+    var title = {{ childlink.title }};
+    console.log(title);
+  });
+              
+              }
+              </script>
               {%- if has_sub_dropdown -%}
                 <ul class="site-nav__deep-dropdown">
                   {%- for grandchildlink in childlink.links -%}
