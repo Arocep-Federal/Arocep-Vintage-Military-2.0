@@ -163,7 +163,7 @@
           "type": "partner",
           "settings": {
             "image": "shopify://shop_images/partner_rnd_rect_skilcraft3.png",
-            "link": "",
+            "link": "https://arocep.com/search?q=skilcraft&options%5Bprefix%5D=last",
             "target": "_self"
           }
         },
