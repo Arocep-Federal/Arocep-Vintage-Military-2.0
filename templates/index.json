@@ -209,6 +209,7 @@
         "partner_6nQBBj": {
           "type": "partner",
           "settings": {
+            "image": "shopify://shop_images/SKILCRAFT_2_f20e0237-3c41-47b4-9eb0-45205c483bfa.jpg",
             "link": "",
             "target": "_self"
           }
