@@ -1,13 +1,11 @@
 {%- style -%}
-.login--{{ section.id }} label {
-  display: none;
-}
+  .login--{{ section.id }} label {
+    display: none;
+  }
 {%- endstyle -%}
 <div class="page-width page-content login--{{ section.id }}">
   <div class="grid">
-
     <div class="grid__item medium-up--one-third medium-up--push-one-third">
-
       <header class="section-header">
         <h1 class="section-header__title">{{ 'customer.login.title' | t }}</h1>
       </header>
@@ -18,50 +16,66 @@
 
       <div id="CustomerLoginForm" class="form-vertical">
         {% form 'customer_login' %}
-
           {{ form.errors | default_errors }}
 
           <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
-          <input type="email" name="customer[email]" placeholder="Email" id="CustomerEmail" class="input-full{% if form.errors contains 'email' %} error{% endif %}" autocorrect="off" autocapitalize="off" autofocus>
+          <input
+            type="email"
+            name="customer[email]"
+            placeholder="Email"
+            id="CustomerEmail"
+            class="input-full{% if form.errors contains 'email' %} error{% endif %}"
+            autocorrect="off"
+            autocapitalize="off"
+            autofocus
+          >
 
           {% if form.password_needed %}
+            <div class="grid">
+              <div class="grid__item one-full">
+                <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
+              </div>
+            </div>
+            <input
+              type="password"
+              value=""
+              placeholder="Password"
+              name="customer[password]"
+              id="CustomerPassword"
+              class="input-full{% if form.errors contains 'password' %} error{% endif %}"
+            >
+          {% endif %}
+
           <div class="grid">
-            <div class="grid__item one-full">
-              <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
+            <div class="grid__item one-full ">
+              <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
+              <input
+                type="submit"
+                id="login-sign-in-submit"
+                class="btn btn--full btn--no-animate"
+                value="{{ 'customer.login.sign_in' | t }}"
+              >
+            </div>
+            <div class="grid__item one-half text-left">
+              <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+            </div>
+            <div class="grid__item one-half text-right">
+              <small class="label-info">
+                <a href="#recover" id="RecoverPassword" class="js-no-transition">
+                  {{ 'customer.login.forgot_password' | t }}
+                </a>
+              </small>
             </div>
           </div>
-          <input type="password" value="" placeholder="Password" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
-        {% endif %}
-        
-        <div class="grid">
-        <div class="grid__item one-full ">
-          <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
-          <input type="submit" id="login-sign-in-submit" class="btn btn--full btn--no-animate" value="{{ 'customer.login.sign_in' | t }}">
-        </div>
-        <div class="grid__item one-half text-left">
-         <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+        {% endform %}
       </div>
-        <div class="grid__item one-half text-right">
-          <small class="label-info">
-            <a href="#recover" id="RecoverPassword" class="js-no-transition">
-              {{ 'customer.login.forgot_password' | t }}
-            </a>
-          </small>
-        </div>
-        </div>
-        
-      {% endform %}
-    </div>
-    
-    <div id="RecoverPasswordForm" class="hide">
-      
-      <h2>{{ 'customer.recover_password.title' | t }}</h2>
-      <p>{{ 'customer.recover_password.subtext' | t }}</p>
-      
+
+      <div id="RecoverPasswordForm" class="hide">
+        <h2>{{ 'customer.recover_password.title' | t }}</h2>
+        <p>{{ 'customer.recover_password.subtext' | t }}</p>
 
         <div class="form-vertical">
           {% form 'recover_customer_password' %}
-
             {{ form.errors | default_errors }}
 
             {% if form.posted_successfully? %}
@@ -69,16 +83,30 @@
             {% endif %}
 
             <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
-            <input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off">
+            <input
+              type="email"
+              value=""
+              name="email"
+              id="RecoverEmail"
+              class="input-full"
+              autocorrect="off"
+              autocapitalize="off"
+            >
 
             <p>
-              <label for="recover-password-submit" class="hidden-label">{{ 'customer.recover_password.submit' | t }}</label>
-              <input type="submit" id="recover-password-submit" class="btn" value="{{ 'customer.recover_password.submit' | t }}">
+              <label for="recover-password-submit" class="hidden-label">
+                {{- 'customer.recover_password.submit' | t -}}
+              </label>
+              <input
+                type="submit"
+                id="recover-password-submit"
+                class="btn"
+                value="{{ 'customer.recover_password.submit' | t }}"
+              >
             </p>
             <button type="button" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
           {% endform %}
         </div>
-
       </div>
 
       {% if shop.checkout.guest_login %}
@@ -92,7 +120,6 @@
           <input type="submit" id="guest-continue-submit" class="btn" value="{{ 'customer.login.guest_continue' | t }}">
         {% endform %}
       {% endif %}
-
     </div>
   </div>
 </div>
