@@ -33,11 +33,11 @@
           <input type="password" value="" placeholder="Password" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
         {% endif %}
         
-        <p>
+        <div class="grid__item one-half ">
           <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
           <input type="submit" id="login-sign-in-submit" class="btn btn--full btn--no-animate" value="{{ 'customer.login.sign_in' | t }}">
-        </p>
-        <div class="grid__item one-full text-right">
+        </div>
+        <div class="grid__item one-half text-right">
           <small class="label-info">
             <a href="#recover" id="RecoverPassword" class="js-no-transition">
               {{ 'customer.login.forgot_password' | t }}
