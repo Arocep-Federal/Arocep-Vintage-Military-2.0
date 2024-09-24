@@ -179,7 +179,7 @@
           "type": "partner",
           "settings": {
             "image": "shopify://shop_images/hp-logo-vector-download.jpg",
-            "link": "https://arocep.com/search?q=lexmark&options%5Bprefix%5D=last",
+            "link": "https://arocep.com/search?q=hp&options%5Bprefix%5D=last",
             "target": "_self"
           }
         },
