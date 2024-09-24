@@ -162,16 +162,8 @@
         "partner_EMHanM": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_skilcraft3.png",
-            "link": "https://arocep.com/search?q=skilcraft&options%5Bprefix%5D=last",
-            "target": "_self"
-          }
-        },
-        "partner_y8dVTx": {
-          "type": "partner",
-          "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_gatorz2.png",
-            "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
+            "image": "shopify://shop_images/lexmark_47807ba9-a7fa-4266-9c49-65de6834631f.png",
+            "link": "https://arocep.com/search?q=lexmark&options%5Bprefix%5D=last",
             "target": "_self"
           }
         },
@@ -197,14 +189,22 @@
             "link": "",
             "target": "_self"
           }
+        },
+        "partner_y8dVTx": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify://shop_images/gatorz.png",
+            "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
+            "target": "_self"
+          }
         }
       },
       "block_order": [
         "partner_EMHanM",
-        "partner_y8dVTx",
         "partner_MjMr7h",
         "partner_xDNDEX",
-        "partner_qrFQip"
+        "partner_qrFQip",
+        "partner_y8dVTx"
       ],
       "settings": {
         "title": "Proudly Partnered With",
