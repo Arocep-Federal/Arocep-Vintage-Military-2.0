@@ -26,7 +26,7 @@
 
           {% if form.password_needed %}
           <div class="grid">
-            <div class="grid__item one-half">
+            <div class="grid__item one-full">
               <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
             </div>
           </div>
@@ -37,16 +37,16 @@
           <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
           <input type="submit" id="login-sign-in-submit" class="btn btn--full btn--no-animate" value="{{ 'customer.login.sign_in' | t }}">
         </p>
+        <div class="grid__item one-full text-right">
+          <small class="label-info">
+            <a href="#recover" id="RecoverPassword" class="js-no-transition">
+              {{ 'customer.login.forgot_password' | t }}
+            </a>
+          </small>
+        </div>
         <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
         
       {% endform %}
-    </div>
-    <div class="grid__item one-full text-right">
-      <small class="label-info">
-        <a href="#recover" id="RecoverPassword" class="js-no-transition">
-          {{ 'customer.login.forgot_password' | t }}
-        </a>
-      </small>
     </div>
     
     <div id="RecoverPasswordForm" class="hide">
