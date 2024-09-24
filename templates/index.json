@@ -16,9 +16,9 @@
         "title_size": 80,
         "subheading": "",
         "link_text": "",
-        "link": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6f5f388f77804402b82199e83539a6fc.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/6f5f388f77804402b82199e83539a6fc.mp4",
         "overlay_opacity": 0,
         "section_height": "750px",
         "mobile_height": "auto"
@@ -102,7 +102,7 @@
         "text_bXtPkQ": {
           "type": "text",
           "settings": {
-            "text": "<p><b>Empowering Federal Excellence:<\/b><br\/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.<\/p>"
+            "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
           }
         }
       },
@@ -115,19 +115,19 @@
         "font_size": 32,
         "backgroundcolor": "#000000",
         "fontcolor": "#ffffff",
-        "bgimage": "shopify:\/\/shop_images\/arocep-logo-black-bg-distressed.png",
+        "bgimage": "shopify://shop_images/arocep-logo-black-bg-distressed.png",
         "narrow_column": true
       }
     },
     "af_text_and_image_hcF83F": {
       "type": "af-text-and-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/AbilityOne.png",
+        "image": "shopify://shop_images/AbilityOne.png",
         "image_style": "border",
-        "bgimage": "shopify:\/\/shop_images\/bg-artillery-texture-2tone.jpg",
+        "bgimage": "shopify://shop_images/bg-artillery-texture-2tone.jpg",
         "subtitle": "Honored to Support",
         "title": "The Ability One Program",
-        "text": "<p>AbilityOne is the largest source of employment opportunities for people who are blind or have significant disabilities in the United States. Nonprofit organizations train and employ these individuals and provide quality products and services to the Federal Government at a fair market price. Contact Arocep to make a difference today.<\/p>",
+        "text": "<p>AbilityOne is the largest source of employment opportunities for people who are blind or have significant disabilities in the United States. Nonprofit organizations train and employ these individuals and provide quality products and services to the Federal Government at a fair market price. Contact Arocep to make a difference today.</p>",
         "font_color": "#ffffff",
         "button_label": "Shop AbilityOne",
         "button_link": "",
@@ -149,7 +149,7 @@
         "headline": "Our Trusted Global Network is Standing By",
         "subheadline": "Our global distribution network is available around the clock ensuring you get your products when and where you need them. Government buyers can purchase directly from Arocep Federal with ease. We're standing by to support you.",
         "text_align": "vertical-center horizontal-right",
-        "image": "shopify:\/\/shop_images\/bg-global-network.png",
+        "image": "shopify://shop_images/bg-global-network.png",
         "height": 100,
         "link": "",
         "link_text": "Optional button",
@@ -162,19 +162,19 @@
         "partner_EMHanM": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_skilcraft3.png"
+            "image": "shopify://shop_images/partner_rnd_rect_skilcraft3.png"
           }
         },
         "partner_y8dVTx": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_gatorz2.png"
+            "image": "shopify://shop_images/partner_rnd_rect_gatorz2.png"
           }
         },
         "partner_MjMr7h": {
           "type": "partner",
           "settings": {
-            "image": "shopify:\/\/shop_images\/partner_rnd_rect_lexmark2.png"
+            "image": "shopify://shop_images/partner_rnd_rect_lexmark2.png"
           }
         }
       },
@@ -196,8 +196,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "testimonial": "<p>\"Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "author": "IT Specialist",
             "author_info": "US Department of the Navy"
           }
@@ -206,8 +206,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Outstanding communications and speedy delivery. Highly recommend this vendor!!!\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "testimonial": "<p>\"Outstanding communications and speedy delivery. Highly recommend this vendor!!!\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
             "author": "Legal Assistant",
             "author_info": "US Department of the Army"
           }
@@ -216,8 +216,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Best vendor in FedMall\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "testimonial": "<p>\"Best vendor in FedMall\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "author": "Supply Manager",
             "author_info": "US Department of the Navy"
           }
@@ -226,8 +226,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_army_corps_of_engineers.png",
+            "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_army_corps_of_engineers.png",
             "author": "Civil Engineer Technician",
             "author_info": "US Department of the Army, Corps of Engineers"
           }
@@ -236,8 +236,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Very good Vendor!! Great communication!! Responds immediately ! Items are coming soon although we are FPO\/AE.\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "testimonial": "<p>\"Very good Vendor!! Great communication!! Responds immediately ! Items are coming soon although we are FPO/AE.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "author": "Supply Technician",
             "author_info": "US Department of Navy, EU"
           }
@@ -246,8 +246,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Order received in a timely manner\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "testimonial": "<p>\"Order received in a timely manner\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "author": "Admin Support Specialist",
             "author_info": "US Department of the Navy"
           }
@@ -256,8 +256,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Excellent Service. Received items within 48hrs of placing order.\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "testimonial": "<p>\"Excellent Service. Received items within 48hrs of placing order.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
             "author": "Supply Technician",
             "author_info": "US Department of the Army"
           }
@@ -266,8 +266,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Received product right away\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
+            "testimonial": "<p>\"Received product right away\"</p>",
+            "image": "shopify://shop_images/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
             "author": "Supply Technician",
             "author_info": "Defense Commissary Agency"
           }
@@ -276,8 +276,8 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"<\/p>",
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
+            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
             "author": "Electronics Technician",
             "author_info": "US Department of the Army"
           }
@@ -308,9 +308,9 @@
         "title_size": 60,
         "subheading": "American Made Eyewear",
         "link_text": "",
-        "link": "shopify:\/\/collections\/information-technology",
+        "link": "shopify://collections/information-technology",
         "text_align": "vertical-center horizontal-center",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
         "overlay_opacity": 34,
         "section_height": "650px",
         "mobile_height": "auto"
@@ -321,10 +321,10 @@
       "settings": {
         "subtitle": "Arocep Federal",
         "title": "Contracting Vehicles",
-        "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. <\/p><p><strong>FEDMALL CONTRACT(S): <\/strong><a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">GS02F0052V<\/a>; <a href=\"https:\/\/www.fedmall.mil\/index.html\" target=\"_blank\" title=\"https:\/\/www.fedmall.mil\/index.html\">MARKETPLACE_4UB10<\/a><\/p>",
+        "text": "<p>Search \"Arocep Federal\" in FedMall and GSA Advantage! for products and services available today. </p><p><strong>FEDMALL CONTRACT(S): </strong><a href=\"https://www.fedmall.mil/index.html\" target=\"_blank\" title=\"https://www.fedmall.mil/index.html\">GS02F0052V</a>; <a href=\"https://www.fedmall.mil/index.html\" target=\"_blank\" title=\"https://www.fedmall.mil/index.html\">MARKETPLACE_4UB10</a></p>",
         "button_label": "",
         "button_link": "",
-        "image": "shopify:\/\/shop_images\/bg-contracting4_9514d48b-6170-45cb-a847-f19e0d262683.png",
+        "image": "shopify://shop_images/bg-contracting4_9514d48b-6170-45cb-a847-f19e0d262683.png",
         "focal_point": "80% 50%",
         "layout": "left",
         "height": 550,
@@ -343,7 +343,7 @@
         "headline": "The Arocep Advantage",
         "subheadline": "Providing transparency of products and pricing with a low cost to match. Streamlined purchasing simplifies the acquisition experience while meeting your socio-economic goals.",
         "text_align": "vertical-center horizontal-center",
-        "image": "shopify:\/\/shop_images\/saluting.jpg",
+        "image": "shopify://shop_images/saluting.jpg",
         "height": 78,
         "link": "",
         "link_text": "Optional button",
@@ -362,7 +362,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/Helicopter.jpg",
+            "image": "shopify://shop_images/Helicopter.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -376,7 +376,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/shipping-container-ship.jpg",
+            "image": "shopify://shop_images/shipping-container-ship.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -390,7 +390,7 @@
             "link": "",
             "link_text": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify:\/\/shop_images\/F22_Raptor.jpg",
+            "image": "shopify://shop_images/F22_Raptor.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 26
           }
@@ -417,280 +417,280 @@
         "logo_image_jmcyQb": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_army.png",
-            "link": ""
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
+            "link": "https://www.army.mil"
           }
         },
         "logo_image_iQqmzj": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_energy.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_energy.png",
             "link": ""
           }
         },
         "logo_image_YRR8zX": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_equal_employment_opportunity_commission.png",
+            "image": "shopify://shop_images/seal_of_the_us_equal_employment_opportunity_commission.png",
             "link": ""
           }
         },
         "logo_image_AjMjeN": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_personnel_mgmt.png",
+            "image": "shopify://shop_images/seal_of_the_office_of_personnel_mgmt.png",
             "link": ""
           }
         },
         "logo_image_Ka6mpk": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_logistics_agency.png",
+            "image": "shopify://shop_images/seal_of_the_defense_logistics_agency.png",
             "link": ""
           }
         },
         "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_state_0d7242f4-b0fb-4f47-a3b4-242d876e4ef7.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_state_0d7242f4-b0fb-4f47-a3b4-242d876e4ef7.png",
             "link": ""
           }
         },
         "logo_image_GmBXAp": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_nasa.png",
+            "image": "shopify://shop_images/seal_of_the_nasa.png",
             "link": ""
           }
         },
         "logo_image_q8NrFt": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_veteran_affairs.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_veteran_affairs.png",
             "link": ""
           }
         },
         "logo_image_cabdRU": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
+            "image": "shopify://shop_images/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
             "link": ""
           }
         },
         "logo_image_mPmXqW": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_contract_mgmt.png",
+            "image": "shopify://shop_images/seal_of_the_defense_contract_mgmt.png",
             "link": ""
           }
         },
         "logo_image_8eaCng": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_education.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_education.png",
             "link": ""
           }
         },
         "logo_image_RW8dB6": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_air_force.png",
+            "image": "shopify://shop_images/seal_of_the_us_air_force.png",
             "link": ""
           }
         },
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_merit_systems_protection_board.png",
+            "image": "shopify://shop_images/seal_of_the_us_merit_systems_protection_board.png",
             "link": ""
           }
         },
         "logo_image_qDcEGy": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_defense.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_defense.png",
             "link": ""
           }
         },
         "logo_image_A3A4ct": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_national_archives_and_records_admin.png",
+            "image": "shopify://shop_images/seal_of_the_national_archives_and_records_admin.png",
             "link": ""
           }
         },
         "logo_image_gypAtE": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_the_director_of_national_intelligence-copy-2.png",
+            "image": "shopify://shop_images/seal_of_the_office_of_the_director_of_national_intelligence-copy-2.png",
             "link": ""
           }
         },
         "logo_image_giVTXq": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_the_interior.png",
+            "image": "shopify://shop_images/seal_of_the_us_department_of_the_interior.png",
             "link": ""
           }
         },
         "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_information_systems_agency.png",
+            "image": "shopify://shop_images/seal_of_the_defense_information_systems_agency.png",
             "link": ""
           }
         },
         "logo_image_PgUfdF": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
+            "image": "shopify://shop_images/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
             "link": ""
           }
         },
         "logo_image_zwejxn": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_navy.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "link": ""
           }
         },
         "logo_image_AYwL4H": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_agriculture.png",
+            "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture.png",
             "link": ""
           }
         },
         "logo_image_K7FGWY": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_the_inspector_general.png",
+            "image": "shopify://shop_images/seal_of_the_office_of_the_inspector_general.png",
             "link": ""
           }
         },
         "logo_image_gajJkE": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_federal_bureau_of_prisons.png",
+            "image": "shopify://shop_images/seal_of_the_federal_bureau_of_prisons.png",
             "link": ""
           }
         },
         "logo_image_8NVa7p": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_general_services_admin.png",
+            "image": "shopify://shop_images/seal_of_the_general_services_admin.png",
             "link": ""
           }
         },
         "logo_image_9mb9wp": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_defense_contract_audit_agency.png",
+            "image": "shopify://shop_images/seal_of_the_defense_contract_audit_agency.png",
             "link": ""
           }
         },
         "logo_image_gedNJU": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_office_of_inspector_general.png",
+            "image": "shopify://shop_images/seal_of_the_office_of_inspector_general.png",
             "link": ""
           }
         },
         "logo_image_rhq3Ak": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_labor.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_labor.png",
             "link": ""
           }
         },
         "logo_image_WxmyGc": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_federal_bureau_of_investigation.png",
+            "image": "shopify://shop_images/seal_of_the_federal_bureau_of_investigation.png",
             "link": ""
           }
         },
         "logo_image_yWkVjR": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_marine_corps.png",
+            "image": "shopify://shop_images/seal_of_the_marine_corps.png",
             "link": ""
           }
         },
         "logo_image_FfVmkj": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_air_force.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_air_force.png",
             "link": ""
           }
         },
         "logo_image_dFCcGk": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_the_treasury.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_treasury.png",
             "link": ""
           }
         },
         "logo_image_dHx4pW": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_of_health_and_human_services.png",
+            "image": "shopify://shop_images/seal_of_the_department_of_health_and_human_services.png",
             "link": ""
           }
         },
         "logo_image_DFFHJV": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_department_commerce.png",
+            "image": "shopify://shop_images/seal_of_the_department_commerce.png",
             "link": ""
           }
         },
         "logo_image_i9VqFX": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_housing.png",
+            "image": "shopify://shop_images/seal_of_the_us_department_of_housing.png",
             "link": ""
           }
         },
         "logo_image_CEQeJt": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_nuclear_regulatory_commission.png",
+            "image": "shopify://shop_images/seal_of_the_us_nuclear_regulatory_commission.png",
             "link": ""
           }
         },
         "logo_image_7dpgcG": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us-abilityone-commission.png",
+            "image": "shopify://shop_images/seal_of_the_us-abilityone-commission.png",
             "link": ""
           }
         },
         "logo_image_VFNA4C": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_central_intelligence_agency.png",
+            "image": "shopify://shop_images/seal_of_the_central_intelligence_agency.png",
             "link": ""
           }
         },
         "logo_image_eVekn9": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_department_of_agriculture_9448049a-84a9-4553-89cd-440d02a44ec7.png",
+            "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture_9448049a-84a9-4553-89cd-440d02a44ec7.png",
             "link": ""
           }
         },
         "logo_image_yzQGdw": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_us_coast_guard.png",
+            "image": "shopify://shop_images/seal_of_the_us_coast_guard.png",
             "link": ""
           }
         },
         "logo_image_YppcGm": {
           "type": "logo_image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/seal_of_the_homeland_security.png",
+            "image": "shopify://shop_images/seal_of_the_homeland_security.png",
             "link": ""
           }
         }
@@ -753,9 +753,9 @@
         "headline": "Woman Owned & Operated",
         "subheadline": "Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.",
         "button_label": "Read About Us",
-        "button_link": "shopify:\/\/pages\/about-us",
+        "button_link": "shopify://pages/about-us",
         "text_align": "vertical-bottom horizontal-right",
-        "image": "shopify:\/\/shop_images\/bg-woman-owned.png",
+        "image": "shopify://shop_images/bg-woman-owned.png",
         "focal_point": "20% 50%",
         "color_border": "#f4f4f4",
         "height": 450,
