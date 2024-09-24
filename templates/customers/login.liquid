@@ -31,14 +31,14 @@
             </div>
           </div>
           <input type="password" value="" placeholder="Password" name="customer[password]" id="CustomerPassword" class="input-full{% if form.errors contains 'password' %} error{% endif %}">
+          <div class="grid__item one-half text-right">
+            <small class="label-info">
+              <a href="#recover" id="RecoverPassword" class="js-no-transition">
+                {{ 'customer.login.forgot_password' | t }}
+              </a>
+            </small>
+          </div>
         {% endif %}
-        <div class="grid__item one-half text-right">
-          <small class="label-info">
-            <a href="#recover" id="RecoverPassword" class="js-no-transition">
-              {{ 'customer.login.forgot_password' | t }}
-            </a>
-          </small>
-        </div>
 
           <p>
             <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
