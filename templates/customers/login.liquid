@@ -38,15 +38,15 @@
           <input type="submit" id="login-sign-in-submit" class="btn btn--full btn--no-animate" value="{{ 'customer.login.sign_in' | t }}">
         </div>
         <div class="grid__item one-half text-right">
+          <div class="grid__item one-half text-left">
+           <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+        </div>
           <small class="label-info">
             <a href="#recover" id="RecoverPassword" class="js-no-transition">
               {{ 'customer.login.forgot_password' | t }}
             </a>
           </small>
         </div>
-        <div class="grid__item one-half text-left">
-         <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
-      </div>
         
       {% endform %}
     </div>
