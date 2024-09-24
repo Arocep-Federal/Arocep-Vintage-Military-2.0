@@ -13,6 +13,22 @@
 .collections-list--{{ section.id }} .skrim__item-content .skrim__overlay:after  {
   background-image: linear-gradient(to bottom, rgba(0,0,0, .1) 30%, rgba(0,0,0,1) 100%);
 }
+
+
+@media only screen and (max-width: 1024px){ 
+  .collections-list--{{ section.id }} .medium-up--one-third  {
+    width: calc(50% - 6px);
+  }
+}
+
+@media only screen and (max-width: 590px){ 
+  .search--{{ section.id }} .medium-up--one-quarter {
+  width: calc(100%);
+}
+}
+
+
+
 {% endstyle %}
 {%- liquid
   assign per_row = section.settings.grid
