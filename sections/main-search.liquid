@@ -1,4 +1,13 @@
-<div data-section-id="{{ section.id }}" data-section-type="collection-template">
+
+
+{%- style -%}
+.search--{{ section.id }} .medium-up--one-quarter {
+  border:1px solid #ccc;
+}
+{%- endstyle -%}
+
+
+<div class="search--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-template">
 {%- paginate search.results by 12 -%}
 
   <div class="page-width page-content">
