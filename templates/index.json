@@ -178,8 +178,23 @@
         "partner_MjMr7h": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_lexmark2.png",
+            "image": "shopify://shop_images/hp-logo-vector-download.jpg",
             "link": "https://arocep.com/search?q=lexmark&options%5Bprefix%5D=last",
+            "target": "_self"
+          }
+        },
+        "partner_xDNDEX": {
+          "type": "partner",
+          "settings": {
+            "image": "shopify://shop_images/XEROX_LOGO_63d318a0-0e28-4bd9-87e9-8ac4bbba32fc.png",
+            "link": "https://arocep.com/search?q=xerox&options%5Bprefix%5D=last",
+            "target": "_self"
+          }
+        },
+        "partner_qrFQip": {
+          "type": "partner",
+          "settings": {
+            "link": "",
             "target": "_self"
           }
         }
@@ -187,7 +202,9 @@
       "block_order": [
         "partner_EMHanM",
         "partner_y8dVTx",
-        "partner_MjMr7h"
+        "partner_MjMr7h",
+        "partner_xDNDEX",
+        "partner_qrFQip"
       ],
       "settings": {
         "title": "Proudly Partnered With",
