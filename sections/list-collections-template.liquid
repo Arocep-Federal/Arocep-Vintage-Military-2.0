@@ -1,5 +1,5 @@
 {% style %}
-.skrim__item-content .skrim__overlay:after  {
+.collections-list--{{ section.id }} .skrim__item-content .skrim__overlay:after  {
   background-image: linear-gradient(to bottom, rgba(0,0,0) 30%, rgba(0,0,0,1) 100%);
 }
 {% endstyle %}
@@ -23,7 +23,7 @@
 
 {%- paginate collections by paginate_by -%}
 
-<div class="page-width page-content collections-list">
+<div class="page-width page-content collections-list collections-list--{{ section.id }}">
 
   {%- render 'breadcrumbs' -%}
 
