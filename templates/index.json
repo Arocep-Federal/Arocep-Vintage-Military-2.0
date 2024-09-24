@@ -197,6 +197,20 @@
             "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
             "target": "_self"
           }
+        },
+        "partner_jt7mFa": {
+          "type": "partner",
+          "settings": {
+            "link": "",
+            "target": "_self"
+          }
+        },
+        "partner_6nQBBj": {
+          "type": "partner",
+          "settings": {
+            "link": "",
+            "target": "_self"
+          }
         }
       },
       "block_order": [
@@ -204,7 +218,9 @@
         "partner_MjMr7h",
         "partner_xDNDEX",
         "partner_qrFQip",
-        "partner_y8dVTx"
+        "partner_y8dVTx",
+        "partner_jt7mFa",
+        "partner_6nQBBj"
       ],
       "settings": {
         "title": "Proudly Partnered With",
