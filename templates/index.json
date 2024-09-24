@@ -418,280 +418,320 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_army.png",
-            "link": "https://www.army.mil"
+            "link": "https://www.army.mil",
+            "target": "_self"
           }
         },
         "logo_image_iQqmzj": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_energy.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_YRR8zX": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_equal_employment_opportunity_commission.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_AjMjeN": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_personnel_mgmt.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_Ka6mpk": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_logistics_agency.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_Vn7xRp": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_state_0d7242f4-b0fb-4f47-a3b4-242d876e4ef7.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_GmBXAp": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_nasa.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_q8NrFt": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_veteran_affairs.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_cabdRU": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_mPmXqW": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_contract_mgmt.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_8eaCng": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_education.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_RW8dB6": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_air_force.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_nt9qY4": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_merit_systems_protection_board.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_qDcEGy": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_defense.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_A3A4ct": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_national_archives_and_records_admin.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_gypAtE": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_the_director_of_national_intelligence-copy-2.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_giVTXq": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_the_interior.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_Fg8KxN": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_information_systems_agency.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_PgUfdF": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_zwejxn": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_AYwL4H": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_K7FGWY": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_the_inspector_general.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_gajJkE": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_federal_bureau_of_prisons.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_8NVa7p": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_general_services_admin.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_9mb9wp": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_contract_audit_agency.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_gedNJU": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_inspector_general.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_rhq3Ak": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_labor.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_WxmyGc": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_federal_bureau_of_investigation.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_yWkVjR": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_marine_corps.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_FfVmkj": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_air_force.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_dFCcGk": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_treasury.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_dHx4pW": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_health_and_human_services.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_DFFHJV": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_commerce.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_i9VqFX": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_housing.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_CEQeJt": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_nuclear_regulatory_commission.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_7dpgcG": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us-abilityone-commission.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_VFNA4C": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_central_intelligence_agency.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_eVekn9": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture_9448049a-84a9-4553-89cd-440d02a44ec7.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_yzQGdw": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_coast_guard.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         },
         "logo_image_YppcGm": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_homeland_security.png",
-            "link": ""
+            "link": "",
+            "target": "_blank"
           }
         }
       },
