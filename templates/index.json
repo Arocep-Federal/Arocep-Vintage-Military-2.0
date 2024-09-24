@@ -162,19 +162,25 @@
         "partner_EMHanM": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_skilcraft3.png"
+            "image": "shopify://shop_images/partner_rnd_rect_skilcraft3.png",
+            "link": "",
+            "target": "_self"
           }
         },
         "partner_y8dVTx": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_gatorz2.png"
+            "image": "shopify://shop_images/partner_rnd_rect_gatorz2.png",
+            "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
+            "target": "_self"
           }
         },
         "partner_MjMr7h": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/partner_rnd_rect_lexmark2.png"
+            "image": "shopify://shop_images/partner_rnd_rect_lexmark2.png",
+            "link": "",
+            "target": "_self"
           }
         }
       },
