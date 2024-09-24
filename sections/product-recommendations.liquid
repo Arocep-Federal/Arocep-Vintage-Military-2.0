@@ -8,6 +8,21 @@
   assign number_of_products = section.settings.related_count
 -%}
 
+{%- style -%}
+#Recommendations-{{ section.id }} .product-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Recommendations-{{ section.id }} .medium-up--one-quarter {
+  border:1px solid #ccc;
+  width: calc(25% - 6px);
+  margin: 0 6px 6px 0;
+  padding:20px;
+}
+{%- endstyle -%}
+
+
 <product-recommendations
   id="Recommendations-{{ section.id }}"
   data-section-id="{{ section.id }}"
