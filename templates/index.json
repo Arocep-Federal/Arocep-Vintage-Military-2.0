@@ -130,7 +130,7 @@
         "text": "<p>AbilityOne is the largest source of employment opportunities for people who are blind or have significant disabilities in the United States. Nonprofit organizations train and employ these individuals and provide quality products and services to the Federal Government at a fair market price. Contact Arocep to make a difference today.</p>",
         "font_color": "#ffffff",
         "button_label": "Shop AbilityOne",
-        "button_link": "",
+        "button_link": "shopify://collections/abilityone-catalog",
         "button_style": "secondary",
         "align_text": "left",
         "image_width": "33",
