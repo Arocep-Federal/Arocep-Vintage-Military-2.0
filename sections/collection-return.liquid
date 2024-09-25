@@ -1,12 +1,16 @@
 {% style %}
 
-  #Recommendations-{{ section.id }} .medium-up--one-half {
+.collection-return--{{ section.id }} .medium-up--one-half {
     border:1px solid #ccc;
     border-radius:10px;
     overflow:hidden;
     width: calc(50% - 6px);
     margin: 0 6px 6px 0;
     padding:20px;
+  }
+
+  .collection-return--{{ section.id }} .grid--no-gutters .grid__item {
+    /* padding-left: 0; */
   }
 /* 
   .collection-return--{{ section.id }} .grid__item {
