@@ -166,9 +166,9 @@
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
-            <div class="button_su">
-              <span class="su_button_circle"> </span>
-              <a href="{{ section.settings.button_link }}" class="button_su_inner{% if section.settings.button_style == 'secondary' %} secondary{% endif %}">
+            <div class="button_super">
+              <span class="super_button_circle"> </span>
+              <a href="{{ section.settings.button_link }}" class="button_super_inner{% if section.settings.button_style == 'secondary' %} secondary{% endif %}">
                 <span class="button_text_container">
                   {{ section.settings.button_label }}
                 </span>
@@ -177,15 +177,6 @@
           </div>
 
 
-      <div class="button_su">
-        <span class="su_button_circle">
-        </span>
-        <a href="#" class="button_su_inner">
-          <span class="button_text_container">
-            <b>Optional Button</b>
-          </span>
-        </a>
-      </div>
           {% comment %} <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
             <a
               href="{{ section.settings.button_link }}"
