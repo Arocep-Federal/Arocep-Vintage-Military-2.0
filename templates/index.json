@@ -467,7 +467,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_energy.png",
-            "link": "",
+            "link": "https://www.energy.gov/",
             "target": "_blank"
           }
         },
@@ -475,7 +475,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_equal_employment_opportunity_commission.png",
-            "link": "",
+            "link": "https://www.eeoc.gov/",
             "target": "_blank"
           }
         },
@@ -483,7 +483,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_personnel_mgmt.png",
-            "link": "",
+            "link": "https://www.opm.gov/",
             "target": "_blank"
           }
         },
@@ -491,7 +491,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_logistics_agency.png",
-            "link": "",
+            "link": "https://www.dla.mil/",
             "target": "_blank"
           }
         },
@@ -499,7 +499,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_state_0d7242f4-b0fb-4f47-a3b4-242d876e4ef7.png",
-            "link": "",
+            "link": "https://www.state.gov/",
             "target": "_blank"
           }
         },
@@ -507,7 +507,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_nasa.png",
-            "link": "",
+            "link": "https://www.nasa.gov/",
             "target": "_blank"
           }
         },
@@ -515,7 +515,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_veteran_affairs.png",
-            "link": "",
+            "link": "https://www.va.gov/",
             "target": "_blank"
           }
         },
@@ -523,7 +523,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_commissary_agency_398b21d5-8166-4320-a577-3eb674fdc295.png",
-            "link": "",
+            "link": "https://shop.commissaries.com/",
             "target": "_blank"
           }
         },
@@ -531,7 +531,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_contract_mgmt.png",
-            "link": "",
+            "link": "https://www.dcma.mil/",
             "target": "_blank"
           }
         },
@@ -539,7 +539,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_education.png",
-            "link": "",
+            "link": "https://www.ed.gov/",
             "target": "_blank"
           }
         },
@@ -547,7 +547,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_air_force.png",
-            "link": "",
+            "link": "https://www.spaceforce.mil/",
             "target": "_blank"
           }
         },
