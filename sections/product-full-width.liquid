@@ -1,10 +1,14 @@
 {% style %}
+.product--{{ section.id }} strong {
+  display:block;
+  background-color: #ccc;
+}
 
 {% endstyle %}
 
 
 {%- if section.blocks.size > 0 -%}
-  <div class="page-width{% if section.settings.max_width %} page-width--narrow{% endif %}">
+  <div class="product--{{ section.id }} page-width{% if section.settings.max_width %} page-width--narrow{% endif %}">
     <div class="product-full-width">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
