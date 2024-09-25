@@ -1,3 +1,22 @@
+{% style %}
+
+  #Recommendations-{{ section.id }} .medium-up--one-half {
+    border:1px solid #ccc;
+    border-radius:10px;
+    overflow:hidden;
+    width: calc(50% - 6px);
+    margin: 0 6px 6px 0;
+    padding:20px;
+  }
+
+  .collection-return--{{ section.id }} .grid__item {
+    padding:20px;
+  }
+  .collection-return--{{ section.id }} .grid {
+    margin-left:0;
+  }
+{% endstyle %}
+
 {%- if collection -%}
   {%- liquid
     assign grid_item_width = ''
@@ -14,7 +33,7 @@
     endif
   -%}
 
-  <div class="grid grid--no-gutters skrim-grid skrim-grid--pagination product-navigation">
+  <div class="grid grid--no-gutters skrim-grid skrim-grid--pagination collection-return--{{ section.id }} product-navigation">
     {%- if collection.next_product -%}
       <div class="grid__item {{ grid_item_width }} skrim__item medium-up--hide" data-aos="skrim__animation">
         <a href="{{ collection.next_product }}" class="skrim__link skrim__item-content">
