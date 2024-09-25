@@ -555,7 +555,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_merit_systems_protection_board.png",
-            "link": "",
+            "link": "https://www.mspb.gov/",
             "target": "_blank"
           }
         },
@@ -563,7 +563,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_defense.png",
-            "link": "",
+            "link": "https://www.defense.gov/",
             "target": "_blank"
           }
         },
@@ -571,7 +571,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_national_archives_and_records_admin.png",
-            "link": "",
+            "link": "https://www.archives.gov/",
             "target": "_blank"
           }
         },
@@ -579,7 +579,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_the_director_of_national_intelligence-copy-2.png",
-            "link": "",
+            "link": "https://www.dni.gov/",
             "target": "_blank"
           }
         },
@@ -587,7 +587,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_the_interior.png",
-            "link": "",
+            "link": "https://www.doi.gov/",
             "target": "_blank"
           }
         },
@@ -595,7 +595,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_information_systems_agency.png",
-            "link": "",
+            "link": "https://disa.mil/",
             "target": "_blank"
           }
         },
@@ -603,7 +603,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_naval_criminal_investigative_service_3f9260fb-a88e-495d-8e58-af2797532dfb.png",
-            "link": "",
+            "link": "https://www.ncis.navy.mil/",
             "target": "_blank"
           }
         },
@@ -611,7 +611,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
-            "link": "",
+            "link": "https://www.navy.mil/",
             "target": "_blank"
           }
         },
@@ -619,7 +619,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture.png",
-            "link": "",
+            "link": "https://www.usda.gov/",
             "target": "_blank"
           }
         },
@@ -627,7 +627,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_the_inspector_general.png",
-            "link": "",
+            "link": "https://www.ssa.gov/",
             "target": "_blank"
           }
         },
