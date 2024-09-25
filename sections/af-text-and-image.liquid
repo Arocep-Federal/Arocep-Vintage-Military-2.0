@@ -1,133 +1,114 @@
 {% style %}
-  {% if section.settings.top_padding == false %}
-    #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
-  {% endif %}
-  {% if section.settings.bottom_padding == false %}
-    #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
-  {% endif %}
+    {% if section.settings.top_padding == false %}
+      #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
+    {% endif %}
+    {% if section.settings.bottom_padding == false %}
+      #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
+    {% endif %}
 
-  #shopify-section-{{ section.id }} .index-section {
-    background-image:url({{ section.settings.bgimage | image_url:width:auto }});
-    background-size:cover; 
-    background-repeat:no-repeat;
-    color: {{ section.settings.font_color }}
-  }
-  /* #shopify-section-{{ section.id }} .stripe {
-    width: 600px;
-    max-width:90vw;
-    overflow:hidden;
-    height:80px;
-    display:block;
+    #shopify-section-{{ section.id }} .index-section {
+      background-image:url({{ section.settings.bgimage | image_url:width:auto }});
+      background-size:cover;
+      background-repeat:no-repeat;
+      color: {{ section.settings.font_color }}
+    }
+    /* #shopify-section-{{ section.id }} .stripe {
+      width: 600px;
+      max-width:90vw;
+      overflow:hidden;
+      height:80px;
+      display:block;
+      position:absolute;
+      background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe.png?v=1726447603");
+      background-repeat:no-repeat;
+      background-position:top -10px right 0;
+      background-size:cover;
+      z-index:1;
+    } */
+
+    #shopify-section-{{ section.id }} .stripe {
     position:absolute;
-    background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe.png?v=1726447603");
+    background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
+    width:100px;
     background-repeat:no-repeat;
-    background-position:top -10px right 0;
-    background-size:cover;
-    z-index:1;
-  } */
-
-  #shopify-section-{{ section.id }} .stripe {
-  position:absolute;
-  background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
-  width:100px;
-  background-repeat:no-repeat;
-  background-position:top left;
-  z-index:2;
-  /* top:0; */
-  right:20px;
-  left:auto;
-  height:800px
-}
-
-
-
-
-  #shopify-section-{{ section.id }} .border-style .feature-row__first-image {
-    position:relative;
-    max-width: 550px;
-    top:-155px;
-    right:0;
-    left:auto;
-    border:10px solid white;
-    border-radius:10px;
-    filter: grayscale(1);
-  }
-
-  #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
-    overflow:visible;
-    position:relative;
-    top:-70px;
+    background-position:top left;
     z-index:2;
+    /* top:0; */
+    right:20px;
+    left:auto;
+    height:800px
   }
 
 
-  @media only screen and (max-width: 589px){ 
+
+
     #shopify-section-{{ section.id }} .border-style .feature-row__first-image {
-    top:auto;
-  }
+      position:relative;
+      max-width: 550px;
+      top:-155px;
+      right:0;
+      left:auto;
+      border:10px solid white;
+      border-radius:10px;
+      filter: grayscale(1);
+    }
+
+    #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
+      overflow:visible;
+      position:relative;
+      top:-70px;
+      z-index:2;
+    }
 
 
-  #shopify-section-{{ section.id }} .stripe { 
-  opacity: .5
-  }
-  #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
-    overflow:visible;
-    top:auto;
-    padding-bottom:100px;
-  }
-  }
+    @media only screen and (max-width: 589px){
+      #shopify-section-{{ section.id }} .border-style .feature-row__first-image {
+      top:auto;
+    }
+
+
+    #shopify-section-{{ section.id }} .stripe {
+    opacity: .5
+    }
+    #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
+      overflow:visible;
+      top:auto;
+      padding-bottom:100px;
+    }
+    }
 {% endstyle %}
-
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 
 <script>
-
-  document.addEventListener('page:loaded', function() {
+  document.addEventListener('page:loaded', function () {
     // Page has loaded and theme assets are ready
-    $( ".button_su_inner" ).mouseenter(function(e) {
-      var parentOffset = $(this).offset(); 
-     
+    $('.button_su_inner').mouseenter(function (e) {
+      var parentOffset = $(this).offset();
       var relX = e.pageX - parentOffset.left;
       var relY = e.pageY - parentOffset.top;
-      $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
-      $(this).prev(".su_button_circle").removeClass("desplode-circle");
-      $(this).prev(".su_button_circle").addClass("explode-circle");
-   
-   });
-   
-   $( ".button_su_inner" ).mouseleave(function(e) {
-   
-        var parentOffset = $(this).offset(); 
-   
-        var relX = e.pageX - parentOffset.left;
-        var relY = e.pageY - parentOffset.top;
-        $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
-        $(this).prev(".su_button_circle").removeClass("explode-circle");
-        $(this).prev(".su_button_circle").addClass("desplode-circle");
-   
-   });
+      $(this).prev('.su_button_circle').css({ left: relX, top: relY });
+      $(this).prev('.su_button_circle').removeClass('desplode-circle');
+      $(this).prev('.su_button_circle').addClass('explode-circle');
+    });
+
+    $('.button_su_inner').mouseleave(function (e) {
+      var parentOffset = $(this).offset();
+      var relX = e.pageX - parentOffset.left;
+      var relY = e.pageY - parentOffset.top;
+      $(this).prev('.su_button_circle').css({ left: relX, top: relY });
+      $(this).prev('.su_button_circle').removeClass('explode-circle');
+      $(this).prev('.su_button_circle').addClass('desplode-circle');
+    });
   });
-  
-  </script>
+</script>
 
-
-
-  <div class="button_su">
-    <span class="su_button_circle">
-    </span>
-    <a href="#" class="button_su_inner">
-      <span class="button_text_container">
-        <b>Optional Button</b>
-      </span>
-    </a>
-  </div>
-  
- <div class="stripe"></div>
-<div class="index-section {% if section.settings.image_style == 'border' %} border-style{% endif %}"> 
+<div class="stripe"></div>
+<div class="index-section {% if section.settings.image_style == 'border' %} border-style{% endif %}">
   <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
     {%- capture image_layout -%}
       <div class="feature-row__item feature-row__images{% if placeholder_images %}feature-row__item--placeholder-images{% endif %}" data-aos>
@@ -184,6 +165,16 @@
           <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
+          <div class="button_su">
+            <span class="su_button_circle">
+            </span>
+            <a href="#" class="button_su_inner">
+              <span class="button_text_container">
+                {{ section.settings.button_label }}
+              </span>
+            </a>
+          </div>
+          
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
             <a
               href="{{ section.settings.button_link }}"
