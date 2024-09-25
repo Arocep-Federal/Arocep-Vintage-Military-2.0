@@ -635,7 +635,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_federal_bureau_of_prisons.png",
-            "link": "",
+            "link": "https://www.bop.gov/",
             "target": "_blank"
           }
         },
@@ -643,7 +643,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_general_services_admin.png",
-            "link": "",
+            "link": "https://www.gsa.gov/",
             "target": "_blank"
           }
         },
@@ -651,7 +651,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_defense_contract_audit_agency.png",
-            "link": "",
+            "link": "https://www.dcaa.mil/",
             "target": "_blank"
           }
         },
@@ -659,7 +659,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_office_of_inspector_general.png",
-            "link": "",
+            "link": "https://oig.hhs.gov/",
             "target": "_blank"
           }
         },
@@ -667,7 +667,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_labor.png",
-            "link": "",
+            "link": "https://www.dol.gov/",
             "target": "_blank"
           }
         },
@@ -675,7 +675,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_federal_bureau_of_investigation.png",
-            "link": "",
+            "link": "https://www.fbi.gov/",
             "target": "_blank"
           }
         },
@@ -683,7 +683,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_marine_corps.png",
-            "link": "",
+            "link": "https://www.marines.mil/",
             "target": "_blank"
           }
         },
@@ -691,7 +691,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_air_force.png",
-            "link": "",
+            "link": "https://www.af.mil/",
             "target": "_blank"
           }
         },
@@ -699,7 +699,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_the_treasury.png",
-            "link": "",
+            "link": "https://home.treasury.gov/",
             "target": "_blank"
           }
         },
@@ -707,7 +707,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_of_health_and_human_services.png",
-            "link": "",
+            "link": "https://www.hhs.gov/",
             "target": "_blank"
           }
         },
@@ -715,7 +715,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_department_commerce.png",
-            "link": "",
+            "link": "https://www.commerce.gov/",
             "target": "_blank"
           }
         },
@@ -723,7 +723,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_housing.png",
-            "link": "",
+            "link": "https://www.hud.gov/",
             "target": "_blank"
           }
         },
@@ -731,7 +731,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_nuclear_regulatory_commission.png",
-            "link": "",
+            "link": "https://www.nrc.gov/",
             "target": "_blank"
           }
         },
@@ -739,7 +739,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us-abilityone-commission.png",
-            "link": "",
+            "link": "https://www.abilityone.gov/",
             "target": "_blank"
           }
         },
@@ -747,7 +747,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_central_intelligence_agency.png",
-            "link": "",
+            "link": "https://www.cia.gov/",
             "target": "_blank"
           }
         },
@@ -755,7 +755,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_department_of_agriculture_9448049a-84a9-4553-89cd-440d02a44ec7.png",
-            "link": "",
+            "link": "https://www.epa.gov/",
             "target": "_blank"
           }
         },
@@ -763,7 +763,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_us_coast_guard.png",
-            "link": "",
+            "link": "https://www.uscg.mil/",
             "target": "_blank"
           }
         },
@@ -771,7 +771,7 @@
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/seal_of_the_homeland_security.png",
-            "link": "",
+            "link": "https://www.dhs.gov/",
             "target": "_blank"
           }
         }
