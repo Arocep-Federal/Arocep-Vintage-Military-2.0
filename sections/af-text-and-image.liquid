@@ -165,24 +165,24 @@
           <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
-          <div class="button_su">
-            <span class="su_button_circle">
-            </span>
-            <a href="#" class="button_su_inner">
-              <span class="button_text_container">
-                {{ section.settings.button_label }}
-              </span>
-            </a>
-          </div>
-          
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+            <div class="button_su">
+              <span class="su_button_circle"> </span>
+              <a href="{{ section.settings.button_link }}" class="button_su_inner">
+                <span class="button_text_container">
+                  {{ section.settings.button_label }}
+                </span>
+              </a>
+            </div>
+          </div>
+          {% comment %} <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
             <a
               href="{{ section.settings.button_link }}"
               class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}"
             >
               {{ section.settings.button_label }}
             </a>
-          </div>
+          </div> {% endcomment %}
         {%- endif -%}
       </div>
 
