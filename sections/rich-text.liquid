@@ -47,7 +47,6 @@
               {%- endif -%}
             </div>
           {%- when 'button' -%}
-            <div class="rte">
               
             
           <div class="button_super {% if block.settings.buttolinkn_style == 'secondary' %}secondary{% endif %}">
@@ -62,7 +61,6 @@
               {% comment %} <a href="{{ block.settings.link }}" class="btn">
                 {{ block.settings.link_text }}
               </a> {% endcomment %}
-            </div>
         {%- endcase -%}
       </div>
     {%- endfor -%}
