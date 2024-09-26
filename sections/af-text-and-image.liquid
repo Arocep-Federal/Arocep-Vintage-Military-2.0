@@ -138,7 +138,11 @@
         {%- if section.settings.button_label != blank -%}
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
            
-           
+            <script
+              src="https://code.jquery.com/jquery-3.7.1.min.js"
+              integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+              crossorigin="anonymous"></script>
+              
             <div class="button_super {% if section.settings.button_style == 'secondary' %}secondary{% endif %}">
               <span class="super_button_circle"> </span>
               <a href="{{ section.settings.button_link }}" class="button_super_inner">
