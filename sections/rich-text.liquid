@@ -48,9 +48,20 @@
             </div>
           {%- when 'button' -%}
             <div class="rte">
-              <a href="{{ block.settings.link }}" class="btn">
+              
+            
+          <div class="button_super {% if block.settings.buttolinkn_style == 'secondary' %}secondary{% endif %}">
+            <span class="super_button_circle"> </span>
+            <a href="{{ block.settings.link }}" class="button_super_inner">
+              <span class="button_text_container">
                 {{ block.settings.link_text }}
-              </a>
+              </span>
+            </a>
+          </div>
+            
+              {% comment %} <a href="{{ block.settings.link }}" class="btn">
+                {{ block.settings.link_text }}
+              </a> {% endcomment %}
             </div>
         {%- endcase -%}
       </div>
