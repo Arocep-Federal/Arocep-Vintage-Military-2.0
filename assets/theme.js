@@ -274,6 +274,7 @@ if (console && console.log) {
 
 
 $( document ).ready(function() {
+
   $('.button_super_inner').mouseenter(function (e) {
     var parentOffset = $(this).offset();
     var relX = e.pageX - parentOffset.left;
