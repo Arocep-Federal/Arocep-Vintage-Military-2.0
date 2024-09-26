@@ -273,7 +273,7 @@ if (console && console.log) {
  */
 
 
-
+            $( document ).ready(function() {
 
   $('.button_super_inner').mouseenter(function (e) {
     var parentOffset = $(this).offset();
@@ -292,7 +292,7 @@ if (console && console.log) {
     $(this).prev('.super_button_circle').removeClass('explode-circle');
     $(this).prev('.super_button_circle').addClass('desplode-circle');
   });
-  
+})
 
 
 /**
