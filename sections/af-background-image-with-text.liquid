@@ -47,9 +47,20 @@
                   <div class="rte background-media-text__subtext">{{ section.settings.text }}</div>
                 {%- endif -%}
                 {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
-                  <a href="{{ section.settings.button_link }}" class="btn">
+                  
+          
+                  <div class="button_super {% if section.settings.button_style == 'secondary' %}secondary{% endif %}">
+                    <span class="super_button_circle"> </span>
+                    <a href="{{ section.settings.button_link }}" class="button_super_inner">
+                      <span class="button_text_container">
+                        {{ section.settings.button_label }}
+                      </span>
+                    </a>
+                  </div>
+                  
+                  {% comment %} <a href="{{ section.settings.button_link }}" class="btn">
                     {{ section.settings.button_label }}
-                  </a>
+                  </a> {% endcomment %}
                 {%- endif -%}
               </div>
             </div>

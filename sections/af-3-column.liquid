@@ -95,9 +95,21 @@
           <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
         {% endif %}
         {% if block.settings.button_label != blank %}
+
+
+          <div class="button_super {% if block.settings.button_style == 'secondary' %}secondary{% endif %}">
+            <span class="super_button_circle"> </span>
+            <a href="{{ block.settings.button_link }}" class="button_super_inner">
+              <span class="button_text_container">
+                {{ block.settings.button_label }}
+              </span>
+            </a>
+          </div>
+
+{% comment %}           
           <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
             {{ block.settings.button_label }}
-          </a>
+          </a> {% endcomment %}
         {% endif %}
       </div>
     {%- endfor -%}

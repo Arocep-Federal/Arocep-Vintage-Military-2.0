@@ -113,9 +113,19 @@
           <div class="af-text hero__link">
             <div class="animation-cropper">
               <div class="animation-contents">
-                <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
+                
+            <div class="button_super {% if section.settings.button_style == 'secondary' %}secondary{% endif %}">
+              <span class="super_button_circle"> </span>
+              <a href="{{ section.settings.link }}" class="button_super_inner">
+                <span class="button_text_container">
+                  {{ section.settings.link_text }}
+                </span>
+              </a>
+            </div>
+                
+                {% comment %} <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
                   {{ section.settings.link_text | escape }}
-                </a>
+                </a> {% endcomment %}
               </div>
             </div>
           </div>
