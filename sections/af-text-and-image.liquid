@@ -139,7 +139,7 @@
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
            
            
-            <div class="button_super">
+            <div class="button_super {% if section.settings.button_style == 'secondary' %}secondary{% endif %}">
               <span class="super_button_circle"> </span>
               <a href="{{ section.settings.button_link }}" class="button_super_inner{% if section.settings.button_style == 'secondary' %} secondary{% endif %}">
                 <span class="button_text_container">
