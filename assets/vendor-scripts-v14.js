@@ -86,7 +86,7 @@ theme.Partners = (function() {
         threshold: 600
       });
     }
-  
+   
     Partners.prototype = Object.assign({}, Partners.prototype, {
       init: function() {
         // Do not wrap when only a few blocks
