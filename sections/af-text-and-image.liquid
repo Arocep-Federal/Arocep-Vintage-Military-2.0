@@ -87,7 +87,7 @@
 <script>
   document.addEventListener('page:loaded', function () {
     // Page has loaded and theme assets are ready
-    $('.button_super_inner').mouseenter(function (e) {
+    {% comment %} $('.button_super_inner').mouseenter(function (e) {
       var parentOffset = $(this).offset();
       var relX = e.pageX - parentOffset.left;
       var relY = e.pageY - parentOffset.top;
@@ -103,7 +103,7 @@
       $(this).prev('.super_button_circle').css({ left: relX, top: relY });
       $(this).prev('.super_button_circle').removeClass('explode-circle');
       $(this).prev('.super_button_circle').addClass('desplode-circle');
-    });
+    }); {% endcomment %}
   });
 </script>
 
