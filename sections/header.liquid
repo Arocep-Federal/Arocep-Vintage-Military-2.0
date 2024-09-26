@@ -22,7 +22,11 @@
     assign overlay_header = true
   endif
 -%}
-
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  
 {%- render 'drawer-menu', section: section, main_menu: main_menu, logo_alignment: logo_alignment -%}
 {%- render 'cart-drawer' -%}
 
