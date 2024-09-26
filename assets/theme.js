@@ -273,12 +273,14 @@ if (console && console.log) {
  */
 
 
-            $( document ).ready(function() {
+$( document ).ready(function() {
 
   $('.button_super_inner').mouseenter(function (e) {
     var parentOffset = $(this).offset();
     var relX = e.pageX - parentOffset.left;
     var relY = e.pageY - parentOffset.top;
+    var y = $(this).prev('.super_button_circle');
+    console.log(y);
     $(this).prev('.super_button_circle').css({ left: relX, top: relY });
     $(this).prev('.super_button_circle').removeClass('desplode-circle');
     $(this).prev('.super_button_circle').addClass('explode-circle');
