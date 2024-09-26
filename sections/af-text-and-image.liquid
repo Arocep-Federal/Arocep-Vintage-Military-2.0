@@ -78,35 +78,6 @@
     }
 {% endstyle %}
 
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"
-></script>
-
-<script>
-  document.addEventListener('page:loaded', function () {
-    // Page has loaded and theme assets are ready
-    {% comment %} $('.button_super_inner').mouseenter(function (e) {
-      var parentOffset = $(this).offset();
-      var relX = e.pageX - parentOffset.left;
-      var relY = e.pageY - parentOffset.top;
-      $(this).prev('.super_button_circle').css({ left: relX, top: relY });
-      $(this).prev('.super_button_circle').removeClass('desplode-circle');
-      $(this).prev('.super_button_circle').addClass('explode-circle');
-    });
-
-    $('.button_super_inner').mouseleave(function (e) {
-      var parentOffset = $(this).offset();
-      var relX = e.pageX - parentOffset.left;
-      var relY = e.pageY - parentOffset.top;
-      $(this).prev('.super_button_circle').css({ left: relX, top: relY });
-      $(this).prev('.super_button_circle').removeClass('explode-circle');
-      $(this).prev('.super_button_circle').addClass('desplode-circle');
-    }); {% endcomment %}
-  });
-</script>
-
 <div class="stripe"></div>
 <div class="index-section {% if section.settings.image_style == 'border' %} border-style{% endif %}">
   <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
@@ -166,6 +137,8 @@
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+           
+           
             <div class="button_super">
               <span class="super_button_circle"> </span>
               <a href="{{ section.settings.button_link }}" class="button_super_inner{% if section.settings.button_style == 'secondary' %} secondary{% endif %}">
@@ -174,6 +147,8 @@
                 </span>
               </a>
             </div>
+          
+          
           </div>
 
 
