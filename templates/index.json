@@ -104,11 +104,19 @@
           "settings": {
             "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
           }
+        },
+        "button_4Nexa4": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/about-us",
+            "link_text": "Read Our Story"
+          }
         }
       },
       "block_order": [
         "heading_zB4eLX",
-        "text_bXtPkQ"
+        "text_bXtPkQ",
+        "button_4Nexa4"
       ],
       "settings": {
         "align_text": "center",
@@ -151,8 +159,8 @@
         "text_align": "vertical-center horizontal-right",
         "image": "shopify://shop_images/bg-global-network.png",
         "height": 100,
-        "link": "",
-        "link_text": "Optional button",
+        "link": "shopify://pages/about-us",
+        "link_text": "Learn More",
         "vintage_military_overlay": "#091d33"
       }
     },
