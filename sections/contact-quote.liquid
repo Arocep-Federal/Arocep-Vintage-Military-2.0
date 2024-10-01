@@ -510,7 +510,7 @@
 
           <div class="grid__item medium-up--one-whole">
             <label for="ContactFormFile-{{ section.id }}">Upload File</label>
-            <input
+            {% comment %} <input
               type="file"
               placeholder="Upload File"
               id="ContactFormFile-{{ section.id }}"
@@ -520,7 +520,9 @@
               autocorrect="off"
               autocapitalize="off"
               value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}"
-            >
+            > {% endcomment %}
+
+              <input type="text" name="contact[file_upload]" placeholder="Upload File" class="fluHidden appFileUpload">
           </div>
 
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
