@@ -15,6 +15,37 @@
       "settings": {
       }
     },
+    "slideshow_pq4hta": {
+      "type": "slideshow",
+      "blocks": {
+        "image_89KRhX": {
+          "type": "image",
+          "settings": {
+            "title": "Request A Formal Proposal",
+            "title_size": 60,
+            "subheading": "Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/AdobeStock_225122865.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_89KRhX"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -54,6 +85,7 @@
   },
   "order": [
     "main",
+    "slideshow_pq4hta",
     "rich-text",
     "contact_quote_qry8bN"
   ]
