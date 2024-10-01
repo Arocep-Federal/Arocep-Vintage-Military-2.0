@@ -27,7 +27,7 @@
         "text_73DDMa": {
           "type": "text",
           "settings": {
-            "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
+            "text": "<p><strong>Empowering Federal Excellence:</strong><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
           }
         }
       },
@@ -46,7 +46,7 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "title": "Contact us",
+        "title": "Contact Us",
         "text": "",
         "show_phone": false,
         "narrow_column": true
