@@ -89,7 +89,15 @@
     "checkout_use_header_image": false,
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "9033207960287450087": {
+        "type": "shopify://apps/thanhbt-file-upload/blocks/thanhbt-file-upload/0bc3b106-12d9-4de0-a0c6-dadcedb2d9c5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Classic": {

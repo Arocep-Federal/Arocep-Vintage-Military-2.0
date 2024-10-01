@@ -356,8 +356,8 @@
         "title": "Gatorz",
         "title_size": 60,
         "subheading": "American Made Eyewear",
-        "link_text": "",
-        "link": "shopify://collections/information-technology",
+        "link_text": "Shop Gatorz",
+        "link": "https://arocep.com/search?q=gatorz",
         "text_align": "vertical-center horizontal-center",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
         "overlay_opacity": 34,
@@ -394,8 +394,8 @@
         "text_align": "vertical-center horizontal-center",
         "image": "shopify://shop_images/saluting.jpg",
         "height": 78,
-        "link": "",
-        "link_text": "Optional button",
+        "link": "shopify://pages/about-us",
+        "link_text": "Learn About the Advantage",
         "vintage_military_overlay": "none"
       }
     },
