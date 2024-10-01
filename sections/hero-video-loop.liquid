@@ -107,14 +107,14 @@
                 <div class="animation-contents">
 
 
-                  <div class="button_super secondary{% if youtube_video_link %} btn--no-animate{% endif %}">
-                    <span class="super_button_circle"> </span>
-                    <a href="{{ section.settings.button_link }}" class="button_super_inner">
-                      <span class="button_text_container">
-                        {{ section.settings.button_label }}
-                      </span>
-                    </a>
-                  </div>
+                    <div class="button_super secondary{% if youtube_video_link %} btn--no-animate{% endif %}">
+                        <span class="super_button_circle"> </span>
+                        <a href="{{ section.settings.link }}" class="button_super_inner">
+                          <span class="button_text_container">
+                            {{ section.settings.link_text }}
+                          </span>
+                        </a>
+                      </div>
 
                   {% comment %} <a href="{{ link_href }}" class="btn btn--inverse{% if youtube_video_link %} btn--no-animate{% endif %}"
                     {%- if section.settings.video_url contains 'vimeo.com' -%}
