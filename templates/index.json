@@ -9,16 +9,16 @@
 */
 {
   "sections": {
-    "hero-video": {
-      "type": "hero-video",
+    "hero_video_no_loop_NgHPhj": {
+      "type": "hero-video-no-loop",
       "settings": {
         "title": "",
         "title_size": 80,
         "subheading": "",
         "link_text": "",
-        "link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "link": "",
         "text_align": "vertical-center horizontal-center",
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/e5f8f5aeeaaa41728dc3f9defb58e11f.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/6f5f388f77804402b82199e83539a6fc.mp4",
         "overlay_opacity": 0,
         "section_height": "750px",
         "mobile_height": "auto"
@@ -348,21 +348,6 @@
         "round_images": true,
         "color_background": "#000000",
         "color_text": "#ffffff"
-      }
-    },
-    "hero_video_LbjQQi": {
-      "type": "hero-video",
-      "settings": {
-        "title": "Gatorz",
-        "title_size": 60,
-        "subheading": "American Made Eyewear",
-        "link_text": "",
-        "link": "https://arocep.com/search?q=gatorz",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
-        "overlay_opacity": 34,
-        "section_height": "650px",
-        "mobile_height": "auto"
       }
     },
     "background-image-text": {
@@ -854,14 +839,13 @@
     }
   },
   "order": [
-    "hero-video",
+    "hero_video_no_loop_NgHPhj",
     "featured-collections",
     "rich_text_bKrQYe",
     "af_text_and_image_hcF83F",
     "vintage_military_gYpftm",
     "partners_JKRHiJ",
     "testimonials_HAxENX",
-    "hero_video_LbjQQi",
     "background-image-text",
     "vintage_military_UahVJC",
     "slideshow_Jqiidr",
