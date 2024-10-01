@@ -22,12 +22,12 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon_0001_teamwork.png",
+            "image": "shopify://shop_images/icon_0001_teamwork.png",
             "image_mask": "square",
             "image_width": 250,
             "title": "Teamwork",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -35,12 +35,12 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon_0002_excellence.png",
+            "image": "shopify://shop_images/icon_0002_excellence.png",
             "image_mask": "square",
             "image_width": 250,
             "title": "Excellence",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -48,12 +48,12 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/icon_0000_innovation.png",
+            "image": "shopify://shop_images/icon_0000_innovation.png",
             "image_mask": "square",
             "image_width": 250,
             "title": "Innovation",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
-            "button_label": "Optional button",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -67,18 +67,18 @@
         "title": "Our Values",
         "fontcolor": "#ffffff",
         "align_text": "center",
-        "bgimage": "shopify:\/\/shop_images\/bg-about.jpg"
+        "bgimage": "shopify://shop_images/bg-about.jpg"
       }
     },
     "af_text_and_image_rvrsbl_CY3FVd": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
-        "image": "shopify:\/\/shop_images\/AdobeStock_271352220_2_Large_bff3a230-d28e-4d50-8dfc-b8a80109a954.jpg",
+        "bg-color": "#000000",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/AdobeStock_271352220_2_Large_bff3a230-d28e-4d50-8dfc-b8a80109a954.jpg",
         "subtitle": "",
         "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -94,12 +94,12 @@
     "af_text_and_image_rvrsbl_RRk8B6": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
-        "image": "shopify:\/\/shop_images\/AdobeStock_271345578_2_Large_50a84d5e-81c4-42ce-8a0c-1b344f223dba.jpg",
+        "bg-color": "#000000",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/AdobeStock_271345578_2_Large_50a84d5e-81c4-42ce-8a0c-1b344f223dba.jpg",
         "subtitle": "",
         "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -115,12 +115,12 @@
     "af_text_and_image_rvrsbl_hGCtLt": {
       "type": "af-text-and-image-rvrsbl",
       "settings": {
-        "bg-color": "#000",
-        "color": "#fff",
-        "image": "shopify:\/\/shop_images\/AdobeStock_523109905_Large_fb07b8d8-0c41-46be-b97f-ac7c33cb668f.jpg",
+        "bg-color": "#000000",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/AdobeStock_523109905_Large_fb07b8d8-0c41-46be-b97f-ac7c33cb668f.jpg",
         "subtitle": "",
         "title": "Image with text",
-        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
