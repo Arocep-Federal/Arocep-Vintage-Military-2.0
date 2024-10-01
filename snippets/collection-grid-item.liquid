@@ -22,7 +22,7 @@
       {% capture placeholder %}collection-{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
       <div class="skrim__overlay grid__image">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
     {%- else -%}
-      <div class="skrim__overlay grid__image">
+      {% comment %} <div class="skrim__overlay grid__image">
         {% assign indicator = block.id %}
         {% if block == blank %}
           {% assign indicator = collection.id %}
@@ -43,13 +43,13 @@
           sizeVariable: sizeVariable,
           fallback: fallback,
         -%}
-      </div>
+      </div> {% endcomment %}
     {%- endif -%}
 
     <div class="skrim__title">
-      <div class="skrim__underline-me">
-        {{ collection_title }}
-      </div>
+      {{ collection_title }}
+      {% comment %} <div class="skrim__underline-me">
+      </div> {% endcomment %}
     </div>
   </a>
 </div>

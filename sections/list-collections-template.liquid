@@ -101,7 +101,7 @@
             -%}
           {%- endfor -%}
         {% endif %}
-      {% comment %} {% else %}
+      {% else %}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
           {%- render 'collection-grid-item',
@@ -112,7 +112,7 @@
             fallback: 'variable'
           -%}
         {%- endfor -%}
-      {% endif %} {% endcomment %}
+      {% endif %}
     </div>
 
     {% comment %} {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
