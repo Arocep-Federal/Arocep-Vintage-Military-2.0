@@ -57,7 +57,7 @@
   assign grid_item_width = gridView | append: ' collection--square-small'
 -%}
 
-{%- paginate collections by paginate_by -%}
+{% comment %} {%- paginate collections by paginate_by -%} {% endcomment %}
   <div class="page-width page-content collections-list collections-list--{{ section.id }}">
     {%- render 'breadcrumbs' -%}
 
@@ -119,7 +119,7 @@
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
   </div>
-{%- endpaginate -%}
+{% comment %} {%- endpaginate -%} {% endcomment %}
 
 {% schema %}
 {
