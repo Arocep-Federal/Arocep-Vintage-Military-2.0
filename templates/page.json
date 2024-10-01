@@ -15,21 +15,33 @@
       "settings": {
       }
     },
-    "af_hero_zdjWAz": {
-      "type": "af-hero",
+    "rich_text_QgVCWj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BBN6Dn": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission"
+          }
+        },
+        "text_79hVBe": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BBN6Dn",
+        "text_79hVBe"
+      ],
       "settings": {
-        "fontcolor": "#ffffff",
-        "kicker": "Your Brand Story",
-        "headline": "Vintage Military Hero",
-        "subheadline": "with all the things...",
-        "button_label": "",
-        "button_link": "",
-        "text_align": "vertical-center horizontal-center",
-        "focal_point": "center",
-        "color_border": "#f4f4f4",
-        "height": 450,
-        "parallax": true,
-        "vintage_military_overlay": "none"
+        "align_text": "center",
+        "font_size": 31,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "bgimage": "shopify://shop_images/AdobeStock_225122865.jpg",
+        "narrow_column": false
       }
     },
     "text_columns_Xgn7cY": {
@@ -116,7 +128,7 @@
         "image": "shopify://shop_images/AdobeStock_271345578_2_Large_50a84d5e-81c4-42ce-8a0c-1b344f223dba.jpg",
         "subtitle": "",
         "title": "Ease, Efficiency & Reliability",
-        "text": "<p>We strive to simplify the procurement process, fostering a culture of <br/>ease, efficiency, and reliability. Our team of acquisition specialists <br/>is committed to delivering flawless supply solutions that support the <br/>critical missions of our federal partners. </p>",
+        "text": "<p>We strive to simplify the procurement process, fostering a culture of ease, efficiency, and reliability. Our team of acquisition specialists is committed to delivering flawless supply solutions that support the critical missions of our federal partners. </p>",
         "button_label": "",
         "button_link": "",
         "button_style": "primary",
@@ -153,7 +165,7 @@
   },
   "order": [
     "main",
-    "af_hero_zdjWAz",
+    "rich_text_QgVCWj",
     "text_columns_Xgn7cY",
     "af_text_and_image_rvrsbl_CY3FVd",
     "af_text_and_image_rvrsbl_RRk8B6",
