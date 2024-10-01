@@ -101,7 +101,7 @@
             -%}
           {%- endfor -%}
         {% endif %}
-      {% else %}
+      {% comment %} {% else %}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
           {%- render 'collection-grid-item',
@@ -112,12 +112,12 @@
             fallback: 'variable'
           -%}
         {%- endfor -%}
-      {% endif %}
+      {% endif %} {% endcomment %}
     </div>
 
-    {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
+    {% comment %} {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
       {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+    {%- endif -%} {% endcomment %}
   </div>
 {% comment %} {%- endpaginate -%} {% endcomment %}
 
