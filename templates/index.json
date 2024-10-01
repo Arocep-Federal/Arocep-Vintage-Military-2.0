@@ -836,6 +836,7 @@
     },
     "af_hero_WnDXfD": {
       "type": "af-hero",
+      "disabled": true,
       "settings": {
         "fontcolor": "#ffffff",
         "kicker": "Proud to be",
