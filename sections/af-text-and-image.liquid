@@ -51,12 +51,18 @@
       border:10px solid white;
       border-radius:10px;
       filter: grayscale(1);
+      transition:all .25s ease 0ms; 
+    }
+
+
+    #shopify-section-{{ section.id }} .border-style .feature-row__first-image:hover {
+      filter: grayscale(0);
     }
 
     #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
       overflow:visible;
       position:relative;
-      top:-70px;
+      top:-80px;
       z-index:2;
     }
 
