@@ -29,10 +29,10 @@
             "menu_item": "My mega",
             "promo_heading_1": "heading",
             "promo_text_1": "text",
-            "promo_url_1": "shopify:\/\/products\/1010070329",
+            "promo_url_1": "shopify://products/1010070329",
             "promo_heading_2": "heading",
             "promo_text_2": "text",
-            "promo_url_2": "shopify:\/\/products\/1010070329"
+            "promo_url_2": "shopify://products/1010070329"
           }
         },
         "megamenu_J8Ppkw": {
@@ -41,10 +41,10 @@
             "menu_item": "new",
             "promo_heading_1": "Heading",
             "promo_text_1": "Text",
-            "promo_url_1": "shopify:\/\/products\/the-3p-fulfilled-snowboard",
+            "promo_url_1": "shopify://products/the-3p-fulfilled-snowboard",
             "promo_heading_2": "heading",
             "promo_text_2": "text",
-            "promo_url_2": "shopify:\/\/collections\/all"
+            "promo_url_2": "shopify://collections/all"
           }
         },
         "megamenu_G3AUnR": {
@@ -53,7 +53,7 @@
             "menu_item": "new2",
             "promo_heading_1": "23232",
             "promo_text_1": "2323232",
-            "promo_url_1": "shopify:\/\/products\/1035806930",
+            "promo_url_1": "shopify://products/1035806930",
             "promo_heading_2": "",
             "promo_text_2": "",
             "promo_url_2": ""
@@ -66,8 +66,8 @@
         "megamenu_G3AUnR"
       ],
       "settings": {
-        "logo": "shopify:\/\/shop_images\/Arocep_Logo_horizontal.png",
-        "logo-inverted": "shopify:\/\/shop_images\/arocep_mixed_3x_white.png",
+        "logo": "shopify://shop_images/arocep_mixed_3x_white.png",
+        "logo-inverted": "shopify://shop_images/arocep_mixed_3x_white.png",
         "desktop_logo_width": 200,
         "mobile_logo_width": 140,
         "main_menu_link_list": "vintage-military-theme",
