@@ -15,6 +15,37 @@
       "settings": {
       }
     },
+    "slideshow_hHdFz4": {
+      "type": "slideshow",
+      "blocks": {
+        "image_GRXCCf": {
+          "type": "image",
+          "settings": {
+            "title": "Get in Touch",
+            "title_size": 60,
+            "subheading": "Use the form below and we will respond within 24 hours.",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/AdobeStock_225122865.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "image_GRXCCf"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
@@ -35,11 +66,12 @@
         "heading",
         "text_73DDMa"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "center",
         "font_size": 32,
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff",
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff",
         "narrow_column": false
       }
     },
@@ -55,6 +87,7 @@
   },
   "order": [
     "main",
+    "slideshow_hHdFz4",
     "rich-text",
     "form"
   ]
