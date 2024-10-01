@@ -15,6 +15,23 @@
       "settings": {
       }
     },
+    "af_hero_zdjWAz": {
+      "type": "af-hero",
+      "settings": {
+        "fontcolor": "#ffffff",
+        "kicker": "Your Brand Story",
+        "headline": "Vintage Military Hero",
+        "subheadline": "with all the things...",
+        "button_label": "",
+        "button_link": "",
+        "text_align": "vertical-center horizontal-center",
+        "focal_point": "center",
+        "color_border": "#f4f4f4",
+        "height": 450,
+        "parallax": true,
+        "vintage_military_overlay": "none"
+      }
+    },
     "text_columns_Xgn7cY": {
       "type": "text-columns",
       "blocks": {
@@ -136,6 +153,7 @@
   },
   "order": [
     "main",
+    "af_hero_zdjWAz",
     "text_columns_Xgn7cY",
     "af_text_and_image_rvrsbl_CY3FVd",
     "af_text_and_image_rvrsbl_RRk8B6",
