@@ -44,19 +44,23 @@
 
 
     @media only screen and (max-width:970px){
-
-        .partners-wrapper {
+    .partners-wrapper {
       position:relative;
       top:-100px;
     }
-
-
-      .partners-{{ section.id }} .flickity-previous,
-      .partners-{{ section.id }} .flickity-next  {
+    .partners-{{ section.id }} .flickity-previous,
+    .partners-{{ section.id }} .flickity-next  {
       display:none
     }
 
     }
+
+    @media only screen and (max-width:590px){
+      .partners-wrapper {
+        top:0px;
+      }
+    }
+
 {%- endstyle -%}
 
 <script>
