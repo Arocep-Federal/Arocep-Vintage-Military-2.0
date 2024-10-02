@@ -5,15 +5,15 @@
     background-position:bottom center;
     background-blend-mode: luminosity;
     background-color: {{ section.settings.vintage_military_overlay }};
-    height:60vh;
+    height:80vh;
     width:100%;
     position:relative;
   }
-      .kicker {
-        text-transform: uppercase;
-      font-size: 16px;
-      margin-bottom:0;
-      }
+  .kicker {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom:0;
+  }
 {%- endstyle -%}
 
 <div
@@ -32,7 +32,7 @@
               <div class="animation-cropper">
                 <div class="animation-contents">
                   {%- unless section.settings.kicker == blank -%}
-                    <h3 class="kicker">&#91;{{ section.settings.kicker }}&#93;</h3>
+                    <p class="kicker">&#91;{{ section.settings.kicker }}&#93;</p>
                   {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
                 </div>
