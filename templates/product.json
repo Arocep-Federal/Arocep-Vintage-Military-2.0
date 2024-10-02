@@ -31,13 +31,6 @@
             "color_swatches": false
           }
         },
-        "sales_point": {
-          "type": "sales_point",
-          "settings": {
-            "icon": "globe",
-            "text": "Free worldwide shipping"
-          }
-        },
         "inventory_status": {
           "type": "inventory_status",
           "settings": {
@@ -84,7 +77,6 @@
         "price",
         "separator",
         "variant_picker",
-        "sales_point",
         "inventory_status",
         "buy_buttons",
         "description",

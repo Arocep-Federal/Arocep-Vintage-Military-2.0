@@ -330,6 +330,42 @@
             "author": "Supply Technician",
             "author_info": "Defense Commissary Agency"
           }
+        },
+        "testimonial_VeVtaf": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_XhVt6c": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_mhbHaR": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial_dzpdfn": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author name",
+            "author_info": "Los Angeles, CA"
+          }
         }
       },
       "block_order": [
@@ -341,7 +377,11 @@
         "testimonial_96PYPQ",
         "testimonial_yaUL9h",
         "testimonial_dwEf9r",
-        "testimonial_jinkMX"
+        "testimonial_jinkMX",
+        "testimonial_VeVtaf",
+        "testimonial_XhVt6c",
+        "testimonial_mhbHaR",
+        "testimonial_dzpdfn"
       ],
       "settings": {
         "title": "Don't take our word for it...",
