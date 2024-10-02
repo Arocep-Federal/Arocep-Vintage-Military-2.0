@@ -241,6 +241,16 @@
     "testimonials_HAxENX": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_RLVQcc": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
+            "author": "IT Specialist",
+            "author_info": "US Department of the Navy"
+          }
+        },
         "testimonial_KPCVTr": {
           "type": "testimonial",
           "settings": {
@@ -251,14 +261,14 @@
             "author_info": "US Department of the Army, Corps of Engineers"
           }
         },
-        "testimonial_RLVQcc": {
+        "testimonial_zA9N3c": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>\"Arocep Federal has been such a pleasure to work with! Their customer service is unparalleled. They have a fast response time to inquiries, billing, and shipping. I am grateful for them and look forward to working with them in the future.\"</p>",
-            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
-            "author": "IT Specialist",
-            "author_info": "US Department of the Navy"
+            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
+            "author": "Electronics Technician",
+            "author_info": "US Department of the Army"
           }
         },
         "testimonial_V6q3GN": {
@@ -320,28 +330,18 @@
             "author": "Supply Technician",
             "author_info": "Defense Commissary Agency"
           }
-        },
-        "testimonial_zA9N3c": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>\"Arocep Federal made my first Fedmall purchase effortless! They responded same day to my email request for an inquiry on supply as well as a request for paid invoice. The item shipped and was delivered very quickly and was exactly as described in the product description. Would love to do business with Arocep Federal again!\"</p>",
-            "image": "shopify://shop_images/seal_of_the_department_army.png",
-            "author": "Electronics Technician",
-            "author_info": "US Department of the Army"
-          }
         }
       },
       "block_order": [
-        "testimonial_KPCVTr",
         "testimonial_RLVQcc",
+        "testimonial_KPCVTr",
+        "testimonial_zA9N3c",
         "testimonial_V6q3GN",
         "testimonial_9KhXDL",
         "testimonial_96PYPQ",
         "testimonial_yaUL9h",
         "testimonial_dwEf9r",
-        "testimonial_jinkMX",
-        "testimonial_zA9N3c"
+        "testimonial_jinkMX"
       ],
       "settings": {
         "title": "Don't take our word for it...",
