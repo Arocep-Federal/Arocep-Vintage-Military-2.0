@@ -15,7 +15,7 @@
     color: white;
     text-decoration: underline
   }
-  .stripe {
+  .section--{{ section.id }}.stripe {
     position:absolute;
     background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
     width:100px;
@@ -53,7 +53,7 @@
     .background-media-text--{{ section.id }} .background-media-text__image {
       visibility:visible;
     }
-    .background-media-text--{{ section.id }} .stripe {
+    .section--{{ section.id }}.stripe {
       z-index:1;
       opacity:.5;
     }
@@ -61,7 +61,7 @@
   }
 {% endstyle %}
 
-{% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
+{% if section.settings.stripe %}<div class="section--{{ section.id }} stripe"></div>{% endif %}
 <div
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
