@@ -28,7 +28,7 @@
           {%- unless section.settings.kicker == blank -%}
             <div class="animation-cropper">
               <div class="animation-contents">
-                <p class="kicker">[{{ section.settings.kicker }}]</p>
+                <p class="kicker">&#91;{{ section.settings.kicker | newline_to_br }}&#93;</p>
               </div>
             </div>
           {%- endunless -%}
