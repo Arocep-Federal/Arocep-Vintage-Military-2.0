@@ -96,7 +96,7 @@
           "settings": {
             "show_footer_title": true,
             "title": "Arocep Federal",
-            "text": "<p><a href=\"https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-02F-0052V&contractorName=AROCEP+FEDERAL%2C+LLC&executeQuery=YES\" title=\"Arocep Federal - GSA eLibrary\">GSA: GS02F0052V</a></p><p><a href=\"https://www.fedmall.mil/index.html\" title=\"FedMall\">FedMall: MARKETPLACE_4UB10, GS02F0052V</a></p><p>Cage: 4UB10</p><p>DUNS:  118293732</p><p>Federal Tax ID: 331189171</p>",
+            "text": "<p><a href=\"https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-02F-0052V&contractorName=AROCEP+FEDERAL%2C+LLC&executeQuery=YES\" title=\"Arocep Federal - GSA eLibrary\">GSA: GS02F0052V</a></p><p><a href=\"https://www.fedmall.mil/index.html\" title=\"FedMall\">FedMall: GS02F0052V</a></p><p>Cage: 4UB10</p><p>DUNS:  118293732</p><p>Federal Tax ID: 331189171</p>",
             "container_width": 34
           }
         },
