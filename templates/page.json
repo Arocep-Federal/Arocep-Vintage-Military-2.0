@@ -21,11 +21,11 @@
         "kicker": "Our Mission",
         "headline": "Empowering Federal Excellence",
         "subheadline": "Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.",
-        "text_align": "vertical-center horizontal-center",
+        "text_align": "vertical-bottom horizontal-center",
         "image": "shopify://shop_images/AdobeStock_359492610_2_757b6176-a689-4058-9a26-6c3be16c73b1.png",
         "link": "",
         "link_text": "",
-        "vintage_military_overlay": "#34090a"
+        "vintage_military_overlay": "none"
       }
     },
     "vintage_military_6m3YqL": {
