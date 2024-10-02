@@ -25,18 +25,14 @@
     <div class="hero__text-wrap hero__text-wrap--absolute">
       <div class="page-width text-center">
         <div class="hero__text-content {{ section.settings.text_align }}">
-          {%- unless section.settings.kicker == blank -%}
-          <div class="animation-cropper">
-            <div class="animation-contents">
-              <p class="kicker">&#91;{{ section.settings.kicker }}&#93;</p>
-              <h2>{{ section.settings.headline | newline_to_br }}</h2>
-            </div>
-          </div>
-        {%- endunless -%}
+       
           {%- unless section.settings.headline == blank -%}
             <div class="hero__title">
               <div class="animation-cropper">
                 <div class="animation-contents">
+                  {%- unless section.settings.kicker == blank -%}
+                    <p class="kicker">&#91;{{ section.settings.kicker }}&#93;</p>
+                  {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
                 </div>
                 </div>
