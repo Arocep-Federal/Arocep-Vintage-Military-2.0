@@ -1,57 +1,61 @@
 {% style %}
-.background-media-text--{{ section.id }} .background-media-text__aligner {
-  margin:0;
-}
+  .background-media-text--{{ section.id }} .background-media-text__aligner {
+    margin:0;
+  }
 
-.background-media-text--{{ section.id }} .background-media-text__text {
-  width:60%;
-  background:none;
-  color: white;
-  padding: 100px 0;
-}
-
-.background-media-text--{{ section.id }} a {
-  position:relative;
-  color: white;
-  text-decoration: underline
-}
-.stripe {
-  position:absolute;
-  background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
-  width:100px;
-  background-repeat:no-repeat;
-  background-position:top left;
-  z-index:2;
-  /* top:0; */
-  left:20px;
-  height:800px
-}
-@media only screen and (max-width: 1500px){
-
-.background-media-text--{{ section.id }} .background-media-text__text {
-  padding: 100px 0 0 120px;
-}
-
-}
-
-
-@media only screen and (max-width: 589px){
-  .background-media-text--{{ section.id }} .page-width {
-    padding:0;
-  } 
   .background-media-text--{{ section.id }} .background-media-text__text {
-    width:100%;
-    padding: 20px 20px 20px 120px;
-    /* margin:0; */
+    width:60%;
+    background:none;
+    color: white;
+    padding: 100px 0;
+  }
+
+  .background-media-text--{{ section.id }} a {
+    position:relative;
+    color: white;
+    text-decoration: underline
+  }
+  .stripe {
+    position:absolute;
+    background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
+    width:100px;
+    background-repeat:no-repeat;
+    background-position:top left;
+    z-index:2;
+    /* top:0; */
+    left:20px;
+    height:800px
+  }
+  @media only screen and (max-width: 1500px){
+    .background-media-text--{{ section.id }} .background-media-text__text {
+      padding: 100px 0 0 120px;
+    }
   }
 
 
-.stripe {
-  z-index:1;
-  opacity:.5;
-}
-}
+  @media only screen and (max-width: 1280px){
+    .background-media-text--{{ section.id }} .background-media-text__image {
+      background-image:none;
+    }
 
+  }
+
+
+  @media only screen and (max-width: 589px){
+    .background-media-text--{{ section.id }} .page-width {
+      padding:0;
+    }
+    .background-media-text--{{ section.id }} .background-media-text__text {
+      width:100%;
+      padding: 20px 20px 20px 120px;
+      /* margin:0; */
+    }
+    .background-media-text--{{ section.id }} .stripe {
+      z-index:1;
+      opacity:.5;
+    }
+
+  }
 {% endstyle %}
 
 {% if section.settings.stripe %}<div class="stripe"></div>{% endif %}
@@ -60,37 +64,46 @@
   data-section-type="background-image"
   class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} loaded"
   data-aos="background-media-text__animation"
-  {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+  {% if section.settings.parallax %}
+    data-parallax="true"
+  {% endif %}
+>
   <div class="page-width">
     <div class="background-media-text__container">
       {%- if section.settings.parallax -%}
         <parallax-image class="parallax-container">
-          <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
+          <div
+            class="parallax-image"
+            data-movement="15%"
+            data-parallax-image
+            data-angle="{{ section.settings.parallax_direction }}"
+          >
       {%- endif -%}
 
-        {%- if section.settings.image != blank -%}
+      {%- if section.settings.image != blank -%}
+        {% assign classes = 'image-fit background-media-text__image background-media-text__image--'
+          | append: section.id
+        %}
+        {% comment %} Full width image so don't need to adjust sizes attribute, fallback is 100vw {% endcomment %}
 
-          {% assign classes = 'image-fit background-media-text__image background-media-text__image--' | append: section.id %}
-          {% comment %} Full width image so don't need to adjust sizes attribute, fallback is 100vw {% endcomment %}
-          
-          {% assign background_position = block.settings.focal_point %}
-          {%- render 'image-element',
-            img: section.settings.image,
-            img_width: 2400,
-            background_position: background_position,
-            loading: section.settings.lazyload_images,
-            classes: classes,
-          -%}
-        {%- else -%}
-          {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+        {% assign background_position = block.settings.focal_point %}
+        {%- render 'image-element',
+          img: section.settings.image,
+          img_width: 2400,
+          background_position: background_position,
+          loading: section.settings.lazyload_images,
+          classes: classes
+        -%}
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
 
       {%- if section.settings.parallax -%}
-          </div>
+        </div>
         </parallax-image>
       {%- endif -%}
     </div>
-    
+
     {%- if section.settings.subtitle != blank or section.settings.title != blank or section.settings.text != blank -%}
       <div class="background-media-text__inner">
         <div class="background-media-text__aligner background-media-text--{{ section.settings.layout }}">
@@ -132,7 +145,7 @@
       "id": "subtitle",
       "label": "t:sections.background-image-text.settings.subtitle.label",
       "default": "Impressive"
-    }, 
+    },
     {
       "type": "text",
       "id": "title",
