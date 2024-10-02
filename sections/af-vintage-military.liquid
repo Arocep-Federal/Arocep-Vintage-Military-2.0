@@ -2,11 +2,12 @@
   .military-background--{{ section.id }} {
     background:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
-      background-blend-mode: luminosity;
-      background-color: {{ section.settings.vintage_military_overlay }};
+    background-position:bottom center;
+    background-blend-mode: luminosity;
+    background-color: {{ section.settings.vintage_military_overlay }};
     height:60vh;
     width:100%;
-      position:relative;
+    position:relative;
   }
       .kicker {
         text-transform: uppercase;
