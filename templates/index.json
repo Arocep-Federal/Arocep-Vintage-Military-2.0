@@ -241,6 +241,16 @@
     "testimonials_HAxENX": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_KPCVTr": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_army_corps_of_engineers.png",
+            "author": "Civil Engineer Technician",
+            "author_info": "US Department of the Army, Corps of Engineers"
+          }
+        },
         "testimonial_RLVQcc": {
           "type": "testimonial",
           "settings": {
@@ -269,16 +279,6 @@
             "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
             "author": "Supply Manager",
             "author_info": "US Department of the Navy"
-          }
-        },
-        "testimonial_KPCVTr": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "5-stars",
-            "testimonial": "<p>\"Arocep has quality toners, OEM and Recycled products to choose from. Customer Service is available to answer questions, and contacts customers if there are any problems with the order. If problems occur, example item out of stock, they contact the customer and discuss other options.\"</p>",
-            "image": "shopify://shop_images/seal_of_the_army_corps_of_engineers.png",
-            "author": "Civil Engineer Technician",
-            "author_info": "US Department of the Army, Corps of Engineers"
           }
         },
         "testimonial_96PYPQ": {
@@ -333,10 +333,10 @@
         }
       },
       "block_order": [
+        "testimonial_KPCVTr",
         "testimonial_RLVQcc",
         "testimonial_V6q3GN",
         "testimonial_9KhXDL",
-        "testimonial_KPCVTr",
         "testimonial_96PYPQ",
         "testimonial_yaUL9h",
         "testimonial_dwEf9r",
