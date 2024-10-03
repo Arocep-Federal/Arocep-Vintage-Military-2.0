@@ -43,6 +43,10 @@
 
   document.addEventListener('page:loaded', function() {
     var vol = document.querySelector('#volume');
+    vol.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+    })
     console.log(vol)
   })
 </script>
