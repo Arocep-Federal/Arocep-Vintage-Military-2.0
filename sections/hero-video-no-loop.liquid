@@ -23,12 +23,22 @@
   {% endif %}
 {%- endstyle -%}
 
+
 <div
   data-section-id="{{ section.id }}"
   data-section-type="video-section"
   data-mobile-natural="false"
   class="video-parent-section hero hero--{{ section.id }} hero--{{ section.settings.section_height }} hero--mobile--{{ section.settings.mobile_height }}"
   data-aos="hero__animation">
+
+<script>
+
+  document.addEventListener('page:loaded', function() {
+    var vol = document.querySelector('#volume');
+    console.log(vol)
+  })
+</script>
+  <a id="volume" href="#"> unmute </a>
 
   <div class="hero__media hero__media--{{ section.id }}">
 
