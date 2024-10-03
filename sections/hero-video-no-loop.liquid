@@ -22,12 +22,20 @@
     }
     {% endif %}
     #volume {
+      width:100px;
+      height:74px;
+      background-image:url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/icon-mute_unmute.png?v=1727988913");
+      background-position:top;
       font-size:10px;
       display:block;
       color: blue;
       position:absolute;
       top:0px;
       z-index:100;
+      text-indent:-9999px;
+    }
+    #volume.unmute {
+      background-position:bottom;
     }
 {%- endstyle -%}
 
@@ -50,9 +58,11 @@
       e.preventDefault();
       if (muted == true) {
         video.muted = false;
+        vol.classList.add("unmute")
         muted = false;
       } else {
         video.muted = true;
+        vol.classList.remove("unmute");
         muted = true;
       }
      
