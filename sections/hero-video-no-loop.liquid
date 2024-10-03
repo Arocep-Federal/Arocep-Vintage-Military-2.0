@@ -21,24 +21,36 @@
       opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     }
     {% endif %}
-    #volume {
+    .video-control {
+      font-size:10px;
+      display:block;
+      color: blue;
+      position:absolute;
+      z-index:100;
+      text-indent:-9999px;   
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+    .volume {
       width:30px;
       height:22px;
       right:15%;
       bottom:100px;
       background-image:url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/icon-mute_unmute.png?v=1727988913");
       background-position:top;
-      background-repeat:no-repeat;
-      background-size:cover;
-      font-size:10px;
-      display:block;
-      color: blue;
-      position:absolute;
-      z-index:100;
-      text-indent:-9999px;
+   
     }
-    #volume.unmute {
+    .volume.unmute {
       background-position:bottom;
+    }
+
+    .replay {
+      width:30px;
+      height:22px;
+      right:15%;
+      bottom:100px;
+      background-image:url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/icon-mute_unmute.png?v=1727988913");
+      background-position:top;
     }
 {%- endstyle -%}
 
@@ -53,7 +65,8 @@
 <script>
 
   document.addEventListener('page:loaded', function() {
-    var vol = document.querySelector('#volume');
+    var vol = document.querySelector('.volume');
+    var replay = document.querySelector('.replay');
     var video = document.querySelector('#Mp4Video-{{ section.id }}');
     var muted = true;
 
@@ -68,12 +81,19 @@
         vol.classList.remove("unmute");
         muted = true;
       }
+      
+    })
+    replay.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+      video.currentTime = 0;
      
     })
     //console.log(vol)
   })
 </script>
-  <a id="volume" href="#"> unmute </a>
+  <a class="video-control replay" href="#"> replay </a>
+  <a class="video-control volume" href="#"> unmute </a>
 
   <div class="hero__media hero__media--{{ section.id }}">
 
