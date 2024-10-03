@@ -46,7 +46,7 @@
     var video = document.querySelector('#Mp4Video-{{ section.id }}');
     vol.addEventListener("click", function(e) {
       e.preventDefault();
-      video.unmute();
+      video.muted = false;
     })
     console.log(vol)
   })
