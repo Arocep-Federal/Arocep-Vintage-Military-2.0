@@ -22,11 +22,11 @@
     }
     {% endif %}
     #volume {
-      font-size:70px;
+      font-size:10px;
       display:block;
-      color: white;
+      color: blue;
       position:absolute;
-      top:150px;
+      top:0px;
       z-index:100;
     }
 {%- endstyle -%}
@@ -45,7 +45,7 @@
     var vol = document.querySelector('#volume');
     vol.addEventListener("click", function(e) {
       e.preventDefault();
-      
+
     })
     console.log(vol)
   })
