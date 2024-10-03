@@ -22,49 +22,6 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "megamenu_QPAWi4": {
-          "type": "megamenu",
-          "settings": {
-            "menu_item": "My mega",
-            "promo_heading_1": "heading",
-            "promo_text_1": "text",
-            "promo_url_1": "shopify://products/1010070329",
-            "promo_heading_2": "heading",
-            "promo_text_2": "text",
-            "promo_url_2": "shopify://products/1010070329"
-          }
-        },
-        "megamenu_J8Ppkw": {
-          "type": "megamenu",
-          "settings": {
-            "menu_item": "new",
-            "promo_heading_1": "Heading",
-            "promo_text_1": "Text",
-            "promo_url_1": "shopify://products/the-3p-fulfilled-snowboard",
-            "promo_heading_2": "heading",
-            "promo_text_2": "text",
-            "promo_url_2": "shopify://collections/all"
-          }
-        },
-        "megamenu_G3AUnR": {
-          "type": "megamenu",
-          "settings": {
-            "menu_item": "new2",
-            "promo_heading_1": "23232",
-            "promo_text_1": "2323232",
-            "promo_url_1": "shopify://products/1035806930",
-            "promo_heading_2": "",
-            "promo_text_2": "",
-            "promo_url_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "megamenu_QPAWi4",
-        "megamenu_J8Ppkw",
-        "megamenu_G3AUnR"
-      ],
       "settings": {
         "logo": "shopify://shop_images/arocep_mixed_3x_white.png",
         "logo-inverted": "shopify://shop_images/arocep_mixed_3x_white.png",
