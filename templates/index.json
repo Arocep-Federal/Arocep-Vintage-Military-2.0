@@ -109,7 +109,7 @@
           "type": "button",
           "settings": {
             "link": "shopify://pages/about-us",
-            "link_text": "Read Our Story"
+            "link_text": "Read More"
           }
         }
       },
@@ -137,7 +137,7 @@
         "title": "The AbilityOne Program",
         "text": "<p>AbilityOne is the largest source of employment opportunities for people who are blind or have significant disabilities in the United States. Nonprofit organizations train and employ these individuals and provide quality products and services to the Federal Government at a fair market price. Contact Arocep to make a difference today.</p>",
         "font_color": "#ffffff",
-        "button_label": "Shop AbilityOne",
+        "button_label": "Shop Now",
         "button_link": "shopify://collections/abilityone-catalog",
         "button_style": "secondary",
         "align_text": "left",
@@ -400,7 +400,7 @@
         "title": "",
         "title_size": 80,
         "subheading": "",
-        "link_text": "Shop GATORZ Eyewear",
+        "link_text": "Shop GATORZ",
         "link": "https://arocep.com/search?q=gatorz",
         "text_align": "vertical-bottom horizontal-center",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/5803e6ccf9f54d59b2fef3412fb72ab3.mp4",
@@ -439,7 +439,7 @@
         "image": "shopify://shop_images/saluting.jpg",
         "height": 78,
         "link": "shopify://pages/about-us",
-        "link_text": "Learn About the Advantage",
+        "link_text": "Learn More",
         "vintage_military_overlay": "none"
       }
     },
