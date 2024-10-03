@@ -154,7 +154,7 @@
         "background": "#111111",
         "fontcolor": "#ffffff",
         "kicker": "Here To Support Your Mission",
-        "headline": "Our Trusted Global Network is Standing By",
+        "headline": "Our Trusted Global Network is <nobr>Standing By</nobr>",
         "subheadline": "Our global distribution network is available around the clock ensuring you get your products when and where you need them. Government buyers can purchase directly from Arocep Federal with ease. We're standing by to support you.",
         "text_align": "vertical-center horizontal-right",
         "image": "shopify://shop_images/bg-global-network.png",
