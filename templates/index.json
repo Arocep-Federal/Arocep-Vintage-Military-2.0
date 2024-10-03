@@ -335,18 +335,20 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>\"Fast service!\"</p>",
+            "image": "shopify://shop_images/seal_of_the_department_of_the_navy.png",
+            "author": "Facilities Admin Specialist",
+            "author_info": "US Department of the Navy"
           }
         },
         "testimonial_XhVt6c": {
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>\"By far the best vendor I have ever dealt with in my years of being a GPC user. I have ordered multiple times through Arocep Federal and been impressed each time. Customer service is phenomenal, items come quicker than you would think possible, they provide a paid invoice without having to ask, reliable, and I never have any issues. I'm confident that even if I had any issues the team at Arocep Federal would take care of it quickly. Thank you for being an amazing and reliable vendor!\"</p><p></p>",
+            "image": "shopify://shop_images/seal_of_the_department_army.png",
+            "author": "Program Support Assistant",
+            "author_info": "US Department of the Army"
           }
         },
         "testimonial_mhbHaR": {
