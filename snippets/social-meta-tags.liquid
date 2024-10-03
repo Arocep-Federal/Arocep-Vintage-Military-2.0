@@ -3,6 +3,7 @@
   assign og_url = canonical_url
   assign og_type = 'website'
   assign og_description = page_description | default: shop.description | default: shop.name
+  meta property="og:image" content="http:{{ page_image | img_url: 'master' }}
 -%}
 
 {%- if request.page_type == 'product' -%}
@@ -30,8 +31,8 @@
     <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
   {%- endif -%}
   {%- if page_image -%}
-    <meta property="og:image" content="http:{{ page_image | img_url: 'master' }}">
-    <meta property="og:image:secure_url" content="https:{{ page_image | img_url: 'master' }}">
+    <meta property="og:image" content="http:{{ page_image | img_url: 'https://cdn.shopify.com/s/files/1/0268/0986/0273/files/Arocep_Logo_130x_2x_6e132436-350d-45a4-bebe-2b6b4fa74be9.png?v=1711015436' }}">
+    <meta property="og:image:secure_url" content="https:{{ page_image | img_url: 'https://cdn.shopify.com/s/files/1/0268/0986/0273/files/Arocep_Logo_130x_2x_6e132436-350d-45a4-bebe-2b6b4fa74be9.png?v=1711015436' }}">
     <meta property="og:image:width" content="{{ page_image.width }}">
     <meta property="og:image:height" content="{{ page_image.height }}">
   {%- endif -%}
