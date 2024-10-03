@@ -43,9 +43,10 @@
 
   document.addEventListener('page:loaded', function() {
     var vol = document.querySelector('#volume');
+    var video = document.querySelector('#Mp4Video-{{ section.id }}');
     vol.addEventListener("click", function(e) {
       e.preventDefault();
-
+      video.unmute();
     })
     console.log(vol)
   })
