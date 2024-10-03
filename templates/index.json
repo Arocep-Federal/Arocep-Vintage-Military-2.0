@@ -355,9 +355,10 @@
           "type": "testimonial",
           "settings": {
             "icon": "5-stars",
-            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author name",
-            "author_info": "Los Angeles, CA"
+            "testimonial": "<p>\"Excellent service - order was acknowledged, advised when shipped and provided with invoice. After product arrived they reached out to make sure the order was received in satisfactory condition.\"</p>",
+            "image": "shopify://shop_images/seal_of_the_army_corps_of_engineers.png",
+            "author": "Administrative Assistant",
+            "author_info": "Us Department of the Army, Corps of Engineers"
           }
         },
         "testimonial_dzpdfn": {
