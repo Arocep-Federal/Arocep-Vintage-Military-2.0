@@ -20,6 +20,7 @@
       background-color: #000;
       opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     }
+    {% endif %}
     #volume {
       font-size:70px;
       display:block;
@@ -28,7 +29,6 @@
       top:150px;
       z-index:100;
     }
-  {% endif %}
 {%- endstyle -%}
 
 
