@@ -44,9 +44,16 @@
   document.addEventListener('page:loaded', function() {
     var vol = document.querySelector('#volume');
     var video = document.querySelector('#Mp4Video-{{ section.id }}');
+    var muted = true;
+
     vol.addEventListener("click", function(e) {
       e.preventDefault();
-      video.muted = false;
+      if (muted == true) {
+        video.muted = false;
+      } else {
+        video.muted = true;
+      }
+     
     })
     console.log(vol)
   })
