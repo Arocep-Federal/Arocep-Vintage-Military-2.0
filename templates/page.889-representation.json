@@ -40,6 +40,17 @@
         "lazyload_images": true
       }
     },
+    "featured_collection_fcbRVb": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "abilityone-catalog",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "main": {
       "type": "main-page-full-width",
       "disabled": true,
@@ -49,6 +60,7 @@
   },
   "order": [
     "slideshow_LhnFYx",
+    "featured_collection_fcbRVb",
     "main"
   ]
 }
