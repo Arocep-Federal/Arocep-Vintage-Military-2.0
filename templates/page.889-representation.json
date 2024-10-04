@@ -15,12 +15,13 @@
         "image_DWWfmw": {
           "type": "image",
           "settings": {
-            "title": "Endless\npossibilities.",
-            "title_size": 80,
-            "subheading": "Bring your brand to life",
+            "title": "889 Representation",
+            "title_size": 60,
+            "subheading": "Download Arocep Federal's 889 Representation",
             "link": "",
-            "link_text": "Optional button",
-            "text_align": "vertical-bottom horizontal-left",
+            "link_text": "Download Now",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/AdobeStock_225122865.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -41,6 +42,7 @@
     },
     "main": {
       "type": "main-page-full-width",
+      "disabled": true,
       "settings": {
       }
     }
