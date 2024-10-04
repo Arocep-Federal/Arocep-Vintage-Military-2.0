@@ -29,7 +29,7 @@
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/bg-global-network.png",
             "parallax_direction": "top",
-            "overlay_opacity": 40
+            "overlay_opacity": 0
           }
         }
       },
