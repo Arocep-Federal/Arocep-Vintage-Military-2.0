@@ -218,13 +218,24 @@
                           </div>
                         {%- endunless -%}
                         {%- if block.settings.link_text != blank -%}
+                         
+
+                          <div class="button_super secondary">
+                            <span class="super_button_circle"> </span>
+                            <a href="{{ block.settings.link }}" class="button_super_inner">
+                              <span class="button_text_container">
+                                {{ block.settings.link_text }}
+                              </span>
+                            </a>
+                          </div>
+{% comment %} 
                           <div class="hero__link">
                             <div class="animation-cropper"><div class="animation-contents">
                               <a href="{{ block.settings.link }}" class="btn btn--inverse">
                                 {{ block.settings.link_text }}
                               </a>
                             </div></div>
-                          </div>
+                          </div> {% endcomment %}
                         {%- endif -%}
                       {%- endif -%}
 
