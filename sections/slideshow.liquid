@@ -222,7 +222,7 @@
 
                           <div class="button_super secondary">
                             <span class="super_button_circle"> </span>
-                            <a href="{{ block.settings.link }}"  {%- if block.settings.target = "_blank" -%}target="_blank"{%- endif -%} class="button_super_inner">
+                            <a href="{{ block.settings.link }}"  target="{{ block.settings.target }}" class="button_super_inner">
                               <span class="button_text_container">
                                 {{ block.settings.link_text }}
                               </span>
@@ -425,8 +425,8 @@
           "default": "",
           "options": [
             {
-              "value": "",
-              "label": "Self"
+              "value": "_self",
+              "label": "Same Window"
             },
             {
               "value": "_blank",
