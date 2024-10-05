@@ -20,6 +20,7 @@
             "subheading": "",
             "link": "https://cdn.shopify.com/s/files/1/0268/0986/0273/files/889_GCPC_Telecoms_Form_-_Arocep_Federal.pdf",
             "link_text": "Download Now",
+            "target": "_blank",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/bg-global-network.png",
             "parallax_direction": "top",
