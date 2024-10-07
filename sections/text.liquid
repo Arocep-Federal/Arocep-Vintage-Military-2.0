@@ -7,7 +7,12 @@
         color: {{ section.settings.fontcolor }};
     }
 
-    
+    .text-block--{{ section.id }} .left {
+        text-align:left;
+    }
+    .text-block--{{ section.id }} .right {
+        text-align:right;
+    }
     
 
   {% if section.settings.top_padding == false %}
