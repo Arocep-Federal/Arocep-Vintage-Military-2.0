@@ -64,7 +64,7 @@
     "cart_type": "page",
     "cart_icon": "bag-minimal",
     "cart_additional_buttons": false,
-    "cart_notes_enable": true,
+    "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": true,
@@ -94,6 +94,12 @@
       "9033207960287450087": {
         "type": "shopify://apps/thanhbt-file-upload/blocks/thanhbt-file-upload/0bc3b106-12d9-4de0-a0c6-dadcedb2d9c5",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "14082181514032464150": {
+        "type": "shopify://apps/o-request-a-quote/blocks/omgrfq_script/5f4ac0e6-8a57-4f3d-853e-0194eab86273",
+        "disabled": true,
         "settings": {
         }
       }
