@@ -1,0 +1,134 @@
+
+
+{% style %}
+  {% if section.settings.top_padding == false %}
+    #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
+  {% endif %}
+  {% if section.settings.bottom_padding == false %}
+    #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
+  {% endif %}
+{% endstyle %}
+
+<div class="index-section">
+    {%- for block in section.blocks -%}
+          {%- if block.settings.title != blank -%}
+            <h3>{{ block.settings.title }}</h3>
+          {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+          {% endif %}
+          {% if block.settings.button_label != blank %}
+            <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+      {%- endfor -%}
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "Text Block",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "top_padding",
+      "label": "t:sections.text-and-image.settings.top_padding.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "t:sections.text-and-image.settings.bottom_padding.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.text-columns.blocks.column.settings.title.label",
+          "default": "Example title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.text-columns.blocks.column.settings.text.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.text-columns.blocks.column.settings.button_label.label",
+          "default": "Optional button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "Text align",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.text-and-image.settings.align_text.options.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.text-and-image.settings.align_text.options.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.text-and-image.settings.align_text.options.right.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "t:sections.text-and-image.settings.layout.label",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.text-and-image.settings.layout.options.left.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.text-and-image.settings.layout.options.right.label"
+            }
+          ]
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}
