@@ -1,6 +1,12 @@
 
 
 {% style %}
+    
+    .text-block--{{ section.id }} {
+        background-color: {{ section.settings.backgroundcolor }};
+    }
+    
+
   {% if section.settings.top_padding == false %}
     #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
   {% endif %}
@@ -9,23 +15,36 @@
   {% endif %}
 {% endstyle %}
 
-<div class="index-section">
+<div class="index-section text-block text-block--{{ section.id }}">
     {%- for block in section.blocks -%}
+
           {%- if block.settings.title != blank -%}
-            <h3>{{ block.settings.title }}</h3>
-          {% endif %}
-          {% if block.settings.text != blank %}
-            <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
-          {% endif %}
-          {% if block.settings.button_label != blank %}
-            <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
-              {{ block.settings.button_label }}
-            </a>
+            <div class="text-block {{ block.settings.layout }} text-block--{{ block.id }}">
+            {%- if block.settings.title != blank -%}
+                <h3>{{ block.settings.title }}</h3>
+            {% endif %}
+            {% if block.settings.text != blank %}
+                <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+            {% endif %}
+            {% if block.settings.button_label != blank %}
+                <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+                {{ block.settings.button_label }}
+                </a>
+
+
+            <div class="button_super {% if block.settings.buttolinkn_style == 'secondary' %}secondary{% endif %}">
+                <span class="super_button_circle"> </span>
+                <a href="{{ block.settings.link }}" class="button_super_inner">
+                <span class="button_text_container">
+                    {{ block.settings.link_text }}
+                </span>
+                </a>
+            </div> 
+            {% endif %}
+            </div>
           {% endif %}
       {%- endfor -%}
 </div>
-
-{%- if section.settings.divider -%}</div>{%- endif -%}
 
 {% schema %}
 {
@@ -42,6 +61,18 @@
       "id": "bottom_padding",
       "label": "t:sections.text-and-image.settings.bottom_padding.label",
       "default": true
+    },
+    {
+      "type": "color",
+      "id": "backgroundcolor",
+      "label": "Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "fontcolor",
+      "label": "Text Color",
+      "default": "#fff"
     }
   ],
   "blocks": [
@@ -71,27 +102,7 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
-        },
-        {
-          "type": "select",
-          "id": "align_text",
-          "label": "Text align",
-          "default": "left",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.text-and-image.settings.align_text.options.left.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.text-and-image.settings.align_text.options.center.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.text-and-image.settings.align_text.options.right.label"
-            }
-          ]
-        },
+        }
         {
           "type": "select",
           "id": "layout",
