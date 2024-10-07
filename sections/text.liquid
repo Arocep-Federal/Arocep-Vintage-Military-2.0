@@ -6,9 +6,12 @@
         background-color: {{ section.settings.backgroundcolor }};
         color: {{ section.settings.fontcolor }};
     }
-    text-block--{{ block.id }} {
-     margin:0 40px;
-    }    
+
+    {% for block in section.blocks %}
+        .text-block--{{block.id}}{
+            margin:0 40px;
+        }
+    {% endfor %}
     
     .text-block--{{ section.id }} .left {
         margin:0 5vw;
