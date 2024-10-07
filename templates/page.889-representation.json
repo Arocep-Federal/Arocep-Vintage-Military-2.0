@@ -61,6 +61,7 @@
     },
     "af_text_and_image_rvrsbl_KkLfag": {
       "type": "af-text-and-image-rvrsbl",
+      "disabled": true,
       "settings": {
         "bg-color": "#000",
         "color": "#fff",
