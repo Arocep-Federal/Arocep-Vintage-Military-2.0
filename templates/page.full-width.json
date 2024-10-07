@@ -78,6 +78,7 @@
     },
     "main": {
       "type": "main-page-full-width",
+      "disabled": true,
       "settings": {
       }
     }
