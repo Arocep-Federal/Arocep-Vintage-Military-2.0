@@ -41,22 +41,22 @@
         "lazyload_images": true
       }
     },
-    "af_hero_zEBLHm": {
-      "type": "af-hero",
+    "background_image_text_YcbnFa": {
+      "type": "background-image-text",
       "settings": {
-        "fontcolor": "#ffffff",
-        "kicker": "Your Brand Story",
-        "headline": "Vintage Military Hero",
-        "subheadline": "with all the things...",
+        "subtitle": "Impressive",
+        "title": "Large image with text box",
+        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
         "button_label": "",
         "button_link": "",
-        "text_align": "vertical-center horizontal-center",
         "image": "shopify://shop_images/AdobeStock_389227112_2a584254-97a3-47dc-8c9e-5cd08a2bc843.jpg",
-        "focal_point": "center",
-        "color_border": "#f4f4f4",
-        "height": 450,
+        "focal_point": "center center",
+        "layout": "left",
+        "height": 550,
         "parallax": true,
-        "vintage_military_overlay": "none"
+        "stripe": true,
+        "parallax_direction": "top",
+        "lazyload_images": true
       }
     },
     "main": {
@@ -67,7 +67,7 @@
   },
   "order": [
     "slideshow_HDn9Gz",
-    "af_hero_zEBLHm",
+    "background_image_text_YcbnFa",
     "main"
   ]
 }
