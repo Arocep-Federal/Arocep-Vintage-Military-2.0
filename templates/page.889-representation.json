@@ -43,6 +43,7 @@
     },
     "background_image_text_xAX7fH": {
       "type": "background-image-text",
+      "disabled": true,
       "settings": {
         "subtitle": "Definition",
         "title": "What is 889 Representation?",
@@ -61,7 +62,6 @@
     },
     "af_text_and_image_rvrsbl_KkLfag": {
       "type": "af-text-and-image-rvrsbl",
-      "disabled": true,
       "settings": {
         "bg-color": "#000",
         "color": "#fff",
@@ -73,11 +73,11 @@
         "button_link": "",
         "button_style": "primary",
         "align_text": "left",
-        "image_width": "50",
+        "image_width": "33",
         "layout": "right",
         "stripe": true,
-        "top_padding": true,
-        "bottom_padding": true,
+        "top_padding": false,
+        "bottom_padding": false,
         "lazyload_images": true
       }
     },
