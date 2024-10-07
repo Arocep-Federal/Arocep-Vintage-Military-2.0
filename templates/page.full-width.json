@@ -51,7 +51,6 @@
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
             "button_label": "Optional button",
             "button_link": "",
-            "align_text": "left",
             "layout": "right"
           }
         },
@@ -62,8 +61,7 @@
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
             "button_label": "Optional button",
             "button_link": "",
-            "align_text": "left",
-            "layout": "right"
+            "layout": "left"
           }
         },
         "text_block_kR7aCX": {
@@ -73,7 +71,6 @@
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>",
             "button_label": "Optional button",
             "button_link": "",
-            "align_text": "left",
             "layout": "right"
           }
         }
@@ -85,7 +82,9 @@
       ],
       "settings": {
         "top_padding": true,
-        "bottom_padding": true
+        "bottom_padding": true,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff"
       }
     },
     "main": {
