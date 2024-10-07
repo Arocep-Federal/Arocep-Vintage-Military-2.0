@@ -44,24 +44,23 @@
     "background_image_text_YcbnFa": {
       "type": "background-image-text",
       "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
+        "subtitle": "",
+        "title": "",
+        "text": "<h2>Sales Tax    </h2><p>Customer/Organization is responsible for payment of all applicable state and local taxes.</p><h3><em> </em><em><strong>Tax Exempt Organization?</strong></em><em> </em></h3><p>Please email accounting@arocep.com with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
         "button_label": "",
         "button_link": "",
         "image": "shopify://shop_images/AdobeStock_389227112_2a584254-97a3-47dc-8c9e-5cd08a2bc843.jpg",
         "focal_point": "center center",
         "layout": "left",
-        "height": 550,
-        "parallax": true,
-        "stripe": true,
+        "height": 750,
+        "parallax": false,
+        "stripe": false,
         "parallax_direction": "top",
         "lazyload_images": true
       }
     },
     "main": {
       "type": "main-page-full-width",
-      "disabled": true,
       "settings": {
       }
     }
