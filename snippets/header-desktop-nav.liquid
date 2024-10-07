@@ -139,7 +139,7 @@
             aria-controls="site-nav-item--{{ forloop.index }}"
             class="site-nav__link {% if has_dropdown %} site-nav__link--has-dropdown{% endif %}"
           >
-            {{ link.title }} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
+           <a href="#"> {{ link.title }} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg></a>
           </summary>
       {% else %}
         <a
