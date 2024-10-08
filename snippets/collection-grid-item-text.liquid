@@ -16,16 +16,9 @@
     endif
   -%}
   
-  <div class="grid__item {{ gridView }} skrim__item" data-aos="skrim__animation" {{ block.shopify_attributes }}>
-    <a href="{{ collection.url }}" class="skrim__link skrim__item-content">
-      {%- if collection == blank or collection_image == blank -%}
-        {% capture placeholder %}collection-{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-        <div class="skrim__overlay grid__image">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
-      {%- else -%}
-        
-      {%- endif -%}
-  
-      <div class="skrim__title">
+  <div class="grid__item {{ gridView }}" data-aos="skrim__animation" {{ block.shopify_attributes }}>
+    <a href="{{ collection.url }}" class="skrim__link ">
+     <div class="">
         {{ collection_title }}
         <div class="">
         </div>
