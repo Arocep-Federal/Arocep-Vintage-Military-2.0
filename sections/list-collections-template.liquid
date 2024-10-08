@@ -1,34 +1,4 @@
 
-
-{%- liquid
-  assign main_menu = linklists[section.settings.main_menu_link_list]
-
-  assign logo_alignment = 'left'
-  if section.settings.main_menu_alignment == 'center-left' or section.settings.main_menu_alignment == 'center-split' or section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-drawer'
-    assign logo_alignment = 'center'
-  endif
-
-  assign template_name = template | replace: '.', ' ' | truncatewords: 2, '' | handle
-
-  assign sticky_header = false
-  assign overlay_header = false
-
-  if section.settings.header_sticky
-    assign sticky_header = true
-  endif
-
-  if template_name == 'index' and section.settings.sticky_index
-    assign overlay_header = true
-  endif
-  if template_name contains 'collection' and collection.image and section.settings.sticky_collection
-    assign overlay_header = true
-  endif
--%}
-<script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
-  
 {%- style -%}
   .site-nav__link,
   .site-nav__dropdown-link {
@@ -67,16 +37,7 @@
 
           {%- if logo_alignment == 'center' -%}
             <div class="header-item header-item--left header-item--navigation" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
-              {%- if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' -%}
-                {%- if settings.search_enable -%}
-                  <div class="site-nav medium-down--hide">
-                    <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
-                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><title>icon-search</title><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58ZM54 54 41.94 42"/></svg>
-                      <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
-                    </a>
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
+              
 
               {%- if section.settings.main_menu_alignment == 'center-left' -%}
                 {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
