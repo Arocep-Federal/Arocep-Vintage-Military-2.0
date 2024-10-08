@@ -1,4 +1,31 @@
 {%- liquid
+  assign main_menu = linklists[section.settings.main_menu_link_list]
+
+  assign logo_alignment = 'left'
+  if section.settings.main_menu_alignment == 'center-left' or section.settings.main_menu_alignment == 'center-split' or section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-drawer'
+    assign logo_alignment = 'center'
+  endif
+
+  assign template_name = template | replace: '.', ' ' | truncatewords: 2, '' | handle
+
+  assign sticky_header = false
+  assign overlay_header = false
+
+  if section.settings.header_sticky
+    assign sticky_header = true
+  endif
+
+  if template_name == 'index' and section.settings.sticky_index
+    assign overlay_header = true
+  endif
+  if template_name contains 'collection' and collection.image and section.settings.sticky_collection
+    assign overlay_header = true
+  endif
+-%}
+
+
+
+{%- liquid
   unless limit
     assign limit = main_menu.links.size
   endunless
@@ -6,6 +33,8 @@
     assign offset = 0
   endunless
 -%}
+
+
 
 <ul
   class="site-nav site-navigation medium-down--hide"
