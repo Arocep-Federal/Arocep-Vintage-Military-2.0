@@ -1,144 +1,138 @@
-
 <div data-section-id="{{ section.id }}" data-section-type="header">
   <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
-  
-      <div class="page-width">
-        <div
-          class="">
+    <div class="page-width">
+      {%- render 'catalog-text-menu',
+        section: section,
+        main_menu: main_menu,
+        hover_menu: section.settings.hover_menu
+      -%}
 
-       
-
-          {%- if logo_alignment == 'left' and section.settings.main_menu_alignment != 'left-drawer' -%}
-            <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
-              {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
-          {%- endif -%}
-
-          {%- if logo_alignment == 'center' -%}
-            <div class="header-item header-item--left header-item--navigation" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
-              
-
-              {%- if section.settings.main_menu_alignment == 'center-left' -%}
-                {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
-              {%- endif -%}
-
-              <div class="site-nav">
-                <button
-                  type="button"
-                  aria-label="site navigation"
-                  class="site-nav__link site-nav__link--icon js-drawer-open-nav"
-                  aria-controls="NavDrawer">
-                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><title>icon-hamburger</title><path d="M7 15h51M7 32h43M7 49h51"/></svg>
-                  <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
-                </button>
-              </div>
-            </div>
-
-
-        </div>
+      <div class="site-nav">
+        <button
+          type="button"
+          aria-label="site navigation"
+          class="site-nav__link site-nav__link--icon js-drawer-open-nav"
+          aria-controls="NavDrawer"
+        >
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64">
+            <title>icon-hamburger</title><path d="M7 15h51M7 32h43M7 49h51"/>
+          </svg>
+          <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+        </button>
       </div>
+    </div>
   </div>
 </div>
 
-
-
-{% comment %} 
-
-{% style %}
-  .collections-list--{{ section.id }} .medium-up--one-third  {
-    width:calc(33.333333% - 6px);
-    margin: 0 6px 6px 0;
-    border: 1px solid #ccc;
-    border-radius:10px;
-    overflow:hidden;
-  }
-  .collections-list--{{ section.id }} .skrim__title  {
-    line-height:1.1;
-    margin-top:-10px;
-  }
-  .collections-list--{{ section.id }} .skrim__item-content .skrim__overlay:after  {
-    background-image: linear-gradient(to bottom, rgba(0,0,0, .1) 30%, rgba(0,0,0,1) 100%);
-  }
-
-
-  @media only screen and (max-width: 1024px){
+{% comment %}
+  {% style %}
     .collections-list--{{ section.id }} .medium-up--one-third  {
-      width: calc(50% - 6px);
+      width:calc(33.333333% - 6px);
+      margin: 0 6px 6px 0;
+      border: 1px solid #ccc;
+      border-radius:10px;
+      overflow:hidden;
     }
-    .collections-list--{{ section.id }} .grid--uniform .medium-up--one-third:nth-of-type(3n+1) {
-      clear:none !important;
-    }
-  }
-
-  @media only screen and (max-width: 590px){
     .collections-list--{{ section.id }} .skrim__title  {
-      font-size:1rem;
       line-height:1.1;
-  }
-  }
-
-
-    .collections-list--{{ section.id }} .grid__item {
-      padding-left: 0;
+      margin-top:-10px;
     }
-    .collections-list--{{ section.id }} .grid {
-      margin-left:0;
+    .collections-list--{{ section.id }} .skrim__item-content .skrim__overlay:after  {
+      background-image: linear-gradient(to bottom, rgba(0,0,0, .1) 30%, rgba(0,0,0,1) 100%);
     }
-{% endstyle %}
-{%- liquid
-  assign per_row = section.settings.grid
-  assign paginate_by = per_row | times: 7
 
-  capture gridView
-    assign per_row = per_row | times: 1
-    if section.settings.display_type == 'selected' and section.blocks.size < per_row
-      assign products_per_row = section.blocks.size
-    else
-      assign products_per_row = per_row
-    endif
-    render 'products_per_row', products_per_row: products_per_row, style: 'fractions'
-  endcapture
 
-  # NOTE: Section uses a unique helper class for grid
-  assign grid_item_width = gridView | append: ' collection--square-small'
--%}
+    @media only screen and (max-width: 1024px){
+      .collections-list--{{ section.id }} .medium-up--one-third  {
+        width: calc(50% - 6px);
+      }
+      .collections-list--{{ section.id }} .grid--uniform .medium-up--one-third:nth-of-type(3n+1) {
+        clear:none !important;
+      }
+    }
 
-{% comment %} {%- paginate collections by paginate_by -%} {% endcomment %}
-  <div class="page-width page-content collections-list collections-list--{{ section.id }}">
-    {%- render 'breadcrumbs' -%}
+    @media only screen and (max-width: 590px){
+      .collections-list--{{ section.id }} .skrim__title  {
+        font-size:1rem;
+        line-height:1.1;
+    }
+    }
 
-    {%- if section.settings.title_enable -%}
-      <header class="section-header">
-        <h1 class="section-header__title">
-          {{ 'collections.general.catalog_title' | t }}
-        </h1>
-      </header>
-    {%- endif -%}
 
-    <div class="grid grid--uniform skrim-grid">
-      {% if section.settings.display_type == 'all' %}
-        {%- liquid
-          case section.settings.sort
-            when 'products_high', 'products_low'
-              assign collections = collections | sort: 'all_products_count'
-            when 'date', 'date_reversed'
-              assign collections = collections | sort: 'published_at'
-          endcase
-        -%}
-        {% if section.settings.sort == 'products_low'
-          or section.settings.sort == 'date'
-          or section.settings.sort == 'alphabetical'
-        %}
-          {%- for collection in collections -%}
-            {%- render 'collection-grid-item',
-              collection: collection,
-              gridView: grid_item_width,
-              sizeVariable: gridView,
-              fallback: 'variable'
-            -%}
-          {%- endfor -%}
+      .collections-list--{{ section.id }} .grid__item {
+        padding-left: 0;
+      }
+      .collections-list--{{ section.id }} .grid {
+        margin-left:0;
+      }
+  {% endstyle %}
+  {%- liquid
+    assign per_row = section.settings.grid
+    assign paginate_by = per_row | times: 7
+
+    capture gridView
+      assign per_row = per_row | times: 1
+      if section.settings.display_type == 'selected' and section.blocks.size < per_row
+        assign products_per_row = section.blocks.size
+      else
+        assign products_per_row = per_row
+      endif
+      render 'products_per_row', products_per_row: products_per_row, style: 'fractions'
+    endcapture
+
+    # NOTE: Section uses a unique helper class for grid
+    assign grid_item_width = gridView | append: ' collection--square-small'
+  -%}
+
+  {% comment %} {%- paginate collections by paginate_by -%} {% endcomment %}
+    <div class="page-width page-content collections-list collections-list--{{ section.id }}">
+      {%- render 'breadcrumbs' -%}
+
+      {%- if section.settings.title_enable -%}
+        <header class="section-header">
+          <h1 class="section-header__title">
+            {{ 'collections.general.catalog_title' | t }}
+          </h1>
+        </header>
+      {%- endif -%}
+
+      <div class="grid grid--uniform skrim-grid">
+        {% if section.settings.display_type == 'all' %}
+          {%- liquid
+            case section.settings.sort
+              when 'products_high', 'products_low'
+                assign collections = collections | sort: 'all_products_count'
+              when 'date', 'date_reversed'
+                assign collections = collections | sort: 'published_at'
+            endcase
+          -%}
+          {% if section.settings.sort == 'products_low'
+            or section.settings.sort == 'date'
+            or section.settings.sort == 'alphabetical'
+          %}
+            {%- for collection in collections -%}
+              {%- render 'collection-grid-item',
+                collection: collection,
+                gridView: grid_item_width,
+                sizeVariable: gridView,
+                fallback: 'variable'
+              -%}
+            {%- endfor -%}
+          {% else %}
+            {%- for collection in collections reversed -%}
+              {%- render 'collection-grid-item',
+                collection: collection,
+                gridView: grid_item_width,
+                sizeVariable: gridView,
+                fallback: 'variable'
+              -%}
+            {%- endfor -%}
+          {% endif %}
         {% else %}
-          {%- for collection in collections reversed -%}
+          {%- for block in section.blocks -%}
+            {%- assign collection = collections[block.settings.collection] -%}
             {%- render 'collection-grid-item',
+              block: block,
               collection: collection,
               gridView: grid_item_width,
               sizeVariable: gridView,
@@ -146,136 +140,123 @@
             -%}
           {%- endfor -%}
         {% endif %}
-      {% else %}
-        {%- for block in section.blocks -%}
-          {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-grid-item',
-            block: block,
-            collection: collection,
-            gridView: grid_item_width,
-            sizeVariable: gridView,
-            fallback: 'variable'
-          -%}
-        {%- endfor -%}
-      {% endif %}
-    </div> 
-    
-    
-    {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
-    {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%} 
+      </div>
 
 
-  </div>
-  {%- endpaginate -%}
+      {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
+      {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
 
-  
-  {% schema %}
-  {
-    "name": "t:sections.list-collections-template.name",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "title_enable",
-        "label": "t:sections.list-collections-template.settings.title_enable.label",
-        "default": true
-      },
-      {
-        "type": "paragraph",
-        "content": "t:sections.list-collections-template.settings.content"
-      },
-      {
-        "type": "radio",
-        "id": "display_type",
-        "label": "t:sections.list-collections-template.settings.display_type.label",
-        "default": "all",
-        "options": [
-          {
-            "value": "all",
-            "label": "t:sections.list-collections-template.settings.display_type.options.all.label"
-          },
-          {
-            "value": "selected",
-            "label": "t:sections.list-collections-template.settings.display_type.options.selected.label"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "sort",
-        "label": "t:sections.list-collections-template.settings.sort.label",
-        "info": "t:sections.list-collections-template.settings.sort.info",
-        "default": "alphabetical",
-        "options": [
-          {
-            "value": "products_high",
-            "label": "t:sections.list-collections-template.settings.sort.options.products_high.label"
-          },
-          {
-            "value": "products_low",
-            "label": "t:sections.list-collections-template.settings.sort.options.products_low.label"
-          },
-          {
-            "value": "alphabetical",
-            "label": "t:sections.list-collections-template.settings.sort.options.alphabetical.label"
-          },
-          {
-            "value": "alphabetical_reversed",
-            "label": "t:sections.list-collections-template.settings.sort.options.alphabetical_reversed.label"
-          },
-          {
-            "value": "date",
-            "label": "t:sections.list-collections-template.settings.sort.options.date.label"
-          },
-          {
-            "value": "date_reversed",
-            "label": "t:sections.list-collections-template.settings.sort.options.date_reversed.label"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "grid",
-        "label": "t:sections.list-collections-template.settings.grid.label",
-        "default": "3",
-        "options": [
-          {
-            "value": "1",
-            "label": "1"
-          },
-          {
-            "value": "2",
-            "label": "2"
-          },
-          {
-            "value": "3",
-            "label": "3"
-          },
-          {
-            "value": "4",
-            "label": "4"
-          },
-          {
-            "value": "5",
-            "label": "5"
-          }
-        ]
-      }
-    ],
-    "blocks": [
-      {
-        "type": "collection",
-        "name": "t:sections.list-collections-template.blocks.collection.name",
-        "settings": [
-          {
-            "label": "t:sections.list-collections-template.blocks.collection.settings.collection.label",
-            "id": "collection",
-            "type": "collection"
-          }
-        ]
-      }
-    ]
-  }
-  {% endschema %}
-  
-  {% endcomment %}
+
+    </div>
+    {%- endpaginate -%}
+
+
+    {% schema %}
+    {
+      "name": "t:sections.list-collections-template.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "title_enable",
+          "label": "t:sections.list-collections-template.settings.title_enable.label",
+          "default": true
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.list-collections-template.settings.content"
+        },
+        {
+          "type": "radio",
+          "id": "display_type",
+          "label": "t:sections.list-collections-template.settings.display_type.label",
+          "default": "all",
+          "options": [
+            {
+              "value": "all",
+              "label": "t:sections.list-collections-template.settings.display_type.options.all.label"
+            },
+            {
+              "value": "selected",
+              "label": "t:sections.list-collections-template.settings.display_type.options.selected.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "sort",
+          "label": "t:sections.list-collections-template.settings.sort.label",
+          "info": "t:sections.list-collections-template.settings.sort.info",
+          "default": "alphabetical",
+          "options": [
+            {
+              "value": "products_high",
+              "label": "t:sections.list-collections-template.settings.sort.options.products_high.label"
+            },
+            {
+              "value": "products_low",
+              "label": "t:sections.list-collections-template.settings.sort.options.products_low.label"
+            },
+            {
+              "value": "alphabetical",
+              "label": "t:sections.list-collections-template.settings.sort.options.alphabetical.label"
+            },
+            {
+              "value": "alphabetical_reversed",
+              "label": "t:sections.list-collections-template.settings.sort.options.alphabetical_reversed.label"
+            },
+            {
+              "value": "date",
+              "label": "t:sections.list-collections-template.settings.sort.options.date.label"
+            },
+            {
+              "value": "date_reversed",
+              "label": "t:sections.list-collections-template.settings.sort.options.date_reversed.label"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "grid",
+          "label": "t:sections.list-collections-template.settings.grid.label",
+          "default": "3",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "2"
+            },
+            {
+              "value": "3",
+              "label": "3"
+            },
+            {
+              "value": "4",
+              "label": "4"
+            },
+            {
+              "value": "5",
+              "label": "5"
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "collection",
+          "name": "t:sections.list-collections-template.blocks.collection.name",
+          "settings": [
+            {
+              "label": "t:sections.list-collections-template.blocks.collection.settings.collection.label",
+              "id": "collection",
+              "type": "collection"
+            }
+          ]
+        }
+      ]
+    }
+    {% endschema %}
+{% endcomment %}
