@@ -8,8 +8,8 @@
 -%}
 
 <ul
-  {% comment %} class="site-nav site-navigation medium-down--hide" {% endcomment %}
-  class="site-nav"
+  class="site-nav site-navigation medium-down--hide"
+  {% comment %} class="site-nav" {% endcomment %}
 >
   {%- for link in main_menu.links limit: limit offset: offset -%}
     {%- liquid
