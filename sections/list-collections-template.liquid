@@ -104,7 +104,7 @@
       {% else %}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-grid-item',
+          {%- render 'collection-grid-item-text',
             block: block,
             collection: collection,
             gridView: grid_item_width,
