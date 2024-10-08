@@ -29,9 +29,6 @@
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
   
-{%- render 'drawer-menu', section: section, main_menu: main_menu, logo_alignment: logo_alignment -%}
-{%- render 'cart-drawer' -%}
-
 {%- style -%}
   .site-nav__link,
   .site-nav__dropdown-link {
@@ -55,21 +52,12 @@
 
 <div data-section-id="{{ section.id }}" data-section-type="header">
   <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
-    <header
-      id="SiteHeader"
-      class="site-header{% if settings.type_navigation_style %} site-header--heading-style{% endif %}"
-      data-sticky="{{ sticky_header }}"
-      data-overlay="{{ overlay_header }}">
+  
       <div class="page-width">
         <div
-          class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
-          data-logo-align="{{ logo_alignment }}">
+          class="">
 
-          {%- if logo_alignment == 'left' -%}
-            <div class="header-item header-item--logo">
-              {%- render 'header-logo-block', section: section -%}
-            </div>
-          {%- endif -%}
+       
 
           {%- if logo_alignment == 'left' and section.settings.main_menu_alignment != 'left-drawer' -%}
             <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
@@ -132,7 +120,6 @@
           </div>
         </div>
       </div>
-    </header>
   </div>
 </div>
 
