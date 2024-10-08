@@ -1,0 +1,35 @@
+{%- liquid
+    unless background_position
+      assign background_position = 'top center'
+    endunless
+  
+    if collection == blank
+      assign collection_title = 'home_page.onboarding.collection_title' | t
+    else
+      assign collection_title = collection.title | escape
+    endif
+  
+    if collection.image
+      assign collection_image = collection.image
+    else
+      assign collection_image = collection.products.first.featured_media.preview_image
+    endif
+  -%}
+  
+  <div class="grid__item {{ gridView }} skrim__item" data-aos="skrim__animation" {{ block.shopify_attributes }}>
+    <a href="{{ collection.url }}" class="skrim__link skrim__item-content">
+      {%- if collection == blank or collection_image == blank -%}
+        {% capture placeholder %}collection-{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        <div class="skrim__overlay grid__image">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
+      {%- else -%}
+        
+      {%- endif -%}
+  
+      <div class="skrim__title">
+        {{ collection_title }}
+        <div class="">
+        </div>
+      </div>
+    </a>
+  </div>
+  

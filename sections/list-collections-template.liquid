@@ -84,7 +84,7 @@
           or section.settings.sort == 'alphabetical'
         %}
           {%- for collection in collections -%}
-            {%- render 'collection-grid-item',
+            {%- render 'collection-grid-item-text',
               collection: collection,
               gridView: grid_item_width,
               sizeVariable: gridView,
@@ -93,7 +93,7 @@
           {%- endfor -%}
         {% else %}
           {%- for collection in collections reversed -%}
-            {%- render 'collection-grid-item',
+            {%- render 'collection-grid-item-text',
               collection: collection,
               gridView: grid_item_width,
               sizeVariable: gridView,
