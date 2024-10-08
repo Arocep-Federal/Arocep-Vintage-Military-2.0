@@ -58,6 +58,7 @@
   -%}
 
   {% comment %} {%- paginate collections by paginate_by -%} {% endcomment %}
+   
     <div class="page-width page-content collections-list collections-list--{{ section.id }}">
       {%- render 'breadcrumbs' -%}
 
@@ -122,7 +123,7 @@
 
 
     </div>
-    {%- endpaginate -%}
+    {% comment %} {%- endpaginate -%} {% endcomment %}
 
 
     {% schema %}
