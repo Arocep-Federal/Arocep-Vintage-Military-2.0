@@ -1,87 +1,4 @@
 
-    {%- style -%}
-
-
-.catalog-nav .site-nav__item {position:static }
-.catalog-nav .site-nav a {
-      color:black !important;
-    }
-    .site-nav__dropdown { 
-      width:100%;
-      text-align:center;
-      padding:10px 0;
-    } 
-    .site-nav__dropdown > li { 
-      position:static;
-      width:auto;
-      float:left;
-      font-weight:bold;
-      padding:10px 0; 
-    } 
-    .site-nav__deep-dropdown {
-      top:53px;
-      left:2vw;
-      position:absolute;
-      display:flex;
-      flex-direction:column;
-      flex-wrap:wrap;
-      background-color:white;
-      /* width:calc(100vw - 20px);  */
-      width:80vw; 
-      padding:10px; 
-      align-items:center;
-    }
-     
-    .office-supplies {
-      max-height:400px;
-    }
-    .industrial,
-    .it-products {
-      max-height:300px;
-    }
-    
-    .janitorial-sanitation,
-    .food-service {
-      max-height:300px; 
-    }
-    
-    
-    .site-nav__deep-dropdown > li {
-      font-weight:normal;
-      flex: 0 1 auto;
-      width:25%;  
-      text-overflow: ellipsis;
-      height:auto;
-      text-wrap:wrap;
-    }
-
-
-    .site-nav__deep-dropdown.industrial > li, 
-    .site-nav__deep-dropdown.it-products > li,
-    .site-nav__deep-dropdown.janitorial-sanitation > li,
-    .site-nav__deep-dropdown.food-service > li {
-      width:33.33333% 
-    }
-
-    .site-nav__dropdown-link {
-      white-space: wrap;
-    }
-
-    .site-nav__details .caret{
-      transform:rotate(90deg)
-    } 
-
-
-    .site-nav .site-nav--active > a {
-      color:#90aac7
-    } 
-
-    
-    
-    {%- endstyle -%}
-
-
-
 
 {%- liquid
   assign main_menu = linklists[section.settings.main_menu_link_list]
@@ -107,243 +24,134 @@
     assign overlay_header = true
   endif
 -%}
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  
+{%- render 'drawer-menu', section: section, main_menu: main_menu, logo_alignment: logo_alignment -%}
+{%- render 'cart-drawer' -%}
 
+{%- style -%}
+  .site-nav__link,
+  .site-nav__dropdown-link {
+    font-size: {{ settings.type_navigation_size }}px;
+  }
 
+  {%- if settings.type_navigation_size < 18 -%}
+    .site-nav__link {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  {%- endif -%}
 
-{%- liquid
-  unless limit
-    assign limit = main_menu.links.size
-  endunless
-  unless offset
-    assign offset = 0
-  endunless
--%}
+  {%- if settings.color_header == settings.color_body_bg or settings.color_body_bg contains settings.color_header -%}
+    .site-header {
+      border-bottom: 1px solid;
+      border-bottom-color: {{ settings.color_borders }};
+    }
+  {%- endif -%}
+{%- endstyle -%}
 
+<div data-section-id="{{ section.id }}" data-section-type="header">
+  <div id="HeaderWrapper" class="header-wrapper{% if overlay_header %} header-wrapper--overlay is-light{% endif %}">
+    <header
+      id="SiteHeader"
+      class="site-header{% if settings.type_navigation_style %} site-header--heading-style{% endif %}"
+      data-sticky="{{ sticky_header }}"
+      data-overlay="{{ overlay_header }}">
+      <div class="page-width">
+        <div
+          class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
+          data-logo-align="{{ logo_alignment }}">
 
-<div class="catalog-nav">
-<ul
-  class="site-nav site-navigation medium-down--hide"
-  {% comment %} class="site-nav" {% endcomment %}
->
-  {%- for link in main_menu.links limit: limit offset: offset -%}
-    {%- liquid
-      assign has_dropdown = false
-      assign is_megamenu = false
-      if link.links != blank
-        assign has_dropdown = true
-      endif
-
-      if has_dropdown
-        for block in section.blocks
-          if link.title == block.settings.menu_item
-            assign is_megamenu = true
-
-            assign promo_image_1 = block.settings.promo_image_1
-            assign promo_heading_1 = block.settings.promo_heading_1
-            assign promo_text_1 = block.settings.promo_text_1
-            assign promo_url_1 = block.settings.promo_url_1
-            assign promo_image_2 = block.settings.promo_image_2
-            assign promo_heading_2 = block.settings.promo_heading_2
-            assign promo_text_2 = block.settings.promo_text_2
-            assign promo_url_2 = block.settings.promo_url_2
-            break
-          endif
-        endfor
-      endif
-    -%}
-
-    <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% if is_megamenu %} site-nav--is-megamenu{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
-
-      {% if is_megamenu or has_dropdown %}
-        <details
-          id="site-nav-item--{{ forloop.index }}"
-          class="site-nav__details"
-          data-hover="{{ hover_menu }}"
-        >
-          <summary
-            data-link="{{ link.url }}"
-            aria-expanded="false"
-            aria-controls="site-nav-item--{{ forloop.index }}"
-            class="site-nav__link {% if has_dropdown %} site-nav__link--has-dropdown{% endif %}"
-          >
-          {{ link.title }} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-          </summary>
-      {% else %}
-        <a
-          href="{{ link.url }}"
-          class="site-nav__link{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}"
-        >
-          {{ link.title }} 
-          {%- if has_dropdown -%}
-            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-          {%- endif -%}
-        </a>
-      {% endif %}
-
-
-      {%- if is_megamenu -%}
-        {%- assign columns = 1 -%}
-        <div class="site-nav__dropdown megamenu text-left">
-          <div class="page-width">
-            <div class="megamenu__wrapper">
-              <div class="megamenu__cols">
-                <div class="megamenu__col appear-animation appear-delay-1">
-                  {%- for childlink in link.links -%}
-                    {%- liquid
-                      assign create_new_column = false
-
-                      if childlink.levels > 0 and forloop.index != 1
-                        assign create_new_column = true
-                      endif
-
-                      if childlink.levels == 0 and previous_column_type == 'full'
-                        assign create_new_column = true
-                      endif
-                    -%}
-
-                    {%- if create_new_column -%}
-                      {%- assign columns = columns | plus: 1 -%}
-                      </div><div class="megamenu__col appear-animation appear-delay-{{ forloop.index }}">
-                    {%- endif -%}
-
-                    <div class="megamenu__col-title">
-                      <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level site-nav__dropdown-link--mega">
-                        <span class="megamenu__link-label">
-                          {{ childlink.title }} 
-                        </span>
-                      </a>
-                    </div>
-
-                    {%- liquid
-                      if childlink.levels > 0
-                        assign previous_column_type = 'full'
-                      else
-                        assign previous_column_type = 'single'
-                      endif
-                    -%}
-
-                    {%- for grandchildlink in childlink.links -%}
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{ grandchildlink.title }}
-                      </a>
-                    {%- endfor -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-              {%- if promo_image_1 -%}
-                {%- assign columns = columns | plus: 1 -%}
-                <div class="megamenu__promo appear-animation appear-delay-{{ columns }}">
-                  {%- if promo_url_1 -%}
-                    <a href="{{ promo_url_1 }}" class="megamenu__promo-link">
-                  {%- endif -%}
-                    <div style="margin: 0 auto; max-width: {{ promo_image_1.width }}px">
-                      <div class="image-wrap aos-animate megamenu__promo-image" style="height: 0; padding-bottom: {{ 100 | divided_by: promo_image_1.aspect_ratio }}%;">
-                        {%- render 'image-element',
-                          img: promo_image_1,
-                          widths: '540, 750, 900',
-                          sizeVariable: '250px',
-                        -%}
-                      </div>
-                    </div>
-                    {%- if promo_heading_1 -%}
-                      <div><strong>{{ promo_heading_1 }}</strong></div>
-                    {%- endif -%}
-                    {%- if promo_text_1 -%}
-                      <div>{{ promo_text_1 }}</div>
-                    {%- endif -%}
-                  {%- if promo_url_1 -%}
-                    </a>
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
-              {%- if promo_image_2 -%}
-                {%- assign columns = columns | plus: 1 -%}
-                <div class="megamenu__promo appear-animation appear-delay-{{ columns }}">
-                  {%- if promo_url_2 -%}
-                    <a href="{{ promo_url_2 }}" class="megamenu__promo-link">
-                  {%- endif -%}
-                    <div style="margin: 0 auto; max-width: {{ promo_image_2.width }}px">
-                      <div class="image-wrap aos-animate megamenu__promo-image" style="height: 0; padding-bottom: {{ 100 | divided_by: promo_image_2.aspect_ratio }}%;">
-                        {%- render 'image-element',
-                          img: promo_image_2,
-                          widths: '540, 750, 900',
-                          sizeVariable: '250px',
-                        -%}
-                      </div>
-                    </div>
-                    {%- if promo_heading_2 -%}
-                      <div><strong>{{ promo_heading_2 }}</strong></div>
-                    {%- endif -%}
-                    {%- if promo_text_2 -%}
-                      <div>{{ promo_text_2 }}</div>
-                    {%- endif -%}
-                  {%- if promo_url_2 -%}
-                    </a>
-                  {%- endif -%}
-                </div>
-              {%- endif -%}
+          {%- if logo_alignment == 'left' -%}
+            <div class="header-item header-item--logo">
+              {%- render 'header-logo-block', section: section -%}
             </div>
+          {%- endif -%}
+
+          {%- if logo_alignment == 'left' and section.settings.main_menu_alignment != 'left-drawer' -%}
+            <div class="header-item header-item--navigation{% if section.settings.main_menu_alignment == 'left-center' %} text-center{% endif %}" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
+              {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
+            </div>
+          {%- endif -%}
+
+          {%- if logo_alignment == 'center' -%}
+            <div class="header-item header-item--left header-item--navigation" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
+              {%- if section.settings.main_menu_alignment == 'center' or section.settings.main_menu_alignment == 'center-split' -%}
+                {%- if settings.search_enable -%}
+                  <div class="site-nav medium-down--hide">
+                    <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><title>icon-search</title><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58ZM54 54 41.94 42"/></svg>
+                      <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
+                    </a>
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
+
+              {%- if section.settings.main_menu_alignment == 'center-left' -%}
+                {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
+              {%- endif -%}
+
+              <div class="site-nav{% unless section.settings.main_menu_alignment == 'center-drawer' %} large-up--hide{% endunless %}">
+                <button
+                  type="button"
+                  aria-label="site navigation"
+                  class="site-nav__link site-nav__link--icon js-drawer-open-nav"
+                  aria-controls="NavDrawer">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><title>icon-hamburger</title><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+                  <span class="icon__fallback-text">{{ 'general.drawers.navigation' | t }}</span>
+                </button>
+              </div>
+            </div>
+
+            {%- if section.settings.main_menu_alignment == 'center-split' -%}
+              {%- render 'header-split-nav', main_menu: main_menu, section: section, hover_menu: section.settings.hover_menu-%}
+            {%- endif -%}
+
+            {%- if section.settings.main_menu_alignment != 'center-split' -%}
+              <div class="header-item header-item--logo">
+                {%- render 'header-logo-block', section: section -%}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+
+          <div class="header-item header-item--icons">
+            {%- render 'header-icons', section: section -%}
           </div>
         </div>
-      {%- elsif has_dropdown -%}
-        <ul class="site-nav__dropdown text-left">
-          {%- for childlink in link.links -%}
-            {%- liquid
-              assign has_sub_dropdown = false
-              if childlink.links != blank
-              assign has_sub_dropdown = true
-              endif
-            -%}
 
-            <li class="{% if childlink.active %}site-nav--active{% endif %}{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %} ">
-              {% if has_sub_dropdown %}
-                <details
-                  id="site-nav-deep-item--{{ forloop.index }}"
-                  class="site-nav__details "
-                  data-hover="{{ hover_menu }}"
-                >
-
-                  <summary
-                    data-link="{{ childlink.url }}"
-                    aria-expanded="false"
-                    aria-controls="site-nav-deep-item--{{ forloop.index }}"
-                    class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}"
-                  >
-                    {{ childlink.title | escape }}  <span class="caret">&gt;</span>
-                    {%- if has_sub_dropdown -%}
-                    {%- endif -%}
-                  </summary>
-              {% else %}
-                <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--second-level">
-                  {{ childlink.title | escape }}  
-                </a>
-              {% endif %}
-  
-              {%- if has_sub_dropdown -%}
-                <ul class="site-nav__deep-dropdown  {{ childlink.handle | escape }}">
-                  {%- for grandchildlink in childlink.links -%}
-                    <li>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">{{ grandchildlink.title | escape }} </a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
-
-              {% if has_sub_dropdown %}
-              </details>
-            {% endif %}
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
-
-      {% if is_megamenu or has_dropdown %}
-        </details>
-      {% endif %}
-    </li>
-  {%- endfor -%}
-</ul>
+        {%- if section.settings.main_menu_alignment == 'center' -%}
+          <div class="text-center" {% unless disable_aria %}role="navigation" aria-label="Primary"{% endunless %}>
+            {%- render 'catalog-text-menu', section: section, main_menu: main_menu, hover_menu: section.settings.hover_menu -%}
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="site-header__search-container">
+        <div class="site-header__search">
+          <div class="page-width">
+            {% render 'predictive-search', context: 'header' %}
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
 </div>
+
+{%- if template_name == 'index' and section.settings.sticky_index -%}
+  {%- style -%}
+    /* Offset first hero's text to make room for overlaid navigation */
+    .shopify-section:first-child .hero__text-content.vertical-center {
+      padding-top: 110px;
+    }
+    @media screen and (max-width: 768px) {
+      .shopify-section:first-child .hero__text-content.vertical-center {
+        padding-top: 70px;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
 
 {% schema %}
 {
@@ -520,7 +328,6 @@
   }
 }
 {% endschema %}
-
 
 {% comment %} 
 
