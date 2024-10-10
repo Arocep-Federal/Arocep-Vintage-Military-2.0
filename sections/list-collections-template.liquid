@@ -1,89 +1,9 @@
-{% style %}
-  .collections-list--{{ section.id }} .medium-up--one-third  {
-    width:calc(33.333333% - 6px);
-    margin: 0 6px 6px 0;
-    border: 1px solid #ccc;
-    border-radius:10px;
-    overflow:hidden;
-  }
-  .collections-list--{{ section.id }} .skrim__title  {
-    line-height:1.1;
-    margin-top:-10px;
-  }
-  .collections-list--{{ section.id }} .skrim__item-content .skrim__overlay:after  {
-    background-image: linear-gradient(to bottom, rgba(0,0,0, .1) 30%, rgba(0,0,0,1) 100%);
-  }
 
 
-  @media only screen and (max-width: 1024px){
-    .collections-list--{{ section.id }} .medium-up--one-third  {
-      width: calc(50% - 6px);
-    }
-    .collections-list--{{ section.id }} .grid--uniform .medium-up--one-third:nth-of-type(3n+1) {
-      clear:none !important;
-    }
-  }
 
-  @media only screen and (max-width: 590px){
-    .collections-list--{{ section.id }} .skrim__title  {
-      font-size:1rem;
-      line-height:1.1;
-  }
-  }
-
-
-    .collections-list--{{ section.id }} .grid__item {
-      padding-left: 0;
-    }
-    .collections-list--{{ section.id }} .grid {
-      margin-left:0;
-    }
-{% endstyle %}
-{%- liquid
-  assign per_row = section.settings.grid
-  assign paginate_by = per_row | times: 7
-
-  capture gridView
-    assign per_row = per_row | times: 1
-    if section.settings.display_type == 'selected' and section.blocks.size < per_row
-      assign products_per_row = section.blocks.size
-    else
-      assign products_per_row = per_row
-    endif
-    render 'products_per_row', products_per_row: products_per_row, style: 'fractions'
-  endcapture
-
-  # NOTE: Section uses a unique helper class for grid
-  assign grid_item_width = gridView | append: ' collection--square-small'
--%}
-
-{% comment %} {%- paginate collections by paginate_by -%} {% endcomment %}
-  <div class="page-width page-content collections-list collections-list--{{ section.id }}">
-    {%- render 'breadcrumbs' -%}
-
-    {%- if section.settings.title_enable -%}
-      <header class="section-header">
-        <h1 class="section-header__title">
-          {{ 'collections.general.catalog_title' | t }}
-        </h1>
-      </header>
-    {%- endif -%}
 
     <div class="grid grid--uniform skrim-grid">
-      {% if section.settings.display_type == 'all' %}
-        {%- liquid
-          case section.settings.sort
-            when 'products_high', 'products_low'
-              assign collections = collections | sort: 'all_products_count'
-            when 'date', 'date_reversed'
-              assign collections = collections | sort: 'published_at'
-          endcase
-        -%}
-        {% if section.settings.sort == 'products_low'
-          or section.settings.sort == 'date'
-          or section.settings.sort == 'alphabetical'
-        %}
-          {%- for collection in collections -%}
+      
             {% comment %} {%- render 'collection-grid-item', {% endcomment %}
             {%- render 'collection-grid-item-text',
               collection: collection,
@@ -91,38 +11,8 @@
               sizeVariable: gridView,
               fallback: 'variable'
             -%}
-          {%- endfor -%}
-        {% else %}
-          {%- for collection in collections reversed -%}
-            {% comment %} {%- render 'collection-grid-item', {% endcomment %}
-            {%- render 'collection-grid-item-text',
-              collection: collection,
-              gridView: grid_item_width,
-              sizeVariable: gridView,
-              fallback: 'variable'
-            -%}
-          {%- endfor -%}
-        {% endif %}
-      {% else %}
-        {%- for block in section.blocks -%}
-          {%- assign collection = collections[block.settings.collection] -%}
-          {% comment %} {%- render 'collection-grid-item', {% endcomment %}
-          {%- render 'collection-grid-item-text',
-            block: block,
-            collection: collection,
-            gridView: grid_item_width,
-            sizeVariable: gridView,
-            fallback: 'variable'
-          -%}
-        {%- endfor -%}
-      {% endif %}
     </div>
 
-    {% comment %} {%- if paginate.pages > 1 and section.settings.display_type == 'all' -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%} {% endcomment %}
-  </div>
-{% comment %} {%- endpaginate -%} {% endcomment %}
 
 {% schema %}
 {
