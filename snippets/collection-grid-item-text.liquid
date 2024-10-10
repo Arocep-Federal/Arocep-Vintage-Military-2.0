@@ -1,28 +1,37 @@
-{%- liquid
-    unless background_position
-      assign background_position = 'top center'
-    endunless
-  
-    if collection == blank
-      assign collection_title = 'home_page.onboarding.collection_title' | t
-    else
-      assign collection_title = collection.title | escape
-    endif
-  
-    if collection.image
-      assign collection_image = collection.image
-    else
-      assign collection_image = collection.products.first.featured_media.preview_image
-    endif
-  -%}
-  
-  <div class="" {{ block.shopify_attributes }}>
-    <a href="{{ collection.url }}" class=" ">
-     <div class="">
-        {{ collection_title }}
-        <div class="">
-        </div>
-      </div>
-    </a>
-  </div>
-  
+<nav role="navigation">
+  <ul>
+    {%- for link in linklists.vintage-military-theme.links -%}
+      <li>
+        {% comment %} <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a> {% endcomment %}
+
+        {%- if link.links != blank -%}
+          <ul>
+            {%- for child_link in link.links -%}
+              <li>
+                <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
+                  {{ child_link.title }}
+                </a>
+
+                {%- if child_link.links != blank -%}
+                  <ul>
+                    {%- for grandchild_link in child_link.links -%}
+                      <li>
+                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                          {{ grandchild_link.title }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>

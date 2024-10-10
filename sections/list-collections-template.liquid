@@ -84,7 +84,8 @@
           or section.settings.sort == 'alphabetical'
         %}
           {%- for collection in collections -%}
-            {%- render 'collection-grid-item',
+            {% comment %} {%- render 'collection-grid-item', {% endcomment %}
+            {%- render 'collection-grid-item-text',
               collection: collection,
               gridView: grid_item_width,
               sizeVariable: gridView,
@@ -93,7 +94,8 @@
           {%- endfor -%}
         {% else %}
           {%- for collection in collections reversed -%}
-            {%- render 'collection-grid-item',
+            {% comment %} {%- render 'collection-grid-item', {% endcomment %}
+            {%- render 'collection-grid-item-text',
               collection: collection,
               gridView: grid_item_width,
               sizeVariable: gridView,
@@ -104,7 +106,8 @@
       {% else %}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-grid-item',
+          {% comment %} {%- render 'collection-grid-item', {% endcomment %}
+          {%- render 'collection-grid-item-text',
             block: block,
             collection: collection,
             gridView: grid_item_width,
