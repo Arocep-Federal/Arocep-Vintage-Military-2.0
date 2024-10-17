@@ -29,7 +29,7 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).next(".child-categories").slideToggle();
+      $(this).toggleClass("active").slideToggle();
         console.log("clicked")
   })
 })
