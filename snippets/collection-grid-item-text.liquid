@@ -35,7 +35,9 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).toggleClass("active");
+      $(this).toggleClass("active", function(){
+        $(".active ul").slideToggle()
+      });
       
   })
 })
