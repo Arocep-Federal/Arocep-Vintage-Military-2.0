@@ -19,7 +19,11 @@ $( document ).ready(function() {
   console.log("ready");
   $(".top-category").on("click", function(e){
     e.preventDefault();
-    $(this).addClass("active");
+    if($(this).hasClass("active")) {
+      $(this).removeClass("active");
+    } else {
+      $(this).addClass("active");
+    }
     console.log("clicked")
   })
 })
