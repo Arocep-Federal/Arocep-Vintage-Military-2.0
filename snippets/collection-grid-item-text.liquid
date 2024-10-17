@@ -7,14 +7,17 @@
   border:1px solid #ccc;
   padding: 5px 10px;
 }
-.all-categories nav ul > li > ul {
-  /* height:0; */
-  /* max-height:0; */
-
-  /* overflow:hidden; */
-  /* transition:2s all ease; */
-  display:none;
+.all-categories nav ul > li.active > ul {
+  max-height:2000px;
+  height:auto;
 }
+.all-categories nav ul > li > ul {
+  height:0;
+  max-height:0;
+
+  overflow:hidden;
+  transition:2s all ease;
+ }
 
 .all-categories nav ul li > ul > li {
   list-style: bullet;
@@ -29,8 +32,8 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).toggleClass("active").slideToggle();
-        console.log("clicked")
+      $(this).toggleClass("active")
+      
   })
 })
 </script>
