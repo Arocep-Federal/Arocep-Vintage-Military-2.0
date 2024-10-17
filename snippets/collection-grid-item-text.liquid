@@ -1,8 +1,9 @@
 {% style %}
-ul > li > ul {
-  display:hidden;
+.all-categories nav ul > li > ul {
+  display:none;
 }
 {% endstyle %}
+<div class="all-categories">
 <nav role="navigation">
     {%- for link in linklists.vintage-military-theme.links -%} 
       {% comment %} <li> {% endcomment %}
@@ -38,3 +39,4 @@ ul > li > ul {
       {% comment %} </li> {% endcomment %}
     {%- endfor -%}
 </nav>
+</div>
