@@ -21,11 +21,12 @@
 
   overflow:hidden;
   transition:2s all ease; */
-
   display:none;
+
   display:flex;
       flex-direction:column;
       flex-wrap:wrap;
+      height:400px;
  }
 
 .all-categories nav ul li > ul > li {
@@ -37,9 +38,7 @@
 }
 
 .child-categories {
-  display:block;
   font-size:14px;
-  height:400px;
 }
 {% endstyle %}
 
@@ -50,7 +49,7 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).children(".child-categories").slideToggle()
+      $(this).children("ul").slideToggle()
         
   })
 })
@@ -72,19 +71,18 @@ $( document ).ready(function() {
                 <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                   {{ child_link.title }}
                 </a>
-                <span class="child-categories">
-                  {%- if child_link.links != blank -%}
-                    <ul >
-                      {%- for grandchild_link in child_link.links -%}
-                        <li>
-                          <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                            {{ grandchild_link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                </span>
+
+                {%- if child_link.links != blank -%}
+                  <ul class="child-categories">
+                    {%- for grandchild_link in child_link.links -%}
+                      <li>
+                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
+                          {{ grandchild_link.title }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
 
               </li>
             {%- endfor -%}
