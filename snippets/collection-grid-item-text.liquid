@@ -14,7 +14,10 @@
 <script>
 
 $( document ).ready(function() {
-  console.log("ready")
+  console.log("ready");
+  $("top-category").on("click", function(){
+    console.log("clicked")
+  })
 })
 </script>
 
@@ -29,7 +32,7 @@ $( document ).ready(function() {
         {%- if link.links != blank -%}
           <ul>
             {%- for child_link in link.links -%}
-              <li>
+              <li class="top-category">
                 <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                   {{ child_link.title }}
                 </a>
