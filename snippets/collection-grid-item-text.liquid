@@ -15,7 +15,8 @@
 
 $( document ).ready(function() {
   console.log("ready");
-  $("top-category").on("click", function(){
+  $("top-category").on("click", function(e){
+    e.preventDefault();
     console.log("clicked")
   })
 })
