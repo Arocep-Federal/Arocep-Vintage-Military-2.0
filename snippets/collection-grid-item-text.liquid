@@ -35,7 +35,7 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      var a = $(this + " ul");
+      $(this).addClass("active");
       console.log(a)
       
   })
