@@ -35,9 +35,8 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).toggleClass("active", function(){
-        $(".active ul").show()
-      });
+      $(this).toggleClass("active");
+      $(".active ul").show()
       
   })
 })
