@@ -35,7 +35,7 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).children().slideToggle()
+      $(this).find(".top-category:first-child").slideToggle()
       
   })
 })
