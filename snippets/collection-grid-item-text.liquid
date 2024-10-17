@@ -31,12 +31,9 @@ $( document ).ready(function() {
   console.log("ready");
   $(".top-category").on("click", function(e){
     e.preventDefault();
-    if($(this).hasClass("active")) {
-      $(this).removeClass("active");
-    } else {
-      $(this).addClass("active").slideToggle();
-    }
-    console.log("clicked")
+    
+      $(this).toggleClass("active").slideToggle();
+        console.log("clicked")
   })
 })
 </script>
