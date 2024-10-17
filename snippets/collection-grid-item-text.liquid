@@ -33,7 +33,7 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this).slideToggle();
+      $(this).next(".child-categories").slideToggle();
         console.log("clicked")
   })
 })
@@ -56,7 +56,7 @@ $( document ).ready(function() {
                 </a>
 
                 {%- if child_link.links != blank -%}
-                  <ul>
+                  <ul class="child-categories">
                     {%- for grandchild_link in child_link.links -%}
                       <li>
                         <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
