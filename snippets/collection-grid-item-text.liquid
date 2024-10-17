@@ -1,41 +1,38 @@
 {% style %}
 
-.all-categories nav ul {
+.all-categories .top-category {
   list-style:none;
   margin:0; 
   padding:0;
   /* background-color:#ccc; */
   /* transition:2s all ease; */
 }
-.all-categories nav ul > li {
+.all-categories .top-category > li {
   padding: 5px 10px;
   border:1px solid #ccc;
   margin:0; 
 }
-.all-categories nav ul > li > ul {
-}
-.all-categories nav ul > li > ul {
+
+.all-categories .child-categories {
   display:none;
   
   display:flex;
   flex-direction:column;
   flex-wrap:wrap;
   height:400px;
+  font-size:14px;
 }
 
-.all-categories nav ul li > ul > li {
+.all-categories .child-categories > li {
   /* list-style: bullet; */
   /* background-color:white;  */
   margin:0;
   border:none;
 }
-.top-category {
+.all-categories .top-category {
   font-size:20px;
 }
 
-.child-categories {
-  font-size:14px;
-}
 {% endstyle %}
 
 <script>
