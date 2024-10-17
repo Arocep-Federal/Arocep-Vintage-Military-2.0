@@ -35,7 +35,8 @@ $( document ).ready(function() {
   $(".top-category").on("click", function(e){
     e.preventDefault();
     
-      $(this + " ul")show();
+      var a = $(this + " ul");
+      console.log(a)
       
   })
 })
