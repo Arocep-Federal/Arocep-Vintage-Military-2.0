@@ -59,7 +59,11 @@
     $('.trigger-wrapper').on('click', function (e) {
       e.preventDefault();
       $(this).next('.child-categories').slideToggle();
-      
+      if ($(this).is(':visible')) {
+        console.log("visible")
+      } else {
+      console.log("not visible")
+    }
     });
   });
 </script>
