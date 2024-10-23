@@ -47,11 +47,11 @@
     $('.trigger').on('click', function (e) {
       e.preventDefault();
       $(this).next('.child-categories').slideToggle();
-      if( $(this).next('.child-categories').is(':visible')) {
+      {% comment %} if( $(this).next('.child-categories').is(':visible')) {
         console.log('vis')
       } else {
         console.log('hid')
-      }
+      } {% endcomment %}
     });
   });
 </script>
