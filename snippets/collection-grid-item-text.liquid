@@ -80,10 +80,24 @@
           {%- for child_link in link.links -%}
             <li class="top-category">
               <span class="trigger-wrapper">
+
+              {%- if child_link.links != blank -%}
                 <span class="trigger">{{ child_link.title }}</span>
-                {%- if child_link.links != blank -%}
+                <span class="trigger-icon">+</span>
+                
+              {% endif %}
+              {%- if child_link.links == blank -%}
+                <a
+                  href="{{ child_link.url }}"
+                  {% if child_link.active %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  <span class="trigger">{{ child_link.title }}</span>
                   <span class="trigger-icon">+</span>
-                {% endif %}
+                </a>
+
+              {% endif %}
               </span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
