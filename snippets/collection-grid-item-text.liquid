@@ -33,15 +33,20 @@
     border: none;
   }
   
-
+.trigger-wrapper {
+  width:100%;
+  display:block;
+  overflow:hidden;
+}
   .trigger {
     display: block;
     padding:10px;
     color: white;
+    float:left;
     width:90%;
   }
   .trigger-icon {
-    float:right;
+    float:left;
     color:white; 
     font-weight:bold;
     font-size:20px;
@@ -80,7 +85,10 @@
         <ul class="categories">
           {%- for child_link in link.links -%}
             <li class="top-category">
-              <span class="trigger-icon">+</span><span class="trigger">{{ child_link.title }}</span>
+              <span class="trigger-wrapper">
+                <span class="trigger">{{ child_link.title }}</span>
+                <span class="trigger-icon">+</span>
+              </span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
                   <li>
