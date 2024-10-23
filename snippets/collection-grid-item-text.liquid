@@ -46,8 +46,9 @@
     console.log('ready');
     $('.trigger').on('click', function (e) {
       e.preventDefault();
-      $(this).next('.child-categories').slideToggle();
-      if($(this).next('.child-categories').is(':visible') {
+      var next = $(this).next('.child-categories');
+      next.slideToggle();
+      if($(next).is(':visible')) {
         console.log('vis')
       } else {
         console.log('hid')
