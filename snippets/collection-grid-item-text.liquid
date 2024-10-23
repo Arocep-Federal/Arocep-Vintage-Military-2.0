@@ -37,11 +37,9 @@
 
 $( document ).ready(function() {
   console.log("ready");
-  $(".top-category").on("click", function(e){
-    e.preventDefault();
-    
+  $(".trigger").on("click", function(e){
+      e.preventDefault();
       $(this).children("ul").slideToggle()
-        
   })
 })
 </script>
@@ -59,14 +57,14 @@ $( document ).ready(function() {
           <ul>
             {%- for child_link in link.links -%}
               <li class="top-category">
-                  {{ child_link.title }}
+                  <span class="trigger">{{ child_link.title }}</span>
                 {%- if child_link.links != blank -%}
                   <ul class="child-categories">
                     <li>
                       <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
                         Shop All
                       </a>
-                  </li>
+                   </li>
                     {%- for grandchild_link in child_link.links -%}
                       <li>
                         <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
