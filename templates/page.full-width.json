@@ -15,7 +15,7 @@
         "image_PrkRGQ": {
           "type": "image",
           "settings": {
-            "title": "",
+            "title": "Sales Tax & Exemptions",
             "title_size": 60,
             "subheading": "",
             "link": "",
@@ -44,19 +44,8 @@
     "text_MXKrgH": {
       "type": "text",
       "blocks": {
-        "text_block_mAXrFr": {
-          "type": "text_block",
-          "settings": {
-            "title": "Example title",
-            "text": "<p>As described in our Privacy Policy, we collect personal information from your interactions with us and our website, including through cookies and similar technologies. We may also share this personal information with third parties, including advertising partners. We do this in order to show you ads on other websites that are more relevant to your interests and for other reasons outlined in our privacy policy.</p><p>Sharing<br/> of personal information for targeted advertising based on your <br/>interaction on different websites may be considered \"sales\", \"sharing\", <br/>or \"targeted advertising\" under certain U.S. state privacy laws. <br/>Depending on where you live, you may have the right to opt out of these <br/>activities. If you would like to exercise this opt-out right, please <br/>follow the instructions below.</p><p>If you visit our website with the <br/>Global Privacy Control opt-out preference signal enabled, depending on <br/>where you are, we will treat this as a request to opt-out of activity <br/>that may be considered a “sale” or “sharing” of personal information or <br/>other uses that may be considered targeted advertising for the device <br/>and browser you used to visit our website.</p>",
-            "button_label": "Optional button",
-            "button_link": "",
-            "layout": "center"
-          }
-        },
         "text_block_6XEA9y": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "title": "Sales Tax",
             "text": "<p>Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
@@ -67,7 +56,6 @@
         },
         "text_block_dqKakK": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
             "title": "Tax Exempt Businesses",
             "text": "<p>Please email accounting@arocep.com with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
@@ -78,7 +66,6 @@
         }
       },
       "block_order": [
-        "text_block_mAXrFr",
         "text_block_6XEA9y",
         "text_block_dqKakK"
       ],
@@ -91,6 +78,7 @@
     },
     "main": {
       "type": "main-page-full-width",
+      "disabled": true,
       "settings": {
       }
     }
