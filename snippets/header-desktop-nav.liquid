@@ -39,16 +39,6 @@
 
     {%- style -%}
 
-    /* .site-nav__deep-dropdown { 
-      max-height: 80vh;
-      overflow:scroll;
-    } 
-
-    .site-nav__details [aria-expanded="true"]{
-      color:#90aac7;
-    }  */
-
-
     .site-nav__item {position:static }
     
     .site-nav__dropdown { 
@@ -67,63 +57,30 @@
       top:53px;
       left:2vw;
       position:absolute;
-      /* display:flex;
-      flex-direction:column;
-      flex-wrap:wrap; */
 
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
+      -moz-column-count: 3;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 20px;
+      column-count: 3;
+      column-gap: 20px;
 
       background-color:white;
-      /* width:calc(100vw - 20px);  */ 
+      
       width:80vw; 
       padding:10px; 
       align-items:center;
     }
      
-    /* .office-supplies {
-      max-height:400px;
-    }
-    .industrial,
-    .it-products {
-      max-height:300px;
-    }
-    
-    .janitorial-sanitation,
-    .food-service {
-      max-height:300px; 
-    }
-    
-     */
     .site-nav__deep-dropdown > li {
       font-weight:normal;
-      /* flex: 0 1 auto; */
-      /* width:25%;   */
-      text-overflow: ellipsis;
       height:auto;
       text-wrap:wrap;
-    }
-
-
-    .site-nav__deep-dropdown.industrial > li, 
-    .site-nav__deep-dropdown.it-products > li,
-    .site-nav__deep-dropdown.janitorial-sanitation > li,
-    .site-nav__deep-dropdown.food-service > li {
-      /* width:33.33333%  */
-    }
-
-    .site-nav__dropdown-link {
-      /* white-space: wrap; */
     }
 
     .site-nav__details .caret{
       transform:rotate(90deg)
     } 
-
 
     .site-nav .site-nav--active > a {
       color:#90aac7
