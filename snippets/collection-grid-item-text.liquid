@@ -8,6 +8,10 @@
     background-color:grey;
   }
 
+  ul.categories {
+    padding:0; margin:0;
+  }
+
   .all-categories ul.child-categories {
     -moz-column-count: 3;
     -moz-column-gap: 20px;
@@ -59,7 +63,7 @@
       {% endcomment %}
 
       {%- if link.links != blank -%}
-        <ul>
+        <ul class="categories">
           {%- for child_link in link.links -%}
             <li class="top-category">
               <span class="trigger">{{ child_link.title }}</span>
