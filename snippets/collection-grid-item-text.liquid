@@ -1,90 +1,100 @@
 {% style %}
+  .all-categories .top-category {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.all-categories .top-category {
-  list-style:none;
-  margin:0; 
-  padding:0;
-}
+  .all-categories .top-category {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0;
+  }
 
-.all-categories .top-category > li {
-  padding: 5px 10px;
-  border:1px solid #ccc;
-  margin:0; 
-}
+  .all-categories .child-categories {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
 
-.all-categories .child-categories {
+    font-size: 14px;
+    list-style: none;
+  }
 
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
+  .all-categories .child-categories > li {
+    /* background-color:white;  */
+    margin: 0;
+    border: none;
+  }
+  .all-categories .top-category {
+    font-size: 20px;
+  }
 
-  font-size:14px;
-  list-style: none;
-}
-
-.all-categories .child-categories > li {
-  /* background-color:white;  */
-  margin:0;
-  border:none;
-}
-.all-categories .top-category {
-  font-size:20px;
-}
-
-.trigger {display: block}
+  .trigger {
+    display: block;
+  }
 {% endstyle %}
 
 <script>
-
-$( document ).ready(function() {
-  console.log("ready");
-  $(".trigger").on("click", function(e){
+  $(document).ready(function () {
+    console.log('ready');
+    $('.trigger').on('click', function (e) {
       e.preventDefault();
-      $(this).next(".child-categories").slideToggle()
-  })
-})
+      $(this).next('.child-categories').slideToggle();
+    });
+  });
 </script>
 
 <div class="all-categories">
   <h2>Browse by Category</h2>
-<nav role="navigation">
-    {%- for link in linklists.vintage-military-theme.links -%} 
+  <nav role="navigation">
+    {%- for link in linklists['vintage-military-theme'].links -%}
       {% comment %} <li> {% endcomment %}
-        {% comment %} <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+      {% comment %}
+        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
-        </a> {% endcomment %}
+        </a>
+      {% endcomment %}
 
-        {%- if link.links != blank -%}
-          <ul>
-            {%- for child_link in link.links -%}
-              <li class="top-category">
-                  <span class="trigger">{{ child_link.title }}</span>
-                {%- if child_link.links != blank -%}
-                  <ul class="child-categories">
+      {%- if link.links != blank -%}
+        <ul>
+          {%- for child_link in link.links -%}
+            <li class="top-category">
+              <span class="trigger">{{ child_link.title }}</span>
+              {%- if child_link.links != blank -%}
+                <ul class="child-categories">
+                  <li>
+                    <a
+                      href="{{ child_link.url }}"
+                      {% if child_link.active %}
+                        aria-current="page"
+                      {% endif %}
+                    >
+                      Shop All
+                    </a>
+                  </li>
+                  {%- for grandchild_link in child_link.links -%}
                     <li>
-                      <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                        Shop All
+                      <a
+                        href="{{ grandchild_link.url }}"
+                        {% if grandchild_link.active %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ grandchild_link.title }}
                       </a>
-                   </li>
-                    {%- for grandchild_link in child_link.links -%}
-                      <li>
-                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                          {{ grandchild_link.title }}
-                        </a>
-                      </li>
-                    {%- endfor -%}
-                  </ul>
-                {%- endif -%}
-
-              </li>
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
 
       {% comment %} </li> {% endcomment %}
     {%- endfor -%}
-</nav>
+  </nav>
 </div>
