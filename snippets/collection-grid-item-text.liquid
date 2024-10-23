@@ -31,6 +31,7 @@
   font-size:20px;
 }
 
+.trigger {display: block}
 {% endstyle %}
 
 <script>
@@ -39,7 +40,7 @@ $( document ).ready(function() {
   console.log("ready");
   $(".trigger").on("click", function(e){
       e.preventDefault();
-      $(this).next("ul").slideToggle()
+      $(this).next("child-categories").slideToggle()
   })
 })
 </script>
