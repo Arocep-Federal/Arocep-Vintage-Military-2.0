@@ -81,7 +81,9 @@
             <li class="top-category">
               <span class="trigger-wrapper">
                 <span class="trigger">{{ child_link.title }}</span>
-                <span class="trigger-icon">+</span>
+                {%- if child_link.links != blank -%}
+                  <span class="trigger-icon">+</span>
+                {% endif %}
               </span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
