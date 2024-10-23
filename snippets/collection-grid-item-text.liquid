@@ -92,10 +92,11 @@
         .next('.child-categories')
         .slideToggle(function () {
           if ($(this).is(':visible')) {
-            $(this).parent().find('.trigger-icon').html('—');
+            $(this).parent().find('.trigger-icon').html('&ndash;');
           } else {
             $(this).parent().find('.trigger-icon').html('+');
           }
+          
         });
     });
   });
