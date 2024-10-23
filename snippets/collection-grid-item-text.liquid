@@ -14,11 +14,16 @@
 }
 
 .all-categories .child-categories {
-  display:flex;
+  /* display:flex;
   flex-direction:column;
-  flex-wrap:wrap;
-  height:auto;
-  min-height:300px;
+  flex-wrap:wrap; */
+
+  -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
   font-size:14px;
   list-style: none;
 }
@@ -41,7 +46,7 @@ $( document ).ready(function() {
   console.log("ready");
   $(".trigger").on("click", function(e){
       e.preventDefault();
-      $(this).next(".child-categories").slideToggle()
+      $(this).next("child-categories").slideToggle()
   })
 })
 </script>
