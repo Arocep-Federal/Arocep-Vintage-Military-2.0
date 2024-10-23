@@ -38,19 +38,16 @@
   display:block;
   overflow:hidden;
 }
+.trigger-wrapper span {
+  float:left;
+  display:block;
+  padding:10px;
+  color:white;
+}
   .trigger {
-    display: block;
-    padding:10px;
-    color: white;
-    float:left;
     width:90%;
   }
   .trigger-icon {
-    float:left;
-    color:white; 
-    font-weight:bold;
-    font-size:20px;
-    display:block;
     width:10%;
   }
 {% endstyle %}
@@ -58,14 +55,10 @@
 <script>
   $(document).ready(function () {
     console.log('ready');
-    $('.trigger').on('click', function (e) {
+    $('.trigger-wrapper').on('click', function (e) {
       e.preventDefault();
       $(this).next('.child-categories').slideToggle();
-      {% comment %} if( $(this).next('.child-categories').is(':visible')) {
-        console.log('vis')
-      } else {
-        console.log('hid')
-      } {% endcomment %}
+      
     });
   });
 </script>
