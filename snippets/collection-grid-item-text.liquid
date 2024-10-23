@@ -78,7 +78,7 @@
         <ul class="categories">
           {%- for child_link in link.links -%}
             <li class="top-category">
-              <span class="trigger">{{ child_link.title }}</span><span class="trigger-icon">+</span>
+              <span class="trigger-icon">+</span><span class="trigger">{{ child_link.title }}</span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
                   <li>
