@@ -46,7 +46,14 @@
     console.log('ready');
     $('.trigger').on('click', function (e) {
       e.preventDefault();
-      $(this).next('.child-categories').slideToggle();
+      var next = $(this).next('.child-categories');
+      next.slideToggle();
+      if($(next).is(':visible') {
+        console.log('vis')
+      } else {
+        console.log('hid')
+      }
+      {% comment %} $(this).next('.trigger-icon').html {% endcomment %}
     });
   });
 </script>
@@ -66,7 +73,7 @@
         <ul class="categories">
           {%- for child_link in link.links -%}
             <li class="top-category">
-              <span class="trigger">{{ child_link.title }}</span>
+              <span class="trigger">{{ child_link.title }}</span><span class="trigger-icon">+</span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
                   <li>
