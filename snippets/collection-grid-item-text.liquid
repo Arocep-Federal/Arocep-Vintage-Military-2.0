@@ -5,11 +5,12 @@
     padding: 0;
     border: 1px solid #ccc;
     font-size: 20px;
-    background-color:grey;
+    background-color: grey;
   }
 
   ul.categories {
-    padding:0; margin:0;
+    padding: 0;
+    margin: 0;
   }
 
   .all-categories ul.child-categories {
@@ -24,32 +25,32 @@
     list-style: none;
 
     background-color: white;
-    padding:20px;
-    margin:0;
+    padding: 20px;
+    margin: 0;
   }
 
   .all-categories .child-categories > li {
     margin: 0;
     border: none;
   }
-  
-.trigger-wrapper {
-  width:100%;
-  display:block;
-  overflow:hidden;
-}
-.trigger-wrapper span {
-  float:left;
-  display:block;
-  padding:10px;
-  color:white;
-}
+
+  .trigger-wrapper {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .trigger-wrapper span {
+    float: left;
+    display: block;
+    padding: 10px;
+    color: white;
+  }
   .trigger {
-    width:90%;
+    width: 90%;
   }
   .trigger-icon {
-    width:10%;
-    text-align:right;
+    width: 10%;
+    text-align: right;
   }
 {% endstyle %}
 
@@ -58,12 +59,15 @@
     console.log('ready');
     $('.trigger-wrapper').on('click', function (e) {
       e.preventDefault();
-      $(this).next('.child-categories').slideToggle();
-      if ($(this).is(':visible')) {
-        console.log("visible")
-      } else {
-      console.log("not visible")
-    }
+      $(this)
+        .next('.child-categories')
+        .slideToggle(function () {
+          if ($(this).is(':visible')) {
+            console.log('visible');
+          } else {
+            console.log('not visible');
+          }
+        });
     });
   });
 </script>
@@ -84,24 +88,21 @@
           {%- for child_link in link.links -%}
             <li class="top-category">
               <span class="trigger-wrapper">
-
-              {%- if child_link.links != blank -%}
-                <span class="trigger">{{ child_link.title }}</span>
-                <span class="trigger-icon">+</span>
-                
-              {% endif %}
-              {%- if child_link.links == blank -%}
-                <a
-                  href="{{ child_link.url }}"
-                  {% if child_link.active %}
-                    aria-current="page"
-                  {% endif %}
-                >
+                {%- if child_link.links != blank -%}
                   <span class="trigger">{{ child_link.title }}</span>
-                  <span class="trigger-icon">&gt;</span>
-                </a>
-
-              {% endif %}
+                  <span class="trigger-icon">+</span>
+                {% endif %}
+                {%- if child_link.links == blank -%}
+                  <a
+                    href="{{ child_link.url }}"
+                    {% if child_link.active %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    <span class="trigger">{{ child_link.title }}</span>
+                    <span class="trigger-icon">&gt;</span>
+                  </a>
+                {% endif %}
               </span>
               {%- if child_link.links != blank -%}
                 <ul class="child-categories">
