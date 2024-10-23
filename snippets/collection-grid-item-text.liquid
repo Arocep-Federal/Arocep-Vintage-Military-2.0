@@ -39,7 +39,7 @@ $( document ).ready(function() {
   console.log("ready");
   $(".trigger").on("click", function(e){
       e.preventDefault();
-      $(this).children("ul").slideToggle()
+      $(this).find().next("ul").slideToggle()
   })
 })
 </script>
