@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_video_no_loop_NgHPhj": {
@@ -167,19 +167,19 @@
     "partners_JKRHiJ": {
       "type": "partners",
       "blocks": {
-        "partner_EMHanM": {
+        "partner_jt7mFa": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/lexmark_47807ba9-a7fa-4266-9c49-65de6834631f.png",
-            "link": "https://arocep.com/search?q=lexmark&options%5Bprefix%5D=last",
+            "image": "shopify://shop_images/SKILCRAFT_2_f20e0237-3c41-47b4-9eb0-45205c483bfa.jpg",
+            "link": "https://arocep.com/search?q=scilcraft&options%5Bprefix%5D=last",
             "target": "_self"
           }
         },
-        "partner_MjMr7h": {
+        "partner_y8dVTx": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/hp-logo-vector-download.jpg",
-            "link": "https://arocep.com/search?q=hp&options%5Bprefix%5D=last",
+            "image": "shopify://shop_images/gatorz.png",
+            "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
             "target": "_self"
           }
         },
@@ -198,39 +198,21 @@
             "target": "_self"
           }
         },
-        "partner_y8dVTx": {
+        "partner_EMHanM": {
           "type": "partner",
           "settings": {
-            "image": "shopify://shop_images/gatorz.png",
-            "link": "https://arocep.com/search?q=gatorz&options%5Bprefix%5D=last",
-            "target": "_self"
-          }
-        },
-        "partner_jt7mFa": {
-          "type": "partner",
-          "settings": {
-            "image": "shopify://shop_images/SKILCRAFT_2_f20e0237-3c41-47b4-9eb0-45205c483bfa.jpg",
-            "link": "https://arocep.com/search?q=scilcraft&options%5Bprefix%5D=last",
-            "target": "_self"
-          }
-        },
-        "partner_6nQBBj": {
-          "type": "partner",
-          "settings": {
-            "image": "shopify://shop_images/SKILCRAFT_2_f20e0237-3c41-47b4-9eb0-45205c483bfa.jpg",
-            "link": "",
+            "image": "shopify://shop_images/lexmark_47807ba9-a7fa-4266-9c49-65de6834631f.png",
+            "link": "https://arocep.com/search?q=lexmark&options%5Bprefix%5D=last",
             "target": "_self"
           }
         }
       },
       "block_order": [
-        "partner_EMHanM",
-        "partner_MjMr7h",
+        "partner_jt7mFa",
+        "partner_y8dVTx",
         "partner_xDNDEX",
         "partner_qrFQip",
-        "partner_y8dVTx",
-        "partner_jt7mFa",
-        "partner_6nQBBj"
+        "partner_EMHanM"
       ],
       "settings": {
         "title": "Proudly Partnered With",
@@ -454,6 +436,7 @@
             "subheading": "",
             "link": "",
             "link_text": "",
+            "target": "",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/Helicopter.jpg",
             "parallax_direction": "top",
@@ -468,6 +451,7 @@
             "subheading": "",
             "link": "",
             "link_text": "",
+            "target": "",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/shipping-container-ship.jpg",
             "parallax_direction": "top",
@@ -482,6 +466,7 @@
             "subheading": "",
             "link": "",
             "link_text": "",
+            "target": "",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/F22_Raptor.jpg",
             "parallax_direction": "top",
