@@ -41,13 +41,61 @@
         "lazyload_images": true
       }
     },
+    "af_collection_list_HFJHnx": {
+      "type": "af-collection-list",
+      "blocks": {
+        "collection_3mmaPf": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_kdtyj3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_FryXUQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_U9qhFb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3mmaPf",
+        "collection_kdtyj3",
+        "collection_FryXUQ",
+        "collection_U9qhFb"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "enable_gutter": true,
+        "background-color": "#FFF"
+      }
+    },
     "partner_text_UwLFNA": {
       "type": "partner-text",
       "blocks": {
         "heading_Kwf9Yp": {
           "type": "heading",
           "settings": {
-            "title": "Partner Name"
+            "title": "Partner Mission"
           }
         },
         "text_EkfK3U": {
@@ -64,23 +112,8 @@
       "settings": {
         "align_text": "center",
         "font_size": 32,
-        "backgroundcolor": "#FFF",
-        "fontcolor": "#000"
-      }
-    },
-    "collection_callout_MxhAka": {
-      "type": "collection-callout",
-      "settings": {
-        "collection": "",
-        "subtitle": "Brand new",
-        "title": "Collection callout",
-        "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
-        "cta_text1": "Shop Jackets",
-        "cta_link1": "",
-        "cta_text2": "Shop All Mens",
-        "cta_link2": "",
-        "layout": "left",
-        "divider": false
+        "backgroundcolor": "#ffffff",
+        "fontcolor": "#000000"
       }
     },
     "text_with_icons_cWaQHh": {
@@ -171,7 +204,7 @@
         "featured_product": "",
         "divider": false,
         "sku_enable": false,
-        "image_size": "medium",
+        "image_size": "small",
         "product_zoom_enable": true,
         "thumbnail_position": "beside",
         "thumbnail_arrows": false,
@@ -187,8 +220,8 @@
   },
   "order": [
     "slideshow_HDn9Gz",
+    "af_collection_list_HFJHnx",
     "partner_text_UwLFNA",
-    "collection_callout_MxhAka",
     "text_with_icons_cWaQHh",
     "featured_product_XTxNhH",
     "main"
