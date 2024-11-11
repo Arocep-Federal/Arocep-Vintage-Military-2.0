@@ -86,7 +86,7 @@
       "settings": {
         "title": "Shop by Category",
         "enable_gutter": true,
-        "background-color": "#FFF"
+        "background-color": "#ffffff"
       }
     },
     "partner_text_UwLFNA": {
@@ -212,6 +212,17 @@
         "product_video_style": "muted"
       }
     },
+    "featured_collection_D66AXx": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured Category",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "main": {
       "type": "main-page-full-width",
       "disabled": true,
@@ -224,6 +235,7 @@
     "partner_text_UwLFNA",
     "text_with_icons_cWaQHh",
     "featured_product_XTxNhH",
+    "featured_collection_D66AXx",
     "main"
   ]
 }
