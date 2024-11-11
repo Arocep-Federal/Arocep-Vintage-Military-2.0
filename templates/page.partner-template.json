@@ -212,8 +212,8 @@
         "product_video_style": "muted"
       }
     },
-    "featured_collection_D66AXx": {
-      "type": "featured-collection",
+    "af_featured_category_Y4J43J": {
+      "type": "af-featured-category",
       "settings": {
         "title": "Featured Category",
         "home_featured_products": "",
@@ -235,7 +235,7 @@
     "partner_text_UwLFNA",
     "text_with_icons_cWaQHh",
     "af_featured_product_3QLhYY",
-    "featured_collection_D66AXx",
+    "af_featured_category_Y4J43J",
     "main"
   ]
 }
