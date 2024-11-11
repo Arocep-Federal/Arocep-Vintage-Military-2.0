@@ -15,7 +15,7 @@
         "image_PrkRGQ": {
           "type": "image",
           "settings": {
-            "title": "Sales Tax & Exemptions",
+            "title": "Featured Partner",
             "title_size": 60,
             "subheading": "",
             "link": "",
@@ -41,39 +41,143 @@
         "lazyload_images": true
       }
     },
-    "text_MXKrgH": {
-      "type": "text",
+    "collection_callout_MxhAka": {
+      "type": "collection-callout",
+      "settings": {
+        "collection": "",
+        "subtitle": "Brand new",
+        "title": "Collection callout",
+        "text": "Use this section to easily call attention to one of your collections. We'll show photos of the first 5 products.",
+        "cta_text1": "Shop Jackets",
+        "cta_link1": "",
+        "cta_text2": "Shop All Mens",
+        "cta_link2": "",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "text_with_icons_cWaQHh": {
+      "type": "text-with-icons",
       "blocks": {
-        "text_block_6XEA9y": {
+        "text_block_ddj7rt": {
           "type": "text_block",
           "settings": {
-            "title": "Sales Tax",
-            "text": "<p>Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
-            "button_label": "",
-            "button_link": "",
-            "layout": "center"
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
         },
-        "text_block_dqKakK": {
+        "text_block_tbYRje": {
           "type": "text_block",
           "settings": {
-            "title": "Tax Exempt Businesses",
-            "text": "<p>Please email accounting@arocep.com with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
-            "button_label": "Email Us",
-            "button_link": "mailto:accounting@arocep.com",
-            "layout": "center"
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+          }
+        },
+        "text_block_3CdfNL": {
+          "type": "text_block",
+          "settings": {
+            "icon": "chat",
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
         }
       },
       "block_order": [
-        "text_block_6XEA9y",
-        "text_block_dqKakK"
+        "text_block_ddj7rt",
+        "text_block_tbYRje",
+        "text_block_3CdfNL"
       ],
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
-        "backgroundcolor": "#000000",
-        "fontcolor": "#ffffff"
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "rich_text_p7MWjD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4D4ERC": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission"
+          }
+        },
+        "text_DWfw8f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4D4ERC",
+        "text_DWfw8f"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "narrow_column": false
+      }
+    },
+    "featured_product_XTxNhH": {
+      "type": "featured-product",
+      "blocks": {
+        "price_qNKA46": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator_C8Lwri": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker_LVyxFC": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons_JMWWwf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description_g8yWYz": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "price_qNKA46",
+        "separator_C8Lwri",
+        "variant_picker_LVyxFC",
+        "buy_buttons_JMWWwf",
+        "description_g8yWYz"
+      ],
+      "settings": {
+        "featured_product": "",
+        "divider": false,
+        "sku_enable": false,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted"
       }
     },
     "main": {
@@ -84,7 +188,10 @@
   },
   "order": [
     "slideshow_HDn9Gz",
-    "text_MXKrgH",
+    "collection_callout_MxhAka",
+    "text_with_icons_cWaQHh",
+    "rich_text_p7MWjD",
+    "featured_product_XTxNhH",
     "main"
   ]
 }
