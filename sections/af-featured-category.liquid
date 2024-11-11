@@ -1,3 +1,5 @@
+
+<div class="vintage-military-{{ section.id }} vintage-military-section">
 {%- liquid
     assign per_row = section.settings.per_row
     assign product_limit = per_row | times: section.settings.rows
@@ -15,8 +17,7 @@
       }
     {% endif %}
   {% endstyle %}
-  
-  {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
   
   <div id="CollectionSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="featured-collection">
     {%- if section.settings.title != blank or section.settings.view_all -%}
@@ -94,8 +95,7 @@
     </div>
   </div>
   
-  {%- if section.settings.divider -%}</div>{%- endif -%}
-  
+  </div>
   {% schema %}
   {
     "name": "AF Featured Category",
