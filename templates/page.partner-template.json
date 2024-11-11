@@ -41,6 +41,33 @@
         "lazyload_images": true
       }
     },
+    "partner_text_UwLFNA": {
+      "type": "partner-text",
+      "blocks": {
+        "heading_Kwf9Yp": {
+          "type": "heading",
+          "settings": {
+            "title": "Partner Name"
+          }
+        },
+        "text_EkfK3U": {
+          "type": "text",
+          "settings": {
+            "text": "<p><b>Empowering Our Partners:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kwf9Yp",
+        "text_EkfK3U"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#FFF",
+        "fontcolor": "#000"
+      }
+    },
     "collection_callout_MxhAka": {
       "type": "collection-callout",
       "settings": {
@@ -93,37 +120,9 @@
         "title": "",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "icon_color": "#000",
+        "icon_color": "#000000",
         "button_label": "",
         "button_link": ""
-      }
-    },
-    "rich_text_p7MWjD": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_4D4ERC": {
-          "type": "heading",
-          "settings": {
-            "title": "Our Mission"
-          }
-        },
-        "text_DWfw8f": {
-          "type": "text",
-          "settings": {
-            "text": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_4D4ERC",
-        "text_DWfw8f"
-      ],
-      "settings": {
-        "align_text": "center",
-        "font_size": 32,
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff",
-        "narrow_column": false
       }
     },
     "featured_product_XTxNhH": {
@@ -188,9 +187,9 @@
   },
   "order": [
     "slideshow_HDn9Gz",
+    "partner_text_UwLFNA",
     "collection_callout_MxhAka",
     "text_with_icons_cWaQHh",
-    "rich_text_p7MWjD",
     "featured_product_XTxNhH",
     "main"
   ]
