@@ -1,5 +1,9 @@
-
-<div class="vintage-military-{{ section.id }} vintage-military-section">
+{% style %}
+.partner-section .grid__item {
+  margin-right:6px;
+}
+{% endstyle %}
+<div class="vintage-military-{{ section.id }} partner-section">
 {%- liquid
     assign per_row = section.settings.per_row
     assign product_limit = per_row | times: section.settings.rows
