@@ -3,6 +3,10 @@
    .shopify-section:has(.vintage-military-{{ section.id }}) {
       background-color: {{ section.settings.backgroundcolor }};
       color: {{ section.settings.fontcolor }};
+      background-image: url({{ section.settings.bgimage | image_url:width:auto }});
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
 
@@ -15,7 +19,7 @@
 
     .shopify-section:has(.vintage-military-{{ section.id }}) p {
     font-size:18px;
-  } 
+  }
   }
 {% endstyle %}
 
@@ -64,7 +68,7 @@
 </div>
 {% schema %}
 {
-  "name": "t:sections.rich-text.name",
+  "name": "AF Partner Text",
   "class": "index-section",
   "settings": [
     {
@@ -106,18 +110,28 @@
       "id": "fontcolor",
       "label": "Text Color",
       "default": "#fff"
+    },
+    {
+      "type": "image_picker",
+      "id": "bgimage",
+      "label": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "Narrow Column"
     }
   ],
   "blocks": [
     {
       "type": "heading",
-      "name": "Partner Text",
+      "name": "t:sections.rich-text.blocks.heading.name",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "label": "t:sections.rich-text.blocks.heading.settings.title.label",
-          "default": "Our Partner"
+          "default": "Our Mission"
         }
       ]
     },
@@ -129,7 +143,7 @@
           "id": "text",
           "type": "richtext",
           "label": "t:sections.rich-text.blocks.text.settings.text.label",
-          "default": "lorem ipsum"
+          "default": "<p><b>Empowering Federal Excellence:</b><br/> Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.</p>"
         }
       ]
     },
@@ -164,7 +178,7 @@
   ],
   "presets": [
     {
-      "name": "Partner Text",
+      "name": "AF Partner Text",
       "blocks": [
         {
           "type": "heading"
