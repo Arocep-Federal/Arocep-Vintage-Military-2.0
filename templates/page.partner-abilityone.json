@@ -15,14 +15,14 @@
         "image_PrkRGQ": {
           "type": "image",
           "settings": {
-            "title": "Featured Partner",
+            "title": "AbilityOne",
             "title_size": 60,
             "subheading": "",
             "link": "",
             "link_text": "",
             "target": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/bg-contact.jpg",
+            "image": "shopify://shop_images/www.abilityone.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
