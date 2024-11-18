@@ -22,7 +22,7 @@
             "link_text": "",
             "target": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/AbilityOne_hero2.png",
+            "image": "shopify://shop_images/AbilityOne_hero.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
@@ -112,8 +112,8 @@
       "settings": {
         "align_text": "center",
         "font_size": 32,
-        "backgroundcolor": "#ffffff",
-        "fontcolor": "#000000"
+        "backgroundcolor": "#055ea3",
+        "fontcolor": "#ffffff"
       }
     },
     "text_with_icons_cWaQHh": {
