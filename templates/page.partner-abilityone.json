@@ -220,6 +220,8 @@
       "type": "af-featured-category",
       "settings": {
         "title": "Featured Category",
+        "background-color": "#d4003b",
+        "text-color": "#ffffff",
         "home_featured_products": "",
         "per_row": 4,
         "rows": 1,
