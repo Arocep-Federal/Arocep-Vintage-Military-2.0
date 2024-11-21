@@ -15,37 +15,21 @@
         "image_PrkRGQ": {
           "type": "image",
           "settings": {
-            "title": "AbilityOne",
+            "title": "",
             "title_size": 60,
             "subheading": "",
             "link": "",
             "link_text": "",
             "target": "",
             "text_align": "vertical-bottom horizontal-center",
-            "image": "shopify://shop_images/AbilityOne_hero.jpg",
-            "parallax_direction": "top",
-            "overlay_opacity": 0
-          }
-        },
-        "image_TkPtTJ": {
-          "type": "image",
-          "settings": {
-            "title": "",
-            "title_size": 80,
-            "subheading": "",
-            "link": "",
-            "link_text": "",
-            "target": "",
-            "text_align": "vertical-bottom horizontal-left",
-            "image": "shopify://shop_images/www.abilityone.jpg",
+            "image": "shopify://shop_images/AbilityOne_hero_3.jpg",
             "parallax_direction": "top",
             "overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "image_PrkRGQ",
-        "image_TkPtTJ"
+        "image_PrkRGQ"
       ],
       "settings": {
         "section_height": "550px",
