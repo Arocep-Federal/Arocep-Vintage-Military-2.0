@@ -1,5 +1,6 @@
 
 
+
 {%- assign product = all_products[section.settings.featured_product] -%}
 {%- render 'af-partner-product-template',
   product: product,
@@ -40,6 +41,12 @@
     {
       "type": "header",
       "content": "t:sections.featured-product.settings.header_media"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000"
     },
     {
       "type": "paragraph",
