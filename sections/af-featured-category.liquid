@@ -6,6 +6,9 @@
   width:calc(25% - 6px)
   
 }
+.vintage-military-{{ section.id }} {
+  background-color: {{ section.settings.background-color }}
+}
 {% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
 {%- liquid
@@ -114,6 +117,11 @@
         "id": "title",
         "label": "t:sections.featured-collection.settings.title.label",
         "default": "Featured Category"
+      },
+      {
+        "type": "color",
+        "id": "background-color",
+        "label": "Background Color"
       },
       {
         "type": "collection",
