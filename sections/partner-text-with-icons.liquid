@@ -1,6 +1,12 @@
 
+{% style %}
+.text-with-icons-{{ section.id }} {
+  padding-top:40px;
+}
+{% endstyle %}
+
 <div
-  class="text-with-icons"
+  class="text-with-icons-{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="text-with-icons"
 >
