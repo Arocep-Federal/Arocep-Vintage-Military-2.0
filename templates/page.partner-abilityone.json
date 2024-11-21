@@ -119,38 +119,38 @@
     "partner_text_with_icons_WJpFLQ": {
       "type": "partner-text-with-icons",
       "blocks": {
-        "text_block_p9b4wf": {
-          "type": "text_block",
-          "settings": {
-            "icon": "bills",
-            "title": "Reasonable Pricing",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
-          }
-        },
         "text_block_mYWfyb": {
           "type": "text_block",
           "settings": {
             "icon": "thumbs-up",
-            "title": "Enable Disabled",
-            "text": "<p>By buying these products you help to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.</p>"
+            "title": "Provide Jobs",
+            "text": "<p>Strive to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.</p>"
+          }
+        },
+        "text_block_p9b4wf": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "Fair Market",
+            "text": "<p>Ensure AbilityOne products and services meet customer quality requirements at a fair market price.</p>"
           }
         },
         "text_block_4RkTrX": {
           "type": "text_block",
           "settings": {
-            "icon": "sales-tag",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "icon": "truck",
+            "title": "Easy Access",
+            "text": "<p>Work with both federal and commercial distributing agencies to ensure that AbilityOne products are easily identifiable and accessible</p>"
           }
         }
       },
       "block_order": [
-        "text_block_p9b4wf",
         "text_block_mYWfyb",
+        "text_block_p9b4wf",
         "text_block_4RkTrX"
       ],
       "settings": {
-        "title": "",
+        "title": "Program Standards",
         "align_text": "center",
         "desktop_columns_per_row": 3,
         "icon_color": "#055ea3",
