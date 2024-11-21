@@ -153,7 +153,8 @@
         "title": "Program Standards",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "icon_color": "#d4003b",
+        "h2_color": "#055ea3",
+        "icon_color": "#055ea3",
         "button_label": "",
         "button_link": ""
       }
@@ -204,6 +205,7 @@
         "featured_product": "skilcraft-round-ring-view-binder-3-rings-05-capacity-11-x-85-blue",
         "divider": false,
         "sku_enable": false,
+        "heading_color": "#055ea3",
         "image_size": "medium",
         "product_zoom_enable": true,
         "thumbnail_position": "below",
