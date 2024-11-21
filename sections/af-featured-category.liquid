@@ -6,7 +6,11 @@
   width:calc(25% - 6px)
   
 }
+.index-section:has(.vintage-military-{{ section.id }}) {
+  padding: 0;
+}
 .vintage-military-{{ section.id }} {
+  padding:100px 0; 
   background-color: {{ section.settings.background-color }}
 }
 {% endstyle %}
