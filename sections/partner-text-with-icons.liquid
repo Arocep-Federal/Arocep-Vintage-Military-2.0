@@ -1,16 +1,4 @@
 
-{% style %}
-.text-with-icons-{{ section.id }} {
-  padding-top:40px;
-  background-color: {{ section.settings.bg_color }}
-}
-
-.text-with-icons-{{ section.id }} h2,
-.text-with-icons-{{ section.id }} h3 {
-  color: {{ section.settings.h2_color }};
-}
-
-{% endstyle %}
 
 <div
   class="text-with-icons-{{ section.id }}"
@@ -119,6 +107,19 @@
   #shopify-section-{{ section.id }} .icon g {
     stroke-width: {{ settings.icon_weight | replace: 'px', '' | minus: 1 }}px;
   }
+
+
+.text-with-icons-{{ section.id }} {
+  padding-top:40px;
+  background-color: {{ section.settings.bg_color }}
+}
+
+.text-with-icons-{{ section.id }}
+/* .text-with-icons-{{ section.id }} h2,
+.text-with-icons-{{ section.id }} h3 */
+ {
+  color: {{ section.settings.h2_color }};
+}
 {% endstyle %}
 
 {% schema %}
