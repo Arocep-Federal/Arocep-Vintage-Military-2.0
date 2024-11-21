@@ -5,7 +5,7 @@
 {%- endstyle -%}
 <div class="page-width page-content login--{{ section.id }} ">
   <div class="grid">
-    <div class="grid__item medium-up--one-third medium-up--push-one-third">
+    <div class="grid__item medium-up--one-half medium-up--push-one-quarter">
       <header class="section-header">
         <h1 class="section-header__title">{{ 'customer.login.title' | t }}</h1>
       </header>
@@ -18,7 +18,6 @@
         {% form 'customer_login' %}
           {{ form.errors | default_errors }}
 
-          <div class="grid">
             <div class="grid__item one-full">
           <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
           <input
@@ -32,10 +31,8 @@
             autofocus
           >
           </div>
-          </div>
 
           {% if form.password_needed %}
-            <div class="grid">
               <div class="grid__item one-full">
                 <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
                 <input
@@ -47,10 +44,8 @@
                   class="input-full{% if form.errors contains 'password' %} error{% endif %}"
                 >
               </div>
-            </div>
           {% endif %}
 
-          <div class="grid">
             <div class="grid__item one-full ">
               <label for="login-sign-in-submit" class="hidden-label">{{ 'customer.login.sign_in' | t }}</label>
               <input
@@ -70,7 +65,6 @@
                 </a>
               </small>
             </div>
-          </div>
         {% endform %}
       </div>
 
