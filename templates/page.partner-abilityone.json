@@ -32,9 +32,9 @@
         "image_PrkRGQ"
       ],
       "settings": {
-        "section_height": "450px",
+        "section_height": "550px",
         "mobile_height": "auto",
-        "parallax": true,
+        "parallax": false,
         "style": "arrows",
         "autoplay": true,
         "autoplay_speed": 5,
@@ -116,10 +116,10 @@
         "fontcolor": "#ffffff"
       }
     },
-    "text_with_icons_cWaQHh": {
-      "type": "text-with-icons",
+    "partner_text_with_icons_WJpFLQ": {
+      "type": "partner-text-with-icons",
       "blocks": {
-        "text_block_ddj7rt": {
+        "text_block_p9b4wf": {
           "type": "text_block",
           "settings": {
             "icon": "chat",
@@ -127,7 +127,7 @@
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
         },
-        "text_block_tbYRje": {
+        "text_block_mYWfyb": {
           "type": "text_block",
           "settings": {
             "icon": "chat",
@@ -135,7 +135,7 @@
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
         },
-        "text_block_3CdfNL": {
+        "text_block_4RkTrX": {
           "type": "text_block",
           "settings": {
             "icon": "chat",
@@ -145,15 +145,15 @@
         }
       },
       "block_order": [
-        "text_block_ddj7rt",
-        "text_block_tbYRje",
-        "text_block_3CdfNL"
+        "text_block_p9b4wf",
+        "text_block_mYWfyb",
+        "text_block_4RkTrX"
       ],
       "settings": {
         "title": "",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "icon_color": "#000000",
+        "icon_color": "#000",
         "button_label": "",
         "button_link": ""
       }
@@ -233,7 +233,7 @@
     "slideshow_HDn9Gz",
     "af_collection_list_HFJHnx",
     "partner_text_UwLFNA",
-    "text_with_icons_cWaQHh",
+    "partner_text_with_icons_WJpFLQ",
     "af_featured_product_3QLhYY",
     "af_featured_category_Y4J43J",
     "main"
