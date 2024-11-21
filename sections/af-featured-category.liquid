@@ -9,10 +9,13 @@
 .index-section:has(.vintage-military-{{ section.id }}) {
   padding: 0;
 }
-.vintage-military-{{ section.id }},
-.vintage-military-{{ section.id }} a {
+.vintage-military-{{ section.id }} {
   padding:100px 0; 
   background-color: {{ section.settings.background-color }};
+  color: {{ section.settings.text-color }}
+}
+
+.vintage-military-{{ section.id }} a {
   color: {{ section.settings.text-color }}
 }
 .vintage-military-{{ section.id }} .grid {
