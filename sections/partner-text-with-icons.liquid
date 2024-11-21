@@ -2,6 +2,7 @@
 {% style %}
 .text-with-icons-{{ section.id }} {
   padding-top:40px;
+  background-color: {{ section.settings.bg_color }}
 }
 
 .text-with-icons-{{ section.id }} h2,
@@ -125,6 +126,13 @@
   "name": "Partner Text with Icons",
   "class": "index-section",
   "settings": [
+    
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fff"
+    },
     {
       "type": "text",
       "id": "title",
