@@ -11,7 +11,8 @@
 }
 .vintage-military-{{ section.id }} {
   padding:100px 0; 
-  background-color: {{ section.settings.background-color }}
+  background-color: {{ section.settings.background-color }};
+  color: {{ section.settings.text-color }}
 }
 .vintage-military-{{ section.id }} .grid {
   margin:0;
@@ -129,6 +130,11 @@
         "type": "color",
         "id": "background-color",
         "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text Color"
       },
       {
         "type": "collection",
