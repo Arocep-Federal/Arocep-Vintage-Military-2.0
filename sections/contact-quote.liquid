@@ -19,6 +19,9 @@
     border-radius:5px;
     border: 1px solid #ccc;
    }
+  .index-section--{{ section.id }} .btn--full {
+    border-radius:5px;
+  }
 
   .index-section--{{ section.id }} .form-vertical input,
   .index-section--{{ section.id }} .form-vertical select,
@@ -540,7 +543,7 @@
         </div>
 
         <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
-        <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">
+        <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn btn--full">
           {{ 'contact.form.send' | t }}
         </button>
 
