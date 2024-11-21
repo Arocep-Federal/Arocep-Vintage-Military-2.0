@@ -4,6 +4,10 @@
   padding-top:40px;
 }
 
+.text-with-icons-{{ section.id }} h2 {
+  color: {{ section.settings.h2_color }};
+}
+
 {% endstyle %}
 
 <div
@@ -149,6 +153,13 @@
       "min": 2,
       "max": 4,
       "step": 1
+    },
+
+    {
+      "type": "color",
+      "id": "h2_color",
+      "label": "Heading Color",
+      "default": "#000"
     },
     {
       "type": "color",
