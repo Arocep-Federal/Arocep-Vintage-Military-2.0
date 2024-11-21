@@ -86,6 +86,8 @@
               <span class="hide reset-password-success"></span>
             {% endif %}
 
+
+            <div class="grid__item one-full ">
             <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
             <input
               type="email"
@@ -97,19 +99,22 @@
               autocorrect="off"
               autocapitalize="off"
             >
+              </div>
 
-            <p>
-              <label for="recover-password-submit" class="hidden-label">
-                {{- 'customer.recover_password.submit' | t -}}
-              </label>
-              <input
-                type="submit"
-                id="recover-password-submit"
-                class="btn"
-                value="{{ 'customer.recover_password.submit' | t }}"
-              >
-            </p>
+              <div class="grid__item one-half ">
+                <label for="recover-password-submit" class="hidden-label">
+                  {{- 'customer.recover_password.submit' | t -}}
+                </label>
+                <input
+                  type="submit"
+                  id="recover-password-submit"
+                  class="btn"
+                  value="{{ 'customer.recover_password.submit' | t }}"
+                >
+                </div>
+                <div class="grid__item one-half ">
             <button type="button" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
+            </div>
           {% endform %}
         </div>
       </div>
