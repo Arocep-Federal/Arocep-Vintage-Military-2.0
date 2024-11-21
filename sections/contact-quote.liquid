@@ -15,7 +15,7 @@
   .index-section--{{ section.id }} input,
   .index-section--{{ section.id }} textarea,
   .index-section--{{ section.id }} select
-  { 
+  {
     border-radius:5px;
     border: 1px solid #ccc;
    }
@@ -517,7 +517,8 @@
 
           <div class="grid__item medium-up--one-whole">
             <label for="ContactFormFile-{{ section.id }}">Upload File</label>
-            {% comment %} <input
+            {% comment %}
+              <input
               type="file"
               placeholder="Upload File"
               id="ContactFormFile-{{ section.id }}"
@@ -527,9 +528,10 @@
               autocorrect="off"
               autocapitalize="off"
               value="{% if form.file %}{{ form.file }}{% elsif customer %}{{ customer.file }}{% endif %}"
-            > {% endcomment %}
+              >
+            {% endcomment %}
 
-              <input type="text" name="contact[file_upload]" placeholder="Upload File" class="fluHidden appFileUpload">
+            <input type="text" name="contact[file_upload]" placeholder="Upload File" class="fluHidden appFileUpload">
           </div>
 
           <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
@@ -542,11 +544,12 @@
           >{% if form.body %}{{ form.body }}{% endif %}</textarea>
         </div>
 
-        <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
-        <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn btn--full">
-          {{ 'contact.form.send' | t }}
-        </button>
-
+        <div class="grid__item medium-up--one-whole">
+          <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+          <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn btn--full">
+            {{ 'contact.form.send' | t }}
+          </button>
+        </div>
         {% comment %}
           Remove the following three lines of code to remove the note
           about being protected by Google's reCAPTCHA service.
