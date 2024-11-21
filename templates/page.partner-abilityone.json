@@ -122,23 +122,23 @@
         "text_block_p9b4wf": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
-            "title": "Example title",
+            "icon": "bills",
+            "title": "Reasonable Pricing",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
         },
         "text_block_mYWfyb": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
-            "title": "Example title",
-            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
+            "icon": "thumbs-up",
+            "title": "Enable Disabled",
+            "text": "<p>By buying these products you help to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.</p>"
           }
         },
         "text_block_4RkTrX": {
           "type": "text_block",
           "settings": {
-            "icon": "chat",
+            "icon": "sales-tag",
             "title": "Example title",
             "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products.</p>"
           }
@@ -153,7 +153,7 @@
         "title": "",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "icon_color": "#000",
+        "icon_color": "#055ea3",
         "button_label": "",
         "button_link": ""
       }
