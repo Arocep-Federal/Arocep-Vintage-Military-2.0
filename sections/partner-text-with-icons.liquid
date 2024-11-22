@@ -108,7 +108,7 @@
     stroke-width: {{ settings.icon_weight | replace: 'px', '' | minus: 1 }}px;
   }
 
-  .index-section:has(#shopify-section-{{ section.id }}) {
+  .index-section:has(.text-with-icons-{{ section.id }}) {
     padding:0;
   }
 
@@ -118,8 +118,6 @@
 }
 
 .text-with-icons-{{ section.id }}
-/* .text-with-icons-{{ section.id }} h2,
-.text-with-icons-{{ section.id }} h3 */
  {
   color: {{ section.settings.h2_color }};
 }
