@@ -25,7 +25,7 @@
           {% form 'create_customer' %}
             {{ form.errors | default_errors }}
 
-            <div class="grid__item one-full ">
+            <div class="one-full ">
               <input
                 type="text"
                 name="customer[first_name]"
@@ -40,7 +40,7 @@
               >
             </div>
 
-            <div class="grid__item one-full ">
+            <div class="one-full ">
               <input
                 type="text"
                 name="customer[last_name]"
@@ -53,7 +53,7 @@
                 autocapitalize="words"
               >
             </div>
-            <div class="grid__item one-full ">
+            <div class="one-full ">
               {% comment %} <label for="Email">{{ 'customer.register.email' | t }}</label> {% endcomment %}
               <input
                 type="email"
@@ -68,7 +68,7 @@
                 autocapitalize="off"
               >
             </div>
-            <div class="grid__item one-full ">
+            <div class="one-full ">
               {% comment %} <label for="CreatePassword">{{ 'customer.register.password' | t }}</label> {% endcomment %}
               <input
                 type="password"
@@ -78,7 +78,7 @@
                 class="input-full{% if form.errors contains 'password' %} error{% endif %}"
               >
             </div>
-            <div class="grid__item one-full ">
+            <div class="one-full ">
               {% comment %} <p> {% endcomment %}
               {% comment %} <label for="register-submit" class="hidden-label">{{ 'customer.register.submit' | t }}</label> {% endcomment %}
               <input
