@@ -63,7 +63,7 @@
         "collection_ai9Fjg": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "avery",
             "focal_point": "center center",
             "size": "square-small"
           }
