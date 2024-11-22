@@ -44,14 +44,6 @@
     "af_collection_list_HFJHnx": {
       "type": "af-collection-list",
       "blocks": {
-        "collection_3mmaPf": {
-          "type": "collection",
-          "settings": {
-            "collection": "abilityone-office-supplies",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
         "collection_kdtyj3": {
           "type": "collection",
           "settings": {
@@ -75,13 +67,21 @@
             "focal_point": "center center",
             "size": "square-small"
           }
+        },
+        "collection_3mmaPf": {
+          "type": "collection",
+          "settings": {
+            "collection": "abilityone-office-supplies",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
         }
       },
       "block_order": [
-        "collection_3mmaPf",
         "collection_kdtyj3",
         "collection_FryXUQ",
-        "collection_U9qhFb"
+        "collection_U9qhFb",
+        "collection_3mmaPf"
       ],
       "settings": {
         "title": "Shop by Category",
@@ -115,6 +115,55 @@
         "font_size": 32,
         "backgroundcolor": "#055ea3",
         "fontcolor": "#ffffff"
+      }
+    },
+    "af_collection_list_R8Hgdr": {
+      "type": "af-collection-list",
+      "blocks": {
+        "collection_xDQLz8": {
+          "type": "collection",
+          "settings": {
+            "collection": "skilcraft",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_bEzCP4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_ai9Fjg": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_yjyb9k": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_xDQLz8",
+        "collection_bEzCP4",
+        "collection_ai9Fjg",
+        "collection_yjyb9k"
+      ],
+      "settings": {
+        "title": "Shop by Brand",
+        "enable_gutter": true,
+        "background-color": "#0a406c",
+        "heading-color": "#ffffff"
       }
     },
     "partner_text_with_icons_WJpFLQ": {
@@ -239,6 +288,7 @@
     "slideshow_HDn9Gz",
     "af_collection_list_HFJHnx",
     "partner_text_UwLFNA",
+    "af_collection_list_R8Hgdr",
     "partner_text_with_icons_WJpFLQ",
     "af_featured_product_3QLhYY",
     "af_featured_category_Y4J43J",
