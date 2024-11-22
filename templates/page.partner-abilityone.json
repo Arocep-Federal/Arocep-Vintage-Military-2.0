@@ -219,10 +219,10 @@
     "af_featured_category_Y4J43J": {
       "type": "af-featured-category",
       "settings": {
-        "title": "Featured Category",
+        "title": "Shop All",
         "background-color": "#d4003b",
         "text-color": "#ffffff",
-        "home_featured_products": "",
+        "home_featured_products": "abilityone-catalog",
         "per_row": 4,
         "rows": 1,
         "view_all": true,
