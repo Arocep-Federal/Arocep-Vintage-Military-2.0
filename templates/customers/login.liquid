@@ -66,15 +66,17 @@
                 value="{{ 'customer.login.sign_in' | t }}"
               >
             </div>
-            <div class="one-half text-left">
-              <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
-            </div>
-            <div class="one-half text-right">
-              <small class="label-info">
-                <a href="#recover" id="RecoverPassword" class="js-no-transition">
-                  {{ 'customer.login.forgot_password' | t }}
-                </a>
-              </small>
+            <div class="grid__item">
+              <div class="one-half text-left">
+                <p>{{ 'layout.customer.create_account' | t | customer_register_link }}</p>
+              </div>
+              <div class="one-half text-right">
+                <small class="label-info">
+                  <a href="#recover" id="RecoverPassword" class="js-no-transition">
+                    {{ 'customer.login.forgot_password' | t }}
+                  </a>
+                </small>
+              </div>
             </div>
         {% endform %}
       </div>
@@ -105,7 +107,7 @@
               autocapitalize="off"
             >
               </div>
-<div class="grid_item">
+<div class="grid__item">
               <div class="one-half">
                 <label for="recover-password-submit" class="hidden-label">
                   {{- 'customer.recover_password.submit' | t -}}
