@@ -41,6 +41,33 @@
         "lazyload_images": true
       }
     },
+    "partner_text_UwLFNA": {
+      "type": "partner-text",
+      "blocks": {
+        "heading_Kwf9Yp": {
+          "type": "heading",
+          "settings": {
+            "title": "The AbilityOne Program"
+          }
+        },
+        "text_EkfK3U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>creates employment and training opportunities for 45,000 people across the country who are blind or have other significant disabilities through the sale of SKILCRAFT® and other products and services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kwf9Yp",
+        "text_EkfK3U"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#055ea3",
+        "fontcolor": "#ffffff"
+      }
+    },
     "af_collection_list_R8Hgdr": {
       "type": "af-collection-list",
       "blocks": {
@@ -137,33 +164,6 @@
         "enable_gutter": true,
         "background-color": "#d4003b",
         "heading-color": "#ffffff"
-      }
-    },
-    "partner_text_UwLFNA": {
-      "type": "partner-text",
-      "blocks": {
-        "heading_Kwf9Yp": {
-          "type": "heading",
-          "settings": {
-            "title": "The AbilityOne Program"
-          }
-        },
-        "text_EkfK3U": {
-          "type": "text",
-          "settings": {
-            "text": "<p>creates employment and training opportunities for 45,000 people across the country who are blind or have other significant disabilities through the sale of SKILCRAFT® and other products and services.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Kwf9Yp",
-        "text_EkfK3U"
-      ],
-      "settings": {
-        "align_text": "center",
-        "font_size": 32,
-        "backgroundcolor": "#055ea3",
-        "fontcolor": "#ffffff"
       }
     },
     "partner_text_with_icons_WJpFLQ": {
@@ -286,10 +286,10 @@
   },
   "order": [
     "slideshow_HDn9Gz",
-    "af_collection_list_R8Hgdr",
-    "af_collection_list_HFJHnx",
     "partner_text_UwLFNA",
+    "af_collection_list_HFJHnx",
     "partner_text_with_icons_WJpFLQ",
+    "af_collection_list_R8Hgdr",
     "af_featured_product_3QLhYY",
     "af_featured_category_Y4J43J",
     "main"
