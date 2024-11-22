@@ -105,20 +105,23 @@
               autocapitalize="off"
             >
               </div>
-              <div class="one-half">
-                <label for="recover-password-submit" class="hidden-label">
-                  {{- 'customer.recover_password.submit' | t -}}
-                </label>
-                <input
-                  type="submit"
-                  id="recover-password-submit"
-                  class="btn btn--full btn--no-animate"
-                  value="{{ 'customer.recover_password.submit' | t }}"
-                >
-                </div>
+              <div class="grid">
+
                 <div class="one-half">
-            <button type="button" class="btn--full btn--no-animate" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
-            </div>
+                  <label for="recover-password-submit" class="hidden-label">
+                    {{- 'customer.recover_password.submit' | t -}}
+                  </label>
+                  <input
+                    type="submit"
+                    id="recover-password-submit"
+                    class="btn btn--full btn--no-animate"
+                    value="{{ 'customer.recover_password.submit' | t }}"
+                  >
+                  </div>
+                  <div class="one-half">
+                    <button type="button" class="btn--full btn--no-animate" id="HideRecoverPasswordLink">{{ 'customer.recover_password.cancel' | t }}</button>
+                  </div>
+                </div>
           </div>
           {% endform %}
         </div>
