@@ -117,6 +117,17 @@
         "heading-color": "#ffffff"
       }
     },
+    "featured_collection_ewgyB4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Best Sellers",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "partner_text_with_icons_WJpFLQ": {
       "type": "partner-text-with-icons",
       "blocks": {
@@ -204,7 +215,7 @@
         "description_JreeqJ"
       ],
       "settings": {
-        "featured_product": "skilcraft-round-ring-view-binder-3-rings-05-capacity-11-x-85-blue",
+        "featured_product": "skilcraft-toilet-tissue-2-ply-white-550-sheets-roll-40-rolls-box",
         "divider": false,
         "sku_enable": false,
         "heading_color": "#055ea3",
@@ -212,7 +223,7 @@
         "product_zoom_enable": true,
         "thumbnail_position": "below",
         "thumbnail_arrows": false,
-        "enable_video_looping": true,
+        "enable_video_looping": false,
         "product_video_style": "muted"
       }
     },
@@ -287,6 +298,7 @@
   "order": [
     "slideshow_HDn9Gz",
     "partner_text_UwLFNA",
+    "featured_collection_ewgyB4",
     "af_collection_list_HFJHnx",
     "partner_text_with_icons_WJpFLQ",
     "af_featured_product_3QLhYY",
