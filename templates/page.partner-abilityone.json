@@ -71,18 +71,10 @@
     "af_collection_list_HFJHnx": {
       "type": "af-collection-list",
       "blocks": {
-        "collection_kdtyj3": {
+        "collection_3mmaPf": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "focal_point": "center center",
-            "size": "square-small"
-          }
-        },
-        "collection_FryXUQ": {
-          "type": "collection",
-          "settings": {
-            "collection": "it-products-ab1",
+            "collection": "office-supplies-ab1",
             "focal_point": "center center",
             "size": "square-small"
           }
@@ -95,20 +87,28 @@
             "size": "square-small"
           }
         },
-        "collection_3mmaPf": {
+        "collection_FryXUQ": {
           "type": "collection",
           "settings": {
-            "collection": "office-supplies-ab1",
+            "collection": "it-products-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_kdtyj3": {
+          "type": "collection",
+          "settings": {
+            "collection": "food-service-ab1",
             "focal_point": "center center",
             "size": "square-small"
           }
         }
       },
       "block_order": [
-        "collection_kdtyj3",
-        "collection_FryXUQ",
+        "collection_3mmaPf",
         "collection_U9qhFb",
-        "collection_3mmaPf"
+        "collection_FryXUQ",
+        "collection_kdtyj3"
       ],
       "settings": {
         "title": "Shop by Category",
