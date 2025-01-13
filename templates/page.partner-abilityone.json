@@ -90,7 +90,7 @@
         "collection_U9qhFb": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "jan-san-ab1",
             "focal_point": "center center",
             "size": "square-small"
           }
@@ -98,7 +98,7 @@
         "collection_3mmaPf": {
           "type": "collection",
           "settings": {
-            "collection": "abilityone-office-supplies",
+            "collection": "office-supplies-ab1",
             "focal_point": "center center",
             "size": "square-small"
           }
