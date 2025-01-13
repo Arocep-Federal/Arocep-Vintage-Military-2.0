@@ -82,7 +82,7 @@
         "collection_FryXUQ": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "it-products-ab1",
             "focal_point": "center center",
             "size": "square-small"
           }
