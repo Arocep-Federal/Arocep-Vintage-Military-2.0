@@ -68,6 +68,17 @@
         "fontcolor": "#ffffff"
       }
     },
+    "featured_collection_ewgyB4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Best Sellers",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": true
+      }
+    },
     "af_collection_list_HFJHnx": {
       "type": "af-collection-list",
       "blocks": {
@@ -115,17 +126,6 @@
         "enable_gutter": true,
         "background-color": "#d4003b",
         "heading-color": "#ffffff"
-      }
-    },
-    "featured_collection_ewgyB4": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Shop Best Sellers",
-        "home_featured_products": "best-sellers",
-        "per_row": 4,
-        "rows": 1,
-        "view_all": true,
-        "divider": false
       }
     },
     "partner_text_with_icons_WJpFLQ": {
